@@ -23,7 +23,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | Facebook | Publication auto après validation — **bloqué** : l'utilisateur n'est pas administrateur de la Page |
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
-| Historique | Google Sheet |
+| Stockage | Google Sheet (onglets « Banque de thèmes » et « Historique ») — compte Google à créer |
 | Appel à l'action | Grille de positionnement **gratuite** + WhatsApp |
 | Cas clients | **Interdiction** de citer les cas d'études (GCF, MBP Business, Ets LA DIFFÉRENCE) ou tout client réel |
 | n8n | Version cloud |
@@ -45,4 +45,21 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [ ] Document de charte graphique (couleurs exactes, police)
 - [ ] Accès à la Page Facebook (contrôle total ou création de contenu via Meta Business Suite)
 - [x] Prompt v2 validé
-- [ ] Validation de la banque de thèmes
+- [x] Banque de thèmes validée
+- [ ] Compte Google + Google Sheet (import de `banque_themes.csv`)
+- [ ] Clé API DeepSeek dans n8n
+- [ ] Identifiants SMTP LWS pour admin@stratfocus-consulting.com dans n8n
+- [ ] Clé API Google Gemini (images, étape 2)
+
+## Workflows n8n
+| Workflow | ID | État |
+|---|---|---|
+| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — en attente des identifiants (Google Sheets, DeepSeek, SMTP) |
+
+Code source : `n8n/workflow_publications_stfc.js`.
+
+## Étapes suivantes
+1. Phase 1 (fait) : thèmes → rédaction DeepSeek → mail de validation → suivi dans Google Sheet.
+2. Étape 2 : image (Gemini) + logo et bandeau STFC (Edit Image), jointe au mail.
+3. Étape 3 : publication Facebook automatique après validation (dès l'accès à la Page).
+4. Phase 2 : LinkedIn, TikTok.
