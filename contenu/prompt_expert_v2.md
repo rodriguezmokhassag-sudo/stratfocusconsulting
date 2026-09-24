@@ -3,7 +3,6 @@
 > Utilisé dans le nœud IA du workflow n8n. Les champs `{{ $json.… }}` viennent de la ligne
 > choisie dans la banque de thèmes (`banque_themes.csv` / Google Sheet).
 > Le format JSON de sortie est imposé par un « Structured Output Parser » (schéma en bas de page).
-> `[NUMERO_WHATSAPP]` : à remplacer dès que le numéro est confirmé.
 
 ---
 
@@ -66,7 +65,7 @@ PRODUIS :
    - Appel à l'action, en alternant d'une publication à l'autre entre :
      a) « Évaluez gratuitement le niveau de votre équipe commerciale avec la Grille de
         positionnement STFC (8 blocs de compétences, 210 points). »
-     b) « Échangeons sur votre situation : écrivez-nous sur WhatsApp au [NUMERO_WHATSAPP]. »
+     b) « Échangeons sur votre situation : écrivez-nous sur WhatsApp au 066 000 066 (+242). »
    - Terminer par 5 hashtags : #StratFocusConsulting #PerformanceCommerciale #PME
      + 2 hashtags liés au thème ou au lieu (ex. #ForceDeVente #PointeNoire #Congo).
 

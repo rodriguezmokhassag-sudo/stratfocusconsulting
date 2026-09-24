@@ -40,8 +40,9 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à P4, 10 pour P5 et P6 = 10 semaines).
 
 ## En attente
-- [ ] Numéro WhatsApp pour l'appel à l'action
+- [x] Numéro WhatsApp : 066 000 066 (+242)
 - [ ] Logo PNG à fond transparent
 - [ ] Document de charte graphique (couleurs exactes, police)
 - [ ] Accès à la Page Facebook (contrôle total ou création de contenu via Meta Business Suite)
-- [ ] Validation de la banque de thèmes et du prompt v2
+- [x] Prompt v2 validé
+- [ ] Validation de la banque de thèmes
