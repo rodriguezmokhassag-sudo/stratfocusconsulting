@@ -19,7 +19,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | IA texte | DeepSeek (déjà utilisé dans n8n) |
 | Images | Générateur à faible coût (Imagen 4 Fast / Nano Banana) + logo et bandeau posés par n8n (Edit Image) |
 | Charte (provisoire) | Bleu marine ≈ #0B2468, or ≈ #C5A24A, noir ≈ #181818 — à confirmer avec le document de charte |
-| Validation | Obligatoire avant publication, par mail à admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |
+| Validation | Obligatoire avant publication : mail envoyé depuis dg@stratfocus-consulting.com (SMTP) vers admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |
 | Facebook | Publication auto après validation — **bloqué** : l'utilisateur n'est pas administrateur de la Page |
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
@@ -48,7 +48,7 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [x] Banque de thèmes validée
 - [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets — lecture testée OK (100 thèmes)
 - [ ] Clé API DeepSeek dans n8n
-- [ ] Identifiants SMTP LWS pour admin@stratfocus-consulting.com dans n8n
+- [ ] Identifiants SMTP LWS dans n8n : utiliser dg@stratfocus-consulting.com (admin@ refusé : erreur 535)
 - [ ] Clé API Google Gemini (images, étape 2)
 
 ## Workflows n8n

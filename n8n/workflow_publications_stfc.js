@@ -120,7 +120,7 @@ const demanderValidation = node({
     parameters: {
       resource: 'email',
       operation: 'sendAndWait',
-      fromEmail: 'Publications STFC <admin@stratfocus-consulting.com>',
+      fromEmail: 'Publications STFC <dg@stratfocus-consulting.com>',
       toEmail: 'admin@stratfocus-consulting.com',
       subject: expr('{{ $json.sujet }}'),
       message: expr('{{ $json.message }}'),
