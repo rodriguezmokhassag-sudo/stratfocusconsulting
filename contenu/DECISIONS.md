@@ -16,7 +16,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | Formats | conseil, méthode, erreur, checklist, question |
 | Banque de thèmes | 100 thèmes (`banque_themes.csv`), rédigés par Claude, à valider ; l'IA en proposera de nouveaux quand la banque s'épuise |
 | Fréquence | 10 posts / semaine : lundi à vendredi, 8 h 00 et 12 h 30 |
-| IA texte | DeepSeek (déjà utilisé dans n8n) |
+| IA texte | DeepSeek, modèle `deepseek-flash` (V4.1-Flash ; `deepseek-chat` retiré le 24/07/2026) |
 | Images | Générateur à faible coût (Imagen 4 Fast / Nano Banana) + logo et bandeau posés par n8n (Edit Image) |
 | Charte (provisoire) | Bleu marine ≈ #0B2468, or ≈ #C5A24A, noir ≈ #181818 — à confirmer avec le document de charte |
 | Validation | Obligatoire avant publication : mail envoyé depuis dg@stratfocus-consulting.com (SMTP) vers admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |

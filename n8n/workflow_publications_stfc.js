@@ -57,7 +57,7 @@ const modeleDeepSeek = languageModel({
   version: 1,
   config: {
     name: 'DeepSeek',
-    parameters: { model: 'deepseek-chat', options: { temperature: 0.8 } },
+    parameters: { model: 'deepseek-flash', options: { temperature: 0.8 } },
     credentials: { deepSeekApi: newCredential('DeepSeek') },
     position: [600, 520]
   }
