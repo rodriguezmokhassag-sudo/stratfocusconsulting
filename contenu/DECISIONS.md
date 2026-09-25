@@ -46,7 +46,7 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [ ] Accès à la Page Facebook (contrôle total ou création de contenu via Meta Business Suite)
 - [x] Prompt v2 validé
 - [x] Banque de thèmes validée
-- [ ] Google Sheet : importer `STFC_Publications.xlsx` dans le Drive de rodriguezmokhassag@gmail.com
+- [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets
 - [ ] Clé API DeepSeek dans n8n
 - [ ] Identifiants SMTP LWS pour admin@stratfocus-consulting.com dans n8n
 - [ ] Clé API Google Gemini (images, étape 2)
