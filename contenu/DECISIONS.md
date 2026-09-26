@@ -48,13 +48,13 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [x] Banque de thèmes validée
 - [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets — lecture testée OK (100 thèmes)
 - [x] Clé API Google Gemini connectée (projet Google Cloud « STFC n8n », identifiant « Google Gemini(PaLM) Api account 2 ») — servira aussi aux images
-- [ ] Fuseau horaire du workflow = Africa/Brazzaville (réglage manuel dans Settings)
+- [x] Fuseau horaire : défaut n8n Africa/Douala = même heure que Brazzaville (UTC+1)
 - [x] SMTP LWS connecté avec dg@stratfocus-consulting.com (test OK ; admin@ refusé : erreur 535)
 
 ## Workflows n8n
 | Workflow | ID | État |
 |---|---|---|
-| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — Sheets ✅, SMTP ✅, Gemini ✅, reste : fuseau horaire + 1er test (test manuel possible le week-end : planning du lundi) |
+| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | **1er test complet réussi le 26/09/2026** (exécution n° 44 : T001 + T061 rédigés par Gemini, mail reçu, validés, Sheet mis à jour). Inactif — reste : ajustements du prompt puis activation (Publish) |
 
 Code source : `n8n/workflow_publications_stfc.js`.
 
@@ -63,3 +63,9 @@ Code source : `n8n/workflow_publications_stfc.js`.
 2. Étape 2 : image (Gemini) + logo et bandeau STFC (Edit Image), jointe au mail.
 3. Étape 3 : publication Facebook automatique après validation (dès l'accès à la Page).
 4. Phase 2 : LinkedIn, TikTok.
+
+## Retours du 1er test (26/09/2026) — ajustements de prompt proposés
+- Offre inventée dans un script TikTok (« audit gratuit ») → interdire toute offre autre que la Grille de positionnement gratuite.
+- Format checklist mélangé avec méthode + question → respecter strictement le format demandé.
+- Thème « 10 questions » traité en 6 points → respecter les nombres annoncés dans le thème.
+- Accroches identiques (« votre CA stagne ») et hashtags identiques → varier.
