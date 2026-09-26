@@ -47,13 +47,14 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [x] Prompt v2 validé
 - [x] Banque de thèmes validée
 - [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets — lecture testée OK (100 thèmes)
-- [ ] Clé API Google Gemini dans n8n (nœud « Google Gemini ») — sert aussi aux images à l'étape 2
+- [x] Clé API Google Gemini connectée (projet Google Cloud « STFC n8n », identifiant « Google Gemini(PaLM) Api account 2 ») — servira aussi aux images
+- [ ] Fuseau horaire du workflow = Africa/Brazzaville (réglage manuel dans Settings)
 - [x] SMTP LWS connecté avec dg@stratfocus-consulting.com (test OK ; admin@ refusé : erreur 535)
 
 ## Workflows n8n
 | Workflow | ID | État |
 |---|---|---|
-| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — Sheets ✅, SMTP ✅, reste : clé Gemini + fuseau horaire + test |
+| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — Sheets ✅, SMTP ✅, Gemini ✅, reste : fuseau horaire + 1er test (test manuel possible le week-end : planning du lundi) |
 
 Code source : `n8n/workflow_publications_stfc.js`.
 
