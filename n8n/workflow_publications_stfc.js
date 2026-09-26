@@ -52,13 +52,13 @@ const choisirThemes = node({
   ]
 });
 
-const modeleDeepSeek = languageModel({
-  type: '@n8n/n8n-nodes-langchain.lmChatDeepSeek',
-  version: 1,
+const modeleGemini = languageModel({
+  type: '@n8n/n8n-nodes-langchain.lmChatGoogleGemini',
+  version: 1.1,
   config: {
-    name: 'DeepSeek',
-    parameters: { model: 'deepseek-flash', options: { temperature: 0.8 } },
-    credentials: { deepSeekApi: newCredential('DeepSeek') },
+    name: 'Google Gemini',
+    parameters: { modelName: 'models/gemini-3.1-flash-lite', options: { temperature: 0.8, maxOutputTokens: 4096 } },
+    credentials: { googlePalmApi: newCredential('Google Gemini') },
     position: [600, 520]
   }
 });
@@ -88,7 +88,7 @@ const rediger = node({
       messages: { messageValues: [{ type: 'SystemMessagePromptTemplate', message: "Tu es l'Expert Senior en Performance Commerciale, Marketing d'Innovation et Transformation Digitale du cabinet STRAT FOCUS CONSULTING (STFC), basé à Pointe-Noire, République du Congo.\nSignature du cabinet : « Parce que votre chiffre d'affaires compte ».\n\nTA CIBLE : les dirigeants de TPE, PE et PME du Congo-Brazzaville et d'Afrique centrale.\n\nTON OBJECTIF : publier du contenu à forte valeur ajoutée qui aide ces dirigeants à :\n1. accroître durablement leur chiffre d'affaires ;\n2. consolider et structurer leur force de vente ;\n3. former et faire monter en compétences leurs commerciaux ;\n4. concevoir ou restructurer une organisation commerciale efficace ;\n5. innover dans leur marketing ;\n6. réussir leur transformation digitale.\n\nTON ET STYLE :\n- Professionnel, pragmatique, orienté résultats, inspirant, ancré dans les réalités du terrain.\n- Vouvoiement du dirigeant, jamais de tutoiement.\n- Exemples concrets adaptés au contexte local : montants en FCFA, commerce de proximité, vente à crédit, Mobile Money, WhatsApp, prospection terrain.\n- Phrases courtes, paragraphes aérés, emojis avec modération (3 à 6 maximum).\n- Pas de mise en forme Markdown (pas d'astérisques ni de dièses de titre) : Facebook ne l'affiche pas.\n\nRÈGLES STRICTES :\n- N'invente AUCUN chiffre, statistique, étude ou citation. Si tu illustres, dis « par exemple ».\n- Ne cite AUCUN client, cas réel ou nom d'entreprise. Pas de faux témoignages.\n- Aucun sujet politique, religieux ou polémique.\n- Reste strictement sur le thème fourni.\n- Quand une méthode est citée (SPIN, SONCAS, BANT, CROC...), explique-la simplement, comme à un dirigeant qui ne la connaît pas." }] },
       batching: { batchSize: 1 }
     },
-    subnodes: { model: modeleDeepSeek, outputParser: formatPublication },
+    subnodes: { model: modeleGemini, outputParser: formatPublication },
     position: [660, 300]
   },
   output: [
@@ -241,7 +241,7 @@ const ajouterHistorique = node({
   output: [{ date: '28/09/2026', creneau: '08h00', id_theme: 'T001' }]
 });
 
-const noteFonctionnement = sticky("## 📣 Publications STFC – fonctionnement\nDu lundi au vendredi à **7 h** (heure de Brazzaville) :\n1. Lecture de la banque de thèmes (Google Sheet).\n2. Choix des 2 thèmes du jour selon le planning (8 h 00 et 12 h 30).\n3. Rédaction par DeepSeek avec le prompt Expert v2 (post Facebook, script TikTok, image, titre).\n4. **Un seul mail** à admin@stratfocus-consulting.com avec les boutons Valider / Rejeter (attente max 5 h).\n5. Mise à jour de la banque (validé / rejeté) et ajout à l'onglet Historique. Sans réponse, les thèmes restent « à publier ».\n\nPlanning : lun P1/P4 · mar P2/P1 · mer P3/P2 · jeu P4/P3 · ven P5/P6", [declencheur, lireBanque, choisirThemes, rediger, preparerMail, demanderValidation, preparerSuivi, majBanque, ajouterHistorique], { color: 4 });
+const noteFonctionnement = sticky("## 📣 Publications STFC – fonctionnement\nDu lundi au vendredi à **7 h** (heure de Brazzaville) :\n1. Lecture de la banque de thèmes (Google Sheet).\n2. Choix des 2 thèmes du jour selon le planning (8 h 00 et 12 h 30).\n3. Rédaction par Google Gemini avec le prompt Expert v2 (post Facebook, script TikTok, image, titre).\n4. **Un seul mail** à admin@stratfocus-consulting.com avec les boutons Valider / Rejeter (attente max 5 h).\n5. Mise à jour de la banque (validé / rejeté) et ajout à l'onglet Historique. Sans réponse, les thèmes restent « à publier ».\n\nPlanning : lun P1/P4 · mar P2/P1 · mer P3/P2 · jeu P4/P3 · ven P5/P6", [declencheur, lireBanque, choisirThemes, rediger, preparerMail, demanderValidation, preparerSuivi, majBanque, ajouterHistorique], { color: 4 });
 
 const noteConfiguration = sticky("## ⚙️ À configurer avant d'activer\n1. **Fuseau horaire** : menu ⋯ > Settings > Timezone = **Africa/Brazzaville**.\n2. **Google Sheet** : importer `banque_themes.csv` dans un onglet nommé **Banque de thèmes** ; créer un onglet **Historique** avec en ligne 1 : date | creneau | id_theme | pilier | theme | format | decision | titre_visuel | facebook_post | tiktok_script | image_prompt. Puis connecter le compte Google et choisir le fichier dans les 3 nœuds Google Sheets.\n3. **DeepSeek** : clé API (platform.deepseek.com > API keys).\n4. **SMTP LWS** : admin@stratfocus-consulting.com, hôte SMTP indiqué dans l'espace LWS, port 465, SSL activé.\n5. Tester avec **Execute workflow**, puis activer.", [], { color: 3, position: [0, 700], width: 900, height: 320 });
 
