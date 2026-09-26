@@ -74,3 +74,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 
 ## Idée en cours d'étude
 - Publier le lien vers la Grille de positionnement en **1er commentaire** des posts P2/P3/P4 (API Meta `/{post-id}/comments`, permission `pages_manage_engagement`) — nécessite l'accès à la Page + une version en ligne de la Grille.
+- Formulaire Grille (Google Forms) validé : répondants = dirigeants, entrepreneurs, responsables commerciaux, commerciaux ; coordonnées = nom, entreprise, fonction, ville, WhatsApp, e-mail, domaine d'activité, taille de l'équipe commerciale. En attente : critères officiels des 8 blocs (42 critères notés 0-5 = 210 pts).
