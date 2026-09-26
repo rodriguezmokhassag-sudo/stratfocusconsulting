@@ -24,7 +24,9 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
 | Stockage | Google Sheet (onglets « Banque de thèmes » et « Historique ») — compte rodriguezmokhassag@gmail.com |
-| Appel à l'action | Grille de positionnement **gratuite** + WhatsApp |
+| Appel à l'action | Selon le pilier : P2/P3/P4 → Grille de positionnement **gratuite** + WhatsApp ; P1/P5/P6 → « Échangeons sur votre situation de dirigeant » + WhatsApp |
+| Mobile Money | Cité seulement quand le sujet touche aux paiements / encaissements |
+| Prompt en production | v3 (`contenu/prompt_expert_v3.md`) |
 | Cas clients | **Interdiction** de citer les cas d'études (GCF, MBP Business, Ets LA DIFFÉRENCE) ou tout client réel |
 | n8n | Version cloud |
 
@@ -64,8 +66,11 @@ Code source : `n8n/workflow_publications_stfc.js`.
 3. Étape 3 : publication Facebook automatique après validation (dès l'accès à la Page).
 4. Phase 2 : LinkedIn, TikTok.
 
-## Retours du 1er test (26/09/2026) — ajustements de prompt proposés
+## Retours du 1er test (26/09/2026) — ajustements appliqués dans le prompt v3
 - Offre inventée dans un script TikTok (« audit gratuit ») → interdire toute offre autre que la Grille de positionnement gratuite.
 - Format checklist mélangé avec méthode + question → respecter strictement le format demandé.
 - Thème « 10 questions » traité en 6 points → respecter les nombres annoncés dans le thème.
 - Accroches identiques (« votre CA stagne ») et hashtags identiques → varier.
+
+## Idée en cours d'étude
+- Publier le lien vers la Grille de positionnement en **1er commentaire** des posts P2/P3/P4 (API Meta `/{post-id}/comments`, permission `pages_manage_engagement`) — nécessite l'accès à la Page + une version en ligne de la Grille.
