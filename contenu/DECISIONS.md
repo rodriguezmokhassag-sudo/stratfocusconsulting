@@ -53,7 +53,7 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 ## Workflows n8n
 | Workflow | ID | État |
 |---|---|---|
-| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — en attente des identifiants (Google Sheets, DeepSeek, SMTP) |
+| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | Créé, inactif — Sheets ✅, SMTP ✅, reste : clé Gemini + fuseau horaire + test |
 
 Code source : `n8n/workflow_publications_stfc.js`.
 
