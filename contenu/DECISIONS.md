@@ -56,7 +56,7 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 ## Workflows n8n
 | Workflow | ID | État |
 |---|---|---|
-| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | **1er test complet réussi le 26/09/2026** (exécution n° 44 : T001 + T061 rédigés par Gemini, mail reçu, validés, Sheet mis à jour). Inactif — reste : ajustements du prompt puis activation (Publish) |
+| Publications STFC – rédaction et validation quotidienne | `i8ltd8oSAq4FEoQZ` | **1er test complet réussi le 26/09/2026** (exécution n° 44 : T001 + T061 rédigés par Gemini, mail reçu, validés, Sheet mis à jour). **ACTIF depuis le 28/09/2026** (version « 802cd7bf », prompt v3, fuseau Africa/Brazzaville) — 1er envoi automatique : lundi 28/09 à 7 h (T002 + T062) |
 
 Code source : `n8n/workflow_publications_stfc.js`.
 
