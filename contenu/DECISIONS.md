@@ -20,7 +20,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | Images | Générateur à faible coût (Imagen 4 Fast / Nano Banana) + logo et bandeau posés par n8n (Edit Image) |
 | Charte (provisoire) | Bleu marine ≈ #0B2468, or ≈ #C5A24A, noir ≈ #181818 — à confirmer avec le document de charte |
 | Validation | Obligatoire avant publication : mail envoyé depuis dg@stratfocus-consulting.com (SMTP) vers admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |
-| Facebook | Publication auto après validation — accès Page obtenu (contrôle total), app Meta « STFC Publications n8n » (ID 1847472296617299) créée, jeton généré ; **en attente** : ID de la Page + identifiant « Facebook Graph API » dans n8n |
+| Facebook | **Branché le 02/10/2026** : Page « Strat focus consulting » (ID `104316208239694`, facebook.com/longohamanofficiel), app Meta « STFC Publications n8n » (ID 1847472296617299), jeton de Page permanent dans l'identifiant n8n « Facebook Graph account ». Après « Valider » : post programmé à 8 h 00 / 12 h 30 (Graph API v25.0, `/feed`, `scheduled_publish_time`), ou publié tout de suite si le créneau est à moins de 15 min / passé. Texte seul pour l'instant. ⚠️ Accès aux données à renouveler tous les ~90 jours (prochaine échéance ≈ 30/12/2026). ⚠️ Jetons apparus sur des captures : nettoyage prévu (supprimer l'intégration puis régénérer sans capture) |
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
 | Stockage | Google Sheet (onglets « Banque de thèmes » et « Historique ») — compte rodriguezmokhassag@gmail.com |
@@ -46,7 +46,9 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [ ] Logo PNG à fond transparent
 - [ ] Document de charte graphique (couleurs exactes, police)
 - [x] Accès à la Page Facebook (contrôle total)
-- [ ] ID de la Page STFC + identifiant n8n « Facebook Graph API » (jeton de Page permanent)
+- [x] ID de la Page STFC (104316208239694) + identifiant n8n « Facebook Graph account » (jeton de Page permanent)
+- [ ] Nettoyage sécurité des jetons Facebook exposés sur captures
+- [ ] Renouveler l'accès aux données Meta avant ≈ 30/12/2026
 - [x] Prompt v2 validé
 - [x] Banque de thèmes validée
 - [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets — lecture testée OK (100 thèmes)
@@ -64,7 +66,7 @@ Code source : `n8n/workflow_publications_stfc.js`.
 ## Étapes suivantes
 1. Phase 1 (fait) : thèmes → rédaction Gemini → mail de validation → suivi dans Google Sheet.
 2. Étape 2 : image (Gemini) + logo et bandeau STFC (Edit Image), jointe au mail.
-3. Étape 3 : publication Facebook automatique après validation (dès l'accès à la Page).
+3. Étape 3 (fait le 02/10/2026) : publication Facebook programmée après validation.
 4. Phase 2 : LinkedIn, TikTok.
 
 ## Retours du 1er test (26/09/2026) — ajustements appliqués dans le prompt v3
@@ -84,3 +86,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | mar 29/09 | 47 | P2 / P1 | **Sans réponse** |
 | mer 30/09 | 48 | T041 + T021 | **Sans réponse** |
 | jeu 01/10 | 49 | T062 + T041 | **Erreur** : Gemini 503 (surcharge) → aucun mail. Correctif : nouvelles tentatives automatiques (5 essais, 5 s) sur « Rédiger la publication », publié (version 6113656e) |
+| ven 02/10 | — | — | Nœuds « Préparer la publication Facebook » + « Publier sur Facebook » ajoutés, workflow publié (version 4e9a3390) |
