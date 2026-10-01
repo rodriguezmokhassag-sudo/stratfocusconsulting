@@ -20,7 +20,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | Images | Générateur à faible coût (Imagen 4 Fast / Nano Banana) + logo et bandeau posés par n8n (Edit Image) |
 | Charte (provisoire) | Bleu marine ≈ #0B2468, or ≈ #C5A24A, noir ≈ #181818 — à confirmer avec le document de charte |
 | Validation | Obligatoire avant publication : mail envoyé depuis dg@stratfocus-consulting.com (SMTP) vers admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |
-| Facebook | Publication auto après validation — **bloqué** : l'utilisateur n'est pas administrateur de la Page |
+| Facebook | Publication auto après validation — accès Page obtenu (contrôle total), app Meta « STFC Publications n8n » (ID 1847472296617299) créée, jeton généré ; **en attente** : ID de la Page + identifiant « Facebook Graph API » dans n8n |
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
 | Stockage | Google Sheet (onglets « Banque de thèmes » et « Historique ») — compte rodriguezmokhassag@gmail.com |
@@ -45,7 +45,8 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [x] Numéro WhatsApp : 066 000 066 (+242)
 - [ ] Logo PNG à fond transparent
 - [ ] Document de charte graphique (couleurs exactes, police)
-- [ ] Accès à la Page Facebook (contrôle total ou création de contenu via Meta Business Suite)
+- [x] Accès à la Page Facebook (contrôle total)
+- [ ] ID de la Page STFC + identifiant n8n « Facebook Graph API » (jeton de Page permanent)
 - [x] Prompt v2 validé
 - [x] Banque de thèmes validée
 - [x] Google Sheet « STFC_Publications » (ID `1jsCTDFJ0_g-9IUHsxm8zkvw7ml6oXmXx4mXp6od7aug`) relié aux 3 nœuds Google Sheets — lecture testée OK (100 thèmes)
@@ -75,3 +76,11 @@ Code source : `n8n/workflow_publications_stfc.js`.
 ## Idée en cours d'étude
 - Publier le lien vers la Grille de positionnement en **1er commentaire** des posts P2/P3/P4 (API Meta `/{post-id}/comments`, permission `pages_manage_engagement`) — nécessite l'accès à la Page + une version en ligne de la Grille.
 - Formulaire Grille (Google Forms) validé : répondants = dirigeants, entrepreneurs, responsables commerciaux, commerciaux ; coordonnées = nom, entreprise, fonction, ville, WhatsApp, e-mail, domaine d'activité, taille de l'équipe commerciale. En attente : critères officiels des 8 blocs (42 critères notés 0-5 = 210 pts).
+
+## Suivi de production
+| Date | Exécution | Thèmes | Résultat |
+|---|---|---|---|
+| lun 28/09 | 46 | T002 + T062 | Mail envoyé, **sans réponse** (thèmes remis « à publier ») |
+| mar 29/09 | 47 | P2 / P1 | **Sans réponse** |
+| mer 30/09 | 48 | T041 + T021 | **Sans réponse** |
+| jeu 01/10 | 49 | T062 + T041 | **Erreur** : Gemini 503 (surcharge) → aucun mail. Correctif : nouvelles tentatives automatiques (5 essais, 5 s) sur « Rédiger la publication », publié (version 6113656e) |
