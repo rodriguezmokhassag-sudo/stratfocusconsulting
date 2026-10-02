@@ -1,0 +1,16 @@
+
+  
+  <!-- Cible -->
+  <circle cx="218" cy="222" r="124" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+  <path d="M 140 190 A 84 84 0 1 0 296 190" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" transform="rotate(8 218 222)"/>
+  <path d="M 183 146 A 80 80 0 0 1 252 146" fill="none" stroke="#C9A84C" stroke-width="5" stroke-linecap="round"/>
+  <!-- Fléchette -->
+  <polygon points="333,58 368,86 291,158 276,150" fill="#FFFFFF"/>
+  <!-- S -->
+  <text x="216" y="272" text-anchor="middle" class="cond" font-size="136" fill="#FFFFFF">S</text>
+  <!-- Nom -->
+  <text x="356" y="272" class="cond" font-size="136" textLength="1068" lengthAdjust="spacing"><tspan fill="#FFFFFF">TRAT FOCUS </tspan><tspan fill="#C9A84C">CONSULTING</tspan></text>
+  <!-- Signature -->
+  <text x="366" y="324" class="tag" font-size="55" textLength="1056" lengthAdjust="spacing">
+    <tspan fill="#C9A84C">Parce que</tspan><tspan fill="#FFFFFF"> votre chiffre d'affaires compte</tspan>
+  </text>
