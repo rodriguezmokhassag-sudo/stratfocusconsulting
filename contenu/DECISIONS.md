@@ -96,3 +96,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - Facturation Google : compte « My Billing Account » (013133-8A9A25-E5A59A), créé par erreur sur « My First Project », à relier au projet « STFC n8n ». Prépaiement de 30 $ demandé pour l'activer.
 - Mention ajoutée sur tous les visuels (02/10) : « Cabinet spécialisé dans la performance commerciale et Marketing d'Innovation ».
 - Test post photo programmé réussi puis supprimé (02/10).
+- **02/10 : modèle A (fond navy, titre blanc et or) retenu pour tous les visuels.** Les modèles B, C et D (`contenu/visuels/modeles/`, générateur `generer_visuels_v2.mjs`) restent disponibles mais ne sont pas utilisés. Pistes d'images à rediscuter plus tard : photos IA gratuites (Pollinations), photos libres de droits (Pexels), Imagen payant, illustrations.
