@@ -117,3 +117,8 @@ Code source : `n8n/workflow_publications_stfc.js`.
   1. « Téléverser le visuel » : POST /photos avec published=false, et temporary=true si le post est programmé.
   2. « Préparer le post du fil » puis « Publier sur le fil Facebook » : POST /feed avec message, attached_media=[{media_fbid}], et published=false avec scheduled_publish_time si le post est programmé.
 - Test réel à faire : un post programmé, puis suppression par l'utilisateur.
+- Republication du 02/10 vers 12 h 08 (exécution de test 67, workflow dmcv15ZRHwtcFIVd), à la demande de l'utilisateur et sans respecter les horaires prévus :
+  - nouveaux posts sur le fil : T081 104316208239694_1543410847802229, T091 104316208239694_1543410924468888 ;
+  - anciens supprimés : le post 104316208239694_1543232111153436 (sa photo est partie avec lui) et la photo programmée T091 1543232151153432.
+  - La méthode « publication immédiate » est validée en réel. La méthode « programmée » (temporary=true) reste à vérifier, lundi 05/10 à 12 h 30.
+- Meta signale que v25.0 est automatiquement passée en v26.0 (v25.0 bientôt obsolète). À mettre à jour dans les nœuds Facebook.
