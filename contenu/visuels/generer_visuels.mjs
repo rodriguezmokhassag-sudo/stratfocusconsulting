@@ -26,6 +26,7 @@ for (const it of items) {
 <text id="pilltxt" x="110" y="190" class="tag" font-size="28" font-weight="bold" fill="#0D2B6E">${esc(it.pilier)}</text>
 <g id="titre">${it.titre.map((l, i) => `<text class="cond" font-size="120" fill="${i === n - 1 ? '#C9A84C' : '#FFFFFF'}" x="80">${esc(l)}</text>`).join('')}</g>
 <text id="acc" x="80" class="tag" font-size="36" fill="#EDF0F7"></text>
+<text x="540" y="822" text-anchor="middle" class="tag" font-size="27" fill="#C9A84C">Cabinet spécialisé dans la performance commerciale et Marketing d'Innovation</text>
 <rect x="0" y="860" width="1080" height="220" fill="#08204F"/>
 <g transform="translate(40,895) scale(0.40)">${logo}</g>
 <text x="1020" y="985" text-anchor="end" class="tag" font-size="32" font-weight="bold" fill="#C9A84C">WhatsApp 066 000 066</text>
