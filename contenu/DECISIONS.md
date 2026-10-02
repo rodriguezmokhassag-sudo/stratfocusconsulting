@@ -19,7 +19,7 @@ Mémoire du projet d'une session à l'autre. À relire avant chaque reprise.
 | IA texte | **Google Gemini** (`models/gemini-3.1-flash-lite`, offre gratuite) — DeepSeek abandonné (paiement par carte virtuelle impossible) |
 | Images | Générateur à faible coût (Imagen 4 Fast / Nano Banana) + logo et bandeau posés par n8n (Edit Image) |
 | Charte (provisoire) | Bleu marine ≈ #0B2468, or ≈ #C5A24A, noir ≈ #181818 — à confirmer avec le document de charte |
-| Validation | Obligatoire avant publication : mail envoyé depuis dg@stratfocus-consulting.com (SMTP) vers admin@stratfocus-consulting.com (1 mail par jour groupant les 2 posts) |
+| Validation | Obligatoire avant publication : mail envoyé depuis dg@ vers **dg@stratfocus-consulting.com** (changé le 02/10 : les mails vers admin@ n’étaient pas lus) — 1 mail par jour groupant les 2 posts, réponse avant 12 h |
 | Facebook | **Branché le 02/10/2026** : Page « Strat focus consulting » (ID `104316208239694`, facebook.com/longohamanofficiel), app Meta « STFC Publications n8n » (ID 1847472296617299), jeton de Page permanent dans l'identifiant n8n « Facebook Graph account ». Après « Valider » : post programmé à 8 h 00 / 12 h 30 (Graph API v25.0, `/feed`, `scheduled_publish_time`), ou publié tout de suite si le créneau est à moins de 15 min / passé. Texte seul pour l'instant. ⚠️ Accès aux données à renouveler tous les ~90 jours (prochaine échéance ≈ 30/12/2026). ⚠️ Jetons apparus sur des captures : nettoyage prévu (supprimer l'intégration puis régénérer sans capture) |
 | TikTok | Pas de publication auto (audit TikTok requis) : script envoyé pour tournage manuel |
 | LinkedIn | Phase 2 |
