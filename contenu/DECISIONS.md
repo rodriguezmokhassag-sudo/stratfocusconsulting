@@ -110,3 +110,10 @@ Code source : `n8n/workflow_publications_stfc.js`.
   2. Partager le Google Sheet STFC_Publications avec l'adresse du compte, en Éditeur.
   3. Basculer les 3 nœuds Google Sheets du workflow sur ce nouvel identifiant, puis tester.
 - En attendant, la connexion OAuth actuelle tient jusqu'au 09/10 environ.
+
+## Correctif Facebook : posts sur le fil (version active c357d448)
+- Constat de l'utilisateur : les posts allaient dans l'album Photos de la Page au lieu du fil d'actualité. Dans l'exécution 64, le post programmé (T091) n'a renvoyé qu'un identifiant de photo, sans post_id.
+- Nouvelle méthode, en 2 temps :
+  1. « Téléverser le visuel » : POST /photos avec published=false, et temporary=true si le post est programmé.
+  2. « Préparer le post du fil » puis « Publier sur le fil Facebook » : POST /feed avec message, attached_media=[{media_fbid}], et published=false avec scheduled_publish_time si le post est programmé.
+- Test réel à faire : un post programmé, puis suppression par l'utilisateur.
