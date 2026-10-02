@@ -90,8 +90,7 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | ven 02/10 | 58 | test | ✅ Post de test programmé sur la Page (id 104316208239694_1542945591182088, lun 05/10 10 h) — à supprimer. Banque remise à zéro : T001/T061 repassés « à publier » (100 thèmes disponibles) |
 
 ## Règles des visuels (02/10/2026)
-- Aucun tiret ni trait d'union décoratif dans les visuels (pas de « — », « – », « · » ni de « - » ajoutés). Le trait d'union du logo (« Parce-que ») reste, car il fait partie du logo.
+- **Règle absolue (visuels ET textes)** : jamais de tiret « — » ou « – », ni de tiret séparateur ou décoratif. Le trait d'union seulement quand l'orthographe française l'exige (Pointe-Noire, peut-être…). Slogan officiel : « **Parce que** votre chiffre d'affaires compte » (sans trait d'union, corrigé dans le logo le 02/10). Règle ajoutée au prompt Gemini (version n8n e8d6bdfe).
 - Aucune ligne dorée décorative (ni sous le titre, ni en haut du visuel).
-- Gemini devra rédiger le titre et l'accroche du visuel sans tirets.
 - Modèle validé en cours : `contenu/logo/exemple_visuel_B.png` (fond navy, étiquette du pilier en or, titre blanc et or, accroche, bandeau avec le logo blanc et le WhatsApp).
 - Facturation Google : compte « My Billing Account » (013133-8A9A25-E5A59A), créé par erreur sur « My First Project », à relier au projet « STFC n8n ». Prépaiement de 30 $ demandé pour l'activer.
