@@ -47,7 +47,7 @@ Soit, par semaine : P1 à P4 × 2, P5 et P6 × 1 (banque : 20 thèmes pour P1 à
 - [ ] Document de charte graphique (couleurs exactes, police)
 - [x] Accès à la Page Facebook (contrôle total)
 - [x] ID de la Page STFC (104316208239694) + identifiant n8n « Facebook Graph account » (jeton de Page permanent)
-- [ ] Nettoyage sécurité des jetons Facebook exposés sur captures
+- [x] Nettoyage sécurité : intégration supprimée le 02/10 (anciens jetons annulés), nouveau jeton de Page avec `pages_manage_posts` dans n8n, sans capture
 - [ ] Renouveler l'accès aux données Meta avant ≈ 30/12/2026
 - [x] Prompt v2 validé
 - [x] Banque de thèmes validée
@@ -87,3 +87,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | mer 30/09 | 48 | T041 + T021 | **Sans réponse** |
 | jeu 01/10 | 49 | T062 + T041 | **Erreur** : Gemini 503 (surcharge) → aucun mail. Correctif : nouvelles tentatives automatiques (5 essais, 5 s) sur « Rédiger la publication », publié (version 6113656e) |
 | ven 02/10 | — | — | Nœuds « Préparer la publication Facebook » + « Publier sur Facebook » ajoutés, workflow publié (version 4e9a3390) |
+| ven 02/10 | 58 | test | ✅ Post de test programmé sur la Page (id 104316208239694_1542945591182088, lun 05/10 10 h) — à supprimer. Banque remise à zéro : T001/T061 repassés « à publier » (100 thèmes disponibles) |
