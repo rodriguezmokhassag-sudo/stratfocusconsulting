@@ -100,3 +100,13 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | ven 02/10 | 63 | — | Erreur : connexion Google Sheets expirée (app OAuth en mode Test, 7 jours). Reconnectée par l'utilisateur. À faire : publier l'app OAuth « STFC n8n » en production |
 | ven 02/10 | 64 | T081 + T091 | ✅ **1re publication réelle** : relance manuelle 7 h 50, validé ≈ 8 h 17. T081 publié immédiatement (post 104316208239694_1543232111153436), T091 programmé 12 h 30 (photo 1543232151153432). Sheet mis à jour |
 - Nœuds Google Sheets de suivi en « continuer en cas d'erreur » (02/10) : un échec du Sheet ne bloque plus la publication Facebook.
+
+## Connexion Google Sheets : passage au compte de service (02/10, en cours)
+- Publication de l'app OAuth « STFC n8n » en production abandonnée : bouton « Publier » grisé malgré le Branding complet (bug connu de Google Auth Platform). Domaines autorisés : konnofuente.com (à garder, redirection n8n) et stratfocus-consulting.com.
+- Solution retenue : compte de service Google, sans expiration.
+- Étape 1 en cours : compte `stfc-n8n@n8n-test-509620.iam.gserviceaccount.com` (projet n8n-test-509620), formulaire rempli, à valider (« Create and continue », « Continue », « Done »).
+- Étapes suivantes :
+  1. Créer une clé JSON du compte (onglet Keys). L'utilisateur la colle lui-même dans n8n (identifiant « Google Service Account API »), sans jamais la transmettre.
+  2. Partager le Google Sheet STFC_Publications avec l'adresse du compte, en Éditeur.
+  3. Basculer les 3 nœuds Google Sheets du workflow sur ce nouvel identifiant, puis tester.
+- En attendant, la connexion OAuth actuelle tient jusqu'au 09/10 environ.
