@@ -9,7 +9,8 @@ W, H = int(sys.argv[1]), int(sys.argv[2])
 FPS = 30
 PORTRAIT = H > W
 U = min(W, H) / 2160.0          # unit scale (1.0 at 4K short side)
-CUT = 60 / 108 * 4 * 1.5          # 3.333 s, bar-aligned with the music
+BPM = 120
+CUT = 60 / BPM * 4 * 1.5          # 3.0 s, bar-aligned with the music
 T1, T2, T3, T4 = CUT, 2 * CUT, 3 * CUT, 4 * CUT   # scene boundaries; outro from T4 to 20 s
 DUR = 20.0
 XF = 0.35                         # crossfade length
@@ -66,8 +67,18 @@ def layer_from_map(boxes, keep):
 # small "L C C" letters (map-asset px) and food icons
 SMALL = [(880, 20, 1180, 380), (1320, 140, 1640, 470), (1590, 500, 1910, 820)]
 ICONS = [(520, 470, 1090, 790), (760, 900, 1250, 1230), (1080, 1360, 1880, 1890)]
-MAP_BASE = layer_from_map(SMALL, keep=False)
-SMALL_L = [layer_from_map([b], True).crop(b) for b in SMALL]
+def letter_mask():
+    a = np.array(MAP).astype(int); m = np.zeros(a.shape[:2], np.uint8)
+    lb = (a[..., 1] > 70) & (a[..., 2] > 140) & (a[..., 2] - a[..., 0] > 60) & (a[..., 3] > 30)
+    for x0, y0, x1, y1 in SMALL: m[y0:y1, x0:x1] = lb[y0:y1, x0:x1]
+    m = cv2.dilate(m * 255, np.ones((9, 9), np.uint8))
+    return cv2.GaussianBlur(m, (0, 0), 1.2).astype(np.float32) / 255
+_LM = letter_mask(); _MA = np.array(MAP)
+def _split(keep):
+    o = _MA.copy(); f = _LM if keep else 1 - _LM
+    o[..., 3] = (o[..., 3] * f).astype(np.uint8); return Image.fromarray(o)
+MAP_BASE = _split(False)
+SMALL_L = [_split(True).crop(b) for b in SMALL]
 def icon_layer(b):
     a = np.array(MAP.crop(b)).astype(int)
     navy = (abs(a[..., 0] - 44) < 40) & (abs(a[..., 1] - 47) < 40) & (abs(a[..., 2] - 118) < 45)
@@ -352,14 +363,15 @@ def big_letter(ch, size):
     return text_img(ch, ARIAL_B, size, LCC_NAVY + (255,), 0)
 
 LETTERS = [('L', 171, 392), ('.', 437, 496), ('C', 550, 822), ('.', 877, 936), ('C', 990, 1262)]
-CONTACTS = ['Tél : (+242) 04 444 06 60 / 04 444 06 11', '04 444 06 30 B.P. 1159 Pointe-Noire', 'République du Congo']
+CONTACTS = ['Tél : (+242) 04 409 59 32 / 04 444 06 90', 'B.P. 1159 Pointe-Noire', 'République du Congo']
+AVAIL = ['Disponible dans tous nos points de vente', 'en République du Congo et chez nos partenaires']
 CONTACT_BOX = [(1089, 1137), (1151, 1188), (1211, 1259)]
 
 def scene5(t):
     c = Image.new('RGBA', (W, H), (255, 255, 255, 255))
     # logo occupies source rows 40..1260 (1220 units), cols 160..1270
-    k = min(H * 0.86 / 1220, W * 0.9 / 1110) * (1 + 0.025 * lin(t, 3.6, DUR - T4))
-    ox = W / 2 - 715 * k; oy = H / 2 - 650 * k
+    k = min(H * 0.9 / 1500, W * 0.9 / 1180) * (1 + 0.02 * lin(t, 3.6, DUR - T4))
+    ox = W / 2 - 715 * k; oy = H / 2 - 780 * k
     X = lambda u: ox + u * k; Y = lambda v: oy + v * k
     # soft radial backdrop
     # Africa map (map asset = source crop [40:540, 450:946] scaled x4)
@@ -411,6 +423,14 @@ def scene5(t):
         fs = 52 * k * 1.0
         im = text_img(line, ARIAL_B, int(fs), (0, 0, 0, 255), 0)
         paste(c, im, X(712), Y((a + b) / 2) + (1 - eout(q)) * 40 * k, 1.0, alpha=eout(q))
+    # availability block
+    for i, line in enumerate(AVAIL):
+        q = lin(t, 3.9 + 0.3 * i, 4.5 + 0.3 * i)
+        if q <= 0: continue
+        fs = fitted_font(line, FONT_B, 1180 * k)
+        col = (232, 140, 20, 255) if i == 0 else LCC_NAVY + (255,)
+        im = text_img(line, FONT_B, int(fs), col, 0)
+        paste(c, im, X(712), Y(1350 + 100 * i) + (1 - eout(q)) * 50 * k, 0.9 + 0.1 * back(q), alpha=eout(q))
     # light sweep over the big letters at the end
     q = lin(t, 4.2, 5.2)
     if 0 < q < 1:
