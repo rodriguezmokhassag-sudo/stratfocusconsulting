@@ -122,3 +122,13 @@ Code source : `n8n/workflow_publications_stfc.js`.
   - anciens supprimés : le post 104316208239694_1543232111153436 (sa photo est partie avec lui) et la photo programmée T091 1543232151153432.
   - La méthode « publication immédiate » est validée en réel. La méthode « programmée » (temporary=true) reste à vérifier, lundi 05/10 à 12 h 30.
 - Meta signale que v25.0 est automatiquement passée en v26.0 (v25.0 bientôt obsolète). À mettre à jour dans les nœuds Facebook.
+
+## Suivi de production (suite)
+| Date | Exécution | Thèmes | Résultat |
+|---|---|---|---|
+| lun 05/10 | 68 | T001 + T061 | Validés. T001 publié vers 9 h 32 (validation tardive), T061 programmé et publié à 12 h 30 : les 2 posts sont sur le fil |
+| mar 06/10 | 69 | T021 + T002 | Validés, programmés et publiés à 8 h 00 et 12 h 30 : les 2 posts sont sur le fil |
+
+- Le 06/10, l'utilisateur signale que les posts « passent toujours en mode photo ». Diagnostic Graph API (exécution de test 71) : les 6 posts depuis le 02/10 sont **publiés sur le fil de la Page** (is_published=true, is_hidden=false, présents dans published_posts). Ils sont de type « added_photos », exactement comme les posts photo publiés à la main en février, juillet et septembre. La programmation (temporary=true) fonctionne.
+- En attente : une capture de l'utilisateur pour comprendre ce qu'il voit.
+- Sécurité : la réponse de l'exécution 71 contient le jeton de la Page, dans le lien de pagination. Il faut supprimer l'exécution 71 dans n8n. Le nœud « Diagnostic : fil de la Page » est débranché.
