@@ -132,3 +132,7 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - Le 06/10, l'utilisateur signale que les posts « passent toujours en mode photo ». Diagnostic Graph API (exécution de test 71) : les 6 posts depuis le 02/10 sont **publiés sur le fil de la Page** (is_published=true, is_hidden=false, présents dans published_posts). Ils sont de type « added_photos », exactement comme les posts photo publiés à la main en février, juillet et septembre. La programmation (temporary=true) fonctionne.
 - En attente : une capture de l'utilisateur pour comprendre ce qu'il voit.
 - Sécurité : la réponse de l'exécution 71 contient le jeton de la Page, dans le lien de pagination. Il faut supprimer l'exécution 71 dans n8n. Le nœud « Diagnostic : fil de la Page » est débranché.
+| mer 07/10 | 72 | | Succès |
+| jeu 08/10 | 74 | | Succès |
+| ven 09/10 | 75 | T082 + T092 | Succès : programmés et publiés à 8 h 00 et 12 h 30 |
+| lun 12/10 | 76 | | **Erreur** à 7 h 00 : connexion Google Sheets expirée (OAuth en mode Test, 7 jours), sur « Lire la banque de thèmes ». Aucun mail, aucun post. L'utilisateur doit se reconnecter, puis relancer. Solution durable à choisir : compte de service Google, ou tables de données n8n |
