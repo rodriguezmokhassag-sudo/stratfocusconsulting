@@ -163,3 +163,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
    - lien en premier commentaire des posts P2, P3 et P4 (autorisation pages_manage_engagement).
 7. Plus tard : LinkedIn, photos IA (facturation Google), invitation gwladysmkb@gmail.com à vérifier, renouvellement de l'accès Meta vers le 30/12/2026.
 - Ne pas supprimer la branche claude/gracious-gates-uq8ovb (PR n° 1) : les visuels sont servis depuis cette branche.
+- 21/10 vers 0 h 40 : Google Sheets reconnecté par l'utilisateur, lecture testée (100 thèmes). Prochaine expiration vers le 28/10.
