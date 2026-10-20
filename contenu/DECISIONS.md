@@ -138,3 +138,28 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | lun 12/10 | 76 | | **Erreur** à 7 h 00 : connexion Google Sheets expirée (OAuth en mode Test, 7 jours), sur « Lire la banque de thèmes ». Aucun mail, aucun post. L'utilisateur doit se reconnecter, puis relancer. Solution durable à choisir : compte de service Google, ou tables de données n8n |
 | mar 13/10 | 77 | | **Erreur** à 7 h : connexion Google Sheets expirée (l'utilisateur n'avait plus accès à n8n ; abonnement Konnofuente renouvelé le 13/10) |
 | mar 13/10 | 78 | T023 + T003 | Google Sheets reconnecté vers 14 h, relance manuelle à 13 h 19 (heure de Brazzaville), mail de validation envoyé (attente jusqu'à 18 h 20). Prochaine expiration de la connexion : vers le 20/10 |
+
+## Synthèse au 20/10/2026 : où nous en sommes
+**Ce qui fonctionne**
+- Workflow `i8ltd8oSAq4FEoQZ`, du lundi au vendredi à 7 h : Gemini rédige, un mail de validation part, puis les posts sont publiés sur le fil Facebook avec leur visuel, programmés à 8 h 00 et 12 h 30.
+- Méthode Facebook : photo non publiée, puis post /feed avec attached_media. Validée le 05/10.
+- Application Meta renommée « Strat Focus Consulting » le 13/10 : la mention n8n est retirée.
+
+**En cours, à reprendre dans l'ordre**
+1. Connexion Google Sheets : elle expire tous les 7 jours (dernière reconnexion le 13/10, expiration vers le 20/10). Choisir la solution définitive : A, compte de service Google (étape 1 commencée : stfc-n8n@n8n-test-509620.iam.gserviceaccount.com), ou B, tables de données n8n.
+2. Passage de l'application Meta en Live, pour que les posts soient publics et partageables :
+   - mettre en ligne la page de confidentialité : A, LWS (stratfocus-consulting.com/confidentialite), ou B, GitHub Pages ;
+   - remplir l'URL de confidentialité et celle de suppression des données ;
+   - catégorie « Entreprise et pages », icône `contenu/logo/STFC_icone_app_meta_1024.png` ;
+   - vérifier l'e-mail de contact (contactsozaco@gmail.com ?) ;
+   - basculer en Live ;
+   - vérifier les anciens posts et les republier si besoin.
+3. Mail d'alerte en cas d'échec du workflow (promis).
+4. Version de l'API Facebook : passer de v25.0 à v26.0.
+5. Supprimer l'exécution de test n° 71 (jeton visible dans son journal).
+6. Grille de positionnement en ligne :
+   - valider les 42 critères ;
+   - choisir le format : Google Forms ou page web STFC ;
+   - lien en premier commentaire des posts P2, P3 et P4 (autorisation pages_manage_engagement).
+7. Plus tard : LinkedIn, photos IA (facturation Google), invitation gwladysmkb@gmail.com à vérifier, renouvellement de l'accès Meta vers le 30/12/2026.
+- Ne pas supprimer la branche claude/gracious-gates-uq8ovb (PR n° 1) : les visuels sont servis depuis cette branche.
