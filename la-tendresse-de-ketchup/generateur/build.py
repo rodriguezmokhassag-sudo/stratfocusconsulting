@@ -14,7 +14,7 @@ import affiches as A
 import formulaires as F
 from brand import doc
 from config import CARNET_DEBUT, CARNET_TAILLE
-from render import ROOT, BUILD, to_pdf
+from render import ROOT, BUILD, HTML_OUT, portable, to_pdf
 
 OUT = ROOT / "sortie"
 
@@ -86,6 +86,30 @@ def build_pdf(debut, taille):
     w.write(str(OUT / "LIASSE_COMPLETE_La_Tendresse_de_Ketchup.pdf"))
 
 
+SECTIONS = {"0_Propositions_branding": "Propositions de branding", "1_Affiches": "Affiches",
+            "2_Modeles_vierges": "Formulaires (modèles vierges)"}
+
+
+def build_index():
+    """Page d'accueil des fichiers HTML, avec un lien vers chaque document."""
+    blocs = ""
+    for dossier, titre in SECTIONS.items():
+        liens = "".join(f'<li><a href="{dossier}/{f.name}">{f.stem.replace("_", " ")}</a></li>'
+                        for f in sorted((HTML_OUT / dossier).glob("*.html")))
+        blocs += f"<h2>{titre}</h2><ul>{liens}</ul>"
+    css = """html,body{background:#FFF4E2!important} body{max-width:760px;margin:0 auto;padding:24px 16px;background:#FFF4E2}
+      h1{font-family:'Playfair';font-style:italic;font-size:28pt;color:#231A17}
+      h2{font-family:'Bebas';font-weight:400;font-size:20pt;letter-spacing:.06em;color:#7E0A1E;margin-top:18px}
+      ul{list-style:none;columns:2;column-gap:24px;font-size:11pt;line-height:2}
+      a{color:#C8102E;text-decoration:none;font-weight:600} a:hover{text-decoration:underline}
+      p{font-size:10pt;color:#5a4b46}
+      @media (max-width:560px){ul{columns:1}}"""
+    html = doc("Kit de gestion", f"<h1>La Tendresse de Ketchup — kit de gestion</h1>"
+               f"<p>Ouvrir un document, puis Fichier &gt; Imprimer (format A4, marges : aucune, "
+               f"graphiques d'arrière-plan activés).</p>{blocs}", css, "A4 portrait")
+    (HTML_OUT / "index.html").write_text(portable(html), encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pdf", action="store_true")
@@ -94,8 +118,11 @@ def main():
     a = ap.parse_args()
     if OUT.exists():
         shutil.rmtree(OUT)
-    print("PDF…")
+    print("PDF + HTML…")
+    import propositions_branding
+    propositions_branding.build()
     build_pdf(a.debut, a.taille)
+    build_index()
     if not a.pdf:
         import excel
         import word

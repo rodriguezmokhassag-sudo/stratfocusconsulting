@@ -15,6 +15,8 @@ Monnaie : **FCFA**. Paiements prévus : espèces, MTN Mobile Money, Airtel Money
 | `2_Modeles_vierges/` | 22 formulaires, N° à remplir à la main | **Maquettes pour l'imprimeur** (carnets à souches) et photocopies |
 | `3_Carnets_numerotes/` | 9 formulaires pré-numérotés de 0001 à 0050 | Impression maison, prêts à agrafer en carnets |
 | `4_Excel_pilotage/` | Classeur : caisse, clôtures, stocks, crédits, avances, tableau de bord + graphique | Saisie chaque soir et synthèse mensuelle automatique |
+| `0_Propositions_branding/` | Planche A4 des 4 pistes de branding | Choix de l'identité visuelle |
+| `6_HTML/` | Version HTML autonome (polices intégrées) des affiches, formulaires et propositions ; `index.html` pour tout parcourir | Ouvrir dans un navigateur, imprimer en A4 sans marges, arrière-plans activés |
 | `5_Word_modifiables/` | Reconnaissance de dette, règlement clients, règles du personnel, facture, lettre de relance | Textes à adapter librement |
 
 ### Affiches (A4 paysage, pied de page « Restaurant-Bar La Tendresse de Ketchup — La Direction »)
