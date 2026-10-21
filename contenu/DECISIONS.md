@@ -169,3 +169,10 @@ Code source : `n8n/workflow_publications_stfc.js`.
 | ven 16/10 | 81 | T083 + T093 | **Erreur** : Gemini 503 (surcharge) malgré 5 tentatives. Piste : modèle de secours |
 | lun 19/10, mar 20/10, mer 21/10 | 85, 86, 88 | | **Erreur** sur le mail de validation : SMTP LWS 535, mot de passe de dg@ changé par l'utilisateur. Corrigé le 21/10 au soir dans l'identifiant « SMTP account » (connexion testée OK) |
 - À retenir : à chaque changement du mot de passe de dg@stratfocus-consulting.com, le mettre à jour dans l'identifiant n8n « SMTP account ».
+
+## 21/10 au soir : fiabilisation (version active f931886b)
+- **Modèle de secours** : « Google Gemini (secours) », `models/gemini-3.8-flash` (testé OK dans l'aperçu, exécution 90), branché en fallback sur « Rédiger la publication » (needsFallback). Constats : gemini-2.5-flash n'est plus disponible pour les nouveaux utilisateurs ; 3.8-flash est plus lent (environ 40 s par post).
+- **Restauration** : le nœud « Préparer le suivi » avait disparu du brouillon (modification du 13/10 vers 13 h 08) ; il est restauré et reconnecté avant publication.
+- **Alerte** : workflow `r0JrxVPlxtuTTOb3`, « ALERTE – Échec des publications STFC » (Error Trigger, puis mail à Gmail et admin@). À lier par l'utilisateur dans les paramètres du workflow principal (Paramètres, puis Workflow d'erreur). Limite : si c'est le SMTP qui échoue, l'alerte ne peut pas partir non plus.
+- **API Facebook v26** : pas proposée par le nœud n8n (v25.0 au maximum) ; Meta bascule automatiquement vers v26. Rien à faire.
+- Essai de contrôle (exécution 91, 21/10 à 23 h 15) : lecture du Sheet, rédaction et mail OK. Consigne à l'utilisateur : ne pas cliquer, pour éviter une publication de nuit.
