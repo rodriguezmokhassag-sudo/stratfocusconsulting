@@ -164,3 +164,8 @@ Code source : `n8n/workflow_publications_stfc.js`.
 7. Plus tard : LinkedIn, photos IA (facturation Google), invitation gwladysmkb@gmail.com à vérifier, renouvellement de l'accès Meta vers le 30/12/2026.
 - Ne pas supprimer la branche claude/gracious-gates-uq8ovb (PR n° 1) : les visuels sont servis depuis cette branche.
 - 21/10 vers 0 h 40 : Google Sheets reconnecté par l'utilisateur, lecture testée (100 thèmes). Prochaine expiration vers le 28/10.
+| mer 14/10 | 79 | | Succès |
+| jeu 15/10 | 80 | | Succès |
+| ven 16/10 | 81 | T083 + T093 | **Erreur** : Gemini 503 (surcharge) malgré 5 tentatives. Piste : modèle de secours |
+| lun 19/10, mar 20/10, mer 21/10 | 85, 86, 88 | | **Erreur** sur le mail de validation : SMTP LWS 535, mot de passe de dg@ changé par l'utilisateur. Corrigé le 21/10 au soir dans l'identifiant « SMTP account » (connexion testée OK) |
+- À retenir : à chaque changement du mot de passe de dg@stratfocus-consulting.com, le mettre à jour dans l'identifiant n8n « SMTP account ».
