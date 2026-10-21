@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 40 300 300" width="300" height="300">
+  <defs>
+    <style>
+      @font-face { font-family: 'Bebas'; src: url('fonts/BebasNeue.ttf'); }
+      .cond { font-family: 'Bebas'; }
+      .tag { font-family: 'Liberation Sans', Arial, sans-serif; }
+    </style>
+  </defs>
+  <!-- Cible -->
+  <circle cx="218" cy="222" r="124" fill="none" stroke="#1A1A1A" stroke-width="7"/>
+  <path d="M 140 190 A 84 84 0 1 0 296 190" fill="none" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" transform="rotate(8 218 222)"/>
+  <path d="M 183 146 A 80 80 0 0 1 252 146" fill="none" stroke="#C9A84C" stroke-width="5" stroke-linecap="round"/>
+  <!-- Fléchette -->
+  <polygon points="333,58 368,86 291,158 276,150" fill="#1A1A1A"/>
+  <!-- S -->
+  <text x="216" y="272" text-anchor="middle" class="cond" font-size="136" fill="#0D2B6E">S</text>
+  </svg>
