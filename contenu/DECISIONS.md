@@ -176,3 +176,10 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - **Alerte** : workflow `r0JrxVPlxtuTTOb3`, « ALERTE – Échec des publications STFC » (Error Trigger, puis mail à Gmail et admin@). À lier par l'utilisateur dans les paramètres du workflow principal (Paramètres, puis Workflow d'erreur). Limite : si c'est le SMTP qui échoue, l'alerte ne peut pas partir non plus.
 - **API Facebook v26** : pas proposée par le nœud n8n (v25.0 au maximum) ; Meta bascule automatiquement vers v26. Rien à faire.
 - Essai de contrôle (exécution 91, 21/10 à 23 h 15) : lecture du Sheet, rédaction et mail OK. Consigne à l'utilisateur : ne pas cliquer, pour éviter une publication de nuit.
+
+## Compte de service Google : état au 22/10 (en pause)
+- Clés supprimées : d85d… (exposée sur une capture) et c61c… (supprimée par erreur). Une nouvelle clé a été créée après le tableau vide.
+- Identifiant n8n `DF6r874ClFWQ8PBb` (« Google Service Account account ») : clé refusée, « secretOrPrivateKey must be an asymmetric key » (copie de la clé incomplète ; traduction Firefox soupçonnée). Testé par le nœud « Test SA 1 » du workflow de test.
+- Partage du Sheet avec stfc-n8n@… : non confirmé.
+- Prochaine étape : alternative 1, copier la valeur private_key avec la visionneuse JSON de Firefox, puis retester. En cas d'échec : alternative 2, tables de données n8n. Alternative 3 : reconnexion OAuth hebdomadaire (prochaine échéance vers le 28/10).
+- À faire aussi : lier le workflow d'erreur « ALERTE – Échec des publications STFC » dans les paramètres du workflow principal (action de l'utilisateur).
