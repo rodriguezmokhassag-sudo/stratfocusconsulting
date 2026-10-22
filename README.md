@@ -11,8 +11,7 @@ Domaine : https://www.gclean-congo.com (hébergement LWS)
 
 ## Réglages (en bas de `index.html`)
 - `NUM` / `AFFICHE` : numéro WhatsApp (242069740088)
-- `HOOK` : webhook n8n du circuit « G-Clean - Devis automatique ».
-  Tant que le circuit n'est pas publié, le client est invité à envoyer sa demande par WhatsApp.
+- `HOOK` : vide au lancement (les demandes partent directement sur le WhatsApp G-Clean). À renseigner avec le webhook n8n une fois le numéro G-Clean connecté à Geskap.
 - `P` / `DISPO` : produits et formats disponibles. Le formulaire de devis ne propose que les formats existants pour chaque produit.
 
 ## Mise en ligne chez LWS

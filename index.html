@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>G-Clean | Produits d'entretien professionnels et industriels, Pointe-Noire, Congo</title>
 <meta name="description" content="G-Clean fabrique à Pointe-Noire des produits d'entretien professionnels et industriels : eau de Javel, lessive concentrée, dégraissant, décapant, liquide vaisselle. Devis rapide par WhatsApp.">
+<link rel="icon" type="image/png" href="img/logo.png">
 <link rel="canonical" href="https://www.gclean-congo.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.gclean-congo.com/">
@@ -32,6 +33,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 0 #dde2
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{font:700 1.7rem Georgia,serif;color:var(--navy)}
 .logo b{color:var(--gold)}
+.logo img{display:block;height:52px;width:auto}
 nav{display:flex;gap:26px;align-items:center}
 nav a{font-weight:500}
 nav a:hover{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px}
@@ -114,7 +116,7 @@ section{padding:56px 0}
 <!-- PHOTOS : déposez vos images dans le dossier "img" avec les noms indiqués dans les attributs style (--img). Sans image, un fond bleu s'affiche. -->
 <div class="top"><div class="wrap"><span>Fabricant de produits d'entretien à Pointe-Noire, Congo</span><span>Devis rapide par WhatsApp</span></div></div>
 <header><div class="wrap">
-<a class="logo" href="#accueil">G<b>-</b>Clean</a>
+<a class="logo" href="#accueil"><img src="img/logo.png" alt="G-Clean" width="140" height="55"></a>
 <button class="burger" aria-label="Ouvrir le menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
 <nav><a href="#produits">Produits</a><a href="#pourquoi">Pourquoi G-Clean</a><a href="#apropos">Qui sommes-nous</a><a href="#clients">Nos clients</a><a class="btn" href="#devis">Demander un devis</a></nav>
 </div></header>
@@ -193,7 +195,7 @@ section{padding:56px 0}
 <div><span class="logo">G<b>-</b>Clean</span><p>Fabricant congolais de produits d'entretien professionnels et industriels, basé à Pointe-Noire.</p></div>
 <div><h3>Navigation</h3><ul><li><a href="#produits">Produits</a></li><li><a href="#pourquoi">Pourquoi G-Clean</a></li><li><a href="#apropos">Qui sommes-nous</a></li><li><a href="#devis">Devis</a></li></ul></div>
 <div><h3>Contact</h3><ul><li>Quartier MPITA, Pointe-Noire, République du Congo</li><li>WhatsApp : <span class="t2">+242 XX XXX XX XX</span></li><li><a href="mailto:commercial@gclean-congo.com">commercial@gclean-congo.com</a></li></ul></div>
-</div><div class="wrap copy" style="display:block">&copy; 2026 G-Clean, marque de SOZACO SARL. Tous droits réservés.</div></footer>
+</div><div class="wrap copy" style="display:block">&copy; 2026 G-Clean, marque de SOZACO SARL. RCCM CG/PNR/16 B 961, NIU M2016110000352127. Tous droits réservés.</div></footer>
 
 <a class="wa" href="#devis">Mon devis (<span id="cnt">0</span>)</a>
 
@@ -213,7 +215,7 @@ var P=[
 ["Décapant sol","Retire les salissures incrustées et rénove les sols.","decapant.jpg"],
 ["Dégraissant cuisine","Vient à bout des graisses tenaces des cuisines professionnelles.","degraissant.jpg"]];
 // 3) Adresse du webhook n8n. Laissez vide tant que n8n n'est pas branché : la demande part alors par WhatsApp.
-var HOOK="https://n8n-academy.konnofuente.com/webhook/gclean-devis";
+var HOOK=""; // circuit n8n : https://n8n-academy.konnofuente.com/webhook/gclean-devis (à remettre une fois le numéro G-Clean connecté à Geskap)
 // 4) Conditionnements. Pour retirer un produit d'un format, supprimez son nom dans la liste DISPO de ce format.
 var F=["3 L","5 L","25 L","200 L","1000 L"],DISPO={};
 var GROS=["Eau de Javel 9°","Eau de Javel 12°","Eau de Javel 36°","Gel WC javellisé","Nettoyant multi-surfaces","Liquide vaisselle","Dégraissant cuisine","Lave-vitres et miroirs","Décapant sol","Lessive concentrée 3 en 1"];
