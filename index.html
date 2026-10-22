@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-Clean | Produits d'entretien professionnels et industriels, Pointe-Noire, Congo</title>
+<meta name="description" content="G-Clean fabrique à Pointe-Noire des produits d'entretien professionnels et industriels : eau de Javel, lessive concentrée, dégraissant, décapant, liquide vaisselle. Devis rapide par WhatsApp.">
+<link rel="canonical" href="https://www.gclean-congo.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.gclean-congo.com/">
+<meta property="og:title" content="G-Clean | Produits d'entretien professionnels fabriqués au Congo">
+<meta property="og:description" content="Eau de Javel, lessive concentrée, dégraissant, décapant. Fabriqué à Pointe-Noire. Devis rapide par WhatsApp.">
+<meta property="og:image" content="https://www.gclean-congo.com/img/hero-1.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#0D2B6E">
+<style>
+:root{--navy:#0D2B6E;--gold:#C9A84C;--bg:#EDF0F7;--ink:#262626;--w:1160px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);line-height:1.2}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--w);margin:auto;padding:0 20px}
+.ph{background:var(--img,none) center/cover no-repeat,linear-gradient(135deg,#0D2B6E,#2a5cc0)}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem system-ui,sans-serif;padding:13px 26px;border-radius:4px;background:var(--gold);color:var(--navy)}
+.btn:hover{background:#d9ba5f}
+.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top{background:var(--navy);color:#fff;font-size:.9rem;padding:8px 0}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 0 #dde2ee}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font:700 1.7rem Georgia,serif;color:var(--navy)}
+.logo b{color:var(--gold)}
+nav{display:flex;gap:26px;align-items:center}
+nav a{font-weight:500}
+nav a:hover{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px}
+.burger{display:none;background:none;border:0;font-size:1.8rem;color:var(--navy);cursor:pointer}
+.hero{position:relative;height:min(78vh,620px);overflow:hidden;background:var(--navy)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .9s;display:flex;align-items:center}
+.slide.on{opacity:1}
+.slide::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,43,110,.88),rgba(13,43,110,.25))}
+.slide .wrap{position:relative;color:#fff}
+.slide h1,.slide h2{color:#fff;font-size:clamp(2rem,5vw,3.6rem);max-width:700px;margin-bottom:16px}
+.slide p{max-width:540px;font-size:1.15rem;margin-bottom:26px}
+.slide .btn+.btn{margin-left:10px}
+.dots{position:absolute;bottom:22px;left:0;right:0;display:flex;justify-content:center;gap:10px}
+.dots button{width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:transparent;cursor:pointer}
+.dots button.on{background:var(--gold);border-color:var(--gold)}
+.strip{background:var(--bg)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 20px;text-align:center}
+.strip strong{display:block;color:var(--navy);font-size:1.05rem}
+.strip span{font-size:.92rem}
+section{padding:80px 0}
+.head{max-width:640px;margin-bottom:38px}
+.head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border:1px solid #dde2ee;border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:1/1}
+.card div.t{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.15rem}
+.card p{font-size:.93rem;flex:1}
+.card .btn{padding:10px 16px;font-size:.92rem;background:var(--navy);color:#fff}
+.card .btn:hover{background:#17399a}
+.why{background:var(--navy);color:#fff}
+.why h2,.why h3{color:#fff}
+.why .grid{grid-template-columns:repeat(4,1fr);gap:30px}
+.why h3{font-size:1.15rem;margin-bottom:8px;border-top:3px solid var(--gold);padding-top:14px}
+.why p{font-size:.95rem;opacity:.92}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about .ph{aspect-ratio:4/3;border-radius:6px}
+.about p{margin-bottom:14px}
+.who{background:var(--bg)}
+.who .grid{grid-template-columns:repeat(4,1fr)}
+.who .ph{aspect-ratio:4/3;border-radius:6px;margin-bottom:12px}
+.who h3{font-size:1.1rem;margin-bottom:4px}
+.who p{font-size:.93rem}
+.quote .box{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+label{display:block;font-weight:600;font-size:.92rem;margin:14px 0 4px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #b8c0d6;border-radius:4px;font:1rem system-ui,sans-serif}
+textarea{min-height:100px;resize:vertical}
+.info p{margin-bottom:12px}
+.info strong{color:var(--navy)}
+footer{background:#0a2058;color:#cfd6ea;padding:44px 0 26px;font-size:.93rem}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+footer .logo{color:#fff;display:block;margin-bottom:8px}
+footer h3{color:#fff;font-size:1rem;margin-bottom:8px}
+footer li{list-style:none;margin-bottom:6px}
+.copy{border-top:1px solid #2a3f7d;margin-top:30px;padding-top:16px;text-align:center;font-size:.85rem}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--gold);color:var(--navy);font-weight:700;padding:14px 20px;border-radius:40px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+@media(max-width:900px){
+.grid,.why .grid,.who .grid,.strip .wrap{grid-template-columns:repeat(2,1fr)}
+.about .wrap,.quote .box,footer .wrap{grid-template-columns:1fr}
+.burger{display:block}
+nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 20px;gap:14px;border-bottom:1px solid #dde2ee}
+nav.open{display:flex}
+section{padding:56px 0}
+}
+@media(max-width:520px){.grid,.who .grid{grid-template-columns:1fr}.slide .btn+.btn{margin:10px 0 0}}
+@media(prefers-reduced-motion:reduce){.slide{transition:none}html{scroll-behavior:auto}}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{padding:10px 20px;border:2px solid var(--navy);background:#fff;color:var(--navy);font:600 1rem system-ui,sans-serif;border-radius:30px;cursor:pointer}
+.tabs button.on{background:var(--navy);color:#fff}
+.fm{font-size:.85rem;color:#6b5a1f}
+.lg{display:grid;grid-template-columns:2fr 1fr 80px 40px;gap:8px;margin-bottom:8px}
+.lg .x{border:0;background:#e6e9f3;border-radius:4px;font-size:1.3rem;cursor:pointer}
+.btn.alt2{background:#fff;border:2px solid var(--navy);color:var(--navy)}
+#etat{margin-top:10px;font-weight:600;color:var(--navy)}
+@media(max-width:520px){.lg{grid-template-columns:1fr 1fr}.lg .lp{grid-column:1/3}}
+</style>
+</head>
+<body>
+<!-- PHOTOS : déposez vos images dans le dossier "img" avec les noms indiqués dans les attributs style (--img). Sans image, un fond bleu s'affiche. -->
+<div class="top"><div class="wrap"><span>Fabricant de produits d'entretien à Pointe-Noire, Congo</span><span>Devis rapide par WhatsApp</span></div></div>
+<header><div class="wrap">
+<a class="logo" href="#accueil">G<b>-</b>Clean</a>
+<button class="burger" aria-label="Ouvrir le menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+<nav><a href="#produits">Produits</a><a href="#pourquoi">Pourquoi G-Clean</a><a href="#apropos">Qui sommes-nous</a><a href="#clients">Nos clients</a><a class="btn" href="#devis">Demander un devis</a></nav>
+</div></header>
+
+<div class="hero" id="accueil">
+<div class="slide ph on" style="--img:url(img/hero-1.jpg)"><div class="wrap"><div><h1>Des produits d'entretien fabriqués au Congo, pensés pour les professionnels</h1><p>Eau de Javel, lessive concentrée, dégraissant, décapant. Une gamme complète, produite à Pointe-Noire.</p><a class="btn" href="#produits">Voir la gamme</a><a class="btn alt" href="#devis">Demander un devis</a></div></div></div>
+<div class="slide ph" style="--img:url(img/hero-2.jpg)"><div class="wrap"><div><h2>Une propreté qui tient dans la durée</h2><p>Des formules concentrées pour nettoyer vite, mieux, et dépenser moins à chaque utilisation.</p><a class="btn" href="#pourquoi">Pourquoi nous choisir</a></div></div></div>
+<div class="slide ph" style="--img:url(img/hero-3.jpg)"><div class="wrap"><div><h2>Hôtels, restaurants, industries, écoles et revendeurs</h2><p>Nous livrons des volumes adaptés à votre activité, partout au Congo.</p><a class="btn" href="#devis">Parler à notre équipe</a></div></div></div>
+<div class="dots"></div>
+</div>
+
+<div class="strip"><div class="wrap">
+<div><strong>Fabriqué à Pointe-Noire</strong><span>Production 100 % congolaise</span></div>
+<div><strong>Depuis 2019</strong><span>Une entreprise qui grandit avec ses clients</span></div>
+<div><strong>Usage professionnel</strong><span>Hôtellerie, industrie, collectivités</span></div>
+<div><strong>Partout au Congo</strong><span>Commandes et livraisons sur demande</span></div>
+</div></div>
+
+<section id="produits"><div class="wrap">
+<div class="head"><h2>Une gamme complète pour tous vos besoins de nettoyage</h2><p>Choisissez votre conditionnement, de 3 litres à 1000 litres, puis ajoutez les produits à votre devis.</p></div>
+<div class="tabs" id="tabs" role="group" aria-label="Choisir un conditionnement"></div>
+<div class="grid" id="liste"></div>
+</div></section>
+
+<section class="why" id="pourquoi"><div class="wrap">
+<div class="head"><h2>Ce qui fait la différence</h2><p>Nous fabriquons ici, nous connaissons vos conditions de travail et nous nous engageons sur ce que nous livrons.</p></div>
+<div class="grid">
+<div><h3>Des formules concentrées</h3><p>Moins de produit par utilisation. Votre budget d'entretien est mieux maîtrisé.</p></div>
+<div><h3>Une production locale</h3><p>Fabriqué à Pointe-Noire. Des délais courts et un approvisionnement fiable.</p></div>
+<div><h3>Des volumes sur mesure</h3><p>Du petit conditionnement au grand volume, selon vos besoins et vos usages.</p></div>
+<div><h3>Un service réactif</h3><p>Un devis par WhatsApp, une équipe qui répond, un suivi de votre commande.</p></div>
+</div></div></section>
+
+<section class="about" id="apropos"><div class="wrap">
+<div class="ph" style="--img:url(img/atelier.jpg)" role="img" aria-label="Atelier de fabrication G-Clean"></div>
+<div>
+<div class="head" style="margin-bottom:18px"><h2>Une entreprise congolaise, au service des entreprises congolaises</h2></div>
+<p>G-Clean est la marque de SOZACO SARL, société congolaise qui fabrique et commercialise la gamme. Elle est née en 2019 à Pointe-Noire avec une conviction simple : le Congo peut produire des produits d'entretien de qualité professionnelle.</p>
+<p>Aujourd'hui, nous fabriquons une large gamme, de l'eau de Javel au dégraissant industriel, pour les hôtels, restaurants, industries, établissements et revendeurs.</p>
+<p>Notre ambition : devenir la référence nationale de l'entretien professionnel, avec des produits fiables et un service de proximité.</p>
+</div></div></section>
+
+<section class="who" id="clients"><div class="wrap">
+<div class="head"><h2>Nous accompagnons tous les professionnels</h2></div>
+<div class="grid">
+<div><div class="ph" style="--img:url(img/hotels.jpg)"></div><h3>Hôtels et restaurants</h3><p>Cuisines, chambres, sanitaires, linge : tout pour une hygiène irréprochable.</p></div>
+<div><div class="ph" style="--img:url(img/industrie.jpg)"></div><h3>Industries et ateliers</h3><p>Dégraissage, décapage et entretien des sols et des surfaces exposées.</p></div>
+<div><div class="ph" style="--img:url(img/ecoles.jpg)"></div><h3>Écoles, santé, bureaux</h3><p>Des produits adaptés à l'entretien quotidien des locaux recevant du public.</p></div>
+<div><div class="ph" style="--img:url(img/revendeurs.jpg)"></div><h3>Revendeurs et grossistes</h3><p>Des tarifs de gros et un approvisionnement régulier pour votre commerce.</p></div>
+</div></div></section>
+
+<section class="quote" id="devis"><div class="wrap"><div class="box">
+<div class="info">
+<div class="head" style="margin-bottom:18px"><h2>Demandez votre devis en 1 minute</h2></div>
+<p>Sélectionnez autant de produits et de formats que nécessaire. Votre devis officiel vous est envoyé sur WhatsApp.</p>
+<p><strong>Adresse :</strong> Pointe-Noire, République du Congo</p>
+<p><strong>WhatsApp :</strong> <span id="tel">+242 XX XXX XX XX</span></p>
+<p><strong>Horaires :</strong> du lundi au samedi</p>
+</div>
+<div>
+<label for="n">Nom ou entreprise</label><input id="n" autocomplete="organization">
+<label for="tl">Numéro WhatsApp</label><input id="tl" type="tel" placeholder="+242 ...">
+<label for="em">Email (facultatif)</label><input id="em" type="email">
+<label for="vi">Ville</label><input id="vi">
+<label for="ad">Adresse de livraison (facultatif)</label><input id="ad">
+<h3 style="font-size:1.15rem;margin-top:24px">Vos produits</h3>
+<p id="vide" style="font-size:.92rem">Ajoutez des produits depuis le catalogue ou avec le bouton ci-dessous.</p>
+<div id="lignes"></div>
+<p><button class="btn alt2" onclick="ligne(0,'5 L',1);maj()">+ Ajouter un produit</button></p>
+<label for="m">Message (facultatif)</label><textarea id="m"></textarea>
+<p style="margin-top:16px"><button class="btn" onclick="devis()">Recevoir mon devis</button></p><p id="etat" role="status"></p>
+</div></div></div></section>
+
+<footer><div class="wrap">
+<div><span class="logo">G<b>-</b>Clean</span><p>Fabricant congolais de produits d'entretien professionnels et industriels, basé à Pointe-Noire.</p></div>
+<div><h3>Navigation</h3><ul><li><a href="#produits">Produits</a></li><li><a href="#pourquoi">Pourquoi G-Clean</a></li><li><a href="#apropos">Qui sommes-nous</a></li><li><a href="#devis">Devis</a></li></ul></div>
+<div><h3>Contact</h3><ul><li>Pointe-Noire, Congo</li><li>WhatsApp : <span class="t2">+242 XX XXX XX XX</span></li></ul></div>
+</div><div class="wrap copy" style="display:block">&copy; 2026 G-Clean, marque de SOZACO SARL. Tous droits réservés.</div></footer>
+
+<a class="wa" href="#devis">Mon devis (<span id="cnt">0</span>)</a>
+
+<script>
+// 1) Remplacez par votre numéro WhatsApp au format international, sans + ni espaces (ex. 242060000000)
+var NUM="242XXXXXXXXX", AFFICHE="+242 XX XXX XX XX";
+// 2) Liste des produits : nom, description, image (dossier img)
+var P=[
+["Liquide vaisselle","Dégraisse efficacement, mousse bien, ménage les mains.","vaisselle.jpg"],
+["Nettoyant multi-surfaces","Un seul produit pour sols, plans de travail et surfaces lavables.","multisurfaces.jpg"],
+["Eau de Javel 9°","Désinfecte et blanchit. Pour l'entretien courant.","javel.jpg"],
+["Eau de Javel 12°","Plus concentrée, pour les grands volumes.","javel.jpg"],
+["Eau de Javel 36°","Très concentrée, économique à l'usage.","javel.jpg"],
+["Gel WC javellisé","Nettoie, désinfecte et désodorise les sanitaires.","gel-wc.jpg"],
+["Lessive concentrée 3 en 1","Nettoie, parfume et adoucit le linge en un seul lavage.","lessive.jpg"],
+["Lave-vitres et miroirs","Des surfaces vitrées nettes, sans traces.","lave-vitres.jpg"],
+["Décapant sol","Retire les salissures incrustées et rénove les sols.","decapant.jpg"],
+["Dégraissant cuisine","Vient à bout des graisses tenaces des cuisines professionnelles.","degraissant.jpg"]];
+// 3) Adresse du webhook n8n. Laissez vide tant que n8n n'est pas branché : la demande part alors par WhatsApp.
+var HOOK="";
+// 4) Conditionnements. Pour retirer un produit d'un format, supprimez son nom dans la liste DISPO de ce format.
+var F=["3 L","5 L","25 L","200 L","1000 L"],DISPO={};
+var GROS=["Eau de Javel 9°","Eau de Javel 12°","Eau de Javel 36°","Gel WC javellisé","Nettoyant multi-surfaces","Liquide vaisselle","Dégraissant cuisine","Lave-vitres et miroirs","Décapant sol","Lessive concentrée 3 en 1"];
+DISPO["3 L"]=["Liquide vaisselle","Nettoyant multi-surfaces","Eau de Javel 9°","Lessive concentrée 3 en 1"];
+DISPO["5 L"]=["Liquide vaisselle","Nettoyant multi-surfaces","Eau de Javel 9°","Lessive concentrée 3 en 1"];
+DISPO["25 L"]=GROS;DISPO["200 L"]=GROS;DISPO["1000 L"]=GROS;
+var L=document.getElementById("liste"),T=document.getElementById("tabs"),LG=document.getElementById("lignes"),cur="5 L";
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function tabs(){T.innerHTML="";F.forEach(function(f){var b=document.createElement("button");b.textContent=f;b.className=f==cur?"on":"";b.onclick=function(){cur=f;tabs();cards();};T.appendChild(b);});}
+function cards(){L.innerHTML="";P.forEach(function(x,i){if(DISPO[cur].indexOf(x[0])<0)return;
+L.insertAdjacentHTML("beforeend",'<article class="card"><div class="ph" style="--img:url(img/'+x[2]+')" role="img" aria-label="'+esc(x[0])+'"></div><div class="t"><h3>'+esc(x[0])+'</h3><p>'+esc(x[1])+'</p><span class="fm">Format '+cur+'</span><button class="btn" onclick="ajouter('+i+',\''+cur+'\')">Ajouter au devis</button></div></article>');});}
+function ligne(p,f,q){var d=document.createElement("div");d.className="lg";
+d.innerHTML='<select class="lp" aria-label="Produit"></select><select class="lf" aria-label="Format"></select><input class="lq" type="number" min="1" value="'+q+'" aria-label="Quantité"><button class="x" aria-label="Retirer cette ligne" onclick="this.parentNode.remove();maj()">&times;</button>';
+var sp=d.querySelector(".lp"),sf=d.querySelector(".lf");
+P.forEach(function(x){sp.insertAdjacentHTML("beforeend","<option>"+esc(x[0])+"</option>");});
+F.forEach(function(x){sf.insertAdjacentHTML("beforeend","<option>"+x+"</option>");});
+sp.selectedIndex=p;sf.value=f;LG.appendChild(d);}
+function ajouter(i,f){ligne(i,f,1);maj();}
+function maj(){document.getElementById("cnt").textContent=LG.children.length;document.getElementById("vide").style.display=LG.children.length?"none":"block";}
+function devis(){
+var v=function(id){return document.getElementById(id).value.trim();},s=document.getElementById("etat");
+var rows=[].map.call(LG.children,function(d){return{produit:d.querySelector(".lp").value,format:d.querySelector(".lf").value,quantite:+d.querySelector(".lq").value||0};}).filter(function(r){return r.quantite>0;});
+if(!v("n")||!v("tl")||!rows.length){s.textContent="Indiquez votre nom, votre numéro WhatsApp et au moins un produit.";return;}
+var data={client:{nom:v("n"),telephone:v("tl"),email:v("em"),ville:v("vi"),adresse:v("ad")},lignes:rows,message:v("m"),date:new Date().toISOString()};
+function wa(){var t="Bonjour G-Clean, je souhaite un devis.\nClient : "+data.client.nom+" ("+data.client.telephone+")\n"+rows.map(function(r){return "- "+r.quantite+" x "+r.produit+" ("+r.format+")";}).join("\n")+(data.message?"\n"+data.message:"");
+window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank");}
+if(!HOOK){wa();return;}
+s.textContent="Envoi en cours...";
+fetch(HOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){if(!r.ok)throw 0;s.textContent="Demande envoyée. Votre devis arrive sur WhatsApp dans quelques instants.";}).catch(function(){s.textContent="Envoi impossible. Ouverture de WhatsApp.";wa();});}
+document.getElementById("tel").textContent=AFFICHE;
+document.querySelector(".t2").textContent=AFFICHE;
+tabs();cards();maj();
+// Défilement automatique de la bannière
+var sl=document.querySelectorAll(".slide"),D=document.querySelector(".dots"),k=0,tm;
+sl.forEach(function(_,i){var b=document.createElement("button");b.setAttribute("aria-label","Image "+(i+1));b.onclick=function(){go(i);};D.appendChild(b);});
+function go(i){k=i;sl.forEach(function(s,j){s.classList.toggle("on",j==i);D.children[j].classList.toggle("on",j==i);});clearInterval(tm);
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches)tm=setInterval(function(){go((k+1)%sl.length);},5500);}
+go(0);
+document.querySelectorAll("nav a").forEach(function(a){a.onclick=function(){document.querySelector("nav").classList.remove("open");};});
+</script>
+</body>
+</html>
