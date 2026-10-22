@@ -170,8 +170,9 @@ section{padding:56px 0}
 <div class="info">
 <div class="head" style="margin-bottom:18px"><h2>Demandez votre devis en 1 minute</h2></div>
 <p>Sélectionnez autant de produits et de formats que nécessaire. Votre devis officiel vous est envoyé sur WhatsApp.</p>
-<p><strong>Adresse :</strong> Pointe-Noire, République du Congo</p>
+<p><strong>Adresse :</strong> Quartier MPITA, Pointe-Noire, République du Congo</p>
 <p><strong>WhatsApp :</strong> <span id="tel">+242 XX XXX XX XX</span></p>
+<p><strong>Email :</strong> <a href="mailto:commercial@gclean-congo.com">commercial@gclean-congo.com</a></p>
 <p><strong>Horaires :</strong> du lundi au samedi</p>
 </div>
 <div>
@@ -191,14 +192,14 @@ section{padding:56px 0}
 <footer><div class="wrap">
 <div><span class="logo">G<b>-</b>Clean</span><p>Fabricant congolais de produits d'entretien professionnels et industriels, basé à Pointe-Noire.</p></div>
 <div><h3>Navigation</h3><ul><li><a href="#produits">Produits</a></li><li><a href="#pourquoi">Pourquoi G-Clean</a></li><li><a href="#apropos">Qui sommes-nous</a></li><li><a href="#devis">Devis</a></li></ul></div>
-<div><h3>Contact</h3><ul><li>Pointe-Noire, Congo</li><li>WhatsApp : <span class="t2">+242 XX XXX XX XX</span></li></ul></div>
+<div><h3>Contact</h3><ul><li>Quartier MPITA, Pointe-Noire, République du Congo</li><li>WhatsApp : <span class="t2">+242 XX XXX XX XX</span></li><li><a href="mailto:commercial@gclean-congo.com">commercial@gclean-congo.com</a></li></ul></div>
 </div><div class="wrap copy" style="display:block">&copy; 2026 G-Clean, marque de SOZACO SARL. Tous droits réservés.</div></footer>
 
 <a class="wa" href="#devis">Mon devis (<span id="cnt">0</span>)</a>
 
 <script>
 // 1) Remplacez par votre numéro WhatsApp au format international, sans + ni espaces (ex. 242060000000)
-var NUM="242XXXXXXXXX", AFFICHE="+242 XX XXX XX XX";
+var NUM="242069740088", AFFICHE="+242 06 974 00 88";
 // 2) Liste des produits : nom, description, image (dossier img)
 var P=[
 ["Liquide vaisselle","Dégraisse efficacement, mousse bien, ménage les mains.","vaisselle.jpg"],
@@ -212,7 +213,7 @@ var P=[
 ["Décapant sol","Retire les salissures incrustées et rénove les sols.","decapant.jpg"],
 ["Dégraissant cuisine","Vient à bout des graisses tenaces des cuisines professionnelles.","degraissant.jpg"]];
 // 3) Adresse du webhook n8n. Laissez vide tant que n8n n'est pas branché : la demande part alors par WhatsApp.
-var HOOK="";
+var HOOK="https://n8n-academy.konnofuente.com/webhook/gclean-devis";
 // 4) Conditionnements. Pour retirer un produit d'un format, supprimez son nom dans la liste DISPO de ce format.
 var F=["3 L","5 L","25 L","200 L","1000 L"],DISPO={};
 var GROS=["Eau de Javel 9°","Eau de Javel 12°","Eau de Javel 36°","Gel WC javellisé","Nettoyant multi-surfaces","Liquide vaisselle","Dégraissant cuisine","Lave-vitres et miroirs","Décapant sol","Lessive concentrée 3 en 1"];
@@ -228,8 +229,12 @@ function ligne(p,f,q){var d=document.createElement("div");d.className="lg";
 d.innerHTML='<select class="lp" aria-label="Produit"></select><select class="lf" aria-label="Format"></select><input class="lq" type="number" min="1" value="'+q+'" aria-label="Quantité"><button class="x" aria-label="Retirer cette ligne" onclick="this.parentNode.remove();maj()">&times;</button>';
 var sp=d.querySelector(".lp"),sf=d.querySelector(".lf");
 P.forEach(function(x){sp.insertAdjacentHTML("beforeend","<option>"+esc(x[0])+"</option>");});
-F.forEach(function(x){sf.insertAdjacentHTML("beforeend","<option>"+x+"</option>");});
-sp.selectedIndex=p;sf.value=f;LG.appendChild(d);}
+sp.selectedIndex=p;formats(d);sf.value=f;if(!sf.value)sf.selectedIndex=0;
+sp.onchange=function(){formats(d);};LG.appendChild(d);}
+// Ne propose que les formats disponibles pour le produit choisi
+function formats(d){var sp=d.querySelector(".lp"),sf=d.querySelector(".lf"),old=sf.value;sf.innerHTML="";
+F.forEach(function(x){if(DISPO[x].indexOf(sp.value)>=0)sf.insertAdjacentHTML("beforeend","<option>"+x+"</option>");});
+sf.value=old;if(!sf.value)sf.selectedIndex=0;}
 function ajouter(i,f){ligne(i,f,1);maj();}
 function maj(){document.getElementById("cnt").textContent=LG.children.length;document.getElementById("vide").style.display=LG.children.length?"none":"block";}
 function devis(){
@@ -237,11 +242,12 @@ var v=function(id){return document.getElementById(id).value.trim();},s=document.
 var rows=[].map.call(LG.children,function(d){return{produit:d.querySelector(".lp").value,format:d.querySelector(".lf").value,quantite:+d.querySelector(".lq").value||0};}).filter(function(r){return r.quantite>0;});
 if(!v("n")||!v("tl")||!rows.length){s.textContent="Indiquez votre nom, votre numéro WhatsApp et au moins un produit.";return;}
 var data={client:{nom:v("n"),telephone:v("tl"),email:v("em"),ville:v("vi"),adresse:v("ad")},lignes:rows,message:v("m"),date:new Date().toISOString()};
-function wa(){var t="Bonjour G-Clean, je souhaite un devis.\nClient : "+data.client.nom+" ("+data.client.telephone+")\n"+rows.map(function(r){return "- "+r.quantite+" x "+r.produit+" ("+r.format+")";}).join("\n")+(data.message?"\n"+data.message:"");
-window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank");}
+function lien(){var t="Bonjour G-Clean, je souhaite un devis.\nClient : "+data.client.nom+" ("+data.client.telephone+")\n"+rows.map(function(r){return "- "+r.quantite+" x "+r.produit+" ("+r.format+")";}).join("\n")+(data.message?"\n"+data.message:"");
+return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t);}
+function wa(){window.open(lien(),"_blank");}
 if(!HOOK){wa();return;}
 s.textContent="Envoi en cours...";
-fetch(HOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){if(!r.ok)throw 0;s.textContent="Demande envoyée. Votre devis arrive sur WhatsApp dans quelques instants.";}).catch(function(){s.textContent="Envoi impossible. Ouverture de WhatsApp.";wa();});}
+fetch(HOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){if(!r.ok)throw 0;s.textContent="Demande envoyée. Votre devis arrive sur WhatsApp dans quelques instants.";}).catch(function(){s.innerHTML='Envoi impossible pour le moment. <a href="'+lien()+'" target="_blank" rel="noopener" style="text-decoration:underline">Envoyer ma demande par WhatsApp</a>';});}
 document.getElementById("tel").textContent=AFFICHE;
 document.querySelector(".t2").textContent=AFFICHE;
 tabs();cards();maj();
