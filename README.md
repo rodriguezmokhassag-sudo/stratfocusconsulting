@@ -1,6 +1,6 @@
 # G-Clean — site vitrine
 
-Site de G-Clean (marque de SOZACO SARL), fabricant de produits d'entretien professionnels et industriels à Pointe-Noire, Congo.
+Site de G-Clean (marque de SOZACO-TD SARL), fabricant de produits d'entretien professionnels et industriels à Pointe-Noire, Congo.
 
 Domaine : https://www.gclean-congo.com (hébergement LWS)
 
