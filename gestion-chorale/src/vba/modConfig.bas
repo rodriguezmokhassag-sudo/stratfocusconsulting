@@ -4,7 +4,7 @@ Option Explicit
 ' =============================================================================
 
 Public Const APP_NAME As String = "Gestion Chorale"
-Public Const APP_VERSION As String = "1.0.0 - lot 1"
+Public Const APP_VERSION As String = "1.1.0 - lot 2"
 Public Const SYS_PWD As String = "Ch0rale#Sys2026"
 
 Public Const HDR As Long = 4            ' ligne d'en-tete des tables de donnees
@@ -32,6 +32,21 @@ Public Const SH_ELEC As String = "ELECTEURS"
 Public Const SH_FICHE As String = "FICHE_APPEL"
 Public Const SH_PAT As String = "PATRIMOINE"
 Public Const SH_JOURNAL As String = "JOURNAL"
+Public Const SH_SAISIE As String = "SAISIE_CAISSE"
+Public Const SH_CAISSE As String = "CAISSE"
+Public Const SH_RUBRIQUES As String = "RUBRIQUES"
+Public Const SH_BUDGET As String = "BUDGET"
+Public Const SH_SUIVI_BUDGET As String = "SUIVI_BUDGET"
+Public Const SH_COTIS As String = "COTISATIONS"
+Public Const SH_CAMPAGNES As String = "CAMPAGNES"
+Public Const SH_SUIVI_CAMP As String = "SUIVI_CAMPAGNE"
+Public Const SH_SOCIAL As String = "SOCIAL"
+Public Const SH_BAREME As String = "BAREME_SOCIAL"
+Public Const SH_ARRETE As String = "ARRETE_CAISSE"
+Public Const SH_ARRETES As String = "ARRETES"
+Public Const SH_PERTES As String = "PERTES"
+Public Const SH_RECU As String = "RECU"
+Public Const SH_CLOTURES As String = "CLOTURES"
 
 Public Const ST_OBS As String = "En observation"
 Public Const ST_CONF As String = "Choriste confirm" & "é"
@@ -39,7 +54,7 @@ Public Const ST_REFROIDI As String = "Refroidi"
 Public Const ST_NONRETENU As String = "Non retenu"
 
 Public G_Busy As Boolean
-Private m_StNames() As String, m_StCodes() As String, m_StN As Long   ' cache des statuts
+Private m_StNames() As String, m_StCodes() As String, m_StCot() As Boolean, m_StN As Long   ' cache des statuts
 Public G_TestMode As Boolean   ' tests automatises (LibreOffice) : pas de protection
 
 ' ----------------------------------------------------------------- feuilles
@@ -196,14 +211,17 @@ End Function
 Public Sub LoadStatuts()
     Dim sh As Worksheet, cS As Long, cP As Long, cC As Long, r As Long, lr As Long
     Set sh = WS(SH_LISTES)
+    Dim cT As Long
     cS = ColOf(sh, "Statut"): cP = ColOf(sh, "Pointage"): cC = ColOf(sh, "Code par défaut")
+    cT = ColOf(sh, "Cotisation", False)
     lr = LastRow(sh, cS)
     m_StN = 0
-    ReDim m_StNames(1 To lr): ReDim m_StCodes(1 To lr)
+    ReDim m_StNames(1 To lr): ReDim m_StCodes(1 To lr): ReDim m_StCot(1 To lr)
     For r = FIRSTROW To lr
         If Trim$(CStr(sh.Cells(r, cS).Value)) <> "" Then
             m_StN = m_StN + 1
             m_StNames(m_StN) = UCase$(Trim$(CStr(sh.Cells(r, cS).Value)))
+            If cT > 0 Then m_StCot(m_StN) = (UCase$(Trim$(CStr(sh.Cells(r, cT).Value))) = "OUI")
             If UCase$(Trim$(CStr(sh.Cells(r, cP).Value))) = "OUI" Then
                 m_StCodes(m_StN) = UCase$(Trim$(CStr(sh.Cells(r, cC).Value)))
                 If m_StCodes(m_StN) = "" Then m_StCodes(m_StN) = "P"
@@ -222,6 +240,19 @@ Public Function StatutCodeDefaut(ByVal statut As String) As String
     For i = 1 To m_StN
         If m_StNames(i) = s Then
             StatutCodeDefaut = m_StCodes(i)
+            Exit Function
+        End If
+    Next i
+End Function
+
+' Le statut doit-il la cotisation mensuelle ?
+Public Function StatutCotise(ByVal statut As String) As Boolean
+    Dim i As Long, s As String
+    If m_StN = 0 Then LoadStatuts
+    s = UCase$(Trim$(statut))
+    For i = 1 To m_StN
+        If m_StNames(i) = s Then
+            StatutCotise = m_StCot(i)
             Exit Function
         End If
     Next i

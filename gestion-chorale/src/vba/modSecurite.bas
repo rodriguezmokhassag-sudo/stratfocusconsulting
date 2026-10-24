@@ -214,7 +214,7 @@ Public Sub StorePassword(ByVal code As String, ByVal pwd As String)
     sh.Cells(r, 3).Value = Sha256Hex(salt & pwd)
 End Sub
 
-Private Function ActiveInterim(ByVal code As String) As String
+Public Function ActiveInterim(ByVal code As String) As String
     Dim sh As Worksheet, r As Long, d1 As Date, d2 As Date, cible As String
     Set sh = WS(SH_USERS)
     r = UserRow(code)
@@ -237,6 +237,10 @@ Public Function SheetModule(ByVal nom As String) As String
         Case SH_ELEC: SheetModule = "MANDATS"
         Case SH_PAT: SheetModule = "PATRIMOINE"
         Case SH_JOURNAL: SheetModule = "JOURNAL"
+        Case SH_SAISIE, SH_CAISSE, SH_RUBRIQUES, SH_BUDGET, SH_SUIVI_BUDGET, SH_ARRETE, SH_ARRETES, SH_PERTES, SH_RECU, SH_CLOTURES
+            SheetModule = "FINANCES"
+        Case SH_COTIS, SH_CAMPAGNES, SH_SUIVI_CAMP: SheetModule = "COTISATIONS"
+        Case SH_SOCIAL, SH_BAREME: SheetModule = "SOCIAL"
         Case Else: SheetModule = ""
     End Select
 End Function
@@ -370,8 +374,28 @@ Private Sub UnlockEditable(ByVal sh As Worksheet)
             sh.Range("C5").Locked = False
             sh.Range("E5").Locked = False
             sh.Range("G5").Locked = False
-        Case SH_FICHE
+        Case SH_FICHE, SH_COTIS, SH_SUIVI_CAMP
             sh.Range("C5").Locked = False
+        Case SH_SUIVI_BUDGET
+            sh.Range("C5").Locked = False
+            sh.Range("E5").Locked = False
+        Case SH_SAISIE
+            sh.Range("C5:C14").Locked = False
+        Case SH_ARRETE
+            sh.Range("C5:C17").Locked = False
+            sh.Range("C21").Locked = False
+        Case SH_RUBRIQUES
+            UnlockCols sh, "Choix", True
+        Case SH_BUDGET
+            UnlockCols sh, "Budget initial|Budget rectifié|M01|M02|M03|M04|M05|M06|M07|M08|M09|M10|M11|M12|Réf. adoption", False
+        Case SH_CAMPAGNES
+            UnlockCols sh, "Libellé|Montant par membre (FCFA)|Date limite|Code rubrique|Statut", False
+        Case SH_SOCIAL
+            UnlockCols sh, "Description|Aide prévue (FCFA)|Affectation de la différence|Statut", False
+        Case SH_BAREME
+            UnlockCols sh, "", True
+        Case SH_PERTES
+            UnlockCols sh, "Description|Échéancier|Statut", False
     End Select
 End Sub
 

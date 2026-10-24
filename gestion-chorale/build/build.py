@@ -245,6 +245,9 @@ ORDER = ["ACCUEIL", "MEMBRES", "ADHESIONS", "SEANCES", "POINTAGE", "PRESENCES", 
 JOURNALED = {"ADHESIONS", "PARAMETRES", "LISTES", "TYPES_ACTIVITE", "CODES_PRESENCE",
              "CONTROLES_ADHESION", "UTILISATEURS", "PATRIMOINE"}
 
+import lot2  # noqa: E402
+lot2.register(globals())
+
 
 def col_letter(i):  # 0-based
     s = ""
@@ -453,7 +456,9 @@ class Builder:
             s, h = hash_pwd(MDP_INITIAL)
             sec.append([c, s, h])
         self.table("SECURITE", sec, autofilter=False)
+        lot2.build_sheets(self)
         self.names()
+        lot2.names(self)
         for name, ws in self.ws.items():
             if name != "ACCUEIL":
                 ws.very_hidden()
@@ -580,6 +585,7 @@ class Builder:
                 ws.write(r, 2, p[1], self.f["section"])
             else:
                 key, val, desc = p
+                val = self.data.get("params", {}).get(key, val)
                 ws.write(r, 0, key, self.f["t"])
                 if isinstance(val, dt.date):
                     ws.write_datetime(r, 1, dt.datetime.combine(val, dt.time()), self.f["d"])
@@ -647,7 +653,7 @@ def main():
     with open(tmp, "wb") as f:
         f.write(build_vba_project(vba_modules()))
     for fname, data in [("GestionChorale.xlsm", demo.empty_data()),
-                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES))]:
+                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES, lot2))]:
         b = Builder(os.path.join(dist, fname), data)
         b.build()
         b.close(tmp)

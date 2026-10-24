@@ -689,6 +689,27 @@ Public Sub RefreshAlerts()
         If nFin > 0 Then lignes.Add "Nouveaux choristes : " & nFin & " observation(s) se terminent dans les " & jours & " prochains jours."
         If nManq > 0 Then lignes.Add "Nouveaux choristes : " & nManq & " dossier(s) avec des éléments manquants."
     End If
+    If ModuleRight("COTISATIONS") <> "" Then
+        Dim nbRet As Long, totRes As Double
+        CotisationsInterne Date, False, nbRet, totRes
+        If nbRet > 0 Then lignes.Add "Cotisations : " & nbRet & " membre(s) avec au moins " & ParamNum("MOIS_ALERTE_ARRIERES", 3) & _
+            " mois d'arriérés ; reste à recouvrer " & Fcfa(totRes) & " (feuille COTISATIONS)."
+    End If
+    If ModuleRight("FINANCES") <> "" Then
+        Dim esp As Double, bq As Double, soc As Double, ar As Worksheet, dA As Date, rr As Long
+        Soldes Date, esp, bq, soc
+        If esp < 0 Then lignes.Add "Caisse : le solde en espèces est négatif (" & Fcfa(esp) & ") : vérifiez les écritures."
+        If soc < 0 Then lignes.Add "Caisse sociale : solde négatif (" & Fcfa(soc) & ")."
+        Set ar = WS(SH_ARRETES)
+        For rr = FIRSTROW To LastRow(ar, 1)
+            If CStr(ar.Cells(rr, 2).Value) = CAISSE_ESP Then
+                If AsDate(ar.Cells(rr, 1).Value) > dA Then dA = AsDate(ar.Cells(rr, 1).Value)
+            End If
+        Next rr
+        If G_JN > 0 And (dA = 0 Or Date - dA > ParamNum("JOURS_ALERTE_ARRETE", 30)) Then
+            lignes.Add "Arrêté de caisse : " & IIf(dA = 0, "aucun arrêté enregistré", "dernier arrêté le " & Format$(dA, "dd/mm/yyyy")) & " - comptez la caisse."
+        End If
+    End If
     If lignes.Count = 0 Then lignes.Add "Aucune alerte."
     For i = 1 To lignes.Count
         hs.Cells(row + i - 1, 2).Value = ChrW(8226) & " " & lignes(i)

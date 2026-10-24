@@ -93,11 +93,35 @@ Private Function SheetButtons(ByVal nom As String) As Variant
         Case SH_FICHE
             SheetButtons = Array("Générer la fiche|GenererFicheAppel|A", "Imprimer|ImprimerFeuille|P")
         Case SH_PARAM
-            SheetButtons = Array("Thème et couleurs|ChoisirTheme|P", "Importer le logo|ImporterLogo|P")
+            SheetButtons = Array("Thème et couleurs|ChoisirTheme|P", "Importer le logo|ImporterLogo|P", "Reprendre un ancien fichier|ReprendreAncienFichier|P")
         Case SH_USERS
             SheetButtons = Array("Réinitialiser un mot de passe|ReinitialiserMotDePasse|A")
         Case SH_CTRL
             SheetButtons = Array("Mettre à jour les dossiers|ActualiserDossiers|P")
+        Case SH_SAISIE
+            SheetButtons = Array("Enregistrer|SaisieEnregistrer|A", "Effacer|SaisieEffacer|P", "Actualiser les soldes|AfficherSoldes|P", "Imprimer un reçu|ImprimerRecu|P", "Journal de caisse|AllerJournal|P")
+        Case SH_CAISSE
+            SheetButtons = Array("Nouvelle écriture|AllerSaisie|A", "Annuler l'écriture|AnnulerEcriture|P", "Imprimer le reçu|ImprimerRecu|P", "Clôturer un exercice|CloturerExercice|P")
+        Case SH_COTIS
+            SheetButtons = Array("Calculer|CalculerCotisations|A", "Encaisser une cotisation|EncaisserCotisation|P", "Encaisser des pénalités|EncaisserPenalites|P", "Trier par montant dû|TrierCotisations|P", "Imprimer|ImprimerFeuille|P")
+        Case SH_CAMPAGNES
+            SheetButtons = Array("Nouvelle campagne|NouvelleCampagne|A", "Suivre la campagne|SuivreCampagne|P", "Actualiser les totaux|ActualiserCampagnes|P")
+        Case SH_SUIVI_CAMP
+            SheetButtons = Array("Calculer|CalculerSuiviCampagne|A", "Encaisser|EncaisserCampagne|P", "Imprimer|ImprimerFeuille|P")
+        Case SH_SOCIAL
+            SheetButtons = Array("Déclarer un événement|DeclarerEvenement|A", "Verser l'aide|VerserAide|P", "Actualiser|ActualiserSocial|P", "Suivre les contributions|SuivreContributions|P")
+        Case SH_BUDGET
+            SheetButtons = Array("Préparer l'exercice|PreparerExercice|P", "Répartir par mois|RepartirBudget|P", "Contrôler le budget|ControlerBudget|A")
+        Case SH_SUIVI_BUDGET
+            SheetButtons = Array("Calculer|CalculerSuiviBudget|A", "Imprimer|ImprimerFeuille|P")
+        Case SH_ARRETE
+            SheetButtons = Array("Calculer le solde théorique|CalculerTheorique|P", "Enregistrer l'arrêté|EnregistrerArrete|A", "Rapprochement bancaire|RapprochementBancaire|P", "Remettre à zéro|RemettreAZeroComptage|P")
+        Case SH_PERTES
+            SheetButtons = Array("Nouvelle perte|NouvellePerte|P", "Enregistrer un remboursement|RemboursementPerte|A", "Actualiser|ActualiserPertes|P")
+        Case SH_RECU
+            SheetButtons = Array("Imprimer|ImprimerFeuille|A", "Autre reçu|ImprimerRecu|P")
+        Case SH_CLOTURES
+            SheetButtons = Array("Clôturer un exercice|CloturerExercice|A")
         Case Else
             SheetButtons = Array()
     End Select
@@ -199,8 +223,15 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Fiche d'appel", SH_FICHE, idx, x0, y0
         NavIfAllowed sh, "Liste électorale", SH_ELEC, idx, x0, y0
         NavIfAllowed sh, "Patrimoine", SH_PAT, idx, x0, y0
-        FutureIfAllowed sh, "Finances (lot 2)", "FINANCES", idx, x0, y0
-        FutureIfAllowed sh, "Caisse sociale (lot 2)", "SOCIAL", idx, x0, y0
+        NavIfAllowed sh, "Saisie de caisse", SH_SAISIE, idx, x0, y0
+        NavIfAllowed sh, "Journal de caisse", SH_CAISSE, idx, x0, y0
+        NavIfAllowed sh, "Cotisations", SH_COTIS, idx, x0, y0
+        NavIfAllowed sh, "Cotisations spéciales", SH_CAMPAGNES, idx, x0, y0
+        NavIfAllowed sh, "Caisse sociale", SH_SOCIAL, idx, x0, y0
+        NavIfAllowed sh, "Budget", SH_BUDGET, idx, x0, y0
+        NavIfAllowed sh, "Suivi budgétaire", SH_SUIVI_BUDGET, idx, x0, y0
+        NavIfAllowed sh, "Arrêté de caisse", SH_ARRETE, idx, x0, y0
+        NavIfAllowed sh, "Pertes et remboursements", SH_PERTES, idx, x0, y0
         FutureIfAllowed sh, "Discipline (lot 4)", "DISCIPLINE", idx, x0, y0
         FutureIfAllowed sh, "Planning (lot 4)", "PLANNING", idx, x0, y0
         FutureIfAllowed sh, "Cantiques (lot 4)", "CANTIQUES", idx, x0, y0
@@ -210,6 +241,8 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Types d'activités", SH_TYPES, idx, x0, y0
         NavIfAllowed sh, "Codes de présence", SH_CODES, idx, x0, y0
         NavIfAllowed sh, "Contrôles d'adhésion", SH_CTRL, idx, x0, y0
+        NavIfAllowed sh, "Rubriques budgétaires", SH_RUBRIQUES, idx, x0, y0
+        NavIfAllowed sh, "Barème social", SH_BAREME, idx, x0, y0
         NavIfAllowed sh, "Utilisateurs", SH_USERS, idx, x0, y0
         NavIfAllowed sh, "Journal des actions", SH_JOURNAL, idx, x0, y0
         If idx Mod 4 <> 0 Then idx = idx + (4 - idx Mod 4)
@@ -244,6 +277,23 @@ Public Sub GoSheet()
     ActiveWindow.ScrollRow = 1
 End Sub
 
+Public Sub AllerJournal()
+    If Not RequireLogin() Then Exit Sub
+    WS(SH_CAISSE).Activate
+    WS(SH_CAISSE).Cells(LastRow(WS(SH_CAISSE), 1) + 1, 1).Select
+End Sub
+
+Public Sub SuivreContributions()
+    Dim r As Long
+    If Not RequireLogin() Then Exit Sub
+    If ActiveSheet.Name = SH_SOCIAL And ActiveCell.Row >= FIRSTROW Then
+        r = ActiveCell.Row
+        If CStr(WS(SH_SOCIAL).Cells(r, 9).Value) <> "" Then WS(SH_SUIVI_CAMP).Range("C5").Value = WS(SH_SOCIAL).Cells(r, 9).Value
+    End If
+    WS(SH_SUIVI_CAMP).Activate
+    CalculerSuiviCampagne
+End Sub
+
 Public Sub AllerAccueil()
     WS(SH_ACCUEIL).Activate
 End Sub
@@ -260,8 +310,8 @@ End Sub
 ' ------------------------------------------------------------- theme
 Private Function HeaderRowOf(ByVal nom As String) As Long
     Select Case UCase$(nom)
-        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE: HeaderRowOf = OUT_HDR
-        Case SH_ACCUEIL: HeaderRowOf = 0
+        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET: HeaderRowOf = OUT_HDR
+        Case SH_ACCUEIL, SH_RECU: HeaderRowOf = 0
         Case Else: HeaderRowOf = HDR
     End Select
 End Function
@@ -285,17 +335,19 @@ Public Sub ApplyThemeColors()
             sh.Unprotect SYS_PWD
             On Error GoTo 0
             hr = HeaderRowOf(sh.Name)
-            lc = LastCol(sh, hr)
-            If lc < 8 Then lc = 8
+            If hr > 0 Then lc = LastCol(sh, hr) Else lc = 3
+            If lc < 8 And hr > 0 Then lc = 8
             With sh.Range(sh.Cells(1, 1), sh.Cells(1, lc))
                 .Interior.Color = ColPrincipale()
                 .Font.Color = RGB(255, 255, 255)
             End With
-            With sh.Range(sh.Cells(hr, 1), sh.Cells(hr, lc))
-                .Interior.Color = ColPrincipale()
-                .Font.Color = RGB(255, 255, 255)
-                .Font.Bold = True
-            End With
+            If hr > 0 And sh.Name <> SH_SAISIE And sh.Name <> SH_ARRETE Then
+                With sh.Range(sh.Cells(hr, 1), sh.Cells(hr, lc))
+                    .Interior.Color = ColPrincipale()
+                    .Font.Color = RGB(255, 255, 255)
+                    .Font.Bold = True
+                End With
+            End If
             Select Case UCase$(sh.Name)
                 Case SH_POINTAGE, SH_FICHE: sh.Range("C5").Interior.Color = RGB(255, 242, 153)
                 Case SH_TAUX
@@ -308,7 +360,7 @@ Public Sub ApplyThemeColors()
             For Each shp In sh.Shapes
                 If Left$(shp.Name, 4) = "btn_" And shp.Name <> "btn_home" Then
                     If shp.Fill.ForeColor.RGB <> RGB(200, 200, 200) Then
-                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
+                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
                             shp.Fill.ForeColor.RGB = ColAccent()
                         Else
                             shp.Fill.ForeColor.RGB = ColPrincipale()

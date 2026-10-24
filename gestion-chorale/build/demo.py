@@ -38,7 +38,7 @@ def _rand_date(a, b):
     return a + dt.timedelta(days=random.randint(0, (b - a).days))
 
 
-def demo_data(listes, controles):
+def demo_data(listes, controles, lot2=None):
     random.seed(1988)
     membres = []
     info = []  # dict par membre pour la simulation des presences
@@ -231,5 +231,9 @@ def demo_data(listes, controles):
     titulaires["CONS"] = "Conseiller paroissial (démo)"
 
     journal = [[dt.datetime(2026, 1, 2, 10, 0), "Administrateur", "", "ACCUEIL", "Mise en service", "Version de démonstration"]]
-    return {"demo": True, "membres": membres, "adhesions": adhesions, "seances": seances, "presences": presences,
+    fin = {}
+    if lot2 is not None:
+        import demo_fin
+        fin = demo_fin.build(info, presences, lot2.RUBRIQUES)
+    return {**fin, "demo": True, "membres": membres, "adhesions": adhesions, "seances": seances, "presences": presences,
             "patrimoine": patrimoine, "journal": journal, "titulaires": titulaires}
