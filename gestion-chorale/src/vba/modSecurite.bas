@@ -235,7 +235,8 @@ Public Function SheetModule(ByVal nom As String) As String
         Case SH_MEMBRES, SH_ADH: SheetModule = "MEMBRES"
         Case SH_SEANCES, SH_POINTAGE, SH_PRES, SH_TAUX, SH_FICHE: SheetModule = "PRESENCES"
         Case SH_ELEC: SheetModule = "MANDATS"
-        Case SH_PAT: SheetModule = "PATRIMOINE"
+        Case SH_PAT, SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_CONTRAT, SH_ETIQ, SH_INVENT, SH_INVENTS, SH_SYNTH, SH_FICHEB
+            SheetModule = "PATRIMOINE"
         Case SH_JOURNAL: SheetModule = "JOURNAL"
         Case SH_SAISIE, SH_CAISSE, SH_RUBRIQUES, SH_BUDGET, SH_SUIVI_BUDGET, SH_ARRETE, SH_ARRETES, SH_PERTES, SH_RECU, SH_CLOTURES
             SheetModule = "FINANCES"
@@ -366,7 +367,20 @@ Private Sub UnlockEditable(ByVal sh As Worksheet)
         Case SH_USERS
             UnlockCols sh, "Titulaire|Actif|Assure l'intérim de|Début de l'intérim|Fin de l'intérim", False
         Case SH_PAT
-            UnlockCols sh, "Code|Valeur totale (FCFA)", True
+            UnlockCols sh, "Code|Valeur totale (FCFA)|Amortissement cumulé (FCFA)|Valeur nette (FCFA)|Quantité sortie|Quantité disponible|Dernier inventaire|Pièce de caisse", True
+        Case SH_CATPAT
+            UnlockCols sh, "", True
+        Case SH_MOUV
+            UnlockCols sh, "Observations", False
+        Case SH_LOCATIONS
+            UnlockCols sh, "Contact|Objet|Caution (FCFA)|Avis commission musicale|Accord du Bureau|Observations", False
+        Case SH_INVENT
+            sh.Range("C5").Locked = False
+            sh.Range("E5").Locked = False
+            sh.Range("F" & OUT_FIRST & ":G" & MAXROWS).Locked = False
+            sh.Range("I" & OUT_FIRST & ":I" & MAXROWS).Locked = False
+        Case SH_SYNTH, SH_FICHEB
+            sh.Range("C5").Locked = False
         Case SH_POINTAGE
             sh.Range("C5").Locked = False
             sh.Range("D" & OUT_FIRST & ":E" & MAXROWS).Locked = False

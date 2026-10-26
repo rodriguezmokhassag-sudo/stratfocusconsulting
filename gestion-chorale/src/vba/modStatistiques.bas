@@ -710,6 +710,23 @@ Public Sub RefreshAlerts()
             lignes.Add "Arrêté de caisse : " & IIf(dA = 0, "aucun arrêté enregistré", "dernier arrêté le " & Format$(dA, "dd/mm/yyyy")) & " - comptez la caisse."
         End If
     End If
+    If RightOf(SH_PAT) <> "" Then
+        Dim nRetard As Long, nAch As Long, nLoc As Long, inv As String, nRep As Long
+        nRetard = RetoursEnRetard()
+        If nRetard > 0 Then lignes.Add "Patrimoine : " & nRetard & " prêt(s), location(s) ou réparation(s) non rendu(s) à la date prévue (feuille MOUVEMENTS_PAT)."
+        nLoc = LocationsEnAttente()
+        If nLoc > 0 Then lignes.Add "Locations : " & nLoc & " contrat(s) en attente d'une étape (approbation, encaissement, remise ou caution)."
+        inv = InventaireAttendu()
+        If inv <> "" Then lignes.Add "Patrimoine : " & inv & " (feuille INVENTAIRE)."
+        nAch = AchatsSansFiche()
+        If nAch > 0 Then lignes.Add "Patrimoine : " & nAch & " achat(s) de matériel sans fiche de bien (bouton « Créer depuis un achat »)."
+        Dim pr As Worksheet, rr2 As Long
+        Set pr = WS(SH_PAT)
+        For rr2 = FIRSTROW To LastRow(pr, 1)
+            If CStr(pr.Cells(rr2, ColOf(pr, "État")).Value) = "À réparer" Or CStr(pr.Cells(rr2, ColOf(pr, "État")).Value) = "Hors service" Then nRep = nRep + 1
+        Next rr2
+        If nRep > 0 Then lignes.Add "Patrimoine : " & nRep & " bien(s) à réparer ou hors service."
+    End If
     If lignes.Count = 0 Then lignes.Add "Aucune alerte."
     For i = 1 To lignes.Count
         hs.Cells(row + i - 1, 2).Value = ChrW(8226) & " " & lignes(i)

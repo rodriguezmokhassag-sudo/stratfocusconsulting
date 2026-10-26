@@ -72,6 +72,8 @@ Public Sub T_All()
     Etape "T_EnLettres"
     T_Finances
     Etape "T_Finances"
+    T_Patrimoine
+    Etape "T_Patrimoine"
     T_Logout
     Etape "T_Logout"
 End Sub
@@ -186,6 +188,7 @@ Public Sub T_Adhesions()
     AppliquerDecisions
     Verif "decision_confirme", CStr(MembreValeur(mat, "Statut")) = ST_CONF, CStr(MembreValeur(mat, "Statut"))
     Verif "decision_kit_patrimoine", LastRow(WS(SH_PAT), 1) - nPat = 4, (LastRow(WS(SH_PAT), 1) - nPat) & " article(s)"
+    Verif "kit_code_categorie", Left$(CStr(WS(SH_PAT).Cells(LastRow(WS(SH_PAT), 1), 1).Value), 4) = "CUI-", CStr(WS(SH_PAT).Cells(LastRow(WS(SH_PAT), 1), 1).Value)
     Verif "decision_dossier_clos", Left$(CStr(sh.Cells(rA, ColOf(sh, "Statut du dossier")).Value), 4) = "Clos"
     Verif "decision_prolonge", Left$(CStr(sh.Cells(rA + 1, ColOf(sh, "Statut du dossier")).Value), 8) = "Prolongé", CStr(sh.Cells(rA + 1, ColOf(sh, "Statut du dossier")).Value)
 End Sub
@@ -297,6 +300,17 @@ Public Sub T_Vierge()
     Verif "v_affichage_soldes", NumV(WS(SH_SAISIE).Range("G5").Value) = 30000
     RefreshAlerts
     Etape "v_alertes_fin"
+    ' Patrimoine sur le modele vierge
+    LoginAs "PAT"
+    SynthesePatInterne Date
+    Etape "v_synthese_vide"
+    Verif "v_inventaire_vide", PreparerInventaireInterne("Vide", Date) = 0
+    Verif "v_premier_bien", CreerBienInterne("Clavier", "Matériel de musique", 1, "unité", Date, "Don", "Paroisse", "", 100000) = "MUS-0001"
+    Verif "v_kit_code", NextCodeBien("Cuisine et kit de sortie") = "CUI-0001"
+    Verif "v_pret", PreterInterne("MUS-0001", 1, "ADC-0001", Date + 2, "") <> "", G_LastError
+    Verif "v_location_non_louable", NouvelleLocationInterne("X", "", "", Date, Date) <> "" And Not AjouterArticleInterne("LOC-" & Year(Date) & "-001", "MUS-0001", 1)
+    RefreshAlerts
+    Etape "v_alertes_pat"
     Verif "v_fin", True
 End Sub
 
@@ -322,6 +336,12 @@ Public Sub T_Visu()
     SuiviCampagneInterne "CAMP-2026-01", True
     RemplirRecu "REC-2026-0010"
     WS(SH_COTIS).Range("C5").Value = Date
+    RecalculerPatrimoineInterne Date
+    RemplirContrat "LOC-2026-001"
+    EtiquettesInterne "MUS"
+    SynthesePatInterne Date
+    PreparerInventaireInterne "Inventaire de décembre 2026", Date
+    FicheBienInterne "MUS-0004"
 End Sub
 
 ' ============================================================ lot 2
@@ -487,7 +507,7 @@ Public Sub T_Reprise()
     Dim rapport As String
     T_Init
     LoginAs "ADMIN"
-    rapport = ReprendreDonneesDe("/tmp/claude-0/lot1_demo.xlsm")
+    rapport = ReprendreDonneesDe("/tmp/claude-0/lot2_demo.xlsm")
     Verif "reprise_rapport", InStr(rapport, "MEMBRES : 100") > 0, Replace(rapport, vbCrLf, " ")
     Verif "reprise_membre", MembreRow("ADC-0100") > 0
     Verif "reprise_presences", LastRow(WS(SH_PRES), 1) - HDR > 10000, CStr(LastRow(WS(SH_PRES), 1) - HDR)
@@ -495,4 +515,106 @@ Public Sub T_Reprise()
     Verif "reprise_listes_cotisation", StatutCotise("Choriste confirmé")
     Verif "reprise_rubriques_conservees", RubRow("R01.1") > 0
     Verif "reprise_param", ParamStr("SIGLE") = "ADC"
+    Verif "reprise_caisse", LastRow(WS(SH_CAISSE), 1) - HDR > 900, CStr(LastRow(WS(SH_CAISSE), 1) - HDR)
+    Verif "reprise_patrimoine_ancien_code", BienRow("PAT-0001") > 0 And NumV(BienValeur("PAT-0001", "Durée d'amortissement (ans)")) > 0, CStr(BienValeur("PAT-0001", "Durée d'amortissement (ans)"))
+    Verif "reprise_rubriques_lot3", RubRow("R10.1") > 0 And RubRow("D11.1") > 0
+End Sub
+
+' ============================================================ lot 3
+Private Function Dispo(ByVal code As String) As Double
+    RecalculerPatrimoineInterne Date
+    Dispo = NumV(BienValeur(code, "Quantité disponible"))
+End Function
+
+Public Sub T_Patrimoine()
+    Dim code As String, num As String, d0 As Double, r As Long, loc As String, e0 As Double, b0 As Double, s0 As Double
+    Dim e1 As Double, b1 As Double, s1 As Double, q0 As Double, n As Long, msg As String, invs As Worksheet, i As Long, per As Long
+    T_Init
+    WS(SH_USERS).Cells(FIRSTROW + 6, ColOf(WS(SH_USERS), "Assure l'intérim de")).Value = ""
+    LoginAs "PAT"
+    Verif "pat_droit", CanEdit(SH_PAT) And CanEdit(SH_LOCATIONS) And ModuleRight("FINANCES") = "L"
+    RecalculerPatrimoineInterne Date
+    Verif "amorti_total", NumV(BienValeur("MUS-0001", "Valeur nette (FCFA)")) = 0, CStr(BienValeur("MUS-0001", "Amortissement cumulé (FCFA)"))
+    Verif "amorti_partiel", NumV(BienValeur("MOB-0001", "Valeur nette (FCFA)")) > 0 And NumV(BienValeur("MOB-0001", "Valeur nette (FCFA)")) < 120000, CStr(BienValeur("MOB-0001", "Valeur nette (FCFA)"))
+    Verif "code_suivant", NextCodeBien("Matériel de musique") = "MUS-0010", NextCodeBien("Matériel de musique")
+    code = CreerBienInterne("Tambour", "Matériel de musique", 2, "pièce", Date, "Achat", "Fournisseur", "", 25000)
+    Verif "creation_bien", code = "MUS-0010" And NumV(BienValeur(code, "Valeur totale (FCFA)")) = 50000 And NumV(BienValeur(code, "Durée d'amortissement (ans)")) = 5
+    ' Pret et retour
+    d0 = Dispo("MOB-0001")
+    num = PreterInterne("MOB-0001", 10, "Commission cuisine", Date + 3, "test")
+    Verif "pret", num <> "" And Dispo("MOB-0001") = d0 - 10, num & " dispo " & d0 & " -> " & Dispo("MOB-0001")
+    Verif "pret_trop", PreterInterne("MOB-0001", 1000, "x", Date, "") = "", G_LastError
+    Verif "retour_pret", RetourInterne(num, "Bon", 0, "", "") And Dispo("MOB-0001") = d0
+    ' Reparation avec cout (role disposant des finances)
+    LoginAs "ADMIN"
+    num = ReparationInterne("MOB-0002", 1, "Électronicien", Date + 5, "test")
+    Verif "reparation_envoi", num <> "" And CStr(BienValeur("MOB-0002", "État")) = "À réparer", G_LastError
+    Verif "reparation_retour", RetourInterne(num, "Bon", 8000, CAISSE_ESP, ""), G_LastError
+    r = MouvementRow(num)
+    Verif "reparation_caisse", CStr(WS(SH_MOUV).Cells(r, MV_PIECE).Value) <> "" And CStr(BienValeur("MOB-0002", "État")) = "Bon", CStr(WS(SH_MOUV).Cells(r, MV_PIECE).Value)
+    ' Perte avec responsable
+    q0 = NumV(BienValeur("MUS-0003", "Quantité"))
+    per = LastRow(WS(SH_PERTES), 1)
+    num = PerteBienInterne("MUS-0003", "Perte ou vol", 1, "ADC-0010", "test")
+    Verif "perte_bien", num <> "" And NumV(BienValeur("MUS-0003", "Quantité")) = q0 - 1 And LastRow(WS(SH_PERTES), 1) = per + 1 And _
+        CStr(WS(SH_PERTES).Cells(per + 1, 4).Value) = "ADC-0010", G_LastError & " montant " & CStr(WS(SH_PERTES).Cells(per + 1, 7).Value)
+    ' Location complete
+    LoginAs "PAT"
+    loc = NouvelleLocationInterne("Groupe test", "06 000 00 00", "Concert", Date + 5, Date + 6)
+    Verif "loc_article_non_louable", Not AjouterArticleInterne(loc, "MUS-0005", 1), G_LastError
+    Verif "loc_article", AjouterArticleInterne(loc, "MUS-0004", 1), G_LastError
+    r = LocationRow(loc)
+    Verif "loc_montants", NumV(WS(SH_LOCATIONS).Cells(r, 9).Value) = 20000 And NumV(WS(SH_LOCATIONS).Cells(r, 10).Value) = 99000, _
+        WS(SH_LOCATIONS).Cells(r, 9).Value & " / " & WS(SH_LOCATIONS).Cells(r, 10).Value
+    Verif "loc_approbation_incomplete", Not ApprouverInterne(loc, "", "")
+    Verif "loc_approuvee", ApprouverInterne(loc, "Favorable", "PV test"), G_LastError
+    Verif "loc_encaissement_refuse_pat", Not EncaisserLocationInterne(loc, CAISSE_ESP), G_LastError
+    Verif "loc_remise_avant_paiement", Not RemettreInterne(loc)
+    LoginAs "FIN"
+    Soldes Date, e0, b0, s0
+    Verif "loc_encaissee", EncaisserLocationInterne(loc, CAISSE_ESP), G_LastError
+    LoginAs "PAT"
+    d0 = Dispo("MUS-0004")
+    Verif "loc_remise", RemettreInterne(loc) And Dispo("MUS-0004") = d0 - 1, G_LastError
+    Verif "loc_retour", RetourLocationInterne(loc, "À réparer", 15000, "Grille abîmée") And CStr(BienValeur("MUS-0004", "État")) = "À réparer", G_LastError
+    LoginAs "FIN"
+    Verif "loc_caution", RestituerCautionInterne(loc, CAISSE_ESP), G_LastError
+    Soldes Date, e1, b1, s1
+    Verif "loc_solde_net", e1 - e0 = 20000 + 15000, CStr(e1 - e0)
+    Verif "loc_cloturee", CStr(WS(SH_LOCATIONS).Cells(r, 13).Value) = "Clôturée"
+    Verif "loc_contrat", RemplirContrat(loc) And InStr(CStr(WS(SH_CONTRAT).Range("B3").Value), loc) > 0
+    ' Achat de materiel sans fiche
+    n = AchatsSansFiche()
+    Saisir Date, CAISSE_ESP, "Dépense", "D04.1", "Achat flûte", "Fournisseur", 9000, "", "", ""
+    num = EnregistrerSaisie(True)
+    Verif "achat_sans_fiche", AchatsSansFiche() = n + 1, n & " -> " & AchatsSansFiche()
+    LoginAs "PAT"
+    code = CreerBienInterne("Flûte", "Matériel de musique", 1, "pièce", Date, "Achat", "Fournisseur", num, 9000)
+    Verif "achat_fiche_creee", AchatsSansFiche() = n
+    ' Inventaire avec ecart
+    n = PreparerInventaireInterne("Inventaire test", Date)
+    Set invs = WS(SH_INVENT)
+    Verif "inventaire_prepare", n > 20, CStr(n)
+    q0 = NumV(BienValeur("MOB-0001", "Quantité"))
+    For i = OUT_FIRST To LastRow(invs, 1, OUT_HDR)
+        If CStr(invs.Cells(i, 1).Value) = "MOB-0001" Then
+            invs.Cells(i, 6).Value = NumV(invs.Cells(i, 5).Value) - 2
+        Else
+            invs.Cells(i, 6).Value = invs.Cells(i, 5).Value
+        End If
+    Next i
+    per = LastRow(WS(SH_PERTES), 1)
+    msg = ValiderInventaireInterne()
+    Verif "inventaire_valide", InStr(msg, "1 écart") > 0 And NumV(BienValeur("MOB-0001", "Quantité")) = q0 - 2 And LastRow(WS(SH_PERTES), 1) = per + 1, Replace(msg, vbCrLf, " ")
+    ' Etiquettes, synthese, fiche, alertes
+    Verif "etiquettes", EtiquettesInterne("MUS") >= 10, CStr(EtiquettesInterne("MUS"))
+    SynthesePatInterne Date
+    Verif "synthese", InStr(CStr(WS(SH_SYNTH).Range("C6").Value), "Valeur nette totale") > 0, CStr(WS(SH_SYNTH).Range("C6").Value)
+    Verif "fiche_bien", FicheBienInterne("MUS-0004") And CStr(WS(SH_FICHEB).Range("C5").Value) = "MUS-0004"
+    RefreshAlerts
+    msg = ""
+    For i = 0 To 8
+        msg = msg & CStr(WS(SH_ACCUEIL).Cells(AlertRow() + i, 2).Value) & " | "
+    Next i
+    Verif "alertes_patrimoine", InStr(msg, "non rendu") > 0 And InStr(msg, "réparer") > 0, msg
 End Sub

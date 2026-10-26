@@ -302,7 +302,9 @@ Private Function TransfererKit(ByVal r As Long) As Long
             If UCase$(CStr(sh.Cells(r, c).Value)) = "OUI" And UCase$(CtrlItem(n, "Va au patrimoine")) = "OUI" Then
                 pr = LastRow(ps, 1) + 1
                 valeur = Val(Replace(CtrlItem(n, "Valeur unitaire estimée (FCFA)"), " ", ""))
-                ps.Cells(pr, ColOf(ps, "Code")).Value = NextPatrimoineCode()
+                ps.Cells(pr, ColOf(ps, "Code")).Value = NextCodeBien(CtrlItem(n, "Catégorie de patrimoine"))
+                ps.Cells(pr, ColOf(ps, "Durée d'amortissement (ans)")).Value = CategorieDuree(CtrlItem(n, "Catégorie de patrimoine"))
+                ps.Cells(pr, ColOf(ps, "Louable")).Value = "NON"
                 ps.Cells(pr, ColOf(ps, "Désignation")).Value = CtrlItem(n, "Élément")
                 ps.Cells(pr, ColOf(ps, "Catégorie")).Value = CtrlItem(n, "Catégorie de patrimoine")
                 ps.Cells(pr, ColOf(ps, "Quantité")).Value = 1
@@ -319,6 +321,7 @@ Private Function TransfererKit(ByVal r As Long) As Long
             End If
         End If
     Next n
+    If TransfererKit > 0 Then RecalculerPatrimoineInterne Date
     If TransfererKit > 0 Then LogAction "Kit ajouté au patrimoine", TransfererKit & " article(s) - " & mat, SH_PAT
 End Function
 

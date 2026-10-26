@@ -127,11 +127,12 @@ Public Function ReprendreDonneesDe(ByVal chemin As String) As String
     Application.EnableEvents = False
     Set src = Workbooks.Open(Filename:=chemin, ReadOnly:=True, UpdateLinks:=False)
     feuilles = Array(SH_MEMBRES, SH_ADH, SH_SEANCES, SH_PRES, SH_PAT, SH_JOURNAL, SH_LISTES, SH_TYPES, SH_CODES, SH_CTRL, _
-                     SH_CAISSE, SH_BUDGET, SH_CAMPAGNES, SH_SOCIAL, SH_ARRETES, SH_PERTES, SH_CLOTURES, SH_RUBRIQUES, SH_BAREME)
+                     SH_CAISSE, SH_BUDGET, SH_CAMPAGNES, SH_SOCIAL, SH_ARRETES, SH_PERTES, SH_CLOTURES, SH_RUBRIQUES, SH_BAREME, _
+                     SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_INVENTS)
     For i = LBound(feuilles) To UBound(feuilles)
         nom = CStr(feuilles(i))
         If FeuilleExiste(src, nom) Then
-            n = CopierTable(src.Worksheets(nom), WS(nom), (nom = SH_LISTES Or nom = SH_TYPES Or nom = SH_CODES Or nom = SH_CTRL Or nom = SH_RUBRIQUES Or nom = SH_BAREME))
+            n = CopierTable(src.Worksheets(nom), WS(nom), (nom = SH_LISTES Or nom = SH_TYPES Or nom = SH_CODES Or nom = SH_CTRL Or nom = SH_RUBRIQUES Or nom = SH_BAREME Or nom = SH_CATPAT))
             rapport = rapport & vbCrLf & "  " & nom & " : " & n & " ligne(s)"
         End If
     Next i
@@ -144,6 +145,8 @@ Public Function ReprendreDonneesDe(ByVal chemin As String) As String
     src.Close SaveChanges:=False
     Set src = Nothing
     SetParam "PREMIERE_OUVERTURE", "NON"
+    CompleterRubriques
+    RecalculerPatrimoineInterne Date
     RefreshChecklistHeaders
     ApplyThemeColors
     EndWork
@@ -283,4 +286,24 @@ Private Sub CopierLogo(ByVal s As Worksheet)
         End If
     Next shp
 Fin:
+End Sub
+
+' Apres reprise d'un fichier plus ancien : ajoute les rubriques livrees avec ce
+' lot qui manqueraient (ex. cautions du lot 3)
+Private Sub CompleterRubriques()
+    Dim codes As Variant, i As Long, rs As Worksheet, r As Long, p As Variant, c As Long
+    codes = Array("R05.2|Recette|Location de matériel|Indemnités pour dégâts|GENERAL", _
+                  "R10.1|Recette|Cautions et dépôts|Cautions reçues|GENERAL", _
+                  "D11.1|Dépense|Cautions et dépôts|Cautions restituées|GENERAL")
+    Set rs = WS(SH_RUBRIQUES)
+    For i = LBound(codes) To UBound(codes)
+        p = Split(codes(i), "|")
+        If RubRow(CStr(p(0))) = 0 Then
+            r = LastRow(rs, 1) + 1
+            For c = 0 To 4
+                rs.Cells(r, c + 1).Value = p(c)
+            Next c
+            rs.Cells(r, 6).Value = "OUI"
+        End If
+    Next i
 End Sub

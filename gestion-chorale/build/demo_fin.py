@@ -77,7 +77,9 @@ def build(info, presences, rubriques, rnd=None):
         add(dt.date(2026, mo, 25), "Espèces", "Recette", "R02.2", "Offrandes du mois", montant=rnd.randrange(20000, 50000, 500))
     add(dt.date(2026, 2, 14), "Banque", "Recette", "R04.1", "Don pour les instruments", tiers="Famille BOUITY (ancien choriste)", montant=100000, recu=True)
     add(dt.date(2026, 7, 5), "Espèces", "Recette", "R04.1", "Don", tiers="Paroissien anonyme", montant=50000, recu=True)
-    add(dt.date(2026, 6, 13), "Espèces", "Recette", "R05.1", "Location sonorisation (contrat du 10/06)", tiers="Groupe Gloire Éternelle", montant=50000, recu=True)
+    add(dt.date(2026, 6, 13), "Espèces", "Recette", "R05.1", "Loyer LOC-2026-001", tiers="Groupe Gloire Éternelle", ref="LOC-2026-001", montant=50000, recu=True, key="loyer")
+    add(dt.date(2026, 6, 13), "Espèces", "Recette", "R10.1", "Caution LOC-2026-001", tiers="Groupe Gloire Éternelle", ref="LOC-2026-001", montant=60000, recu=True, key="caution")
+    add(dt.date(2026, 6, 16), "Espèces", "Dépense", "D11.1", "Restitution caution LOC-2026-001", tiers="Groupe Gloire Éternelle", ref="LOC-2026-001", montant=60000, autor="Contrat LOC-2026-001", key="restit")
     add(dt.date(2026, 3, 21), "Espèces", "Recette", "R07.1", "Salu kia zola - vente de repas", montant=120000)
     # --- Dépenses
     for mo in range(1, 10):
@@ -88,9 +90,9 @@ def build(info, presences, rubriques, rnd=None):
     add(dt.date(2026, 3, 12), "Banque", "Dépense", "D03.1", "Confection de 20 tenues noir-blanc", tiers="Atelier de couture", montant=300000, autor="PV 2026-02")
     add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D02.1", "Transport sortie d'évangélisation Mpita", tiers="Transporteur", montant=80000, autor="PV 2026-04")
     add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D07.1", "Repas sortie d'évangélisation", montant=60000, autor="PV 2026-04")
-    add(dt.date(2026, 7, 18), "Espèces", "Dépense", "D05.1", "Réparation de l'enceinte amplifiée", tiers="Électronicien", montant=45000, autor="PV 2026-07")
+    add(dt.date(2026, 7, 18), "Espèces", "Dépense", "D05.1", "Réparation de l'enceinte amplifiée", tiers="Électronicien", ref="MUS-0004", montant=45000, autor="PV 2026-07", key="repar")
     add(dt.date(2026, 8, 7), "Espèces", "Dépense", "D01.2", "Retraite spirituelle (hébergement)", tiers="Centre d'accueil", montant=150000, autor="PV 2026-07")
-    add(dt.date(2026, 9, 12), "Banque", "Dépense", "D04.2", "Achat d'un micro sans fil", tiers="Fournisseur local", montant=85000, autor="PV 2026-09")
+    add(dt.date(2026, 9, 12), "Banque", "Dépense", "D04.2", "Achat d'un micro sans fil", tiers="Fournisseur local", montant=85000, autor="PV 2026-09", key="micro")
     add(dt.date(2026, 4, 9), "Espèces", "Dépense", "D08.2", "Impression des programmes de cantiques", tiers="Imprimerie", montant=18000, autor="PV 2026-04", key="err")
     # --- Virements espèces -> banque
     for i, d in enumerate([dt.date(2026, 3, 31), dt.date(2026, 6, 30), dt.date(2026, 9, 30)]):
@@ -190,5 +192,5 @@ def build(info, presences, rubriques, rnd=None):
         part = tot // 12
         budget.append(["2026", c, s, r, sr, f, tot or None, None, tot or None] +
                       ([part] * 11 + [tot - 11 * part] if tot else [None] * 12) + [0 if tot else None, "AG du 18/01/2026"])
-    return {"caisse": rows, "budget": budget, "campagnes": campagnes, "social": social, "arretes": arretes,
+    return {"pieces": keys, "caisse": rows, "budget": budget, "campagnes": campagnes, "social": social, "arretes": arretes,
             "pertes": pertes, "clotures": [], "params": dict(OUVERTURE)}

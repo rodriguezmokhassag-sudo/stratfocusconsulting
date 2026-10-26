@@ -69,6 +69,7 @@ PARAMS = [
     ("PAROISSE", "Paroisse de Tchimbambouka", ""),
     ("DEVISE", "Unis, pour annoncer la Bonne Nouvelle de Jésus-Christ", ""),
     ("ADRESSE", "Siège : Paroisse de Tchimbambouka", ""),
+    ("VILLE", "Pointe-Noire", "Ville (contrats, rapports)"),
     ("DATE_CREATION", dt.date(1988, 4, 13), "Date de création du groupe"),
     ("#", "Exercice"),
     ("MOIS_DEBUT_EXERCICE", 1, "Mois de début de l'exercice (1 = janvier)"),
@@ -213,7 +214,7 @@ TITLES = {
     "ADHESIONS": "Nouveaux choristes : dossiers d'adhésion (art. 26 à 28)",
     "SEANCES": "Calendrier des séances",
     "PRESENCES": "Historique des présences (alimenté par le pointage)",
-    "PATRIMOINE": "Patrimoine (version de base - complétée au lot 3)",
+    "PATRIMOINE": "Patrimoine",
     "JOURNAL": "Journal des actions",
     "UTILISATEURS": "Utilisateurs et rôles",
     "TYPES_ACTIVITE": "Types d'activités (jours : LUN MAR MER JEU VEN SAM DIM, séparés par ;)",
@@ -247,6 +248,8 @@ JOURNALED = {"ADHESIONS", "PARAMETRES", "LISTES", "TYPES_ACTIVITE", "CODES_PRESE
 
 import lot2  # noqa: E402
 lot2.register(globals())
+import lot3  # noqa: E402
+lot3.register(globals())
 
 
 def col_letter(i):  # 0-based
@@ -457,8 +460,10 @@ class Builder:
             sec.append([c, s, h])
         self.table("SECURITE", sec, autofilter=False)
         lot2.build_sheets(self)
+        lot3.build_sheets(self)
         self.names()
         lot2.names(self)
+        lot3.names(self)
         for name, ws in self.ws.items():
             if name != "ACCUEIL":
                 ws.very_hidden()
@@ -633,7 +638,8 @@ class Builder:
                         ("L_OUINON", "Oui/Non"), ("L_OUINONNA", "Oui/Non/NA"), ("L_STATUTS_SEANCE", "Statut de séance"),
                         ("L_CAT_PAT", "Catégorie de patrimoine"), ("L_ETATS", "État du bien"),
                         ("L_MODES", "Mode d'acquisition"), ("L_APPLICABLE", "Applicable à")]:
-            wb.define_name(nm, dyn(key))
+            if key in lc:
+                wb.define_name(nm, dyn(key))
         fc = lc["Filtre de type"]
         wb.define_name("L_FILTRE_TYPES", "=OFFSET(LISTES!$%s$%d,0,0,1+COUNTIF(TYPES_ACTIVITE!$A$%d:$A$300,\"?*\"),1)" % (fc, FIRST, FIRST))
         wb.define_name("L_ROLES", "=UTILISATEURS!$B$%d:$B$%d" % (FIRST, FIRST + len(ROLES) - 1))
@@ -653,7 +659,7 @@ def main():
     with open(tmp, "wb") as f:
         f.write(build_vba_project(vba_modules()))
     for fname, data in [("GestionChorale.xlsm", demo.empty_data()),
-                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES, lot2))]:
+                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES, lot2, lot3))]:
         b = Builder(os.path.join(dist, fname), data)
         b.build()
         b.close(tmp)

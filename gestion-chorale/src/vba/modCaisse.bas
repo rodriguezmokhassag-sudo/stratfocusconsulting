@@ -391,6 +391,7 @@ Public Function EnregistrerSaisie(ByVal silencieux As Boolean) As String
         Else
             MsgBox "Écriture " & p1 & IIf(p2 <> "", " / " & p2, "") & " enregistrée.", vbInformation, APP_NAME
         End If
+        If oper = "Dépense" And Left$(code, Len(ParamStr("PREFIXE_ACHAT_MATERIEL", "D04"))) = ParamStr("PREFIXE_ACHAT_MATERIEL", "D04") Then ProposerFicheDepuisPiece p1
     End If
     Exit Function
 EH:

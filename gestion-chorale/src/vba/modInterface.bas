@@ -122,6 +122,22 @@ Private Function SheetButtons(ByVal nom As String) As Variant
             SheetButtons = Array("Imprimer|ImprimerFeuille|A", "Autre reçu|ImprimerRecu|P")
         Case SH_CLOTURES
             SheetButtons = Array("Clôturer un exercice|CloturerExercice|A")
+        Case SH_PAT
+            SheetButtons = Array("Nouveau bien|NouveauBien|P", "Créer depuis un achat|CreerDepuisDepense|P", "Prêter|PreterBien|P", "Réparation|EnvoyerReparation|P", "Perte / sortie|DeclarerPerteBien|P", "Fiche du bien|AfficherFicheBien|P", "Actualiser les valeurs|RecalculerPatrimoine|A")
+        Case SH_MOUV
+            SheetButtons = Array("Retour du matériel|RetourMouvement|A", "Patrimoine|AllerPatrimoine|P")
+        Case SH_LOCATIONS
+            SheetButtons = Array("Nouvelle demande|NouvelleLocation|P", "Ajouter un article|AjouterArticleLocation|P", "Approuver|ApprouverLocation|P", "Encaisser (Finances)|EncaisserLocation|P", "Remettre le matériel|RemettreMateriel|P", "Retour du matériel|RetourLocation|P", "Restituer la caution (Finances)|RestituerCaution|P", "Refuser|RefuserLocation|P", "Contrat|ImprimerContrat|A")
+        Case SH_CONTRAT
+            SheetButtons = Array("Imprimer|ImprimerFeuille|A", "Autre contrat|ImprimerContrat|P")
+        Case SH_ETIQ
+            SheetButtons = Array("Générer les étiquettes|GenererEtiquettes|A", "Imprimer|ImprimerFeuille|P")
+        Case SH_INVENT
+            SheetButtons = Array("Préparer l'inventaire|PreparerInventaire|P", "Imprimer la feuille de comptage|ImprimerFeuille|P", "Valider l'inventaire|ValiderInventaire|A")
+        Case SH_SYNTH
+            SheetButtons = Array("Calculer|CalculerSynthesePat|A", "Imprimer|ImprimerFeuille|P")
+        Case SH_FICHEB
+            SheetButtons = Array("Afficher|AfficherFicheBien|A", "Imprimer|ImprimerFeuille|P")
         Case Else
             SheetButtons = Array()
     End Select
@@ -223,6 +239,11 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Fiche d'appel", SH_FICHE, idx, x0, y0
         NavIfAllowed sh, "Liste électorale", SH_ELEC, idx, x0, y0
         NavIfAllowed sh, "Patrimoine", SH_PAT, idx, x0, y0
+        NavIfAllowed sh, "Prêts et mouvements", SH_MOUV, idx, x0, y0
+        NavIfAllowed sh, "Locations de matériel", SH_LOCATIONS, idx, x0, y0
+        NavIfAllowed sh, "Inventaire physique", SH_INVENT, idx, x0, y0
+        NavIfAllowed sh, "Synthèse du patrimoine", SH_SYNTH, idx, x0, y0
+        NavIfAllowed sh, "Étiquettes", SH_ETIQ, idx, x0, y0
         NavIfAllowed sh, "Saisie de caisse", SH_SAISIE, idx, x0, y0
         NavIfAllowed sh, "Journal de caisse", SH_CAISSE, idx, x0, y0
         NavIfAllowed sh, "Cotisations", SH_COTIS, idx, x0, y0
@@ -243,6 +264,7 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Contrôles d'adhésion", SH_CTRL, idx, x0, y0
         NavIfAllowed sh, "Rubriques budgétaires", SH_RUBRIQUES, idx, x0, y0
         NavIfAllowed sh, "Barème social", SH_BAREME, idx, x0, y0
+        NavIfAllowed sh, "Catégories du patrimoine", SH_CATPAT, idx, x0, y0
         NavIfAllowed sh, "Utilisateurs", SH_USERS, idx, x0, y0
         NavIfAllowed sh, "Journal des actions", SH_JOURNAL, idx, x0, y0
         If idx Mod 4 <> 0 Then idx = idx + (4 - idx Mod 4)
@@ -275,6 +297,11 @@ Public Sub GoSheet()
     End If
     WS(nom).Activate
     ActiveWindow.ScrollRow = 1
+End Sub
+
+Public Sub AllerPatrimoine()
+    If Not RequireLogin() Then Exit Sub
+    WS(SH_PAT).Activate
 End Sub
 
 Public Sub AllerJournal()
@@ -310,8 +337,8 @@ End Sub
 ' ------------------------------------------------------------- theme
 Private Function HeaderRowOf(ByVal nom As String) As Long
     Select Case UCase$(nom)
-        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET: HeaderRowOf = OUT_HDR
-        Case SH_ACCUEIL, SH_RECU: HeaderRowOf = 0
+        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET, SH_INVENT, SH_SYNTH: HeaderRowOf = OUT_HDR
+        Case SH_ACCUEIL, SH_RECU, SH_CONTRAT, SH_ETIQ, SH_FICHEB: HeaderRowOf = 0
         Case Else: HeaderRowOf = HDR
     End Select
 End Function
@@ -360,7 +387,7 @@ Public Sub ApplyThemeColors()
             For Each shp In sh.Shapes
                 If Left$(shp.Name, 4) = "btn_" And shp.Name <> "btn_home" Then
                     If shp.Fill.ForeColor.RGB <> RGB(200, 200, 200) Then
-                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
+                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|RecalculerPatrimoine|RetourMouvement|ImprimerContrat|GenererEtiquettes|ValiderInventaire|CalculerSynthesePat|AfficherFicheBien|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
                             shp.Fill.ForeColor.RGB = ColAccent()
                         Else
                             shp.Fill.ForeColor.RGB = ColPrincipale()
