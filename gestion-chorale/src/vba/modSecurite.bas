@@ -246,6 +246,10 @@ Public Function SheetModule(ByVal nom As String) As String
         Case SH_CANT, SH_PROGS, SH_PROGCH, SH_ETUDES: SheetModule = "CANTIQUES"
         Case SH_PAT, SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_CONTRAT, SH_ETIQ, SH_INVENT, SH_INVENTS, SH_SYNTH, SH_FICHEB
             SheetModule = "PATRIMOINE"
+        Case SH_TB, SH_RAG: SheetModule = "RAPPORTS"
+        Case SH_PMOIS, SH_LIVRE: SheetModule = "FINANCES"
+        Case SH_FMEMBRE: SheetModule = "MEMBRES"
+        Case SH_RPUP: SheetModule = "PRESENCES"
         Case SH_JOURNAL: SheetModule = "JOURNAL"
         Case SH_SAISIE, SH_CAISSE, SH_RUBRIQUES, SH_BUDGET, SH_SUIVI_BUDGET, SH_ARRETE, SH_ARRETES, SH_PERTES, SH_RECU, SH_CLOTURES
             SheetModule = "FINANCES"
@@ -342,6 +346,7 @@ Public Sub ProtectSheet(ByVal sh As Worksheet, ByVal droit As String)
     If G_TestMode Then Exit Sub
     sh.Cells.Locked = True
     If droit = "M" Then UnlockEditable sh
+    If droit <> "" Then UnlockInputs sh
     If sh.Name = SH_ACCUEIL Then sh.Range("D7").MergeArea.Locked = False
     sh.Protect Password:=SYS_PWD, DrawingObjects:=True, Contents:=True, Scenarios:=True, _
         UserInterfaceOnly:=True, AllowFormattingColumns:=True, AllowFormattingRows:=True, AllowFiltering:=True
@@ -359,6 +364,21 @@ Private Sub UnlockCols(ByVal sh As Worksheet, ByVal liste As String, ByVal sauf 
             If inList Xor sauf Then sh.Range(sh.Cells(FIRSTROW, c), sh.Cells(MAXROWS, c)).Locked = False
         End If
     Next c
+End Sub
+
+' Cases de parametrage des rapports : modifiables par tout role qui voit la feuille
+Private Sub UnlockInputs(ByVal sh As Worksheet)
+    Select Case UCase$(sh.Name)
+        Case SH_TB, SH_RAG, SH_PMOIS, SH_FMEMBRE, SH_FICHE, SH_SYNTH, SH_FICHEB, SH_PROGAN, SH_PROGCH, SH_COTIS, SH_SUIVI_CAMP
+            sh.Range("C5").Locked = False
+        Case SH_RPUP, SH_SUIVI_BUDGET
+            sh.Range("C5").Locked = False
+            sh.Range("E5").Locked = False
+        Case SH_LIVRE, SH_TAUX
+            sh.Range("C5").Locked = False
+            sh.Range("E5").Locked = False
+            sh.Range("G5").Locked = False
+    End Select
 End Sub
 
 Private Sub UnlockEditable(ByVal sh As Worksheet)
@@ -561,6 +581,7 @@ Public Sub Logout(Optional ByVal confirmer_ As Boolean = False)
     G_Role = "": G_RoleLabel = "": G_Holder = "": G_Interim = ""
     Set m_Rights = Nothing
     BeginWork
+    ViderTableauBord
     HideAll
     ProtectSheet WS(SH_ACCUEIL), "L"
     BuildHome

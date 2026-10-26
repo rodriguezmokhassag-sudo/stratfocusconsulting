@@ -253,6 +253,8 @@ import lot3  # noqa: E402
 lot3.register(globals())
 import lot4  # noqa: E402
 lot4.register(globals())
+import lot5  # noqa: E402
+lot5.register(globals())
 
 
 def col_letter(i):  # 0-based
@@ -465,6 +467,7 @@ class Builder:
         lot2.build_sheets(self)
         lot3.build_sheets(self)
         lot4.build_sheets(self)
+        lot5.build_sheets(self)
         self.names()
         lot2.names(self)
         lot3.names(self)

@@ -1,0 +1,20 @@
+body { font-family: "Calibri", "Carlito", "Segoe UI", sans-serif; font-size: 10.5pt; line-height: 1.45; color: #222; max-width: none; margin: 0; padding: 0; }
+header#title-block-header { text-align: center; padding: 60mm 0 30mm; page-break-after: always; }
+h1.title { font-size: 36pt; color: #1E7B4A; background: none; page-break-before: avoid; margin-bottom: 4mm; padding: 0; }
+p.subtitle { font-size: 14pt; color: #555; }
+nav#TOC { page-break-after: always; }
+nav#TOC > ul { list-style: none; padding-left: 0; }
+nav#TOC ul ul { list-style: none; padding-left: 6mm; font-size: 9.5pt; }
+nav#TOC a { color: #222; text-decoration: none; }
+h1 { color: #fff; background: #1E7B4A; padding: 3mm 4mm; font-size: 18pt; page-break-before: always; margin-top: 0; }
+h2 { color: #1E7B4A; border-bottom: 2px solid #1E7B4A; padding-bottom: 1mm; font-size: 13.5pt; margin-top: 7mm; page-break-after: avoid; }
+h3 { color: #1E7B4A; font-size: 11.5pt; page-break-after: avoid; }
+table { border-collapse: collapse; margin: 3mm 0; width: 100%; font-size: 9.5pt; page-break-inside: avoid; }
+th { background: #1E7B4A; color: #fff; padding: 1.5mm 2mm; text-align: left; }
+td { border-bottom: 1px solid #ddd; padding: 1.2mm 2mm; vertical-align: top; }
+tr:nth-child(even) td { background: #F3F8F5; }
+code { background: #F0F0F0; padding: 0 1mm; border-radius: 2px; font-size: 9.5pt; }
+figure { margin: 4mm 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; max-height: 120mm; border: 1px solid #ccc; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+figcaption { font-size: 9pt; color: #666; font-style: italic; margin-top: 1.5mm; }
+strong { color: #111; }

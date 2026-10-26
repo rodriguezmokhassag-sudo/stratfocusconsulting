@@ -6,6 +6,8 @@ Option Explicit
 ' ils couvrent les mois les plus anciens d'abord.
 ' =============================================================================
 
+Public G_CotisTaux As Double   ' taux de recouvrement du dernier calcul (paye / du)
+
 Private Function MoisNum(ByVal d As Date) As Long
     MoisNum = Year(d) * 12 + Month(d) - 1
 End Function
@@ -149,6 +151,7 @@ Public Sub CotisationsInterne(ByVal asOf As Date, ByVal ecrire As Boolean, ByRef
             End If
         End If
     Next r
+    If totDu > 0 Then G_CotisTaux = totPaye / totDu Else G_CotisTaux = 0
     If ecrire Then
         cs.Range("A" & OUT_FIRST & ":P" & MAXROWS).ClearContents
         cs.Range("A" & OUT_FIRST & ":P" & MAXROWS).Interior.ColorIndex = xlNone

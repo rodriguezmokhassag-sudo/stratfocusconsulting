@@ -79,7 +79,7 @@ End Function
 Private Function SheetButtons(ByVal nom As String) As Variant
     Select Case UCase$(nom)
         Case SH_MEMBRES
-            SheetButtons = Array("Nouveau membre|NouveauMembre|P", "Rechercher|RechercherMembre|P", "Dossier d'adhésion|OuvrirDossierMembre|P")
+            SheetButtons = Array("Nouveau membre|NouveauMembre|P", "Rechercher|RechercherMembre|P", "Dossier d'adhésion|OuvrirDossierMembre|P", "Fiche du membre|AfficherFicheMembre|P")
         Case SH_ADH
             SheetButtons = Array("Actualiser les dossiers|ActualiserDossiers|P", "Appliquer les décisions|AppliquerDecisions|A")
         Case SH_SEANCES
@@ -93,7 +93,7 @@ Private Function SheetButtons(ByVal nom As String) As Variant
         Case SH_FICHE
             SheetButtons = Array("Générer la fiche|GenererFicheAppel|A", "Imprimer|ImprimerFeuille|P")
         Case SH_PARAM
-            SheetButtons = Array("Thème et couleurs|ChoisirTheme|P", "Importer le logo|ImporterLogo|P", "Reprendre un ancien fichier|ReprendreAncienFichier|P")
+            SheetButtons = Array("Thème et couleurs|ChoisirTheme|P", "Importer le logo|ImporterLogo|P", "Couleurs du logo|CouleursDepuisLogo|P", "Reprendre un ancien fichier|ReprendreAncienFichier|P")
         Case SH_USERS
             SheetButtons = Array("Réinitialiser un mot de passe|ReinitialiserMotDePasse|A")
         Case SH_CTRL
@@ -162,6 +162,18 @@ Private Function SheetButtons(ByVal nom As String) As Variant
             SheetButtons = Array("Afficher|AfficherProgrammeChants|A", "Contrôler|ControlerProgramme|P", "Imprimer|ImprimerFeuille|P")
         Case SH_ETUDES
             SheetButtons = Array("Nouvelle étude|NouvelleEtude|A", "Créer la séance|CreerSeanceEtude|P", "Actualiser|ActualiserEtudes|P")
+        Case SH_TB
+            SheetButtons = Array("Actualiser|ActualiserTableauBord|A", "Exporter en PDF|ExporterPDF|P")
+        Case SH_RAG
+            SheetButtons = Array("Calculer|CalculerRapportAG|A", "Exporter en PDF|ExporterPDF|P", "Dossier complet de l'AG (PDF)|DossierAGPDF|P")
+        Case SH_PMOIS
+            SheetButtons = Array("Calculer|CalculerPointMensuel|A", "Exporter en PDF|ExporterPDF|P")
+        Case SH_LIVRE
+            SheetButtons = Array("Calculer|CalculerLivreCaisse|A", "Exporter en PDF|ExporterPDF|P")
+        Case SH_FMEMBRE
+            SheetButtons = Array("Afficher|AfficherFicheMembre|A", "Exporter en PDF|ExporterPDF|P")
+        Case SH_RPUP
+            SheetButtons = Array("Calculer|CalculerRapportPupitres|A", "Exporter en PDF|ExporterPDF|P")
         Case Else
             SheetButtons = Array()
     End Select
@@ -254,12 +266,18 @@ Public Sub BuildHome()
         nRows = 1
     Else
         sh.Range("B10").Offset(3, 0).Value = ""
+        NavIfAllowed sh, "Tableau de bord", SH_TB, idx, x0, y0
+        NavIfAllowed sh, "Rapport pour l'AG", SH_RAG, idx, x0, y0
+        NavIfAllowed sh, "Point financier du mois", SH_PMOIS, idx, x0, y0
+        NavIfAllowed sh, "Livre de caisse", SH_LIVRE, idx, x0, y0
         NavIfAllowed sh, "Membres", SH_MEMBRES, idx, x0, y0
+        NavIfAllowed sh, "Fiche d'un membre", SH_FMEMBRE, idx, x0, y0
         NavIfAllowed sh, "Nouveaux choristes", SH_ADH, idx, x0, y0
         NavIfAllowed sh, "Calendrier des séances", SH_SEANCES, idx, x0, y0
         NavIfAllowed sh, "Pointage d'une séance", SH_POINTAGE, idx, x0, y0
         NavIfAllowed sh, "Historique des présences", SH_PRES, idx, x0, y0
         NavIfAllowed sh, "Taux de participation", SH_TAUX, idx, x0, y0
+        NavIfAllowed sh, "Pupitres et commissions", SH_RPUP, idx, x0, y0
         NavIfAllowed sh, "Fiche d'appel", SH_FICHE, idx, x0, y0
         NavIfAllowed sh, "Liste électorale", SH_ELEC, idx, x0, y0
         NavIfAllowed sh, "Patrimoine", SH_PAT, idx, x0, y0
@@ -285,7 +303,6 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Répertoire des cantiques", SH_CANT, idx, x0, y0
         NavIfAllowed sh, "Programmes des chants", SH_PROGS, idx, x0, y0
         NavIfAllowed sh, "Études bibliques", SH_ETUDES, idx, x0, y0
-        FutureIfAllowed sh, "Tableau de bord (lot 5)", "RAPPORTS", idx, x0, y0
         NavIfAllowed sh, "Paramètres", SH_PARAM, idx, x0, y0
         NavIfAllowed sh, "Listes de choix", SH_LISTES, idx, x0, y0
         NavIfAllowed sh, "Types d'activités", SH_TYPES, idx, x0, y0
@@ -381,8 +398,8 @@ End Sub
 ' ------------------------------------------------------------- theme
 Private Function HeaderRowOf(ByVal nom As String) As Long
     Select Case UCase$(nom)
-        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET, SH_INVENT, SH_SYNTH, SH_PROGAN, SH_PROGCH: HeaderRowOf = OUT_HDR
-        Case SH_ACCUEIL, SH_RECU, SH_CONTRAT, SH_ETIQ, SH_FICHEB, SH_NOTIF, SH_PV: HeaderRowOf = 0
+        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET, SH_INVENT, SH_SYNTH, SH_PROGAN, SH_PROGCH, SH_TB, SH_LIVRE, SH_RPUP: HeaderRowOf = OUT_HDR
+        Case SH_ACCUEIL, SH_RECU, SH_CONTRAT, SH_ETIQ, SH_FICHEB, SH_NOTIF, SH_PV, SH_RAG, SH_PMOIS, SH_FMEMBRE: HeaderRowOf = 0
         Case Else: HeaderRowOf = HDR
     End Select
 End Function
@@ -422,6 +439,7 @@ Public Sub ApplyThemeColors()
             End If
             Select Case UCase$(sh.Name)
                 Case SH_POINTAGE, SH_FICHE, SH_PROGAN, SH_PROGCH: sh.Range("C5").Interior.Color = RGB(255, 242, 153)
+                Case SH_TB, SH_RPUP, SH_LIVRE: ColorerGraphiques sh
                 Case SH_TAUX
                     sh.Range("C5").Interior.Color = RGB(255, 242, 153)
                     sh.Range("E5").Interior.Color = RGB(255, 242, 153)
@@ -432,7 +450,7 @@ Public Sub ApplyThemeColors()
             For Each shp In sh.Shapes
                 If Left$(shp.Name, 4) = "btn_" And shp.Name <> "btn_home" Then
                     If shp.Fill.ForeColor.RGB <> RGB(200, 200, 200) Then
-                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|RecalculerPatrimoine|RetourMouvement|ImprimerContrat|GenererEtiquettes|ValiderInventaire|CalculerSynthesePat|AfficherFicheBien|NouveauDossier|ValiderActivite|CalculerProgrammeAnnuel|AllerScrutins|ProclamerResultats|ActualiserRepertoire|AjouterAuProgramme|AfficherProgrammeChants|NouvelleEtude|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
+                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|RecalculerPatrimoine|RetourMouvement|ImprimerContrat|GenererEtiquettes|ValiderInventaire|CalculerSynthesePat|AfficherFicheBien|NouveauDossier|ValiderActivite|CalculerProgrammeAnnuel|AllerScrutins|ProclamerResultats|ActualiserRepertoire|AjouterAuProgramme|AfficherProgrammeChants|NouvelleEtude|ActualiserTableauBord|CalculerRapportAG|CalculerPointMensuel|CalculerLivreCaisse|AfficherFicheMembre|CalculerRapportPupitres|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
                             shp.Fill.ForeColor.RGB = ColAccent()
                         Else
                             shp.Fill.ForeColor.RGB = ColPrincipale()
@@ -446,6 +464,22 @@ Public Sub ApplyThemeColors()
         End If
     Next sh
     ApplyHomeColors
+End Sub
+
+' Couleurs des series des graphiques (tableau de bord, pupitres) selon le theme
+Private Sub ColorerGraphiques(ByVal sh As Worksheet)
+    Dim co As Object, i As Long
+    If G_TestMode Then Exit Sub
+    On Error Resume Next
+    For Each co In sh.ChartObjects
+        For i = 1 To co.Chart.SeriesCollection.Count
+            If co.Chart.SeriesCollection(i).ChartType <> xlLine And co.Chart.SeriesCollection(i).ChartType <> xlLineMarkers Then
+                co.Chart.SeriesCollection(i).Format.Fill.ForeColor.RGB = IIf(i = 1, ColPrincipale(), ColAccent())
+            ElseIf co.Chart.SeriesCollection(i).Name <> "Trésorerie" Then
+                co.Chart.SeriesCollection(i).Format.Line.ForeColor.RGB = ColPrincipale()
+            End If
+        Next i
+    Next co
 End Sub
 
 Private Function PickColor(ByVal titre As String, ByVal actuelle As Long) As Long
@@ -483,7 +517,7 @@ Public Sub ChoisirTheme()
     End Select
 End Sub
 
-Private Sub SetTheme(ByVal nom As String, ByVal p As String, ByVal s As String, ByVal a As String)
+Public Sub SetTheme(ByVal nom As String, ByVal p As String, ByVal s As String, ByVal a As String)
     BeginWork
     SetParam "THEME", nom
     SetParam "COULEUR_PRINCIPALE", p
@@ -517,9 +551,10 @@ Public Sub ImporterLogo()
     shp.Height = 80
     shp.Placement = xlMove
     ProtectSheet sh, "L"
+    SetParam "LOGO_FICHIER", CStr(f)
     EndWork
     LogAction "Logo importé", CStr(f), SH_ACCUEIL
-    If MsgBox("Logo importé. Voulez-vous maintenant choisir les couleurs du thème ?", vbYesNo + vbQuestion, APP_NAME) = vbYes Then ChoisirTheme
+    If MsgBox("Logo importé. Voulez-vous des couleurs de thème proposées à partir du logo ?", vbYesNo + vbQuestion, APP_NAME) = vbYes Then CouleursDepuisLogo
     Exit Sub
 EH:
     ShowError "Import du logo"

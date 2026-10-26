@@ -76,6 +76,8 @@ Public Sub T_All()
     Etape "T_Patrimoine"
     T_Lot4
     Etape "T_Lot4"
+    T_Lot5
+    Etape "T_Lot5"
     T_Logout
     Etape "T_Logout"
 End Sub
@@ -335,6 +337,19 @@ Public Sub T_Vierge()
     Verif "v_etude", NouvelleEtudeInterne(Date, "Étude biblique", "Thème", "", "", "") = FIRSTROW
     RefreshAlerts
     Etape "v_alertes_lot4"
+    ' Lot 5 sur le modele vierge
+    LoginAs "ADMIN"
+    TableauBordInterne Date
+    Etape "v_tableau_bord"
+    RapportPupitresInterne DateSerial(Year(Date), 1, 1), Date
+    Etape "v_pupitres"
+    Verif "v_livre", LivreCaisseInterne(DateSerial(Year(Date), 1, 1), Date, "Toutes") = 2
+    PointMensuelInterne Date
+    Etape "v_point_mensuel"
+    Verif "v_fiche", FicheMembreInterne("ADC-0001", Date)
+    RapportAGInterne ExerciceDe(Date)
+    Etape "v_rapport_ag"
+    Verif "v_dossier_ag", UBound(Split(PreparerDossierAG(ExerciceDe(Date)), "|")) = 4
     Verif "v_fin", True
 End Sub
 
@@ -526,12 +541,12 @@ Public Sub T_PerfFin()
     Verif "perf_suivi_budget", True, Format$(Timer - t, "0.0") & " s"
 End Sub
 
-' Reprise du fichier de demonstration du lot 3 dans le modele vierge du lot 4
+' Reprise du fichier de demonstration du lot 4 dans le modele vierge du lot 5
 Public Sub T_Reprise()
     Dim rapport As String
     T_Init
     LoginAs "ADMIN"
-    rapport = ReprendreDonneesDe("/tmp/claude-0/lot3_demo.xlsm")
+    rapport = ReprendreDonneesDe("/tmp/claude-0/lot4_demo.xlsm")
     Verif "reprise_rapport", InStr(rapport, "MEMBRES : 100") > 0, Replace(rapport, vbCrLf, " ")
     Verif "reprise_membre", MembreRow("ADC-0100") > 0
     Verif "reprise_presences", LastRow(WS(SH_PRES), 1) - HDR > 10000, CStr(LastRow(WS(SH_PRES), 1) - HDR)
@@ -543,8 +558,13 @@ Public Sub T_Reprise()
     Verif "reprise_patrimoine", BienRow("MUS-0001") > 0 And NumV(BienValeur("MUS-0001", "Durée d'amortissement (ans)")) > 0, CStr(BienValeur("MUS-0001", "Durée d'amortissement (ans)"))
     Verif "reprise_rubriques_lot3", RubRow("R10.1") > 0 And RubRow("D11.1") > 0
     Verif "reprise_mouvements", LastRow(WS(SH_MOUV), 1) > FIRSTROW And LastRow(WS(SH_LOCATIONS), 1) >= FIRSTROW
-    Verif "reprise_titulaires", TitulaireDe("RESP1") <> "" And TitulaireDe("DIR") = "", TitulaireDe("RESP1")
+    Verif "reprise_titulaires", TitulaireDe("RESP1") <> "" And TitulaireDe("DIR") <> "", TitulaireDe("DIR")
     Verif "reprise_role_dir", CheckPassword("DIR", "chorale")
+    Verif "reprise_lot4", DisciplineRow("DIS-2026-007") > 0 And ActiviteRow("ACT-2026-09") > 0 And CantiqueRow("CAN-040") > 0 And ScrutinRow("EL-2025-01") > 0
+    Verif "reprise_param_lot5", ParamStr("DOSSIER_RAPPORTS", "x") = "x" And ParamStr("NOM_GROUPE") <> ""
+    LoginAs "ADMIN"
+    TableauBordInterne Date
+    Verif "reprise_tableau_bord", NumV(WS(SH_TB).Range("H9").Value) > 0
     Verif "reprise_listes_lot4", ListValues("Sanction").Count = 7 And ListValues("Recueil").Count > 0
     Verif "reprise_param_lot4", ParamNum("EXCLUSION_TEMP_MAX_JOURS", 0) = 15
     LoginAs "DIR"
@@ -825,4 +845,126 @@ Public Sub T_Lot4()
     Next i
     Verif "l4_alertes_accueil", InStr(txt, "Discipline") > 0 And InStr(txt, "Mandats") > 0 And InStr(txt, "Cantiques") > 0, txt
     Verif "l4_alertes_sous_menu", AlertRow() > 34, CStr(AlertRow())
+End Sub
+
+' ============================================================ lot 5
+Private Function Ligne(ByVal sh As String, ByVal col As Long, ByVal txt As String) As Long
+    Dim w As Worksheet, r As Long
+    Set w = WS(sh)
+    For r = 1 To 400
+        If InStr(1, CStr(w.Cells(r, col).Value), txt) > 0 Then
+            Ligne = r
+            Exit Function
+        End If
+    Next r
+End Function
+
+Public Sub T_Lot5()
+    Dim tb As Worksheet, r As Long, e As Double, b As Double, so As Double, n As Long, rp As Worksheet, px() As Long, i As Long
+    Dim dom() As Long, props As Variant, c() As String, noms As String, t0 As Double
+    T_Init
+    Set tb = WS(SH_TB)
+    ' --- tableau de bord (administrateur : tous les domaines)
+    LoginAs "ADMIN"
+    t0 = Timer
+    TableauBordInterne Date
+    Verif "l5_perf_tableau", True, Format$(Timer - t0, "0.0") & " s"
+    r = Ligne(SH_TB, 2, "Membres actifs")
+    Verif "l5_tb_membres", r > 0 And NumV(tb.Cells(r, 3).Value) > 80, CStr(tb.Cells(r, 3).Value)
+    Verif "l5_tb_domaines", Ligne(SH_TB, 1, "Finances") > 0 And Ligne(SH_TB, 1, "Discipline") > 0 And Ligne(SH_TB, 1, "Cantiques") > 0 And Ligne(SH_TB, 1, "Mandats") > 0
+    Verif "l5_tb_mois", CStr(tb.Range("F9").Value) = "janv. 26" And NumV(tb.Range("G9").Value) > 0.3 And NumV(tb.Range("G9").Value) <= 1 And NumV(tb.Range("H9").Value) > 0, _
+        tb.Range("F9").Value & " " & tb.Range("G9").Value & " " & tb.Range("H9").Value
+    Soldes DateSerial(2026, 9, 30), e, b, so
+    Verif "l5_tb_tresorerie", NumV(tb.Range("J17").Value) = e + b, tb.Range("J17").Value & " / " & (e + b)
+    Verif "l5_tb_pupitres", CStr(tb.Range("F24").Value) = "Soprano" And NumV(tb.Range("G24").Value) > 0 And NumV(tb.Range("H24").Value) > 0, tb.Range("G24").Value & " " & tb.Range("H24").Value
+    Verif "l5_cotis_taux", G_CotisTaux > 0 And G_CotisTaux <= 1.5, CStr(G_CotisTaux)
+    ' --- droits : le Directeur de choeur ne voit pas les finances, les Finances ne voient pas la discipline
+    LoginAs "DIR"
+    TableauBordInterne Date
+    Verif "l5_tb_dir", Ligne(SH_TB, 1, "Finances") = 0 And CStr(tb.Range("H9").Value) = "" And Ligne(SH_TB, 1, "Cantiques") > 0 And Ligne(SH_TB, 1, "Mandats") = 0
+    LoginAs "FIN"
+    TableauBordInterne Date
+    Verif "l5_tb_fin", Ligne(SH_TB, 1, "Finances") > 0 And Ligne(SH_TB, 1, "Discipline") = 0
+    Verif "l5_droit_livre", RightOf(SH_LIVRE) <> "" And RightOf(SH_FMEMBRE) = "L" And RightOf(SH_RPUP) = ""
+    Verif "l5_fiche_sans_discipline", FicheMembreInterne("ADC-0023", Date) And Ligne(SH_FMEMBRE, 1, "Discipline") = 0 And Ligne(SH_FMEMBRE, 1, "Cotisations") > 0
+    LoginAs "ADMIN"
+    Verif "l5_fiche", FicheMembreInterne("ADC-0023", Date) And Ligne(SH_FMEMBRE, 1, "Discipline (confidentiel)") > 0 And Ligne(SH_FMEMBRE, 1, "Assiduité") > 0
+    ' --- pupitres et commissions
+    Set rp = WS(SH_RPUP)
+    RapportPupitresInterne DateSerial(2026, 1, 1), Date
+    Verif "l5_pupitres", CStr(rp.Range("A9").Value) = "Soprano" And NumV(rp.Range("B9").Value) > 0 And NumV(rp.Range("E9").Value) > 0 And NumV(rp.Range("I9").Value) > 0, _
+        rp.Range("B9").Value & " " & rp.Range("E9").Value & " " & rp.Range("I9").Value
+    Verif "l5_pupitres_total", CStr(rp.Range("A15").Value) = "Ensemble de la chorale" And NumV(rp.Range("B15").Value) >= NumV(rp.Range("B9").Value) + NumV(rp.Range("B10").Value), CStr(rp.Range("B15").Value)
+    Verif "l5_commissions", CStr(rp.Range("A19").Value) = "Organisation" And NumV(rp.Range("B19").Value) > 0 And NumV(rp.Range("E19").Value) > 0
+    ' --- livre de caisse et point mensuel
+    n = LivreCaisseInterne(DateSerial(2026, 9, 1), DateSerial(2026, 9, 30), CAISSE_ESP)
+    Soldes DateSerial(2026, 9, 30), e, b, so
+    Verif "l5_livre", n > 5 And NumV(WS(SH_LIVRE).Cells(OUT_FIRST + n + 1, 9).Value) = e, n & " ; " & WS(SH_LIVRE).Cells(OUT_FIRST + n + 1, 9).Value & " / " & e
+    n = LivreCaisseInterne(DateSerial(2026, 1, 1), DateSerial(2026, 9, 30), "Toutes")
+    Verif "l5_livre_toutes", NumV(WS(SH_LIVRE).Cells(OUT_FIRST + n + 1, 9).Value) = e + b
+    PointMensuelInterne DateSerial(2026, 9, 15)
+    r = Ligne(SH_PMOIS, 1, "Solde à la fin du mois")
+    Verif "l5_point_mensuel", r > 0 And NumV(WS(SH_PMOIS).Cells(r, 4).Value) = e + b And Ligne(SH_PMOIS, 1, "2. Recettes") > 0 And Ligne(SH_PMOIS, 1, "4. Cotisations") > 0, CStr(r)
+    ' --- rapport AG
+    RapportAGInterne "2026"
+    Verif "l5_rapport_ag", Ligne(SH_RAG, 1, "1. Effectif") > 0 And Ligne(SH_RAG, 1, "4. Situation financière") > 0 And Ligne(SH_RAG, 1, "8. Vie spirituelle") > 0 And _
+        Ligne(SH_RAG, 1, "RÉSULTAT DE L'EXERCICE") > 0 And Ligne(SH_RAG, 1, "Trimestre 3") > 0
+    noms = PreparerDossierAG("2026")
+    Verif "l5_dossier_ag", UBound(Split(noms, "|")) = 4, noms
+    Verif "l5_nom_pdf", Right$(NomPDF("Test"), 4) = ".pdf" And InStr(NomPDF("Test"), "Rapports") > 0
+    ' --- couleurs proposees a partir du logo
+    ReDim px(1 To 1000)
+    For i = 1 To 1000
+        If i <= 600 Then
+            px(i) = ArgbPixel(30, 123, 74)
+        ElseIf i <= 800 Then
+            px(i) = ArgbPixel(255, 255, 255)
+        ElseIf i <= 950 Then
+            px(i) = ArgbPixel(200, 16, 46)
+        Else
+            px(i) = 0   ' transparent
+        End If
+    Next i
+    n = CouleursDominantes(px, 1000, dom)
+    Verif "l5_dominantes", n = 2 And dom(1) = ArgbPixel(30, 123, 74) And dom(2) = ArgbPixel(200, 16, 46), CStr(n)
+    props = PropositionsCouleurs(px, 1000)
+    c = Split(CStr(props(0)), ";")
+    Verif "l5_propositions", UBound(props) = 2 And c(0) = "#1E7B4A" And Left$(c(2), 1) = "#" And c(1) <> c(0), CStr(props(0)) & " | " & CStr(props(1)) & " | " & CStr(props(2))
+    ApercuPropositions props
+    Verif "l5_apercu", WS(SH_PARAM).Cells(FIRSTROW, 6).Interior.Color = HexToRGB(c(0))
+    EffacerApercu
+    Verif "l5_apercu_efface", CStr(WS(SH_PARAM).Cells(FIRSTROW, 6).Value) = ""
+    ' --- deconnexion : le tableau de bord est vide
+    TableauBordInterne Date
+    ViderTableauBord
+    Verif "l5_tb_vide", CStr(tb.Range("C9").Value) = "" And CStr(tb.Range("H9").Value) = ""
+End Sub
+
+
+' Remplit les rapports du lot 5 pour un apercu visuel (captures du guide)
+Public Sub T_Visu5()
+    T_Init
+    LoginAs "ADMIN"
+    WS(SH_TAUX).Range("C5").Value = DateSerial(2026, 1, 1)
+    WS(SH_TAUX).Range("E5").Value = DateSerial(2026, 10, 26)
+    WS(SH_TAUX).Range("G5").Value = "TOUS"
+    CalculerTaux
+    WS(SH_POINTAGE).Range("C5").Value = "S20261010-REP"
+    ChargerPointage
+    SuiviBudgetInterne "2026", 10
+    WS(SH_COTIS).Range("C5").Value = Date
+    CalculerCotisations
+    TableauBordInterne Date
+    RapportPupitresInterne DateSerial(2026, 1, 1), Date
+    LivreCaisseInterne DateSerial(2026, 9, 1), DateSerial(2026, 9, 30), "Toutes"
+    PointMensuelInterne DateSerial(2026, 9, 15)
+    FicheMembreInterne "ADC-0023", Date
+    RapportAGInterne "2026"
+    RemplirNotification "DIS-2026-005"
+    Saisir Date, CAISSE_ESP, "Recette", "R02.1 - Collectes ordinaires", "Collecte du culte", "", 24500, "", "", ""
+    AfficherSoldes
+    RemplirProgrammeChants DateSerial(2026, 11, 1)
+    ProgrammeAnnuelInterne "2026"
+    SynthesePatInterne Date
+    Verif "visu5", True
 End Sub

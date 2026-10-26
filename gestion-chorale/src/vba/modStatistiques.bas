@@ -135,6 +135,50 @@ Public Sub MemberRate(ByVal mat As String, ByVal d1 As Date, ByVal d2 As Date, B
     Next k
 End Sub
 
+' Agregation en une seule lecture des presences (charger d'abord LoadPresenceCache).
+' Groupe d'une presence : mois de la seance (aaaa-mm) si parMois, sinon grp(matricule),
+' qui peut contenir plusieurs groupes separes par "|". Renvoie le nombre de groupes.
+Public Function AgregerPresences(ByVal d1 As Date, ByVal d2 As Date, ByVal grp As Collection, ByVal parMois As Boolean, _
+                                 ByRef noms() As String, ByRef att() As Double, ByRef pond() As Double) As Long
+    Dim k As Long, code As String, g As String, parts() As String, j As Long, idx As New Collection, n As Long, i As Long, mat As String
+    ReDim noms(1 To 200): ReDim att(1 To 200): ReDim pond(1 To 200)
+    For k = 1 To m_PN
+        If RowInScope(k, d1, d2, "TOUS") Then
+            code = CStr(m_P(k, 6))
+            If Not CodeExclu(code) Then
+                g = ""
+                If parMois Then
+                    g = Format$(AsDate(m_P(k, 2)), "yyyy-mm")
+                Else
+                    mat = CStr(m_P(k, 4))
+                    If KeyExists(grp, mat) Then g = CStr(grp.Item(mat))
+                End If
+                If g <> "" Then
+                    parts = Split(g, "|")
+                    For j = LBound(parts) To UBound(parts)
+                        i = 0
+                        If parts(j) <> "" Then
+                            If KeyExists(idx, parts(j)) Then
+                                i = idx.Item(parts(j))
+                            ElseIf n < 200 Then
+                                n = n + 1
+                                i = n
+                                noms(n) = parts(j)
+                                idx.Add n, parts(j)
+                            End If
+                        End If
+                        If i > 0 Then
+                            att(i) = att(i) + 1
+                            pond(i) = pond(i) + CodePoids(code)
+                        End If
+                    Next j
+                End If
+            End If
+        End If
+    Next k
+    AgregerPresences = n
+End Function
+
 ' ------------------------------------------------------------- taux
 Private Sub SetPeriode(ByVal d1 As Date, ByVal d2 As Date)
     With WS(SH_TAUX)
