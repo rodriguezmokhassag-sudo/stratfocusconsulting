@@ -138,6 +138,30 @@ Private Function SheetButtons(ByVal nom As String) As Variant
             SheetButtons = Array("Calculer|CalculerSynthesePat|A", "Imprimer|ImprimerFeuille|P")
         Case SH_FICHEB
             SheetButtons = Array("Afficher|AfficherFicheBien|A", "Imprimer|ImprimerFeuille|P")
+        Case SH_DISC
+            SheetButtons = Array("Nouveau dossier|NouveauDossier|A", "Décision du Bureau|DeciderDossier|P", "Notification|NotifierSanction|P", "Lever la sanction|LeverSanction|P", "Appliquer les statuts|AppliquerSanctions|P")
+        Case SH_NOTIF
+            SheetButtons = Array("Imprimer|ImprimerFeuille|A", "Autre notification|NotifierSanction|P")
+        Case SH_PLAN
+            SheetButtons = Array("Nouvelle activité|NouvelleActivite|P", "Planning voté en AG|VoterPlanning|P", "Validation paroissiale|ValidationParoissiale|P", "Valider l'activité|ValiderActivite|A", "Annuler|AnnulerActivite|P", "Actualiser le réalisé|ActualiserPlanning|P", "Programme annuel|CalculerProgrammeAnnuel|P")
+        Case SH_PROGAN
+            SheetButtons = Array("Calculer|CalculerProgrammeAnnuel|A", "Imprimer|ImprimerFeuille|P")
+        Case SH_MANDATS
+            SheetButtons = Array("Nouveau mandat|NouveauMandat|P", "Fin anticipée|TerminerMandat|P", "Élections|AllerScrutins|A")
+        Case SH_SCRUTINS
+            SheetButtons = Array("Nouveau scrutin|NouveauScrutin|P", "Ajouter un candidat|AjouterCandidat|P", "Proclamer les résultats|ProclamerResultats|A", "Procès-verbal|ImprimerPV|P")
+        Case SH_CAND
+            SheetButtons = Array("Ajouter un candidat|AjouterCandidat|P", "Proclamer les résultats|ProclamerResultats|A", "Procès-verbal|ImprimerPV|P")
+        Case SH_PV
+            SheetButtons = Array("Imprimer|ImprimerFeuille|A", "Autre PV|ImprimerPV|P")
+        Case SH_CANT
+            SheetButtons = Array("Nouveau cantique|NouveauCantique|P", "Actualiser le répertoire|ActualiserRepertoire|A")
+        Case SH_PROGS
+            SheetButtons = Array("Ajouter un chant|AjouterAuProgramme|A", "Contrôler le programme|ControlerProgramme|P", "Programme à imprimer|AfficherProgrammeChants|P")
+        Case SH_PROGCH
+            SheetButtons = Array("Afficher|AfficherProgrammeChants|A", "Contrôler|ControlerProgramme|P", "Imprimer|ImprimerFeuille|P")
+        Case SH_ETUDES
+            SheetButtons = Array("Nouvelle étude|NouvelleEtude|A", "Créer la séance|CreerSeanceEtude|P", "Actualiser|ActualiserEtudes|P")
         Case Else
             SheetButtons = Array()
     End Select
@@ -203,7 +227,7 @@ Private Sub FutureIfAllowed(ByVal sh As Worksheet, ByVal caption As String, ByVa
 End Sub
 
 Public Sub BuildHome()
-    Dim sh As Worksheet, idx As Long, x0 As Single, y0 As Single, nRows As Long, logo As Shape
+    Dim sh As Worksheet, idx As Long, x0 As Single, y0 As Single, nRows As Long, logo As Shape, ar As Long
     Set sh = WS(SH_ACCUEIL)
     On Error Resume Next
     sh.Unprotect SYS_PWD
@@ -253,9 +277,14 @@ Public Sub BuildHome()
         NavIfAllowed sh, "Suivi budgétaire", SH_SUIVI_BUDGET, idx, x0, y0
         NavIfAllowed sh, "Arrêté de caisse", SH_ARRETE, idx, x0, y0
         NavIfAllowed sh, "Pertes et remboursements", SH_PERTES, idx, x0, y0
-        FutureIfAllowed sh, "Discipline (lot 4)", "DISCIPLINE", idx, x0, y0
-        FutureIfAllowed sh, "Planning (lot 4)", "PLANNING", idx, x0, y0
-        FutureIfAllowed sh, "Cantiques (lot 4)", "CANTIQUES", idx, x0, y0
+        NavIfAllowed sh, "Discipline", SH_DISC, idx, x0, y0
+        NavIfAllowed sh, "Planning des activités", SH_PLAN, idx, x0, y0
+        NavIfAllowed sh, "Programme annuel", SH_PROGAN, idx, x0, y0
+        NavIfAllowed sh, "Mandats", SH_MANDATS, idx, x0, y0
+        NavIfAllowed sh, "Élections", SH_SCRUTINS, idx, x0, y0
+        NavIfAllowed sh, "Répertoire des cantiques", SH_CANT, idx, x0, y0
+        NavIfAllowed sh, "Programmes des chants", SH_PROGS, idx, x0, y0
+        NavIfAllowed sh, "Études bibliques", SH_ETUDES, idx, x0, y0
         FutureIfAllowed sh, "Tableau de bord (lot 5)", "RAPPORTS", idx, x0, y0
         NavIfAllowed sh, "Paramètres", SH_PARAM, idx, x0, y0
         NavIfAllowed sh, "Listes de choix", SH_LISTES, idx, x0, y0
@@ -276,15 +305,25 @@ Public Sub BuildHome()
         nRows = (idx + 3) \ 4
     End If
 
-    ' Les alertes commencent sous les boutons
-    sh.Range("B" & AlertRow() & ":L" & AlertRow() + 60).ClearContents
-    If Not IsLogged() Then sh.Range("B" & AlertRow() & ":L" & AlertRow() + 60).ClearFormats
+    ' Les alertes commencent sous les boutons (la ligne est memorisee en O1)
+    ar = 10 + Int(nRows * (BTN_H + BTN_GAP) / sh.Rows(12).Height + 0.99) + 2
+    If ar < 34 Then ar = 34
+    sh.Range("B32:L160").ClearContents
+    sh.Range("B32:L160").Borders.LineStyle = xlNone
+    If Not IsLogged() Then sh.Range("B34:L160").ClearFormats
+    sh.Range("O1").Value = ar
+    sh.Range("O1").NumberFormat = ";;;"
+    sh.Cells(ar - 1, 2).Value = "ALERTES DU JOUR"
+    sh.Cells(ar - 1, 2).Font.Bold = True
     ApplyHomeColors
     ProtectSheet sh, "L"
 End Sub
 
 Public Function AlertRow() As Long
-    AlertRow = 34
+    Dim v As Variant
+    v = WS(SH_ACCUEIL).Range("O1").Value
+    If IsNumeric(v) And Not IsEmpty(v) Then AlertRow = CLng(v)
+    If AlertRow < 34 Then AlertRow = 34
 End Function
 
 Public Sub GoSheet()
@@ -297,6 +336,11 @@ Public Sub GoSheet()
     End If
     WS(nom).Activate
     ActiveWindow.ScrollRow = 1
+End Sub
+
+Public Sub AllerScrutins()
+    If Not RequireLogin() Then Exit Sub
+    WS(SH_SCRUTINS).Activate
 End Sub
 
 Public Sub AllerPatrimoine()
@@ -337,8 +381,8 @@ End Sub
 ' ------------------------------------------------------------- theme
 Private Function HeaderRowOf(ByVal nom As String) As Long
     Select Case UCase$(nom)
-        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET, SH_INVENT, SH_SYNTH: HeaderRowOf = OUT_HDR
-        Case SH_ACCUEIL, SH_RECU, SH_CONTRAT, SH_ETIQ, SH_FICHEB: HeaderRowOf = 0
+        Case SH_POINTAGE, SH_TAUX, SH_ELEC, SH_FICHE, SH_COTIS, SH_SUIVI_CAMP, SH_SUIVI_BUDGET, SH_INVENT, SH_SYNTH, SH_PROGAN, SH_PROGCH: HeaderRowOf = OUT_HDR
+        Case SH_ACCUEIL, SH_RECU, SH_CONTRAT, SH_ETIQ, SH_FICHEB, SH_NOTIF, SH_PV: HeaderRowOf = 0
         Case Else: HeaderRowOf = HDR
     End Select
 End Function
@@ -355,7 +399,7 @@ Public Sub ApplyHomeColors()
 End Sub
 
 Public Sub ApplyThemeColors()
-    Dim sh As Worksheet, hr As Long, lc As Long, i As Long, shp As Shape
+    Dim sh As Worksheet, hr As Long, lc As Long, i As Long, shp As Shape, lcHdr As Long
     For Each sh In ThisWorkbook.Worksheets
         If sh.Name <> SH_SEC And sh.Name <> SH_DROITS And sh.Name <> SH_ACCUEIL Then
             On Error Resume Next
@@ -363,20 +407,21 @@ Public Sub ApplyThemeColors()
             On Error GoTo 0
             hr = HeaderRowOf(sh.Name)
             If hr > 0 Then lc = LastCol(sh, hr) Else lc = 3
+            lcHdr = lc
             If lc < 8 And hr > 0 Then lc = 8
             With sh.Range(sh.Cells(1, 1), sh.Cells(1, lc))
                 .Interior.Color = ColPrincipale()
                 .Font.Color = RGB(255, 255, 255)
             End With
             If hr > 0 And sh.Name <> SH_SAISIE And sh.Name <> SH_ARRETE Then
-                With sh.Range(sh.Cells(hr, 1), sh.Cells(hr, lc))
+                With sh.Range(sh.Cells(hr, 1), sh.Cells(hr, lcHdr))
                     .Interior.Color = ColPrincipale()
                     .Font.Color = RGB(255, 255, 255)
                     .Font.Bold = True
                 End With
             End If
             Select Case UCase$(sh.Name)
-                Case SH_POINTAGE, SH_FICHE: sh.Range("C5").Interior.Color = RGB(255, 242, 153)
+                Case SH_POINTAGE, SH_FICHE, SH_PROGAN, SH_PROGCH: sh.Range("C5").Interior.Color = RGB(255, 242, 153)
                 Case SH_TAUX
                     sh.Range("C5").Interior.Color = RGB(255, 242, 153)
                     sh.Range("E5").Interior.Color = RGB(255, 242, 153)
@@ -387,7 +432,7 @@ Public Sub ApplyThemeColors()
             For Each shp In sh.Shapes
                 If Left$(shp.Name, 4) = "btn_" And shp.Name <> "btn_home" Then
                     If shp.Fill.ForeColor.RGB <> RGB(200, 200, 200) Then
-                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|RecalculerPatrimoine|RetourMouvement|ImprimerContrat|GenererEtiquettes|ValiderInventaire|CalculerSynthesePat|AfficherFicheBien|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
+                        If InStr(1, "|ValiderPointage|AppliquerDecisions|CalculerTaux|GenererElecteurs|GenererFicheAppel|PointerSeanceSelectionnee|ReinitialiserMotDePasse|SaisieEnregistrer|AllerSaisie|CalculerCotisations|NouvelleCampagne|CalculerSuiviCampagne|DeclarerEvenement|ControlerBudget|CalculerSuiviBudget|EnregistrerArrete|RemboursementPerte|CloturerExercice|RecalculerPatrimoine|RetourMouvement|ImprimerContrat|GenererEtiquettes|ValiderInventaire|CalculerSynthesePat|AfficherFicheBien|NouveauDossier|ValiderActivite|CalculerProgrammeAnnuel|AllerScrutins|ProclamerResultats|ActualiserRepertoire|AjouterAuProgramme|AfficherProgrammeChants|NouvelleEtude|", "|" & Mid$(shp.Name, 5) & "|") > 0 Then
                             shp.Fill.ForeColor.RGB = ColAccent()
                         Else
                             shp.Fill.ForeColor.RGB = ColPrincipale()

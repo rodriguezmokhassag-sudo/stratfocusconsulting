@@ -38,7 +38,7 @@ def _rand_date(a, b):
     return a + dt.timedelta(days=random.randint(0, (b - a).days))
 
 
-def demo_data(listes, controles, lot2=None, lot3=None):
+def demo_data(listes, controles, lot2=None, lot3=None, lot4=None):
     random.seed(1988)
     membres = []
     info = []  # dict par membre pour la simulation des presences
@@ -241,4 +241,9 @@ def demo_data(listes, controles, lot2=None, lot3=None):
     res = {"demo": True, "membres": membres, "adhesions": adhesions, "seances": seances, "presences": presences,
             "patrimoine": patrimoine, "journal": journal, "titulaires": titulaires}
     res.update(fin)
+    if lot4 is not None:
+        import demo_lot4
+        l4 = demo_lot4.build(info, TODAY)
+        titulaires["DIR"] = l4.pop("dir_titulaire")
+        res.update(l4)
     return res

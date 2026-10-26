@@ -40,24 +40,25 @@ ROLES = [
     ("PAT", "Secrétaire aux Patrimoines"),
     ("EVA", "Secrétaire à l'Évangélisation"),
     ("CONS", "Consultation (conseiller paroissial)"),
+    ("DIR", "Directeur de chœur (maître de chants)"),
 ]
 
 # Matrice des droits validee (cahier des charges, section 3)
 DROITS = [
-    ("PARAM", "Paramètres et personnalisation", "M L - - - - - - -"),
-    ("USERS", "Utilisateurs et mots de passe", "M - - - - - - - -"),
-    ("MEMBRES", "Membres et nouveaux choristes", "M L L M M L - L L"),
-    ("PRESENCES", "Présences et taux", "M L L M M - - L L"),
-    ("FINANCES", "Finances, budget, caisses (lot 2)", "M L L - - M L - -"),
-    ("COTISATIONS", "Cotisations et pénalités (lot 2)", "M L L L L M L - -"),
-    ("SOCIAL", "Caisse sociale (lot 2)", "M L M L L M L - -"),
-    ("PATRIMOINE", "Patrimoine, prêts et locations", "M L L - - L M - L"),
-    ("DISCIPLINE", "Discipline et sanctions (lot 4)", "M M M L L - - L -"),
-    ("PLANNING", "Planning des activités (lot 4)", "M M M M M L L M L"),
-    ("MANDATS", "Mandats, élections, liste électorale", "M M L M L - - - L"),
-    ("CANTIQUES", "Cantiques et vie spirituelle (lot 4)", "M L L L L - - M L"),
-    ("RAPPORTS", "Tableaux de bord et rapports (lot 5)", "M L L L L L L L L"),
-    ("JOURNAL", "Journal des actions", "L - - - - - - - -"),
+    ("PARAM", "Paramètres et personnalisation", "M L - - - - - - - -"),
+    ("USERS", "Utilisateurs et mots de passe", "M - - - - - - - - -"),
+    ("MEMBRES", "Membres et nouveaux choristes", "M L L M M L - L L L"),
+    ("PRESENCES", "Présences et taux", "M L L M M - - L L L"),
+    ("FINANCES", "Finances, budget, caisses (lot 2)", "M L L - - M L - - -"),
+    ("COTISATIONS", "Cotisations et pénalités (lot 2)", "M L L L L M L - - -"),
+    ("SOCIAL", "Caisse sociale (lot 2)", "M L M L L M L - - -"),
+    ("PATRIMOINE", "Patrimoine, prêts et locations", "M L L - - L M - L L"),
+    ("DISCIPLINE", "Discipline et sanctions", "M M M L L - - L - L"),
+    ("PLANNING", "Planning des activités", "M M M M M L L M L L"),
+    ("MANDATS", "Mandats, élections, liste électorale", "M M L M L - - - L -"),
+    ("CANTIQUES", "Cantiques et vie spirituelle", "M L L L L - - M L M"),
+    ("RAPPORTS", "Tableaux de bord et rapports (lot 5)", "M L L L L L L L L L"),
+    ("JOURNAL", "Journal des actions", "L - - - - - - - - -"),
 ]
 
 PARAMS = [
@@ -250,6 +251,8 @@ import lot2  # noqa: E402
 lot2.register(globals())
 import lot3  # noqa: E402
 lot3.register(globals())
+import lot4  # noqa: E402
+lot4.register(globals())
 
 
 def col_letter(i):  # 0-based
@@ -461,9 +464,11 @@ class Builder:
         self.table("SECURITE", sec, autofilter=False)
         lot2.build_sheets(self)
         lot3.build_sheets(self)
+        lot4.build_sheets(self)
         self.names()
         lot2.names(self)
         lot3.names(self)
+        lot4.names(self)
         for name, ws in self.ws.items():
             if name != "ACCUEIL":
                 ws.very_hidden()
@@ -659,7 +664,7 @@ def main():
     with open(tmp, "wb") as f:
         f.write(build_vba_project(vba_modules()))
     for fname, data in [("GestionChorale.xlsm", demo.empty_data()),
-                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES, lot2, lot3))]:
+                        ("GestionChorale_DEMO.xlsm", demo.demo_data(LISTES, CONTROLES, lot2, lot3, lot4))]:
         b = Builder(os.path.join(dist, fname), data)
         b.build()
         b.close(tmp)

@@ -4,7 +4,7 @@ Option Explicit
 ' =============================================================================
 
 Public Const APP_NAME As String = "Gestion Chorale"
-Public Const APP_VERSION As String = "1.1.0 - lot 2"
+Public Const APP_VERSION As String = "1.3.0 - lot 4"
 Public Const SYS_PWD As String = "Ch0rale#Sys2026"
 
 Public Const HDR As Long = 4            ' ligne d'en-tete des tables de donnees

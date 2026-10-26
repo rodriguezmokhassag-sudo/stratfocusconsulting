@@ -62,6 +62,26 @@ Private Sub FillSeance(ByVal sh As Worksheet, ByVal r As Long, ByVal d As Date, 
     If CStr(sh.Cells(r, ColOf(sh, "Pointée")).Value) = "" Then sh.Cells(r, ColOf(sh, "Pointée")).Value = "NON"
 End Sub
 
+' Cree (ou retrouve) la seance d'une activite planifiee ou d'une etude : renvoie son ID ("" si type inconnu)
+Public Function CreerSeance(ByVal d As Date, ByVal code As String, ByVal lieu As String, ByVal theme As String) As String
+    Dim sh As Worksheet, r As Long, id As String
+    code = UCase$(Trim$(code))
+    If TypeRow(code) = 0 Or d = 0 Then Exit Function
+    Set sh = WS(SH_SEANCES)
+    id = "S" & Format$(d, "yyyymmdd") & "-" & code
+    r = SeanceRow(id)
+    If r = 0 Then
+        r = LastRow(sh, 1) + 1
+        FillSeance sh, r, d, code
+        sh.Cells(r, ColOf(sh, "Date")).NumberFormat = "dd/mm/yyyy"
+        id = CStr(sh.Cells(r, 1).Value)
+    End If
+    If lieu <> "" And CStr(sh.Cells(r, ColOf(sh, "Lieu")).Value) = "" Then sh.Cells(r, ColOf(sh, "Lieu")).Value = lieu
+    If theme <> "" And CStr(sh.Cells(r, ColOf(sh, "Thème / Observations")).Value) = "" Then sh.Cells(r, ColOf(sh, "Thème / Observations")).Value = theme
+    TrierSeances
+    CreerSeance = id
+End Function
+
 Public Sub TrierSeances()
     Dim sh As Worksheet, lr As Long, lc As Long
     Set sh = WS(SH_SEANCES)

@@ -198,6 +198,12 @@ Public Function RoleLabel(ByVal code As String) As String
     If r > 0 Then RoleLabel = CStr(WS(SH_USERS).Cells(r, ColOf(WS(SH_USERS), "Rôle")).Value)
 End Function
 
+Public Function TitulaireDe(ByVal code As String) As String
+    Dim r As Long
+    r = UserRow(code)
+    If r > 0 Then TitulaireDe = CStr(WS(SH_USERS).Cells(r, ColOf(WS(SH_USERS), "Titulaire")).Value)
+End Function
+
 Public Function CheckPassword(ByVal code As String, ByVal pwd As String) As Boolean
     Dim sh As Worksheet, r As Long
     Set sh = WS(SH_SEC)
@@ -234,7 +240,10 @@ Public Function SheetModule(ByVal nom As String) As String
         Case SH_USERS: SheetModule = "USERS"
         Case SH_MEMBRES, SH_ADH: SheetModule = "MEMBRES"
         Case SH_SEANCES, SH_POINTAGE, SH_PRES, SH_TAUX, SH_FICHE: SheetModule = "PRESENCES"
-        Case SH_ELEC: SheetModule = "MANDATS"
+        Case SH_ELEC, SH_MANDATS, SH_SCRUTINS, SH_CAND, SH_PV: SheetModule = "MANDATS"
+        Case SH_DISC, SH_NOTIF: SheetModule = "DISCIPLINE"
+        Case SH_PLAN, SH_PROGAN: SheetModule = "PLANNING"
+        Case SH_CANT, SH_PROGS, SH_PROGCH, SH_ETUDES: SheetModule = "CANTIQUES"
         Case SH_PAT, SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_CONTRAT, SH_ETIQ, SH_INVENT, SH_INVENTS, SH_SYNTH, SH_FICHEB
             SheetModule = "PATRIMOINE"
         Case SH_JOURNAL: SheetModule = "JOURNAL"
@@ -410,6 +419,24 @@ Private Sub UnlockEditable(ByVal sh As Worksheet)
             UnlockCols sh, "", True
         Case SH_PERTES
             UnlockCols sh, "Description|Échéancier|Statut", False
+        Case SH_DISC
+            UnlockCols sh, "Description|Observations", False
+        Case SH_PLAN
+            UnlockCols sh, "N°|Exercice|Réalisé (FCFA)|Statut|Séance", True
+        Case SH_MANDATS
+            UnlockCols sh, "Observations", False
+        Case SH_SCRUTINS
+            UnlockCols sh, "Électeurs inscrits|Observations", False
+        Case SH_CAND
+            UnlockCols sh, "Voix|Observations", False
+        Case SH_CANT
+            UnlockCols sh, "N°|Niveau|Dernière exécution|Exécutions (12 mois)", True
+        Case SH_PROGS
+            UnlockCols sh, "", True
+        Case SH_ETUDES
+            UnlockCols sh, "Séance", True
+        Case SH_PROGAN, SH_PROGCH
+            sh.Range("C5").Locked = False
     End Select
 End Sub
 

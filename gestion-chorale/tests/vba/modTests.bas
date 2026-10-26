@@ -74,6 +74,8 @@ Public Sub T_All()
     Etape "T_Finances"
     T_Patrimoine
     Etape "T_Patrimoine"
+    T_Lot4
+    Etape "T_Lot4"
     T_Logout
     Etape "T_Logout"
 End Sub
@@ -311,6 +313,28 @@ Public Sub T_Vierge()
     Verif "v_location_non_louable", NouvelleLocationInterne("X", "", "", Date, Date) <> "" And Not AjouterArticleInterne("LOC-" & Year(Date) & "-001", "MUS-0001", 1)
     RefreshAlerts
     Etape "v_alertes_pat"
+    ' Lot 4 sur le modele vierge
+    Dim av As String
+    LoginAs "RESP1"
+    Verif "v_dossier", NouveauDossierInterne("ADC-0001", Date, "Bavardage", "", SANC_VERBAL, AUT_DIR, Date, 0, 0, "") = "DIS-" & Year(Date) & "-001", G_LastError
+    AppliquerSanctionsInterne Date
+    Etape "v_sanctions"
+    Verif "v_activite", NouvelleActiviteInterne(Date + 5, 0, "Activité", "REP", "", "NON", "", "", 0) = "ACT-" & Year(Date + 5) & "-01", G_LastError
+    ActualiserPlanningInterne
+    Etape "v_planning"
+    Verif "v_programme_annuel", ProgrammeAnnuelInterne(ExerciceDe(Date + 5)) = 1
+    Verif "v_postes_vacants", InStr(PostesVacants(), "1er Responsable") > 0, PostesVacants()
+    Verif "v_scrutin", NouveauScrutinInterne(Date, "Ordinaire", "") = "EL-" & Year(Date) & "-01"
+    LoginAs "DIR"
+    ActualiserRepertoireInterne Date
+    Etape "v_repertoire_vide"
+    WS(SH_CANT).Cells(FIRSTROW, 2).Value = "Premier cantique"
+    OnCantiquesChange WS(SH_CANT).Rows(FIRSTROW)
+    Verif "v_cantique", CantiqueRow("CAN-001") = FIRSTROW And CStr(WS(SH_CANT).Cells(FIRSTROW, ColOf(WS(SH_CANT), "Niveau")).Value) = NIV_ZERO
+    Verif "v_programme", AjouterAuProgrammeInterne(Date, "Culte", "CAN-001", "Entrée", av) And RemplirProgrammeChants(Date) = 1, G_LastError
+    Verif "v_etude", NouvelleEtudeInterne(Date, "Étude biblique", "Thème", "", "", "") = FIRSTROW
+    RefreshAlerts
+    Etape "v_alertes_lot4"
     Verif "v_fin", True
 End Sub
 
@@ -502,12 +526,12 @@ Public Sub T_PerfFin()
     Verif "perf_suivi_budget", True, Format$(Timer - t, "0.0") & " s"
 End Sub
 
-' Reprise du fichier de demonstration du lot 1 dans le modele vierge du lot 2
+' Reprise du fichier de demonstration du lot 3 dans le modele vierge du lot 4
 Public Sub T_Reprise()
     Dim rapport As String
     T_Init
     LoginAs "ADMIN"
-    rapport = ReprendreDonneesDe("/tmp/claude-0/lot2_demo.xlsm")
+    rapport = ReprendreDonneesDe("/tmp/claude-0/lot3_demo.xlsm")
     Verif "reprise_rapport", InStr(rapport, "MEMBRES : 100") > 0, Replace(rapport, vbCrLf, " ")
     Verif "reprise_membre", MembreRow("ADC-0100") > 0
     Verif "reprise_presences", LastRow(WS(SH_PRES), 1) - HDR > 10000, CStr(LastRow(WS(SH_PRES), 1) - HDR)
@@ -516,8 +540,17 @@ Public Sub T_Reprise()
     Verif "reprise_rubriques_conservees", RubRow("R01.1") > 0
     Verif "reprise_param", ParamStr("SIGLE") = "ADC"
     Verif "reprise_caisse", LastRow(WS(SH_CAISSE), 1) - HDR > 900, CStr(LastRow(WS(SH_CAISSE), 1) - HDR)
-    Verif "reprise_patrimoine_ancien_code", BienRow("PAT-0001") > 0 And NumV(BienValeur("PAT-0001", "Durée d'amortissement (ans)")) > 0, CStr(BienValeur("PAT-0001", "Durée d'amortissement (ans)"))
+    Verif "reprise_patrimoine", BienRow("MUS-0001") > 0 And NumV(BienValeur("MUS-0001", "Durée d'amortissement (ans)")) > 0, CStr(BienValeur("MUS-0001", "Durée d'amortissement (ans)"))
     Verif "reprise_rubriques_lot3", RubRow("R10.1") > 0 And RubRow("D11.1") > 0
+    Verif "reprise_mouvements", LastRow(WS(SH_MOUV), 1) > FIRSTROW And LastRow(WS(SH_LOCATIONS), 1) >= FIRSTROW
+    Verif "reprise_titulaires", TitulaireDe("RESP1") <> "" And TitulaireDe("DIR") = "", TitulaireDe("RESP1")
+    Verif "reprise_role_dir", CheckPassword("DIR", "chorale")
+    Verif "reprise_listes_lot4", ListValues("Sanction").Count = 7 And ListValues("Recueil").Count > 0
+    Verif "reprise_param_lot4", ParamNum("EXCLUSION_TEMP_MAX_JOURS", 0) = 15
+    LoginAs "DIR"
+    Verif "reprise_droits_dir", CanEdit(SH_CANT) And RightOf(SH_CAISSE) = ""
+    RefreshAlerts
+    Etape "reprise_alertes"
 End Sub
 
 ' ============================================================ lot 3
@@ -617,4 +650,179 @@ Public Sub T_Patrimoine()
         msg = msg & CStr(WS(SH_ACCUEIL).Cells(AlertRow() + i, 2).Value) & " | "
     Next i
     Verif "alertes_patrimoine", InStr(msg, "non rendu") > 0 And InStr(msg, "réparer") > 0, msg
+End Sub
+
+' ============================================================ lot 4
+Private Function MStatut(ByVal mat As String) As String
+    MStatut = CStr(MembreValeur(mat, "Statut"))
+End Function
+
+Private Function DVal(ByVal num As String, ByVal entete As String) As String
+    Dim r As Long
+    r = DisciplineRow(num)
+    If r > 0 Then DVal = CStr(WS(SH_DISC).Cells(r, ColOf(WS(SH_DISC), entete)).Value)
+End Function
+
+Private Function PVal(ByVal num As String, ByVal entete As String) As String
+    Dim r As Long
+    r = ActiviteRow(num)
+    If r > 0 Then PVal = CStr(WS(SH_PLAN).Cells(r, ColOf(WS(SH_PLAN), entete)).Value)
+End Function
+
+Private Sub SetVoix(ByVal num As String, ByVal mat As String, ByVal voix As Long)
+    Dim cs As Worksheet, k As Long
+    Set cs = WS(SH_CAND)
+    For k = FIRSTROW To LastRow(cs, 1)
+        If CStr(cs.Cells(k, 1).Value) = num And CStr(cs.Cells(k, 3).Value) = mat Then cs.Cells(k, 5).Value = voix
+    Next k
+End Sub
+
+Private Function Contient(ByVal c As Collection, ByVal txt As String) As Boolean
+    Dim i As Long
+    For i = 1 To c.Count
+        If InStr(1, CStr(c.Item(i)), txt) > 0 Then Contient = True
+    Next i
+End Function
+
+Public Sub T_Lot4()
+    Dim num As String, r As Long, avert As String, n As Long, txt As String, seance As String, sr As Long, lst As Collection
+    Dim mats() As String, noms() As String, pups() As String, codes() As String, stats() As String, i As Long, ok As Boolean
+    Dim el As String, us As Worksheet, mr As Long
+    T_Init
+    ' --- droits et confidentialite
+    LoginAs "FIN"
+    Verif "l4_fin_discipline_masquee", RightOf(SH_DISC) = "" And WS(SH_DISC).Visible = xlSheetVeryHidden
+    LoginAs "CONS"
+    Verif "l4_cons_discipline_masquee", RightOf(SH_DISC) = "" And RightOf(SH_NOTIF) = ""
+    LoginAs "SG"
+    Verif "l4_sg_discipline_L", RightOf(SH_DISC) = "L" And CanEdit(SH_PLAN) And CanEdit(SH_MANDATS) And Not CanEdit(SH_CANT)
+    LoginAs "DIR"
+    Verif "l4_dir_droits", CanEdit(SH_CANT) And CanEdit(SH_PROGS) And CanEdit(SH_ETUDES) And RightOf(SH_DISC) = "L" And RightOf(SH_CAISSE) = "" And RightOf(SH_MANDATS) = ""
+    Verif "l4_dir_titulaire", TitulaireDe("DIR") <> "", TitulaireDe("DIR")
+    ' --- discipline
+    LoginAs "RESP1"
+    Verif "l4_dir_verbal_seulement", ControleSanction("Blâme", AUT_DIR, 0, 0) <> "" And ControleSanction(SANC_VERBAL, AUT_DIR, 0, 0) = ""
+    Verif "l4_exclusion_15j", ControleSanction("Exclusion temporaire", "Bureau de la chorale", Date, Date + 15) <> "" And _
+        ControleSanction("Exclusion temporaire", "Bureau de la chorale", Date, Date + 14) = "", ControleSanction("Exclusion temporaire", "Bureau de la chorale", Date, Date + 15)
+    Verif "l4_exclusion_sans_fin", ControleSanction("Exclusion temporaire", "Bureau de la chorale", Date, 0) <> ""
+    num = NouveauDossierInterne("ADC-0030", Date, "Bavardage", "Test", SANC_VERBAL, AUT_DIR, Date, 0, 0, "")
+    Verif "l4_verbal", num <> "" And DVal(num, "Statut") = "Terminée" And DVal(num, "Notifiée le") <> "", num & " " & G_LastError
+    Verif "l4_refus_dir", NouveauDossierInterne("ADC-0030", Date, "Bavardage", "", "Blâme", AUT_DIR, Date, 0, 0, "") = "", G_LastError
+    num = NouveauDossierInterne("ADC-0023", Date, "Retards abusifs", "Test", "Blâme", "Bureau de la chorale", Date, 0, 0, "")
+    Verif "l4_recidives", DVal(num, "Récidives (12 mois)") = "2", DVal(num, "Récidives (12 mois)")
+    Verif "l4_notification", RemplirNotification(num) And InStr(CStr(WS(SH_NOTIF).Range("C7").Value), "ADC-0023") > 0, CStr(WS(SH_NOTIF).Range("C7").Value)
+    EnregistrerNotification num, Date, "En présence de l'intéressé"
+    Verif "l4_notifiee_terminee", DVal(num, "Statut") = "Terminée"
+    num = NouveauDossierInterne("ADC-0040", Date, "Querelle, bagarre, médisance, mensonge, écart de langage", "Test", "Exclusion temporaire", "Bureau de la chorale", Date, Date, Date + 9, "")
+    Verif "l4_exclusion_statut", MStatut("ADC-0040") = "Exclu temporaire" And DVal(num, "Statut antérieur") = ST_CONF, MStatut("ADC-0040") & " / " & G_LastError
+    n = MembresAttendus(Date, mats, noms, pups, codes, stats)
+    ok = False
+    For i = 1 To n
+        If mats(i) = "ADC-0040" And codes(i) = "NC" Then ok = True
+    Next i
+    Verif "l4_exclusion_nc", ok
+    Verif "l4_notification_periode", RemplirNotification(num) And InStr(CStr(WS(SH_NOTIF).Range("C17").Value) & CStr(WS(SH_NOTIF).Range("C18").Value) & CStr(WS(SH_NOTIF).Range("C19").Value), "10 jours") > 0
+    Verif "l4_demo_suspendu", MStatut("ADC-0098") = "Suspendu" And DVal("DIS-2026-006", "Statut") = "En cours"
+    AppliquerSanctionsInterne Date + 10
+    Verif "l4_fin_exclusion", MStatut("ADC-0040") = ST_CONF And DVal(num, "Statut") = "Terminée", MStatut("ADC-0040") & " " & DVal(num, "Statut")
+    Verif "l4_demo_fin_suspension", MStatut("ADC-0098") = ST_CONF And DVal("DIS-2026-006", "Statut") = "Terminée" And MStatut("ADC-0097") = "Suspendu", MStatut("ADC-0098")
+    Verif "l4_lever", LeverSanctionInterne("DIS-2026-005", "Test") And MStatut("ADC-0097") = ST_CONF And DVal("DIS-2026-005", "Statut") = "Levée", G_LastError
+    ' refroidis marques par T_Refroidis : dossier a examiner, sans doublon
+    n = 0
+    For r = FIRSTROW To LastRow(WS(SH_DISC), 1)
+        If CStr(WS(SH_DISC).Cells(r, 3).Value) = "ADC-0011" And CStr(WS(SH_DISC).Cells(r, ColOf(WS(SH_DISC), "Statut")).Value) = "À examiner" Then n = n + 1: num = CStr(WS(SH_DISC).Cells(r, 1).Value)
+    Next r
+    Verif "l4_refroidi_dossier", n = 1 And DossierRefroidi("ADC-0011") = "", CStr(n)
+    Verif "l4_decision", DeciderDossierInterne(num, "Avertissement", "Bureau de la chorale", Date, 0, 0) And DVal(num, "Statut") = "En cours", G_LastError
+    Set lst = New Collection
+    AlertesDiscipline lst
+    Verif "l4_alerte_discipline", Contient(lst, "non notifiée"), CStr(lst.Count)
+    ' --- planning
+    LoginAs "SG"
+    Verif "l4_code_budget_inconnu", NouvelleActiviteInterne(Date + 20, 0, "X", "EVANG", "", "NON", "", "X99.9", 0) = ""
+    num = NouvelleActiviteInterne(Date + 20, 0, "Sortie test", "EVANG", "Loango", "OUI", "Organisation", "D02.1", 50000)
+    Verif "l4_activite", num <> "" And PVal(num, "Statut") = "Projet" And PVal(num, "Validation paroissiale") = "Demandée", num & " " & G_LastError
+    Verif "l4_valider_non_votee", ValiderActiviteInterne(num) = "" And InStr(G_LastError, "votée") > 0, G_LastError
+    n = VoterPlanningInterne(ExerciceDe(Date + 20), "PV AG test")
+    Verif "l4_vote_ag", n >= 1 And PVal(num, "Statut") = "Votée en AG", CStr(n)
+    Verif "l4_hors_paroisse", ValiderActiviteInterne(num) = "" And InStr(G_LastError, "art. 6") > 0, G_LastError
+    EnregistrerValidationInterne num, "Obtenue", "Lettre test"
+    seance = ValiderActiviteInterne(num)
+    Verif "l4_seance_creee", seance = "S" & Format$(Date + 20, "yyyymmdd") & "-EVANG" And SeanceRow(seance) > 0 And PVal(num, "Statut") = "Validée", seance & " " & G_LastError
+    ActualiserPlanningInterne
+    Verif "l4_realise_caisse", NumV(PVal("ACT-2026-03", "Réalisé (FCFA)")) = 140000 And NumV(PVal("ACT-2026-04", "Réalisé (FCFA)")) = 150000, PVal("ACT-2026-03", "Réalisé (FCFA)") & " / " & PVal("ACT-2026-04", "Réalisé (FCFA)")
+    sr = SeanceRow(seance)
+    WS(SH_SEANCES).Cells(sr, ColOf(WS(SH_SEANCES), "Pointée")).Value = "OUI"
+    ActualiserPlanningInterne
+    Verif "l4_realisee", PVal(num, "Statut") = "Réalisée"
+    WS(SH_SEANCES).Cells(sr, ColOf(WS(SH_SEANCES), "Pointée")).Value = "NON"
+    n = ProgrammeAnnuelInterne("2026")
+    Verif "l4_programme_annuel", n = 10 And NumV(WS(SH_PROGAN).Cells(OUT_FIRST + n, 7).Value) > 0, CStr(n)
+    Set lst = New Collection
+    AlertesPlanning lst
+    Verif "l4_alerte_planning", Contient(lst, "Planning"), CStr(lst.Count)
+    ' --- mandats et elections
+    Set lst = New Collection
+    AlertesMandats lst
+    Verif "l4_alerte_fin_mandat", Contient(lst, "se terminent"), CStr(lst.Count)
+    Verif "l4_rang", RangMandat("ADC-0001", "1er Responsable", DateSerial(2027, 1, 18)) = 3 And RangMandat("ADC-0002", "Vice-Responsable", DateSerial(2027, 1, 18)) = 2
+    el = NouveauScrutinInterne(DateSerial(2027, 1, 17), "Ordinaire", "")
+    Verif "l4_scrutin", el = "EL-2027-01" And InStr(CStr(WS(SH_SCRUTINS).Cells(ScrutinRow(el), 4).Value), "Évangélisation") > 0, el
+    Verif "l4_candidat_3e_mandat", AjouterCandidatInterne(el, "1er Responsable", "ADC-0001", avert) And avert <> "", avert & G_LastError
+    Verif "l4_candidat_non_confirme", Not AjouterCandidatInterne(el, "1er Responsable", "ADC-0099", avert), G_LastError
+    Verif "l4_candidat", AjouterCandidatInterne(el, "1er Responsable", "ADC-0031", avert) And AjouterCandidatInterne(el, "Secrétaire aux Finances", "ADC-0035", avert), G_LastError
+    Verif "l4_candidat_doublon", Not AjouterCandidatInterne(el, "1er Responsable", "ADC-0031", avert)
+    SetVoix el, "ADC-0001", 30
+    SetVoix el, "ADC-0031", 30
+    SetVoix el, "ADC-0035", 55
+    txt = ProclamerInterne(el, 75)
+    Verif "l4_egalite", InStr(G_LastError, "galité") > 0, G_LastError
+    SetVoix el, "ADC-0031", 40
+    txt = ProclamerInterne(el, 75)
+    Verif "l4_proclame", G_LastError = "" And InStr(txt, "40 voix") > 0, G_LastError & Replace(txt, vbCrLf, " | ")
+    StorePassword "FIN", "Ancien#2026"
+    txt = InstallerElusInterne(el, DateSerial(2027, 1, 18))
+    r = MandatEnCours("1er Responsable")
+    Verif "l4_nouveau_mandat", CStr(WS(SH_MANDATS).Cells(r, 4).Value) = "ADC-0031" And AsDate(WS(SH_MANDATS).Cells(r, 7).Value) = DateSerial(2029, 1, 17), txt
+    Verif "l4_fonction_membres", CStr(MembreValeur("ADC-0031", "Fonction au Bureau")) = "1er Responsable" And CStr(MembreValeur("ADC-0001", "Fonction au Bureau")) = ""
+    Set us = WS(SH_USERS)
+    Verif "l4_titulaire_role", TitulaireDe("RESP1") = NomComplet(MembreValeur("ADC-0031", "Nom"), MembreValeur("ADC-0031", "Prénoms")) And _
+        CheckPassword("FIN", MDP_PROVISOIRE) And CStr(us.Cells(FIRSTROW + 5, ColOf(us, "Doit changer le mot de passe")).Value) = "OUI", TitulaireDe("RESP1")
+    Verif "l4_postes_pourvus", PostesVacants() = "", PostesVacants()
+    Verif "l4_pv", RemplirPV(el) And InStr(CStr(WS(SH_PV).Range("B4").Value), el) > 0 And HasDate(WS(SH_SCRUTINS).Cells(ScrutinRow(el), 8).Value)
+    ' --- cantiques
+    LoginAs "DIR"
+    Verif "l4_niveau", NiveauGlobal(NIV_OK, NIV_OK, NIV_OK, NIV_OK) = NIV_OK And NiveauGlobal(NIV_OK, NIV_ZERO, NIV_OK, NIV_OK) = NIV_EN_COURS And NiveauGlobal("", "", "", "") = NIV_ZERO
+    ActualiserRepertoireInterne DateSerial(2026, 10, 26)
+    r = CantiqueRow("CAN-040")
+    Verif "l4_derniere_execution", AsDate(WS(SH_CANT).Cells(r, ColOf(WS(SH_CANT), "Dernière exécution")).Value) = DateSerial(2026, 10, 18) And _
+        NumV(WS(SH_CANT).Cells(r, ColOf(WS(SH_CANT), "Exécutions (12 mois)")).Value) = 2, CStr(WS(SH_CANT).Cells(r, ColOf(WS(SH_CANT), "Dernière exécution")).Value)
+    Verif "l4_repetition", InStr(ControleChant("CAN-020", DateSerial(2026, 11, 1)), "chanté le 18/10/2026") > 0, ControleChant("CAN-020", DateSerial(2026, 11, 1))
+    Verif "l4_non_maitrise", InStr(ControleChant("CAN-024", DateSerial(2026, 11, 1)), "maîtrisé") > 0, ControleChant("CAN-024", DateSerial(2026, 11, 1))
+    Verif "l4_programme_ok", AjouterAuProgrammeInterne(DateSerial(2026, 11, 8), "Culte dominical", "CAN-001", "Entrée", avert) And avert = "", avert & G_LastError
+    Verif "l4_programme_doublon", Not AjouterAuProgrammeInterne(DateSerial(2026, 11, 8), "Culte dominical", "CAN-001", "Entrée", avert)
+    Verif "l4_programme_alerte", AjouterAuProgrammeInterne(DateSerial(2026, 11, 8), "Culte dominical", "CAN-040", "Envoi", avert) And InStr(avert, "18/10/2026") > 0, avert
+    Verif "l4_programme_imprime", RemplirProgrammeChants(DateSerial(2026, 11, 8)) = 2 And CStr(WS(SH_PROGCH).Cells(OUT_FIRST, 3).Value) = "CAN-001" And _
+        CStr(WS(SH_PROGCH).Cells(OUT_FIRST + 1, 2).Value) = "Envoi"
+    txt = ControlerProgrammeInterne(DateSerial(2026, 11, 1), True)
+    Verif "l4_controle_programme", UBound(Split(txt, vbCrLf)) >= 2, Replace(txt, vbCrLf, " | ")
+    Set lst = New Collection
+    AlertesCantiques lst
+    Verif "l4_alerte_cantiques", Contient(lst, "Cantiques"), CStr(lst.Count)
+    Verif "l4_resume_pupitres", InStr(ResumeApprentissage(), "Ténor") > 0
+    r = NouvelleEtudeInterne(DateSerial(2026, 11, 6), "Étude biblique", "Test", "Jean 3.16", "Pasteur", "Temple")
+    seance = CStr(WS(SH_ETUDES).Cells(r, ColOf(WS(SH_ETUDES), "Séance")).Value)
+    Verif "l4_etude_seance", seance = "S20261106-ETUDE" And SeanceRow(seance) > 0, seance
+    WS(SH_SEANCES).Cells(SeanceRow(seance), ColOf(WS(SH_SEANCES), "Pointée")).Value = "OUI"
+    ActualiserEtudesInterne
+    Verif "l4_etude_realisee", CStr(WS(SH_ETUDES).Cells(r, ColOf(WS(SH_ETUDES), "Statut")).Value) = "Réalisée"
+    ' --- accueil
+    LoginAs "ADMIN"
+    RefreshAlerts
+    txt = ""
+    For i = 0 To 25
+        txt = txt & CStr(WS(SH_ACCUEIL).Cells(AlertRow() + i, 2).Value) & " | "
+    Next i
+    Verif "l4_alertes_accueil", InStr(txt, "Discipline") > 0 And InStr(txt, "Mandats") > 0 And InStr(txt, "Cantiques") > 0, txt
+    Verif "l4_alertes_sous_menu", AlertRow() > 34, CStr(AlertRow())
 End Sub

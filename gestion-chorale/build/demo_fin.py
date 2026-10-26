@@ -88,10 +88,10 @@ def build(info, presences, rubriques, rnd=None):
     for mo in (1, 4, 7):
         add(dt.date(2026, mo, 10), "Espèces", "Dépense", "D08.1", "Fournitures (cahiers, stylos, craie)", tiers="Librairie", montant=25000, autor="PV 2026-01")
     add(dt.date(2026, 3, 12), "Banque", "Dépense", "D03.1", "Confection de 20 tenues noir-blanc", tiers="Atelier de couture", montant=300000, autor="PV 2026-02")
-    add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D02.1", "Transport sortie d'évangélisation Mpita", tiers="Transporteur", montant=80000, autor="PV 2026-04")
-    add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D07.1", "Repas sortie d'évangélisation", montant=60000, autor="PV 2026-04")
+    add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D02.1", "Transport sortie d'évangélisation Mpita", tiers="Transporteur", ref="ACT-2026-03", montant=80000, autor="PV 2026-04")
+    add(dt.date(2026, 5, 16), "Espèces", "Dépense", "D07.1", "Repas sortie d'évangélisation", ref="ACT-2026-03", montant=60000, autor="PV 2026-04")
     add(dt.date(2026, 7, 18), "Espèces", "Dépense", "D05.1", "Réparation de l'enceinte amplifiée", tiers="Électronicien", ref="MUS-0004", montant=45000, autor="PV 2026-07", key="repar")
-    add(dt.date(2026, 8, 7), "Espèces", "Dépense", "D01.2", "Retraite spirituelle (hébergement)", tiers="Centre d'accueil", montant=150000, autor="PV 2026-07")
+    add(dt.date(2026, 8, 7), "Espèces", "Dépense", "D01.2", "Retraite spirituelle (hébergement)", tiers="Centre d'accueil", ref="ACT-2026-04", montant=150000, autor="PV 2026-07")
     add(dt.date(2026, 9, 12), "Banque", "Dépense", "D04.2", "Achat d'un micro sans fil", tiers="Fournisseur local", montant=85000, autor="PV 2026-09", key="micro")
     add(dt.date(2026, 4, 9), "Espèces", "Dépense", "D08.2", "Impression des programmes de cantiques", tiers="Imprimerie", montant=18000, autor="PV 2026-04", key="err")
     # --- Virements espèces -> banque

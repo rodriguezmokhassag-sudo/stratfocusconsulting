@@ -617,19 +617,28 @@ Public Sub MarquerRefroidis()
     End If
     If MsgBox(c.Count & " membre(s) absent(s) depuis plus de " & ParamNum("MOIS_REFROIDI", 2) & " mois sans justification :" & vbCrLf & noms & vbCrLf & vbCrLf & _
               "Leur donner le statut « " & ST_REFROIDI & " » ? (art. 52 : passage devant le conseil de discipline)", vbYesNo + vbQuestion, APP_NAME) = vbNo Then Exit Sub
-    Set ms = WS(SH_MEMBRES)
-    BeginWork
-    For i = 1 To c.Count
-        r = MembreRow(c(i))
-        If r > 0 Then
-            ms.Cells(r, ColOf(ms, "Statut")).Value = ST_REFROIDI
-            ms.Cells(r, ColOf(ms, "Date du statut")).Value = Date
-        End If
-    Next i
-    EndWork
+    MarquerRefroidisInterne c
     LogAction "Membres refroidis", c.Count & " : " & noms, SH_MEMBRES
     RefreshAlerts
 End Sub
+
+' Statut "Refroidi" et dossier de discipline "A examiner" (art. 52) pour chaque membre
+Public Function MarquerRefroidisInterne(ByVal c As Collection) As Long
+    Dim i As Long, r As Long, ms As Worksheet, mat As String
+    Set ms = WS(SH_MEMBRES)
+    BeginWork
+    For i = 1 To c.Count
+        mat = CStr(c.Item(i))
+        r = MembreRow(mat)
+        If r > 0 Then
+            ms.Cells(r, ColOf(ms, "Statut")).Value = ST_REFROIDI
+            ms.Cells(r, ColOf(ms, "Date du statut")).Value = Date
+            If DossierRefroidi(mat) <> "" Then MarquerRefroidisInterne = MarquerRefroidisInterne + 1
+            BeginWork
+        End If
+    Next i
+    EndWork
+End Function
 
 ' ------------------------------------------------------------- alertes
 Public Sub RefreshAlerts()
@@ -639,6 +648,8 @@ Public Sub RefreshAlerts()
     On Error GoTo EH
     Set hs = WS(SH_ACCUEIL)
     row = AlertRow()
+    ' fin des sanctions echues et debut des sanctions programmees (quel que soit le role connecte)
+    If IsLogged() Then AppliquerSanctionsInterne Date
     BeginWork
     hs.Range("B" & row & ":L" & row + 60).ClearContents
     If Not IsLogged() Then
@@ -727,6 +738,10 @@ Public Sub RefreshAlerts()
         Next rr2
         If nRep > 0 Then lignes.Add "Patrimoine : " & nRep & " bien(s) à réparer ou hors service."
     End If
+    If RightOf(SH_DISC) <> "" Then AlertesDiscipline lignes
+    If RightOf(SH_PLAN) <> "" Then AlertesPlanning lignes
+    If RightOf(SH_MANDATS) <> "" Then AlertesMandats lignes
+    If RightOf(SH_CANT) <> "" Then AlertesCantiques lignes
     If lignes.Count = 0 Then lignes.Add "Aucune alerte."
     For i = 1 To lignes.Count
         hs.Cells(row + i - 1, 2).Value = ChrW(8226) & " " & lignes(i)

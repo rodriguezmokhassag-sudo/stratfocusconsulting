@@ -128,7 +128,8 @@ Public Function ReprendreDonneesDe(ByVal chemin As String) As String
     Set src = Workbooks.Open(Filename:=chemin, ReadOnly:=True, UpdateLinks:=False)
     feuilles = Array(SH_MEMBRES, SH_ADH, SH_SEANCES, SH_PRES, SH_PAT, SH_JOURNAL, SH_LISTES, SH_TYPES, SH_CODES, SH_CTRL, _
                      SH_CAISSE, SH_BUDGET, SH_CAMPAGNES, SH_SOCIAL, SH_ARRETES, SH_PERTES, SH_CLOTURES, SH_RUBRIQUES, SH_BAREME, _
-                     SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_INVENTS)
+                     SH_CATPAT, SH_MOUV, SH_LOCATIONS, SH_INVENTS, _
+                     SH_DISC, SH_PLAN, SH_MANDATS, SH_SCRUTINS, SH_CAND, SH_CANT, SH_PROGS, SH_ETUDES)
     For i = LBound(feuilles) To UBound(feuilles)
         nom = CStr(feuilles(i))
         If FeuilleExiste(src, nom) Then
