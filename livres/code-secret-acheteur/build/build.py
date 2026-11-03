@@ -233,6 +233,34 @@ def assembler():
     print(pages[0] if pages else r.stdout)
 
 
+def inserer_couverture(doc):
+    """Place la couverture en pleine page (page 1), dans sa propre section."""
+    from copy import deepcopy
+    couv = os.path.join(RACINE, "images", "couverture.jpg")
+    if not os.path.exists(couv):
+        return
+    body = doc.element.body
+    p = doc.add_paragraph()
+    p.add_run().add_picture(couv, width=Inches(6), height=Inches(9))
+    pf = p.paragraph_format
+    pf.space_before = Pt(0)
+    pf.space_after = Pt(0)
+    pf.line_spacing = 1.0
+    pf.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    body.remove(p._p)
+    body.insert(0, p._p)
+    sect = deepcopy(body.sectPr)
+    for enfant in list(sect):
+        if enfant.tag in (qn("w:headerReference"), qn("w:footerReference"),
+                          qn("w:titlePg")):
+            sect.remove(enfant)
+    marges = sect.find(qn("w:pgMar"))
+    for attr in ("w:top", "w:bottom", "w:left", "w:right", "w:header",
+                 "w:footer", "w:gutter"):
+        marges.set(qn(attr), "0")
+    p._p.get_or_add_pPr().append(sect)
+
+
 def post_traiter(chemin):
     """Ajuste les tableaux (taille, bordures) et retire le titre pandoc."""
     doc = Document(chemin)
@@ -280,6 +308,7 @@ def post_traiter(chemin):
                         if i == 0:
                             r.font.bold = True
                             r.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+    inserer_couverture(doc)
     doc.save(chemin)
 
 

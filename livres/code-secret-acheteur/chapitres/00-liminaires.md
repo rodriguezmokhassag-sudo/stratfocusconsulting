@@ -1,27 +1,3 @@
-::: {custom-style="TitreLivre"}
-Le Code Secret de l'Acheteur
-:::
-
-::: {custom-style="SousTitreLivre"}
-Mieux vendre grâce à la psychologie comportementale
-:::
-
-::: {custom-style="SousTitreLivre"}
-Le guide pratique pour vendre plus en Afrique francophone
-:::
-
-::: {custom-style="AuteurLivre"}
-Rodriguez MOKHASSA
-:::
-
-::: {custom-style="EditeurLivre"}
-Stratfocus Consulting (STFC)
-:::
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ::: {custom-style="Mentions"}
 **Le Code Secret de l'Acheteur — Mieux vendre grâce à la psychologie comportementale**
 
