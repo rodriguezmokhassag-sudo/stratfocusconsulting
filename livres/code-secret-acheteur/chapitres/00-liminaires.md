@@ -63,51 +63,51 @@ Sommaire
 :::
 
 ::: {custom-style="Sommaire"}
-Préface — Avant-propos de l'auteur
+Préface — Avant-propos de l'auteur¤6
 
-Introduction — Pourquoi vos clients n'achètent pas pour les raisons que vous croyez
+Introduction — Pourquoi vos clients n'achètent pas pour les raisons que vous croyez¤8
 
-**Partie I — Comment l'acheteur décide**
+**Partie I — Comment l'acheteur décide**¤13
 
-Chapitre 1. L'émotion décide, la raison justifie
+Chapitre 1. L'émotion décide, la raison justifie¤14
 
-Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client
+Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client¤22
 
-Chapitre 3. Acheter en Afrique francophone : confiance, communauté et réputation
+Chapitre 3. Acheter en Afrique francophone : confiance, communauté et réputation¤30
 
-**Partie II — Comprendre son acheteur**
+**Partie II — Comprendre son acheteur**¤38
 
-Chapitre 4. Les quatre profils d'acheteurs
+Chapitre 4. Les quatre profils d'acheteurs¤39
 
-Chapitre 5. Écouter et questionner pour découvrir les vrais motifs d'achat
+Chapitre 5. Écouter et questionner pour découvrir les vrais motifs d'achat¤47
 
-Chapitre 6. Lire les signaux
+Chapitre 6. Lire les signaux¤55
 
-**Partie III — Les sept leviers d'influence, utilisés avec éthique**
+**Partie III — Les sept leviers d'influence, utilisés avec éthique**¤63
 
-Chapitre 7. Rendre la pareille et inspirer la sympathie
+Chapitre 7. Rendre la pareille et inspirer la sympathie¤64
 
-Chapitre 8. L'exemple des autres, l'autorité et le sentiment d'appartenance
+Chapitre 8. L'exemple des autres, l'autorité et le sentiment d'appartenance¤72
 
-Chapitre 9. Rareté, engagement et psychologie du prix
+Chapitre 9. Rareté, engagement et psychologie du prix¤80
 
-**Partie IV — Vendre et fidéliser**
+**Partie IV — Vendre et fidéliser**¤88
 
-Chapitre 10. Un parcours de vente qui facilite la décision
+Chapitre 10. Un parcours de vente qui facilite la décision¤89
 
-Chapitre 11. Conclure sans forcer et répondre aux objections
+Chapitre 11. Conclure sans forcer et répondre aux objections¤97
 
-Chapitre 12. Fidéliser et faire recommander, sans manipuler
+Chapitre 12. Fidéliser et faire recommander, sans manipuler¤105
 
-Conclusion — Votre plan d'action sur 30 jours
+Conclusion — Votre plan d'action sur 30 jours¤113
 
-Annexe A. Boîte à outils
+Annexe A. Boîte à outils¤117
 
-Annexe B. Glossaire
+Annexe B. Glossaire¤121
 
-Annexe C. Bibliographie et sources
+Annexe C. Bibliographie et sources¤123
 
-Annexe D. À propos de l'auteur et de STFC
+Annexe D. À propos de l'auteur et de STFC¤126
 :::
 
 # Préface — Avant-propos de l'auteur

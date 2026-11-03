@@ -11,7 +11,7 @@ import sys
 
 from docx import Document
 from docx.enum.style import WD_STYLE_TYPE
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -190,8 +190,8 @@ def construire_reference():
     regle(s, taille=19, gras=True, couleur=BLEU, police=POLICE_TITRES,
           align=WD_ALIGN_PARAGRAPH.LEFT, avant=18, apres=12)
     s = style_par(doc, "Sommaire")
-    regle(s, taille=9.5, police=POLICE, align=WD_ALIGN_PARAGRAPH.LEFT,
-          avant=0, apres=3)
+    regle(s, taille=10.5, police=POLICE, align=WD_ALIGN_PARAGRAPH.LEFT,
+          avant=0, apres=float(os.environ.get("SOMMAIRE_APRES", "9")))
     s = style_par(doc, "Signature")
     regle(s, taille=TAILLE_CORPS, italique=True, couleur=BLEU, police=POLICE,
           align=WD_ALIGN_PARAGRAPH.RIGHT, avant=10, apres=2)
@@ -241,6 +241,15 @@ def post_traiter(chemin):
     for p in list(doc.paragraphs):
         if p.style.name in ("Title",):
             p._element.getparent().remove(p._element)
+    for p in doc.paragraphs:
+        if "¤" in p.text:
+            p.paragraph_format.tab_stops.add_tab_stop(
+                Inches(4.7), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+            for r in p.runs:
+                if "¤" in r.text:
+                    r.text = r.text.replace("¤", "\t")
+        if "……" in p.text:
+            p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
     for t in doc.tables:
         tblpr = t._tbl.tblPr
         borders = OxmlElement("w:tblBorders")

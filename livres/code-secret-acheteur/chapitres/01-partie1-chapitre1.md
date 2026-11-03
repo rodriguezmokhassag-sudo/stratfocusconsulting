@@ -122,6 +122,32 @@ Reprenons l'exemple d'un achat important, comme un panneau solaire pour une fami
 
 Le vendeur efficace accompagne chacune de ces étapes. Il réveille le déclencheur émotionnel par ses questions, nourrit l'intuition par des exemples visibles, fournit des preuves pour la confirmation, des éléments chiffrés pour la comparaison, des arguments pour la discussion familiale et de la fierté pour la justification.
 
+## Et les acheteurs professionnels ?
+
+On objecte souvent que tout cela s'applique aux particuliers, mais pas aux entreprises ni aux administrations, où les achats seraient guidés par des critères objectifs, des appels d'offres et des grilles de notation. C'est vrai en partie : les procédures existent et elles comptent. Mais derrière chaque procédure, il y a des êtres humains, avec leur système 1.
+
+L'acheteur professionnel ressent lui aussi des émotions, simplement différentes :
+
+- **La peur d'être blâmé.** Un directeur des achats qui choisit un fournisseur défaillant risque sa réputation, voire son poste. Il cherche donc avant tout à éviter l'erreur. C'est pourquoi il privilégie souvent le fournisseur connu, même plus cher.
+- **Le désir d'être reconnu.** Le responsable qui fait réaliser une économie importante à son entreprise, ou qui introduit une solution innovante, espère que son initiative sera remarquée par sa hiérarchie.
+- **Le besoin de tranquillité.** Un fournisseur fiable, qui livre à l'heure et règle les problèmes sans bruit, simplifie la vie de son interlocuteur. Cette tranquillité a une valeur considérable, rarement inscrite dans le cahier des charges.
+- **La loyauté et la relation.** Comme nous le verrons au chapitre 3, la relation personnelle pèse lourd dans les décisions professionnelles en Afrique francophone.
+
+Pour vendre à un acheteur professionnel, il faut donc répondre à deux questions à la fois. La question officielle : « Cette offre est-elle la meilleure pour l'entreprise ? » Et la question personnelle, jamais formulée : « Ce choix est-il sans risque pour moi, et va-t-il me valoriser ? »
+
+Le vendeur qui ne traite que la première question rédige de bons dossiers. Celui qui traite aussi la seconde gagne des contrats. Concrètement, cela signifie rassurer l'acheteur avec des références similaires, lui fournir des arguments qu'il pourra présenter à sa direction, s'engager sur un accompagnement en cas de difficulté et, quand c'est possible, l'aider à faire de ce choix une réussite visible.
+
+::: {custom-style="Encadre"}
+**Exercice : les deux questions de votre client professionnel**
+
+Pour votre principal prospect professionnel, complétez ces deux phrases :
+
+- « Pour son entreprise, mon offre est la meilleure parce que… »
+- « Pour lui personnellement, choisir mon offre est sans risque et valorisant parce que… »
+
+Si vous ne parvenez pas à compléter la seconde phrase, vous avez trouvé ce qui manque à votre proposition.
+:::
+
 ## Erreurs fréquentes
 
 - **Réciter la fiche technique.** Le client n'a pas besoin de connaître toutes les caractéristiques. Il a besoin de savoir ce que le produit va changer dans sa vie.

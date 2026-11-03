@@ -47,13 +47,6 @@ Elles sont indispensables, mais Rackham a constaté que les vendeurs moins perfo
 - Limitez-vous aux questions de situation vraiment utiles.
 - Montrez que vous vous êtes renseigné : « J'ai vu que vous avez ouvert une deuxième boutique à Bonapriso l'an dernier. Comment s'organise l'approvisionnement entre les deux ? »
 
-**Exemples de questions de situation :**
-
-- « Comment gérez-vous actuellement… ? »
-- « Qui s'occupe de… ? »
-- « Depuis combien de temps utilisez-vous… ? »
-- « Combien de clients servez-vous par jour en moyenne ? »
-
 ## P comme Problème : faire émerger les insatisfactions
 
 Les questions de problème explorent les difficultés, les insatisfactions et les frustrations du client. Elles font apparaître ce que Rackham appelle les **besoins implicites** : des problèmes que le client reconnaît, mais qu'il n'a pas encore décidé de résoudre.
@@ -87,11 +80,7 @@ Un problème qui semble mineur peut révéler des conséquences importantes lors
 
 Les questions d'implication activent directement le biais d'**aversion à la perte** étudié au chapitre 2 : le client prend conscience de ce qu'il perd en ne changeant rien. Mais ce n'est pas le vendeur qui l'affirme : c'est le client qui le découvre.
 
-::: {custom-style="Encadre"}
-**Attention à l'excès**
-
-Les questions d'implication peuvent devenir pesantes si elles s'enchaînent sans fin, et le client peut se sentir acculé. Deux ou trois questions d'implication bien choisies suffisent. L'objectif est d'aider le client à voir clair, pas de le faire paniquer.
-:::
+Attention toutefois à l'excès : deux ou trois questions d'implication bien choisies suffisent. L'objectif est d'aider le client à voir clair, pas de le faire paniquer.
 
 ## N comme Need-payoff : faire formuler la valeur de la solution
 
@@ -104,9 +93,7 @@ Les questions de bénéfice amènent le client à décrire lui-même les avantag
 - « Si vous pouviez réduire ce problème de moitié, qu'est-ce que vous feriez du temps ou de l'argent gagné ? »
 - « Est-ce que ce serait important pour vous de… ? »
 
-Ces questions ont un double effet. D'abord, le client se convainc lui-même en formulant les bénéfices. Ensuite, il vous donne les mots exacts que vous utiliserez pour présenter votre solution : ses mots à lui, qui résonnent avec ses priorités.
-
-Elles préparent aussi la décision collective : le client qui a formulé lui-même les bénéfices saura les expliquer à son associé, à son conjoint ou à sa hiérarchie.
+Ces questions ont un triple effet : le client se convainc lui-même, il vous donne les mots exacts à réutiliser dans votre présentation, et il saura expliquer ces bénéfices à son associé, à son conjoint ou à sa hiérarchie.
 
 ## Exemple complet : SPIN dans une boutique de matériaux
 
@@ -170,7 +157,7 @@ Avant chaque rendez-vous important, préparez la grille suivante. Vous en trouve
 3. **Implications** : pour chaque problème, quelles conséquences (financières, humaines, d'image) puis-je faire explorer ?
 4. **Bénéfices** : quelles questions permettront au client de formuler la valeur de la solution ?
 
-Préparez trois à cinq questions par catégorie. Vous ne les poserez pas toutes : elles vous serviront de guide pour garder le fil.
+Préparez trois à cinq questions par catégorie : elles serviront de guide.
 
 ## Erreurs fréquentes
 
@@ -178,7 +165,6 @@ Préparez trois à cinq questions par catégorie. Vous ne les poserez pas toutes
 - **Transformer la découverte en interrogatoire.** Alternez les questions avec des reformulations et des échanges naturels.
 - **Poser des questions fermées en série.** « Vous êtes satisfait ? Oui. Vous avez des problèmes ? Non. » Préférez les questions ouvertes : « Comment… ? », « Qu'est-ce qui… ? ».
 - **Mettre le client en difficulté.** Ne l'obligez pas à reconnaître publiquement une erreur ou un échec.
-- **Ne pas écouter les réponses.** Une question dont on n'utilise pas la réponse est une question perdue.
 
 ## Liste de contrôle du chapitre 5
 
