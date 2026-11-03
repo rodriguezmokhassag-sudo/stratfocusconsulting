@@ -114,6 +114,21 @@ Cette logique rejoint parfaitement le fonctionnement relationnel du marché cong
 
 La quasi-totalité de la population dispose d'un abonnement mobile, et le mobile money (MTN MoMo et Airtel Money, encadrés par la Banque des États de l'Afrique centrale) permet de payer un fournisseur, de verser un acompte ou d'encaisser une vente en quelques secondes. Trois conséquences pour l'entrepreneur : la distance compte moins, à condition que la confiance soit établie ; le paiement fractionné devient simple ; la trace écrite rassure l'acheteur, mais les arnaques ont aussi rendu les clients prudents face aux vendeurs inconnus. La confiance reste la condition de tout.
 
+## Atelier : cartographier une décision dans une administration
+
+Vendre à une administration obéit aux mêmes règles, avec un circuit souvent plus long. Voici la cartographie qu'a établie Jean-Marc pour un contrat de maintenance dans un service public.
+
+| Rôle | Fonction | Influence | Intérêt | Action de Jean-Marc |
+|---|---|---|---|---|
+| Initiateur | Chef du service technique | Forte | Fort | Visite des installations, diagnostic offert |
+| Prescripteur | Ingénieur chargé des équipements | Forte | Moyen | Fiches techniques, références d'autres services |
+| Décideur | Directeur général | Forte | Faible | Synthèse d'une page centrée sur la continuité du service |
+| Acheteur | Service administratif et financier | Moyenne | Faible | Dossier administratif complet, conditions claires |
+| Utilisateur | Agents des bâtiments | Faible | Fort | Écoute de leurs difficultés quotidiennes |
+| Filtre | Secrétariat de direction | Faible | Faible | Courtoisie, ponctualité, rendez-vous confirmés par écrit |
+
+Deux enseignements ressortent de cet exemple. D'abord, la personne la plus intéressée (le chef du service technique) n'est pas celle qui décide : il faut l'aider à porter le dossier. Ensuite, le décideur a peu d'intérêt pour le sujet : il faut lui présenter la décision sous l'angle qui le concerne, la continuité du service et l'absence de risque. Refaites cet exercice pour chacun de vos grands comptes.
+
 ## Les erreurs qui coûtent cher
 
 - **Parler à une seule personne** et ignorer les prescripteurs, les filtres et les décideurs absents.

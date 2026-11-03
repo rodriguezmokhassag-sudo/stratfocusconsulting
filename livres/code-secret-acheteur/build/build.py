@@ -329,6 +329,27 @@ def inserer_page_titre(doc):
         body.insert(i, el)
 
 
+def typographie_francaise(doc):
+    """Espaces insécables : guillemets, deux-points, point-virgule, ? et !"""
+    nb = "\u00a0"
+    paires = [("« ", "«" + nb), (" »", nb + "»"), (" :", nb + ":"),
+              (" ;", nb + ";"), (" ?", nb + "?"), (" !", nb + "!")]
+    paragraphes = list(doc.paragraphs)
+    for t in doc.tables:
+        for row in t.rows:
+            for cell in row.cells:
+                paragraphes.extend(cell.paragraphs)
+    for p in paragraphes:
+        for r in p.runs:
+            txt = r.text
+            if not txt:
+                continue
+            for a, b in paires:
+                txt = txt.replace(a, b)
+            if txt != r.text:
+                r.text = txt
+
+
 def titres_deux_lignes(doc):
     """« Chapitre 1 » sur une ligne, le titre en dessous."""
     import re
@@ -357,6 +378,7 @@ def post_traiter(chemin):
     for p in list(doc.paragraphs):
         if p.style.name in ("Title",):
             p._element.getparent().remove(p._element)
+    typographie_francaise(doc)
     titres_deux_lignes(doc)
     for p in doc.paragraphs:
         if "¤" in p.text:

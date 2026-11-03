@@ -1,142 +1,151 @@
 # Chapitre 8. L'exemple des autres, l'autorité et le sentiment d'appartenance
 
-## Cas d'ouverture : la page vide de Prisca
+## Le cas : lancer une marque locale face aux marques importées
 
-Prisca a lancé à Brazzaville une marque de cosmétiques naturels à base de beurre de karité et d'huiles locales. Ses produits sont excellents. Elle a créé une belle page sur les réseaux sociaux, avec de superbes photos. Pourtant, pendant trois mois, les ventes restent faibles. Les visiteurs regardent, aiment parfois les publications, mais commandent rarement.
+Séverin et Jean-Marc ont chacun créé une marque de produits cosmétiques naturels fabriqués localement. Ils vendent en ligne et cherchent à être distribués par des pharmacies et des instituts de beauté.
 
-Une amie consultante lui pose une question simple : « Si tu découvrais cette page sans te connaître, qu'est-ce qui te prouverait que ces produits marchent vraiment ? » Prisca réalise qu'il n'y a rien : aucun avis de client, aucune photo avant/après, aucune personnalité connue, aucune information sur sa formation de préparatrice.
+**L'approche de Séverin.** Il investit dans un beau site, de superbes photos et des publications sponsorisées. Les visiteurs aiment les publications, mais commandent peu. Les pharmaciens qu'il rencontre trouvent les produits « sympathiques », mais préfèrent attendre de « voir comment ça marche » avant de les référencer.
 
-Elle change alors de stratégie. Elle demande à ses vingt premières clientes l'autorisation de publier leurs témoignages et leurs photos. Elle met en avant sa formation et le contrôle qualité de ses produits. Elle offre ses produits à une dermatologue reconnue, qui accepte de les tester et de donner un avis honnête. Enfin, elle crée un groupe WhatsApp « Les Reines du Karité », où ses clientes échangent leurs astuces beauté.
+**L'approche de Jean-Marc.** Avant d'investir en publicité, il fait tester ses produits par trente utilisatrices et recueille, avec leur accord, leurs témoignages et leurs photos. Il fait analyser ses formulations par un laboratoire et affiche les résultats. Il propose ses produits à des professionnels de santé reconnus, qui acceptent de les tester et de donner un avis honnête. Enfin, il crée un groupe d'utilisatrices qui échangent leurs conseils et participent au choix des nouveaux produits. Quand il rencontre les pharmaciens, il arrive avec des preuves : chiffres de ventes en ligne, avis vérifiables, résultats d'analyse et recommandations de professionnels. Les référencements suivent.
 
-En deux mois, ses commandes triplent. Elle a activé trois leviers : **la preuve sociale**, **l'autorité** et **l'unité**.
+**Ce qui fait la différence.** Séverin a misé sur l'image. Jean-Marc a apporté des preuves. Il a activé trois leviers : **la preuve sociale**, **l'autorité** et **l'unité**.
 
 ## Troisième levier : la preuve sociale
 
 ### Le principe
 
-Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres, surtout ceux qui nous ressemblent. C'est un raccourci efficace : si beaucoup de gens font un choix, ce choix est probablement bon. Le nganda bondé attire plus que le maquis vide ; la vendeuse entourée de clientes attire de nouvelles clientes.
+Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres, surtout ceux qui nous ressemblent. Une étude publiée en 2008 par Noah Goldstein, Robert Cialdini et Vladas Griskevicius l'a montré dans des hôtels. Le message invitant à réutiliser les serviettes « pour protéger l'environnement » était moins efficace qu'un message indiquant que **la majorité des clients de l'hôtel** le faisaient. Le plus efficace précisait que la majorité des clients ayant séjourné **dans la même chambre** l'avaient fait. Plus les « autres » ressemblent à l'acheteur, plus leur exemple convainc.
 
-Une étude célèbre menée par Noah Goldstein, Robert Cialdini et Vladas Griskevicius, publiée en 2008, l'a montré dans les hôtels. Le message classique invitant les clients à réutiliser leurs serviettes « pour protéger l'environnement » était moins efficace qu'un message indiquant que **la majorité des clients de l'hôtel** réutilisaient leurs serviettes. Et le message le plus efficace précisait que la majorité des clients ayant séjourné **dans la même chambre** l'avaient fait. Plus les « autres » nous ressemblent, plus leur exemple est convaincant.
+La preuve sociale est d'autant plus forte que l'acheteur est **incertain** (nouveau produit, nouveau fournisseur, achat important) et que les exemples sont **proches de lui** (même secteur, même taille d'entreprise, même problème).
 
-### Les deux conditions qui renforcent la preuve sociale
+### La matrice des preuves
 
-1. **L'incertitude** : plus le client hésite, plus il regarde les autres. C'est pourquoi la preuve sociale est cruciale pour les nouveaux produits, les achats importants et les clients qui ne vous connaissent pas encore.
-2. **La similarité** : l'exemple d'une personne semblable au client (même métier, même ville, même situation) pèse plus lourd que l'exemple d'un inconnu. Un commerçant de Pointe-Noire sera plus convaincu par un autre commerçant de Pointe-Noire que par une multinationale.
+Toutes les preuves n'ont pas la même force. Classez les vôtres selon leur crédibilité et leur proximité avec votre acheteur.
 
-### Les formes de preuve sociale
+| | **Éloignée de l'acheteur** | **Proche de l'acheteur** |
+|---|---|---|
+| **Forte crédibilité** (vérifiable, chiffrée) | Utile en complément : certifications, études générales | **La plus puissante** : référence d'un client du même secteur, résultats chiffrés vérifiables |
+| **Faible crédibilité** (vague, non vérifiable) | Inutile : slogans, superlatifs | À renforcer : avis élogieux mais sans chiffres ni identité |
+
+### Les formes de preuve sociale pour l'entrepreneur
 
 | Forme | Exemples d'application |
 |---|---|
-| **Témoignages** | Messages vocaux ou vidéos de clients satisfaits, captures d'écran de messages de remerciement (avec autorisation) |
-| **Chiffres** | « Plus de 500 familles équipées à Dolisie », « 3 000 commandes livrées cette année » |
-| **Références** | Logos ou noms des entreprises clientes, avec leur accord |
-| **Avis en ligne** | Avis sur Google, Facebook ou les plateformes de vente |
-| **Popularité visible** | Le produit « le plus demandé », la file d'attente, les photos de clients avec le produit |
-| **Études de cas** | Récit détaillé de la transformation obtenue chez un client |
+| **Références clients** | Noms ou logos d'entreprises clientes, avec leur accord |
+| **Études de cas** | Situation, solution, résultat chiffré d'un client comparable |
+| **Témoignages** | Courtes vidéos ou messages vocaux de clients satisfaits |
+| **Chiffres d'usage** | « Plus de 2 000 unités vendues », « 40 entreprises équipées » |
+| **Avis en ligne** | Avis sur les pages professionnelles et les plateformes de vente |
+| **Popularité visible** | Le produit « le plus commandé », les rayons qui se vident |
 
-### La preuve sociale à l'ère de WhatsApp
-
-Au Congo, WhatsApp est devenu le premier vecteur de preuve sociale. Quelques bonnes pratiques :
-
-- **Demandez systématiquement un retour** à vos clients quelques jours après l'achat. Les réponses positives deviennent, avec leur accord, des témoignages.
-- **Privilégiez les messages vocaux et les vidéos courtes** : ils sont plus authentiques et plus convaincants que les textes, et accessibles aux clients qui lisent peu.
-- **Publiez régulièrement des preuves dans vos statuts** : livraisons, installations réalisées, clients satisfaits.
-- **Animez des groupes de clients** où les échanges entre membres constituent une preuve sociale permanente.
+Au Congo, les messageries sont devenues le premier vecteur de preuve sociale. Demandez systématiquement un retour à vos clients quelques jours après la livraison ; avec leur accord, les réponses positives deviennent des témoignages. Privilégiez les vidéos courtes et les messages vocaux, plus authentiques que les textes.
 
 ::: {custom-style="Encadre"}
 **Les faux avis**
 
-Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une tromperie. Au-delà de la question morale, c'est une pratique commerciale trompeuse au regard de la loi congolaise n° 36-2024 du 11 octobre 2024 portant protection du consommateur, et un risque majeur pour votre réputation : dans les réseaux sociaux congolais, les faux sont vite démasqués et largement partagés.
+Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une pratique commerciale trompeuse au regard de la loi congolaise n° 36-2024 du 11 octobre 2024 portant protection du consommateur. C'est aussi un risque majeur pour votre réputation : dans un milieu d'affaires où tout le monde se connaît, les faux sont vite démasqués et largement partagés.
 :::
 
 ### Éviter la preuve sociale négative
 
-Un piège fréquent consiste à mettre en avant, sans le vouloir, un comportement négatif majoritaire. « Beaucoup de clients oublient de payer leurs échéances à temps » incite inconsciemment d'autres clients à faire de même. Formulez plutôt : « La grande majorité de nos clients règlent leurs échéances à temps grâce au rappel par SMS. »
+Mettre en avant un comportement négatif majoritaire l'encourage involontairement. « Beaucoup de nos clients paient en retard » incite d'autres clients à faire de même. Préférez : « La grande majorité de nos clients règlent à l'échéance grâce au rappel automatique. »
 
 ## Quatrième levier : l'autorité
 
 ### Le principe
 
-Nous suivons plus facilement les recommandations des personnes que nous considérons comme compétentes ou légitimes. Le médecin, l'expert, l'enseignant, le chef traditionnel ou religieux, l'aîné respecté : leur parole a du poids.
+Nous suivons plus facilement les recommandations des personnes que nous jugeons compétentes ou légitimes. Les expériences de Stanley Milgram, dans les années 1960, ont montré à quel point l'autorité peut influencer les comportements. Dans la vie des affaires, elle joue un rôle plus modeste mais constant : nous faisons confiance aux experts parce que nous ne pouvons pas tout vérifier nous-mêmes.
 
-Cette tendance a été démontrée de façon spectaculaire, et inquiétante, par les expériences de Stanley Milgram dans les années 1960 : une majorité de participants acceptaient d'obéir à une figure d'autorité en blouse blanche jusqu'à infliger ce qu'ils croyaient être des chocs électriques dangereux. Dans la vie quotidienne, l'autorité joue un rôle plus modeste mais constant : nous faisons confiance aux experts parce que nous n'avons ni le temps ni les compétences pour tout vérifier nous-mêmes.
+Dans une culture à forte distance hiérarchique comme celle du Congo, l'autorité est un levier particulièrement puissant, sous plusieurs formes : **l'expertise** (diplômes, certifications, années d'expérience), **l'institution** (agréments, normes, partenariats reconnus), **le statut social** (personnalités respectées du secteur) et **la visibilité** (interventions publiques, publications).
 
-### L'autorité dans les sociétés à forte distance hiérarchique
+### Établir son autorité sans se vanter
 
-Comme nous l'avons vu au chapitre 3, les sociétés congolaises accordent une grande importance au statut, à l'âge et à la fonction. L'autorité y est donc un levier particulièrement puissant, sous plusieurs formes :
-
-- **L'autorité d'expertise** : diplômes, certifications, années d'expérience, publications.
-- **L'autorité institutionnelle** : agréments officiels, partenariats avec des institutions reconnues, références dans l'administration ou les grandes entreprises.
-- **L'autorité traditionnelle et sociale** : aînés, chefs de quartier, notables, responsables associatifs.
-- **L'autorité médiatique** : personnalités connues, animateurs, influenceurs reconnus dans leur domaine.
-
-### Comment établir votre autorité
-
-Le paradoxe de l'autorité est qu'il est difficile de la proclamer soi-même sans paraître prétentieux. Quelques méthodes efficaces :
-
-1. **Faites-vous présenter.** Une personne qui vous présente (« Je vous présente M. Makosso, il a équipé plus de cent boutiques en caisses enregistreuses ») établit votre autorité mieux que vous ne pourriez le faire.
-2. **Affichez vos preuves de compétence** : diplômes et agréments dans votre bureau, mentions sur vos documents, certifications sur votre profil.
-3. **Partagez votre savoir** : conseils, articles, vidéos pédagogiques, interventions lors d'événements professionnels. L'expert est celui qui enseigne.
-4. **Reconnaissez une faiblesse.** Cialdini montre qu'admettre une petite limite avant de présenter ses points forts renforce la crédibilité : « Nous ne sommes pas les moins chers du marché. En revanche, nous sommes les seuls à offrir une garantie de trois ans. »
-5. **Soignez les signes extérieurs de professionnalisme** : documents bien présentés, carte de visite, adresse électronique professionnelle, ponctualité.
+1. **Faites-vous présenter.** Une personne qui dit « il a structuré la force de vente de plusieurs entreprises du secteur » établit votre autorité mieux que vous-même.
+2. **Rendez vos preuves visibles** : certifications, analyses, agréments, références sur vos documents et vos profils.
+3. **Enseignez.** Conseils, articles, interventions en conférence ou en formation : l'expert est celui qui transmet.
+4. **Reconnaissez une limite.** Admettre un point faible avant de présenter ses forces renforce la crédibilité : « Nous ne sommes pas les moins chers. En revanche, nous sommes les seuls à garantir la livraison sous 48 heures. »
+5. **Soignez les signes de professionnalisme** : documents, adresse électronique professionnelle, ponctualité.
 
 ### Les prescripteurs : emprunter l'autorité des autres
 
-Une stratégie très efficace consiste à convaincre les personnes qui font autorité auprès de vos clients : ce sont vos **prescripteurs**. Le pharmacien qui recommande une marque, le mécanicien qui conseille une huile, le maçon qui recommande un ciment, l'enseignant qui conseille des fournitures, le comptable qui recommande un logiciel.
+Les prescripteurs sont les personnes dont l'avis guide vos acheteurs sans qu'elles achètent elles-mêmes. Pour une marque de cosmétiques, ce sont les pharmaciens et les dermatologues. Pour un fabricant de matériaux, les architectes et les ingénieurs. Pour un éditeur de logiciel de gestion, les experts-comptables. Pour un fabricant d'équipements agroalimentaires, les techniciens des organismes d'appui.
 
-Pour un fabricant de peinture, convaincre cent peintres en bâtiment peut valoir plus que convaincre mille particuliers. Identifiez les prescripteurs de votre secteur, formez-les, offrez-leur des échantillons et un excellent service. Ils deviendront votre force de vente invisible.
+| Prescripteur | Ce qu'il attend | Ce que vous pouvez lui apporter |
+|---|---|---|
+| Professionnel de santé | La sécurité de ses patients | Analyses, composition transparente, échantillons |
+| Architecte, ingénieur | Une solution fiable qui valorise son projet | Fiches techniques, visites de réalisations |
+| Expert-comptable | Des clients mieux organisés | Formation à l'outil, accès gratuit pour son cabinet |
+| Technicien, formateur | Des équipements adaptés au terrain | Démonstrations, documentation pratique |
+
+Convaincre dix prescripteurs bien choisis peut valoir plus que convaincre cent clients un par un.
 
 ## Cinquième levier : l'unité
 
-### Le principe
+En 2016, dans *Pre-Suasion*, Cialdini a ajouté un septième principe : **l'unité**. Il ne s'agit plus seulement d'apprécier quelqu'un, mais de partager une identité commune, de faire partie du même « nous ». Nous disons plus facilement oui à ceux que nous considérons comme membres de notre groupe.
 
-En 2016, dans son livre *Pre-Suasion*, Cialdini a ajouté un septième principe à sa liste : **l'unité**. Il ne s'agit plus seulement d'apprécier quelqu'un (sympathie) ou de lui ressembler (similarité), mais de partager une **identité commune** : faire partie du même « nous ». Nous disons plus facilement oui à ceux que nous considérons comme des membres de notre famille, de notre communauté ou de notre groupe.
+Peu de cultures accordent autant d'importance au « nous » que la culture congolaise. Pour l'entrepreneur, l'unité peut s'activer de plusieurs façons, toujours avec sincérité :
 
-### L'unité, un levier naturellement congolais
+- **L'identité nationale** : « fabriqué au Congo », « le savoir-faire congolais ». Le mouvement en faveur de la consommation de produits locaux s'appuie directement sur ce levier, à condition que la qualité suive.
+- **La communauté d'utilisateurs** : un groupe de clients qui échangent, s'entraident et se reconnaissent dans la marque.
+- **La cocréation** : associer les clients au choix d'un nouveau produit ou d'une nouvelle fonctionnalité. Celui qui a participé se sent membre du « nous ».
+- **L'identité professionnelle** : « par des entrepreneurs, pour des entrepreneurs ».
 
-Peu de cultures accordent autant d'importance au « nous » que la culture congolaise. On est « frère » ou « sœur » au-delà des liens de sang, « fils du village », « enfant du quartier », « promotionnaire ». Les expressions comme « on est ensemble » ou « c'est la famille » traduisent cette identité partagée.
-
-Pour le vendeur, l'unité peut s'activer de plusieurs façons, toujours avec sincérité :
-
-- **L'identité territoriale** : « produit ici, pour nous », « fabriqué au Congo », « le savoir-faire de chez nous ». Le mouvement en faveur du « consommer local » s'appuie directement sur ce levier.
-- **L'identité de communauté** : créer une véritable communauté de clients, comme les « Reines du Karité » de Prisca, avec ses codes, ses échanges et son sentiment d'appartenance.
-- **La cocréation** : associer les clients à la conception des produits, leur demander leur avis, les faire voter pour un nouveau modèle. Celui qui a participé à la création se sent membre du « nous ».
-- **Le partage d'expériences** : événements clients, rencontres, ateliers, célébrations communes.
-
-::: {custom-style="Encadre"}
-**Les mamans de la Bouenza**
-
-Une coopérative de transformation de fruits de la Bouenza a renouvelé ses étiquettes en y faisant figurer la photo et le prénom des productrices, avec la mention « Nos mamans de la Bouenza ont cueilli ces mangues pour vous ». Les consommateurs de Brazzaville et de Pointe-Noire ont acheté non seulement un jus, mais aussi une appartenance à une histoire commune. Le levier de l'unité a transformé un produit ordinaire en produit identitaire.
-:::
-
-### Les dangers de l'unité
-
-L'unité est un levier puissant qui peut aussi diviser. Il ne doit jamais être utilisé pour exclure, opposer des communautés ou jouer sur des appartenances ethniques ou religieuses. Le « nous » que construit une entreprise doit être ouvert : celui des clients, des passionnés d'un même produit, des habitants d'une même ville ou d'un même pays.
+Le « nous » que construit une entreprise doit rester ouvert. Il ne doit jamais servir à exclure ni à jouer sur des appartenances ethniques, régionales ou religieuses.
 
 ## Combiner les trois leviers
 
-Les leviers sont plus puissants lorsqu'ils se combinent. Une seule publication peut les activer tous les trois :
+Les leviers sont plus puissants lorsqu'ils se combinent. Une seule page de présentation peut les activer tous :
 
-> « Le Dr Mbemba, pédiatre à Pointe-Noire, recommande nos farines infantiles enrichies (**autorité**). Plus de 2 000 mamans de la ville les utilisent déjà (**preuve sociale**). Rejoignez la communauté des Mamans Fortes et partagez vos astuces avec d'autres mamans comme vous (**unité**). »
+> « Recommandé par des pharmaciens et des dermatologues (**autorité**). Déjà adopté par plus de 2 000 utilisatrices (**preuve sociale**). Rejoignez la communauté de celles qui choisissent un soin naturel fabriqué au Congo (**unité**). »
 
-## Erreurs fréquentes
+## Deuxième cas pratique : vendre un logiciel grâce aux prescripteurs
 
-- **Lancer un produit sans aucune preuve sociale.** Commencez par recueillir quelques témoignages, même auprès de clients tests.
-- **Utiliser des témoignages trop éloignés de vos clients.** Une référence internationale impressionne moins qu'un client voisin.
+Séverin et Jean-Marc éditent chacun un logiciel de comptabilité simplifiée pour les petites entreprises.
+
+**L'approche de Séverin.** Il démarche directement les dirigeants de PME, un par un. Chaque vente demande plusieurs rendez-vous et beaucoup d'explications. Les dirigeants hésitent : « Il faut que j'en parle à mon comptable. » Le comptable, qui ne connaît pas le logiciel, conseille souvent d'attendre.
+
+**L'approche de Jean-Marc.** Il identifie les cabinets d'expertise comptable qui suivent de nombreuses petites entreprises. Il leur offre un accès gratuit, forme leurs collaborateurs et leur montre comment le logiciel leur fait gagner du temps lors des clôtures. Convaincus, les cabinets recommandent le logiciel à leurs clients. Jean-Marc publie ensuite les études de cas de trois PME, avec leur accord. Un cabinet convaincu lui apporte en moyenne plusieurs clients par trimestre.
+
+**Ce qui fait la différence.** Séverin a affronté seul la méfiance de chaque acheteur. Jean-Marc a emprunté l'autorité des prescripteurs que ses acheteurs consultaient déjà, puis il a renforcé cette autorité par des preuves sociales proches.
+
+## Atelier : construire une étude de cas en cinq lignes
+
+Une étude de cas efficace tient en cinq lignes :
+
+| Ligne | Contenu | Exemple |
+|---|---|---|
+| 1. Le client | Secteur, taille, sans détail superflu | « Une PME de distribution de 25 salariés. » |
+| 2. La situation | Le problème chiffré | « Clôture annuelle en trois mois, avec de nombreuses erreurs de saisie. » |
+| 3. La solution | Ce qui a été fait, en une phrase | « Mise en place du logiciel et formation de la comptable en deux jours. » |
+| 4. Le résultat | Chiffres et bénéfice ressenti | « Clôture en trois semaines ; le dirigeant suit sa trésorerie chaque semaine. » |
+| 5. La preuve | Accord du client, contact possible | « Témoignage vidéo disponible, contact sur demande. » |
+
+Rédigez deux études de cas de ce type pour vos meilleurs clients, avec leur accord.
+
+## Conseils de mise en œuvre
+
+- **Collectez les preuves en continu.** Prévoyez dans votre processus de vente un moment fixe, une à deux semaines après chaque livraison, pour recueillir l'avis du client et lui demander l'autorisation de le citer.
+- **Rangez vos preuves par secteur.** Un dossier par secteur de clientèle (hôtellerie, industrie, administration, services) vous permet de présenter à chaque prospect les références qui lui ressemblent.
+- **Faites parler les chiffres.** « Client très satisfait » convainc moins que « délai de traitement divisé par deux ». Aidez vos clients à mesurer leurs résultats : vous obtiendrez de meilleures preuves.
+- **Entretenez vos prescripteurs.** Un prescripteur s'oublie vite. Tenez-le informé de vos nouveautés, invitez-le à vos démonstrations, remerciez-le chaque fois qu'il vous recommande.
+- **Soignez la cohérence.** Un témoignage enthousiaste à côté d'un site négligé ou d'un emballage approximatif perd sa force. L'autorité se construit sur l'ensemble des signaux que vous envoyez.
+
+## Les erreurs qui coûtent cher
+
+- **Lancer un produit sans aucune preuve**, en misant tout sur l'image.
+- **Utiliser des références trop éloignées** de vos acheteurs.
 - **Proclamer son autorité** au lieu de la démontrer.
-- **Négliger les prescripteurs** de votre secteur.
-- **Fabriquer une fausse communauté** ou de faux avis.
-- **Utiliser l'unité pour exclure** ou diviser.
+- **Négliger les prescripteurs** de son secteur.
+- **Fabriquer de faux avis** ou une fausse communauté.
 
-## Liste de contrôle du chapitre 8
+## Feuille de route du chapitre 8
 
-- [ ] J'ai recueilli au moins cinq témoignages authentiques de clients, avec leur autorisation écrite ou enregistrée.
-- [ ] J'ai calculé et je mets en avant un chiffre de preuve sociale réel (nombre de clients, de livraisons, d'années).
-- [ ] Mes preuves de compétence (diplômes, agréments, références) sont visibles sur mes documents et mes profils.
-- [ ] J'ai identifié les dix principaux prescripteurs de mon secteur et prévu une action pour chacun.
-- [ ] J'ai défini le « nous » de ma marque : quelle identité partagée puis-je proposer sincèrement à mes clients ?
-- [ ] J'ai vérifié que mes messages ne mettent pas en avant un comportement négatif majoritaire.
+- [ ] J'ai classé mes preuves existantes dans la matrice crédibilité et proximité.
+- [ ] J'ai recueilli au moins cinq témoignages authentiques, avec autorisation.
+- [ ] J'ai rédigé deux études de cas chiffrées de clients comparables à mes prospects.
+- [ ] J'ai identifié les dix prescripteurs clés de mon secteur et prévu une action pour chacun.
+- [ ] J'ai défini le « nous » que ma marque peut proposer sincèrement à ses clients.
 
 ::: {custom-style="Encadre"}
-Face à l'incertitude, le client regarde ce que font les gens qui lui ressemblent, écoute ceux qui font autorité et rejoint ceux avec qui il partage une identité. Montrez de vraies preuves, faites-vous recommander par de vrais experts et construisez une communauté authentique. Ces trois leviers transforment vos clients et vos prescripteurs en force de vente.
+Face à l'incertitude, l'acheteur regarde ce que font ceux qui lui ressemblent, écoute ceux qui font autorité et rejoint ceux avec qui il partage une identité. Apportez des preuves vérifiables, faites-vous recommander par des prescripteurs reconnus et construisez une communauté authentique : ces trois leviers transforment l'image en ventes.
 :::

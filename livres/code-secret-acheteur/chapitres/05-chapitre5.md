@@ -17,7 +17,7 @@ Séverin et Jean-Marc dirigent chacun une entreprise d'installation de systèmes
 
 Le dirigeant répond lui-même : il pourrait livrer à l'heure, accepter de nouvelles commandes et récupérer en quelques années le coût de l'installation. Il demande un devis.
 
-**Ce qui fait la différence.** Séverin a affirmé la valeur de sa solution. Jean-Marc a aidé le client à la découvrir et à la formuler lui-même. Or nous croyons beaucoup plus ce que nous disons nous-mêmes que ce que les autres nous affirment.
+**Ce qui fait la différence.** Séverin a affirmé la valeur de sa solution. Jean-Marc a aidé le client à la découvrir et à la formuler lui-même. Or, nous croyons beaucoup plus ce que nous disons nous-mêmes que ce que les autres nous affirment.
 
 ## La découverte : l'étape la plus négligée
 
@@ -97,6 +97,30 @@ Une règle utile : dans un entretien de découverte, **le client devrait parler 
 | **Enthousiaste** | Questions ouvertes sur ses ambitions, implications sur l'image, bénéfices liés à la reconnaissance |
 | **Bienveillant** | Rythme lent, questions douces, implications sur les personnes (équipe, clients) |
 | **Analyste** | Questions précises, laisser le client faire ses propres calculs, documenter les implications |
+
+## Atelier : un entretien SPIN annoté
+
+Voici un extrait d'entretien conduit par Jean-Marc, qui propose cette fois une formation commerciale au dirigeant d'une entreprise de distribution. Chaque question est annotée.
+
+> **(S)** « Combien de commerciaux composent votre équipe, et comment suivez-vous leurs résultats ? » Quatre commerciaux, un point mensuel.
+>
+> **(P)** « Êtes-vous satisfait du taux de transformation de leurs rendez-vous ? » Pas vraiment : beaucoup de visites, peu de commandes.
+>
+> **(I)** « Combien de rendez-vous faut-il en moyenne pour une commande ? Et combien coûte chaque visite en temps et en carburant ? » Le dirigeant estime huit visites par commande. Il calcule le coût mensuel des visites sans résultat.
+>
+> **(I)** « Quel effet cela a-t-il sur la motivation de l'équipe ? » Deux commerciaux parlent de partir.
+>
+> **(N)** « Si chaque commercial transformait une visite sur cinq au lieu d'une sur huit, qu'est-ce que cela changerait pour vous ? » Le dirigeant répond : plus de chiffre d'affaires, moins de frais, une équipe plus motivée et stable.
+
+En cinq questions, le dirigeant a lui-même décrit l'enjeu et la valeur d'une formation. Jean-Marc n'a encore rien présenté. Rédigez un entretien du même type pour votre offre principale.
+
+## Conseils de mise en œuvre
+
+- **Préparez, puis oubliez votre liste.** La matrice SPIN sert à préparer l'entretien, pas à le réciter. Pendant le rendez-vous, suivez le fil de ce que dit le client et utilisez vos questions comme repères.
+- **Commencez par un seul client.** Testez la méthode sur un prospect avec lequel vous êtes à l'aise, puis élargissez. Les premières fois, l'enchaînement des questions paraît artificiel ; il devient naturel après cinq ou six entretiens.
+- **Formez votre équipe par le jeu de rôle.** Un commercial joue l'acheteur, un autre conduit l'entretien, un troisième observe et note les types de questions posées. Dix minutes de jeu de rôle par semaine transforment une équipe en un trimestre.
+- **Mesurez la part de parole.** Enregistrez, avec l'accord du client, ou faites observer un entretien. La plupart des entrepreneurs découvrent qu'ils parlent plus des deux tiers du temps.
+- **Réutilisez les mots du client.** Dans la proposition écrite, citez les problèmes et les bénéfices exactement comme il les a formulés. Il se reconnaîtra dans le document, et ceux qui le liront après lui comprendront l'enjeu.
 
 ## Les erreurs qui coûtent cher
 

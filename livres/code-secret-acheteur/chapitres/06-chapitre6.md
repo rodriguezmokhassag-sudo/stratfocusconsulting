@@ -106,6 +106,34 @@ Une grande partie des échanges commerciaux passe désormais par le téléphone,
 - **Le passage de l'écrit à la voix** : un interlocuteur qui appelle ou envoie un message vocal cherche souvent plus de proximité.
 - **Le message lu sans réponse** : l'acheteur ne sait pas quoi répondre. Relancez avec une question simple, à laquelle il est facile de répondre.
 
+## Deuxième cas pratique : lire un prospect à distance
+
+Séverin et Jean-Marc vendent chacun une application de prise de commandes destinée aux distributeurs. Une grande partie de leurs échanges avec les prospects se fait par courriel et par messagerie.
+
+**L'approche de Séverin.** Un prospect, d'abord très réactif, met de plus en plus de temps à répondre, puis laisse un message sans réponse pendant une semaine. Séverin envoie trois relances identiques : « Avez-vous pu avancer sur notre proposition ? » Le prospect cesse de répondre.
+
+**L'approche de Jean-Marc.** Face au même ralentissement, il relit l'échange : les réponses se sont raccourcies au moment où il a envoyé le tarif annuel. Il comprend que le montant global a pu inquiéter. Il appelle le prospect plutôt que de relancer par écrit, et pose une question simple : « J'ai l'impression que notre proposition arrive à un moment compliqué. Qu'est-ce qui vous ferait avancer plus sereinement ? » Le prospect explique que son budget est trimestriel. Jean-Marc propose une facturation trimestrielle. L'échange reprend.
+
+**Ce qui fait la différence.** Séverin a lu le silence comme un oubli. Jean-Marc l'a lu comme un signal, a identifié le moment où l'intérêt avait faibli et a changé de canal pour poser la bonne question.
+
+## Atelier : décoder cinq phrases
+
+| Phrase entendue | Signal probable | Question pour clarifier |
+|---|---|---|
+| « C'est intéressant, envoyez-moi une documentation. » | Fin polie de l'échange, ou besoin de convaincre un tiers | « Bien sûr. À qui sera-t-elle destinée, et qu'est-ce qui comptera pour cette personne ? » |
+| « On va voir. » | Hésitation non exprimée | « Qu'est-ce qui vous ferait dire oui sans hésiter ? » |
+| « Le prix, on en reparlera. » | Le prix est un frein | « Préférez-vous que nous regardions ensemble plusieurs formules ? » |
+| « Mon associé est en voyage. » | Décision collective | « Voulez-vous que je prépare une synthèse à lui transmettre ? » |
+| « Quand pourriez-vous livrer ? » | Signal d'achat | « Si nous validons aujourd'hui, la livraison peut avoir lieu jeudi. Cela vous convient-il ? » |
+
+## Conseils de mise en œuvre
+
+- **Venez à deux aux rendez-vous importants.** Pendant que l'un parle, l'autre observe. Après le rendez-vous, comparez vos lectures des signaux : vous serez surpris de tout ce que vous n'aviez pas vu en parlant.
+- **Notez le moment, pas seulement le signal.** Un signal n'a de sens que rapporté au sujet abordé à cet instant : le prix, les délais, la concurrence, la mise en œuvre.
+- **Vérifiez toujours par une question.** Un signal est une hypothèse, jamais une certitude. « J'ai l'impression que le délai vous préoccupe ; est-ce que je me trompe ? » permet de confirmer sans rien imposer.
+- **Observez votre propre corps.** Le client lit aussi vos signaux. Un entrepreneur qui se crispe à l'annonce de son prix transmet son doute. Entraînez-vous à annoncer votre prix calmement, en regardant votre interlocuteur, puis à vous taire.
+- **Tenez un journal des formules.** Notez pendant un mois les phrases d'hésitation que vous entendez et ce qu'elles cachaient réellement. En quelques semaines, vous connaîtrez le langage indirect de vos acheteurs.
+
 ## Les erreurs qui coûtent cher
 
 - **Prendre « on va voir » pour un oui.** Vérifiez toujours par une question ouverte.
@@ -119,7 +147,7 @@ Une grande partie des échanges commerciaux passe désormais par le téléphone,
 - [ ] J'ai listé les formules indirectes que mes acheteurs utilisent pour dire non, et une question pour clarifier chacune.
 - [ ] Je repère les signaux d'achat et je cesse d'argumenter lorsqu'ils apparaissent.
 - [ ] Je laisse au moins cinq secondes de silence après chaque question importante.
-- [ ] Après chaque rendez-vous, je remplis la grille d'observation de l'annexe A.
+- [ ] Après chaque rendez-vous important, je note les signaux d'intérêt et de doute observés, et le moment où ils sont apparus.
 - [ ] Je suis l'évolution des délais et de la longueur des réponses de mes prospects.
 
 ::: {custom-style="Encadre"}

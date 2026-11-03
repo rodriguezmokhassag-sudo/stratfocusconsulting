@@ -114,6 +114,27 @@ Demandez à trois personnes qui travaillent avec vous de vous situer sur les deu
 
 Pendant les premières minutes d'un échange, observez cinq indices : le débit de parole, la prise d'initiative, le contenu (personnes ou faits), le type de questions posées, le rapport au temps. Formulez une hypothèse de profil, adaptez votre discours, et corrigez l'hypothèse si la suite de l'échange la contredit. La fiche complète figure en annexe A.
 
+## Deuxième cas pratique : le solo-entrepreneur face au directeur
+
+Au début de leur parcours, Séverin et Jean-Marc ont tous deux travaillé comme graphistes indépendants. Chacun a été reçu par le directeur général d'une PME qui souhaitait renouveler l'identité visuelle de son entreprise.
+
+**L'approche de Séverin.** Il ouvre son portfolio et commente longuement chaque création : choix des couleurs, typographies, inspirations. Le directeur, pressé, l'interrompt : « Combien et quand ? » Séverin, déstabilisé, répond qu'il doit « réfléchir au prix » et enverra un devis. Le directeur choisit un autre prestataire.
+
+**L'approche de Jean-Marc.** Dès les salutations, il observe un interlocuteur qui parle vite, regarde l'heure et pose des questions fermées : un Décideur. Il adapte immédiatement son discours : « En deux minutes : une nouvelle identité qui positionne votre marque face aux concurrents importés, livrée en trois semaines, selon deux formules. » Il montre trois réalisations seulement, avec leurs résultats, puis laisse le directeur choisir la formule. Il réserve les détails créatifs pour la responsable de communication, une Enthousiaste, qu'il rencontre ensuite.
+
+**Ce qui fait la différence.** Séverin a parlé comme un créatif à un Décideur. Jean-Marc a lu le profil en quelques minutes et a donné à chacun ce qu'il cherchait.
+
+## Atelier : un même argument, quatre versions
+
+Prenez l'argument central de votre offre et déclinez-le pour les quatre profils. Exemple pour une offre de maintenance informatique :
+
+| Profil | Version de l'argument |
+|---|---|
+| **Décideur** | « Zéro arrêt de vos postes pendant les heures de travail, ou nous remboursons le mois. » |
+| **Enthousiaste** | « Vos équipes travailleront avec un parc informatique moderne, comme dans les entreprises les plus en avance du secteur. » |
+| **Bienveillant** | « Un technicien attitré connaît vos équipes et répond à chacune de leurs questions, sans jugement. » |
+| **Analyste** | « Temps moyen d'intervention de 2 heures, mesuré sur les 12 derniers mois, détaillé dans le rapport mensuel. » |
+
 ## Les erreurs qui coûtent cher
 
 - **Présenter la même chose à tout le monde.** Une réunion à quatre profils demande quatre angles.

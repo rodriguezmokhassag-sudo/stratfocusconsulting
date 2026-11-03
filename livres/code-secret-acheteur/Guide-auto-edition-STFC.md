@@ -56,9 +56,9 @@ Le fichier Word peut être converti en livre numérique (EPUB) pour Amazon Kindl
 
 Appliquer au livre les méthodes du livre lui-même :
 
-- **Preuve sociale** : faire lire le livre à 10 ou 15 dirigeants et commerçants avant la sortie, et recueillir leurs avis.
+- **Preuve sociale** : faire lire le livre à 10 ou 15 chefs d'entreprise et entrepreneurs avant la sortie, et recueillir leurs avis.
 - **Réciprocité** : offrir un extrait gratuit (chapitre 1 et fiches de l'annexe A) sur WhatsApp et LinkedIn.
 - **Rareté réelle** : séance de dédicace ou atelier de lancement à places limitées à Brazzaville et Pointe-Noire.
 - **Paiement simple** : vente directe avec paiement MTN MoMo ou Airtel Money et livraison.
-- **Prescripteurs** : chambres de commerce, associations de commerçants, écoles de commerce, réseaux de femmes entrepreneures.
+- **Prescripteurs** : chambres de commerce, organisations patronales, incubateurs, écoles de commerce et universités, réseaux d'entrepreneurs.
 - **Offre STFC** : proposer le livre comme support des formations et ateliers du cabinet.

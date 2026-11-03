@@ -2,104 +2,112 @@
 
 Les fiches suivantes peuvent être photocopiées pour un usage professionnel personnel ou pour la formation de votre équipe.
 
-## Fiche 1. Lecture rapide du client (chapitre 4)
+## Fiche 1. Matrice « Ressentir et Justifier » (chapitre 1)
+
+**Client :** ……………………… **Offre :** ………………………
+
+| | Ce que le client doit ressentir | Ce qui lui permettra de justifier |
+|---|---|---|
+| **Pour lui** | | |
+| **Pour ceux à qui il rend des comptes** | | |
+
+## Fiche 2. Cartographie de la décision (chapitre 3)
+
+| Rôle | Nom et fonction | Influence (forte ou faible) | Intérêt (fort ou faible) | Action prévue |
+|---|---|---|---|---|
+| Initiateur | | | | |
+| Prescripteur | | | | |
+| Décideur | | | | |
+| Acheteur | | | | |
+| Utilisateur | | | | |
+| Filtre | | | | |
+
+## Fiche 3. Lecture rapide de l'acheteur (chapitre 4)
 
 | Observation | Plutôt… | Ou plutôt… |
 |---|---|---|
-| Débit de parole | Rapide → affirmé | Posé → réservé |
-| Prise d'initiative | Oriente la conversation → affirmé | Laisse faire → réservé |
-| Contenu | Personnes, émotions → personnes | Faits, chiffres → tâches |
-| Questions posées | Les autres, l'image, la relation | Les résultats, les détails |
+| Débit de parole | Rapide : affirmé | Posé : réservé |
+| Prise d'initiative | Oriente l'échange : affirmé | Laisse faire : réservé |
+| Contenu | Personnes, émotions | Faits, chiffres |
+| Questions posées | Image, références, relation | Résultats, détails, calculs |
 | Rapport au temps | Pressé | Disponible |
-| **Hypothèse de profil** | Décideur / Enthousiaste | Bienveillant / Analyste |
+| **Hypothèse de profil** | Décideur ou Enthousiaste | Bienveillant ou Analyste |
 
-## Fiche 2. Grille de préparation SPIN (chapitre 5)
+## Fiche 4. Matrice de découverte SPIN (chapitre 5)
 
-**Client :** ……………………… **Date :** ………… **Offre concernée :** ………………………
+| Problème probable | Questions de situation utiles | Questions d'implication | Question de bénéfice | Réponse de mon offre |
+|---|---|---|---|---|
+| | | | | |
+| | | | | |
+| | | | | |
 
-| Étape | Mes questions préparées (3 à 5) | Réponses notées |
-|---|---|---|
-| **Situation** : ce qui me manque vraiment | | |
-| **Problème** : difficultés probables | | |
-| **Implication** : conséquences à faire mesurer | | |
-| **Need-payoff** : bénéfices à faire formuler | | |
+**Mots exacts du client sur les bénéfices :** …………………………………………
 
-**Mots exacts utilisés par le client pour décrire les bénéfices :** …………………………………………
+**Avancée obtenue :** …………………………………………
 
-**Avancée obtenue en fin d'entretien :** …………………………………………
-
-## Fiche 3. Grille d'observation des signaux (chapitre 6)
-
-| Signaux d'intérêt observés | Signaux de doute observés | Moment de la conversation |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-
-Moment où l'intérêt a été le plus fort : ………………………………
-
-Moment où l'intérêt a faibli : ………………………………
-
-Question ouverte à poser au prochain contact : ………………………………
-
-## Fiche 4. Script CROC (chapitres 7 et 10)
+## Fiche 5. Script CROC (chapitres 7 et 10)
 
 | Étape | Mon texte (une à deux phrases) |
 |---|---|
 | **Contact** : salutation, présentation, recommandation, disponibilité | |
-| **Raison** : pourquoi je contacte cette personne, ce que j'apporte, une question de découverte | |
-| **Objectif** : ce que je propose concrètement (rendez-vous, essai, diagnostic, commande) | |
+| **Raison** : pourquoi cette personne, ce que j'apporte, une question | |
+| **Objectif** : l'étape concrète proposée | |
 | **Conclusion** : confirmation, récapitulatif, remerciement | |
 
-## Fiche 5. Fiche de négociation (chapitre 9)
+## Fiche 6. Fiche de négociation (chapitre 9)
 
-- Mon prix de départ (ancre) : ………………………
-- Mon prix plancher : ………………………
-- Concessions possibles, de la moins coûteuse à la plus coûteuse :
-  1. ………………………
-  2. ………………………
-  3. ………………………
-- Contrepartie demandée pour chaque concession : ………………………
-- « Petits plus » à ajouter plutôt que baisser le prix : ………………………
+| Élément | Ma préparation |
+|---|---|
+| Prix de départ (ancre) | |
+| Prix plancher | |
+| Concession 1, la moins coûteuse, et sa contrepartie | |
+| Concession 2 et sa contrepartie | |
+| Concession 3, la plus coûteuse, et sa contrepartie | |
+| Ajouts possibles plutôt qu'une remise | |
 
-## Fiche 6. Audit du parcours d'achat (chapitre 10)
-
-Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque canal.
-
-| Critère | Boutique | Téléphone | WhatsApp | Réseaux sociaux |
-|---|---|---|---|---|
-| Informations essentielles faciles à trouver | | | | |
-| Rapidité de la première réponse | | | | |
-| Nombre d'actions pour commander (5 = très peu) | | | | |
-| Prix complets, sans surprise | | | | |
-| Paiement simple et sécurisé | | | | |
-| Confirmation claire de la commande | | | | |
-| Contact identifié en cas de problème | | | | |
-| **Total sur 35** | | | | |
-
-## Fiche 7. Traitement des objections avec CRAC (chapitre 11)
+## Fiche 7. Préparation des objections avec CRAC (chapitre 11)
 
 | Objection | Creuser (ma question) | Reformuler | Argumenter | Contrôler |
 |---|---|---|---|---|
 | « C'est trop cher. » | | | | |
 | « Je vais réfléchir. » | | | | |
 | « Je dois en parler à… » | | | | |
-| « J'ai déjà un fournisseur. » | | | | |
-| « Ce n'est pas le moment. » | | | | |
-| « Je n'ai pas confiance. » | | | | |
+| « Nous avons déjà un fournisseur. » | | | | |
+| « Le budget est bouclé. » | | | | |
+| « Je ne vous connais pas. » | | | | |
 
-## Fiche 8. Tableau de bord mensuel (conclusion)
+## Fiche 8. Tableau de bord commercial mensuel (chapitres 10 et 12)
 
 | Indicateur | Mois 1 | Mois 2 | Mois 3 |
 |---|---|---|---|
-| Contacts / demandes | | | |
-| Ventes conclues | | | |
-| Taux de conversion | | | |
+| Demandes ou prospects | | | |
+| Délai moyen de première réponse | | | |
+| Propositions envoyées | | | |
+| Contrats signés | | | |
+| Taux de transformation | | | |
 | Panier moyen | | | |
-| Délai moyen de réponse | | | |
-| Clients revenus dans le mois | | | |
+| Clients perdus | | | |
 | Recommandations reçues | | | |
 | Amélioration testée ce mois | | | |
+
+## Fiche 9. Escalier des engagements (chapitre 9)
+
+| Marche | Engagement demandé à mon client | Date prévue | Obtenu |
+|---|---|---|---|
+| 1. Accepter un échange | | | |
+| 2. Reconnaître le besoin | | | |
+| 3. Venir voir ou tester | | | |
+| 4. Valider la proposition | | | |
+| 5. Réserver (acompte) | | | |
+| 6. Conclure | | | |
+| 7. Recommander | | | |
+
+## Fiche 10. Matrice de fidélisation (chapitre 12)
+
+| | Satisfaction faible | Satisfaction élevée |
+|---|---|---|
+| **Valeur élevée** | Clients : ……………… Action : rencontre et plan d'action | Clients : ……………… Action : demande de recommandation |
+| **Valeur faible** | Clients : ……………… Action : diagnostic de la cause | Clients : ……………… Action : développement et réachat simplifié |
 
 # Annexe B. Glossaire
 
@@ -194,14 +202,10 @@ Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque can
 
 - ARPCE (Agence de régulation des postes et des communications électroniques). Rapport annuel 2025 sur le marché des communications électroniques. www.arpce.cg
 - BEAC. Rapports sur les services de paiement et la monnaie électronique dans la CEMAC. www.beac.int
-- Institut national de la statistique (INS) et Bureau international du travail. Enquête sur l'emploi et le secteur informel au Congo (EESIC, 2009) ; nouvelle enquête annoncée pour 2027.
 - République du Congo. Loi n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel (Journal officiel n° 45-2019).
 - République du Congo. Loi n° 5-2025 du 29 mars 2025 portant création de la Commission nationale pour la protection des données à caractère personnel.
 - République du Congo. Loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur.
-- Commission économique des Nations unies pour l'Afrique (CEA). Données sur l'emploi informel en Afrique, 2024. www.uneca.org
-- CPCCAF. *Baromètre de l'opinion des entreprises africaines francophones*, 25e édition, 2025. www.cpccaf.org
-- OCDE / Commission de l'Union africaine. *Dynamiques du développement en Afrique 2024*. www.oecd.org
-- OHADA. *Acte uniforme relatif au droit commercial général* (statut de l'entreprenant), révisé le 15 décembre 2010. www.ohada.com
+- CEMAC. Directive de 2019 relative à la protection du consommateur.
 
 ## Sources sur les méthodes commerciales
 
@@ -215,14 +219,18 @@ Note : les chiffres relatifs au Congo évoluent vite ; consultez les dernières 
 
 ## Rodriguez MOKHASSA
 
-Rodriguez MOKHASSA est le fondateur de Stratfocus Consulting (STFC), cabinet spécialisé dans l'accélération des petites et moyennes entreprises, la performance commerciale et la stratégie marketing.
+Rodriguez MOKHASSA est expert en stratégie de vente, en marketing et en innovation, fondateur et manager principal du cabinet Stratfocus Consulting (STFC).
 
-Consultant et formateur, il accompagne des dirigeants de TPE et de PME, des commerçants et des équipes commerciales en République du Congo dans la structuration de leur démarche de vente, l'amélioration de leurs résultats commerciaux et le développement durable de leur clientèle.
+Avant de créer son cabinet, il a exercé comme manager commercial au sein de grandes structures de la place, où il occupait une position centrale dans la réalisation du chiffre d'affaires de l'entreprise : pilotage des objectifs, animation des équipes, négociation avec les grands comptes.
 
-Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN Selling, CROC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités des marchés congolais : poids de la relation et de la réputation, décision collective, économie informelle, essor du mobile money et du commerce sur messagerie.
+Entrepreneur et industriel congolais, il a créé et développé une marque qui pèse aujourd'hui plusieurs dizaines de millions de francs CFA. Cette expérience lui a fait vivre de l'intérieur les difficultés commerciales des entrepreneurs : convaincre des distributeurs, défendre un prix, imposer un produit local face à des marques installées. Les méthodes qu'il partage dans ce livre ne viennent pas seulement de la formation : elles ont été éprouvées sur le terrain.
+
+Depuis plus de cinq ans, il accompagne des entreprises et des industries congolaises. Il a structuré des sociétés qui manquaient de direction commerciale pour les doter d'une vision claire, d'une organisation et d'outils de pilotage, et il a formé des commerciaux et des dirigeants devenus des ressources clés de la vente dans leurs entreprises.
+
+Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN, CROC, CRAC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités du marché congolais.
 
 ::: {custom-style="Mentions"}
-[À compléter par l'auteur : formation, parcours professionnel, années d'expérience, secteurs et pays d'intervention, nombre d'entreprises accompagnées, certifications, publications, coordonnées professionnelles.]
+[À compléter par l'auteur si souhaité : formation, certifications, coordonnées professionnelles.]
 :::
 
 ## Stratfocus Consulting (STFC)
@@ -239,4 +247,4 @@ La méthode STFC repose sur une conviction : chaque entreprise, quelle que soit 
 [À compléter : adresse, téléphone, adresse électronique, site Internet, réseaux sociaux.]
 :::
 
-Ce livre est publié par STFC Éditions, la marque éditoriale du cabinet, qui édite des guides pratiques pour les dirigeants et les vendeurs congolais. Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.
+Ce livre est publié par STFC Éditions, la marque éditoriale du cabinet, qui édite des guides pratiques pour les entrepreneurs et les dirigeants congolais. Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.

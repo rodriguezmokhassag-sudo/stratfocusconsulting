@@ -100,6 +100,28 @@ Nous accordons plus de valeur à ce que nous possédons, ou avons l'impression d
 | Confirmation | Cherche à confirmer son opinion | Soigner la première impression |
 | Dotation | Valorise ce qu'il possède | Proposer un essai accompagné |
 
+## Deuxième cas pratique : faire abandonner le tableur
+
+Séverin et Jean-Marc proposent chacun un logiciel de facturation et de suivi des encaissements à des PME de services. Leur principal concurrent n'est pas un autre éditeur : c'est le tableur que les entreprises utilisent depuis des années.
+
+**L'approche de Séverin.** Pour convaincre, il propose 30 % de remise sur la première année. Les dirigeants trouvent l'offre intéressante, mais repoussent la décision : changer d'outil demande du temps, il faudra ressaisir les données, former la comptable. Le statu quo l'emporte.
+
+**L'approche de Jean-Marc.** Il propose un essai gratuit de trente jours, mais un essai accompagné : son équipe importe elle-même les clients et les factures du tableur, paramètre l'outil et forme la comptable en une heure. Pendant un mois, l'entreprise envoie ses factures et suit ses relances avec le logiciel. À la fin de l'essai, Jean-Marc montre le tableau des factures encaissées plus vite grâce aux relances automatiques. Revenir au tableur signifierait perdre ce confort : plus de huit entreprises sur dix poursuivent.
+
+**Ce qui fait la différence.** Séverin a tenté de vaincre le statu quo avec un gain financier. Jean-Marc a supprimé l'effort du changement, puis activé l'effet de dotation : après un mois d'usage, le client possède déjà la solution et ressent sa perte éventuelle.
+
+## Atelier : reformuler trois arguments
+
+Prenez vos trois arguments commerciaux habituels et réécrivez-les selon les biais de ce chapitre. Voici l'exemple d'un cabinet de formation commerciale :
+
+| Argument habituel | Biais mobilisé | Argument reformulé |
+|---|---|---|
+| « Notre formation améliore les ventes. » | Aversion à la perte | « Combien de propositions envoyées le trimestre dernier sont restées sans réponse ? Chacune représente un chiffre d'affaires perdu. » |
+| « La formation coûte 900 000 F. » | Cadrage et ancrage | « Un commercial qui signe un contrat de plus par mois rembourse la formation en moins d'un trimestre. Le programme complet est de 900 000 F. » |
+| « Nous proposons dix modules au choix. » | Surcharge de choix | « Pour une équipe de votre taille, je recommande le parcours en trois modules. » |
+
+Faites l'exercice pour votre propre offre, puis testez les nouvelles formulations auprès de cinq prospects. Notez leurs réactions.
+
 ## Les erreurs qui coûtent cher
 
 - **Baisser le prix pour convaincre.** C'est le réflexe de Séverin. Il attire les clients les plus volatils et détruit la marge.

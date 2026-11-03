@@ -1,159 +1,151 @@
 # Partie III. Les sept leviers d'influence, utilisés avec éthique
 
 ::: {custom-style="IntroPartie"}
-Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte congolais, avec une règle non négociable : un levier d'influence doit servir à présenter une offre réellement bonne, jamais à tromper.
+Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte congolais, avec une règle non négociable : un levier d'influence sert à présenter une offre réellement bonne, jamais à tromper.
 :::
 
 # Chapitre 7. Rendre la pareille et inspirer la sympathie
 
-## Cas d'ouverture : les beignets de Mama Rose
+## Le cas : décrocher un premier rendez-vous avec un dirigeant
 
-Mama Rose vend des beignets (les mikate) et de la bouillie au coin d'une rue animée de Poto-Poto, à Brazzaville. Elles sont une dizaine de vendeuses sur le même trottoir, avec des produits presque identiques et des prix similaires. Pourtant, chaque matin, une file se forme devant l'étal de Mama Rose, tandis que ses voisines attendent les clients.
+Séverin et Jean-Marc sont tous deux consultants indépendants en gestion financière. Ils cherchent à accompagner des PME qui ont du mal à piloter leur trésorerie.
 
-Son secret ? Elle connaît le prénom de la plupart de ses habitués et leur demande des nouvelles des enfants. Quand un nouveau passant hésite, elle lui tend un petit morceau de beignet à goûter, « pour que tu saches ». Quand un écolier n'a pas assez d'argent, elle lui donne quand même son beignet : « Tu me paieras demain. » Et l'écolier revient le lendemain… avec sa mère. Les jours de pluie, elle offre un gobelet de bouillie chaude aux conducteurs de taxi-moto qui s'abritent près de son étal. Ils sont devenus ses meilleurs ambassadeurs.
+**L'approche de Séverin.** Il obtient une liste de numéros de dirigeants et leur envoie un message : présentation de son cabinet, liste de ses services, grille tarifaire, proposition de rendez-vous. Sur cinquante messages, il obtient trois réponses, dont deux pour lui demander de ne plus écrire.
 
-Mama Rose applique les deux premiers leviers d'influence décrits par Cialdini : **la réciprocité** et **la sympathie**. Ce sont les leviers de la relation, ceux qui ouvrent la porte à tous les autres.
+**L'approche de Jean-Marc.** Il commence par des dirigeants de son propre réseau et par ceux que des clients satisfaits acceptent de lui présenter. Il appelle chacun de la part de la personne qui l'a recommandé. Il ne parle pas de ses tarifs : il propose d'envoyer gratuitement un modèle simple de plan de trésorerie sur trois mois, utilisable immédiatement, puis de prendre trente minutes pour l'adapter à l'entreprise, « même si vous ne travaillez pas avec moi ensuite ». La plupart acceptent. Lors de ces rendez-vous, il trouve des points communs sincères avec ses interlocuteurs et les félicite pour ce qui fonctionne déjà dans leur gestion. Un dirigeant sur trois devient client.
+
+**Ce qui fait la différence.** Séverin a demandé avant de donner, à des inconnus. Jean-Marc a donné d'abord quelque chose d'utile, par l'intermédiaire d'une personne de confiance, en créant une relation sincère. Il a activé deux leviers : **la réciprocité** et **la sympathie**.
 
 ## Premier levier : la réciprocité
 
 ### Le principe
 
-Toutes les sociétés humaines connaissent une règle fondamentale : lorsque quelqu'un nous donne quelque chose, nous nous sentons obligés de lui rendre. Cette obligation de réciprocité est si profondément ancrée qu'elle fonctionne même lorsque nous n'avons rien demandé et même lorsque le cadeau est modeste.
+Toutes les sociétés humaines partagent une règle : lorsque quelqu'un nous donne quelque chose, nous nous sentons obligés de lui rendre. Cette obligation fonctionne même lorsque nous n'avons rien demandé et même lorsque le don est modeste.
 
-Cialdini cite de nombreuses études. L'une des plus connues a été menée dans un restaurant américain au début des années 2000 : lorsque le serveur offrait un bonbon avec l'addition, les pourboires augmentaient légèrement. Lorsqu'il en offrait deux, ils augmentaient nettement plus. Et lorsqu'il déposait un bonbon, s'éloignait, puis revenait en offrir un second « spécialement pour vous », les pourboires augmentaient d'environ 23 %. Ce n'est pas la valeur du cadeau qui compte, c'est la manière de le donner.
-
-### La réciprocité dans la culture congolaise
-
-Au Congo, la réciprocité est une valeur sociale centrale. Le don et le contre-don structurent les relations familiales, communautaires et économiques : présents de la dot, contributions au matanga lors d'un deuil, « cadeau » du commerçant à son fidèle client. Le petit supplément offert par le vendeur fait partie des habitudes d'achat.
-
-Cette familiarité culturelle est un atout pour le vendeur, mais aussi un piège : un cadeau attendu ne crée plus d'obligation. Il devient un dû. Pour que la réciprocité fonctionne, le don doit avoir trois caractéristiques.
+Une étude menée au début des années 2000 dans un restaurant l'illustre bien. Lorsque le serveur offrait un bonbon avec l'addition, les pourboires augmentaient légèrement ; avec deux bonbons, ils augmentaient nettement plus. Et lorsqu'il déposait un bonbon, s'éloignait, puis revenait en offrir un second « spécialement pour vous », ils augmentaient d'environ 23 %. Ce n'est pas la valeur du don qui compte, c'est la manière de le donner.
 
 ### Les trois conditions d'un don efficace
 
-Cialdini a identifié trois caractéristiques qui rendent un don plus puissant :
-
-1. **Il est significatif** pour celui qui le reçoit. Pas forcément coûteux, mais utile ou plaisant pour lui.
-2. **Il est inattendu.** Un cadeau systématique devient un dû ; une attention surprise marque les esprits.
-3. **Il est personnalisé.** Un don adapté à la personne montre qu'on l'a écoutée et comprise.
+1. **Il est significatif** pour celui qui le reçoit : utile ou apprécié, pas forcément coûteux.
+2. **Il est inattendu** : un cadeau systématique devient un dû.
+3. **Il est personnalisé** : il montre que vous avez écouté et compris.
 
 | Don banal | Don significatif, inattendu et personnalisé |
 |---|---|
-| Un calendrier publicitaire distribué à tous les clients en janvier | Un livre sur la gestion offert à un client qui avait mentionné vouloir mieux gérer son entreprise |
-| Une remise de 5 % annoncée sur l'affiche | Un petit service supplémentaire offert à la livraison « parce que vous êtes fidèle » |
-| Un échantillon laissé sur le comptoir | Un échantillon choisi pour le problème que le client vient d'évoquer |
+| Un calendrier publicitaire envoyé à tous les clients | Un article ou une étude sur le problème précis que le client a évoqué |
+| Une remise affichée sur la plaquette | Une demi-journée d'accompagnement offerte au moment d'un pic d'activité du client |
+| Un échantillon laissé à l'accueil | Un échantillon adapté au besoin exprimé, livré avec un mode d'emploi |
+
+### La matrice des dons
+
+Pour choisir ce que vous offrez, croisez la valeur perçue par le client et le coût réel pour vous.
+
+| | **Coût faible pour vous** | **Coût élevé pour vous** |
+|---|---|---|
+| **Forte valeur pour le client** | **À privilégier** : diagnostic court, modèle de document, conseil ciblé, mise en relation | À réserver aux prospects stratégiques : essai prolongé, prestation pilote |
+| **Faible valeur pour le client** | Sans effet : objets publicitaires génériques | À éviter : cadeaux coûteux et sans rapport avec le besoin |
 
 ### Donner d'abord : la réciprocité dans la prospection
 
-La réciprocité est particulièrement puissante en début de relation commerciale. Avant de demander quoi que ce soit (un rendez-vous, une commande), donnez quelque chose de valeur :
+Avant de demander un rendez-vous ou une commande, apportez quelque chose de valeur :
 
-- **Un conseil gratuit** : un diagnostic rapide, une idée d'amélioration, une information utile sur le marché.
-- **Un contenu** : un guide pratique, une vidéo explicative, une fiche technique sur un problème courant de votre secteur, partagés sur WhatsApp ou LinkedIn.
-- **Une mise en relation** : présenter votre prospect à quelqu'un qui pourrait l'aider, même sans lien avec votre offre.
-- **Un essai** : un échantillon, une démonstration, une première prestation à prix coûtant.
-
-Le cabinet de conseil qui offre un mini-diagnostic gratuit, le plombier qui répare gratuitement une petite fuite en passant faire un devis, la vendeuse de cosmétiques qui conseille gratuitement ses clientes sur leur routine de soins appliquent tous le même principe.
+- **un diagnostic rapide** : audit de quinze minutes, analyse d'un indicateur, visite technique ;
+- **un contenu utile** : guide, modèle de tableau, vidéo explicative sur un problème courant du secteur ;
+- **une mise en relation** : présenter votre prospect à quelqu'un qui peut l'aider, même sans lien avec votre offre ;
+- **un essai** : échantillon, période d'essai accompagnée, première prestation à prix coûtant.
 
 ### La concession réciproque
 
-La réciprocité ne s'applique pas qu'aux cadeaux : elle s'applique aussi aux concessions. Lorsque quelqu'un renonce à une demande pour en formuler une plus modeste, nous nous sentons obligés de faire nous aussi un pas vers lui.
-
-En négociation, cela signifie qu'**une concession doit toujours être échangée** contre une autre : « Je peux vous accorder ce délai de paiement si vous passez la commande cette semaine. » Une concession offerte sans contrepartie n'est pas perçue comme un cadeau, mais comme la preuve que votre prix initial était exagéré. Nous y reviendrons au chapitre 9.
+La réciprocité s'applique aussi aux concessions. Lorsqu'une partie fait un pas, l'autre se sent tenue d'en faire un. En négociation, **une concession doit toujours être échangée** : « Je peux étaler le paiement sur trois mois si nous signons pour un an. » Une concession accordée sans contrepartie n'est pas perçue comme un cadeau, mais comme la preuve que votre prix initial était exagéré.
 
 ## Deuxième levier : la sympathie
 
-### Le principe
+Nous disons plus facilement oui aux personnes que nous apprécions. La sympathie que vous inspirez peut peser autant que la qualité de votre offre. Elle repose sur cinq facteurs.
 
-Nous disons plus facilement oui aux personnes que nous apprécions. Cette évidence a des conséquences profondes : la sympathie que vous inspirez peut compter autant que la qualité de votre offre. Cialdini identifie plusieurs facteurs qui créent la sympathie.
+| Facteur | Principe | Application pour l'entrepreneur |
+|---|---|---|
+| **Similarité** | Nous apprécions ceux qui nous ressemblent | Chercher des points communs réels : parcours, formation, secteur, défis d'entrepreneur |
+| **Compliments sincères** | Nous apprécions ceux qui nous apprécient | Un compliment précis et vrai sur une réussite de l'entreprise |
+| **Coopération** | Nous apprécions ceux qui sont de notre côté | « Voyons ensemble comment adapter l'offre à votre budget » plutôt que « c'est mon dernier prix » |
+| **Familiarité** | Nous apprécions ce que nous connaissons | Être présent régulièrement : événements professionnels, publications, visites de suivi |
+| **Présentation** | La première impression compte | Tenue adaptée, documents soignés, ponctualité, profils professionnels à jour |
 
-### La similarité
-
-Nous apprécions les personnes qui nous ressemblent : même origine, même langue, mêmes centres d'intérêt, même parcours, mêmes valeurs. Au Congo, les points communs sont nombreux et puissants : le village ou le département d'origine, la langue (lingala, kituba ou langue de la région), l'école ou l'université fréquentée, le club de football supporté, l'appartenance religieuse, le quartier.
-
-La règle éthique est essentielle : **cherchez des points communs réels, n'en inventez jamais**. Prétendre être originaire du même village ou supporter le même club pour plaire à un client est une manipulation qui finira par se découvrir. En revanche, s'intéresser sincèrement à son interlocuteur fait presque toujours apparaître des points communs authentiques.
-
-### Les compliments sincères
-
-Nous apprécions ceux qui nous apprécient. Un compliment sincère et précis crée un climat favorable : sur l'organisation d'une boutique, la réussite d'une entreprise, la qualité d'un accueil. Le compliment vague (« Vous êtes très beau ») sonne faux ; le compliment précis (« Votre vitrine est la mieux organisée de la rue ») sonne vrai.
-
-### La coopération
-
-Nous apprécions ceux qui sont de notre côté. Le vendeur efficace se présente comme un allié du client face à un problème commun, et non comme un adversaire dans une négociation. « Voyons ensemble comment trouver la formule qui correspond à votre budget » crée une alliance. « C'est mon dernier prix » crée une opposition.
-
-### La familiarité
-
-Nous apprécions ce que nous connaissons. Le simple fait de voir régulièrement une personne, une marque ou un logo augmente la sympathie qu'il nous inspire. C'est pourquoi la présence régulière compte : passer saluer ses clients, publier régulièrement sur ses réseaux, être visible lors des événements de son quartier ou de sa filière.
-
-### L'apparence et la présentation
-
-Que cela nous plaise ou non, la première impression repose en partie sur l'apparence. Une tenue soignée et adaptée au contexte, un sourire, une poignée de main franche, une boutique propre ou un profil WhatsApp professionnel influencent la sympathie spontanée. L'objectif n'est pas d'être luxueux, mais d'être soigné et respectueux de son interlocuteur.
+La règle éthique est essentielle : **cherchez des points communs réels, n'en inventez jamais.** Un intérêt feint se découvre toujours, et il blesse.
 
 ## La méthode CROC : structurer le premier contact
 
-La réciprocité et la sympathie se jouent dès les premières secondes. Pour structurer chaque prise de contact, qu'elle se fasse par téléphone, sur WhatsApp ou en face à face, Stratfocus Consulting utilise la méthode **CROC**, très répandue dans la prospection commerciale francophone.
+Pour structurer chaque prise de contact, par téléphone, par messagerie ou en face à face, STFC utilise la méthode CROC.
 
-| Étape | Contenu | Leviers psychologiques mobilisés |
+| Étape | Contenu | Leviers mobilisés |
 |---|---|---|
-| **C : Contact** | Saluer, se présenter, créer un climat agréable, vérifier la disponibilité de l'interlocuteur | Sympathie, familiarité, respect |
-| **R : Raison** | Expliquer pourquoi on contacte cette personne, en partant de son intérêt ; poser quelques questions pour vérifier le besoin | Réciprocité (apporter quelque chose), découverte (SPIN) |
-| **O : Objectif** | Formuler clairement ce que l'on propose : un rendez-vous, un essai, une démonstration, une commande | Clarté, engagement progressif |
-| **C : Conclusion** | Confirmer l'accord, récapituler, remercier, prendre congé chaleureusement | Engagement, cohérence, sympathie |
+| **C : Contact** | Saluer, se présenter, citer la recommandation, vérifier la disponibilité | Sympathie, respect |
+| **R : Raison** | Expliquer pourquoi vous contactez cette personne, ce que vous apportez, poser une question de découverte | Réciprocité, SPIN |
+| **O : Objectif** | Proposer clairement une étape concrète : rendez-vous, diagnostic, essai | Clarté, engagement |
+| **C : Conclusion** | Confirmer, récapituler, remercier, prendre congé chaleureusement | Engagement, sympathie |
 
-### Exemple d'appel CROC
+**Exemple de l'appel de Jean-Marc :**
 
-> **Contact** : « Bonjour Madame Mabiala, je suis Gloria, de la société Hygiène Plus. Mme Nkounkou, de la clinique Les Manguiers, m'a conseillé de vous appeler. Est-ce que je vous dérange ou avez-vous deux minutes ? »
+> **Contact** : « Bonjour Monsieur le Directeur, je suis Jean-Marc, consultant en gestion financière. C'est un dirigeant que vous connaissez bien, et dont j'accompagne l'entreprise, qui m'a suggéré de vous appeler. Avez-vous deux minutes ? »
 >
-> **Raison** : « Mme Nkounkou m'a dit que vous ouvriez une deuxième structure le mois prochain. Nous avons accompagné la clinique Les Manguiers pour réduire leurs coûts de produits d'entretien d'environ un quart. Comment gérez-vous l'hygiène dans votre première structure aujourd'hui ? »
+> **Raison** : « Il m'a dit que vous développiez une nouvelle activité cette année. Les dirigeants qui se lancent dans un tel projet me parlent souvent de tensions de trésorerie. Comment suivez-vous la vôtre aujourd'hui ? »
 >
-> **Objectif** : « Je vous propose de passer jeudi pour un petit diagnostic gratuit de vos besoins. Ça prend trente minutes, et vous repartez avec une estimation de ce que vous pourriez économiser, même si vous ne travaillez pas avec nous. »
+> **Objectif** : « Je peux vous envoyer un modèle simple de plan de trésorerie, puis prendre trente minutes pour l'adapter à votre entreprise. Vous le garderez, que nous travaillions ensemble ou non. »
 >
-> **Conclusion** : « Parfait, donc jeudi à 10 heures à la clinique. Je vous envoie un message WhatsApp pour confirmer. Merci beaucoup, Madame Mabiala, et bonne journée. »
+> **Conclusion** : « Parfait, donc jeudi à 10 heures dans vos bureaux. Je vous envoie le modèle dès ce soir. Merci et bonne journée. »
 
-Remarquez la présence des deux leviers de ce chapitre : la sympathie (recommandation d'une personne connue, respect de la disponibilité) et la réciprocité (diagnostic gratuit qui apporte de la valeur, « même si vous ne travaillez pas avec nous »).
+Au Congo, l'étape Contact est souvent plus longue qu'ailleurs. Si votre interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le : écourter cette étape pour « gagner du temps » peut compromettre tout l'appel.
 
-::: {custom-style="Encadre"}
-**CROC et les salutations**
+## Réciprocité et sympathie en ligne
 
-Dans un appel au Congo, l'étape Contact est souvent plus longue qu'en Europe. Si l'interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le. Abréger cette étape pour « gagner du temps » peut compromettre tout l'appel. Le chapitre 10 revient sur l'utilisation de CROC dans la prospection par WhatsApp et par téléphone.
-:::
+Une part croissante des relations d'affaires se construit d'abord en ligne, sur LinkedIn, sur les messageries ou sur les réseaux sociaux. Les deux leviers y fonctionnent, à condition de les adapter. La **réciprocité numérique** repose sur le contenu utile : un conseil par semaine, un retour d'expérience, un modèle à télécharger. La **sympathie numérique** repose sur l'authenticité : montrez votre visage, votre équipe, votre atelier, répondez personnellement. La **familiarité** repose sur la régularité : une publication par semaine pendant un an vaut mieux que dix en un jour puis six mois de silence.
 
-## Réciprocité et sympathie à distance
-
-Une part croissante des relations commerciales se construit aujourd'hui sans rencontre physique : sur WhatsApp, Facebook, TikTok ou LinkedIn. Les deux leviers de ce chapitre y fonctionnent tout aussi bien, à condition de les adapter.
-
-**La réciprocité numérique** repose sur le contenu utile. Une vendeuse de produits pour bébés qui publie chaque semaine un conseil de puéricultrice, un garagiste qui partage en vidéo comment vérifier l'usure de ses pneus, un consultant qui envoie gratuitement un modèle de tableau de suivi de trésorerie : chacun donne avant de demander. Le jour où leurs abonnés auront besoin d'acheter, ils penseront naturellement à celui qui les a aidés.
-
-**La sympathie numérique** repose sur l'authenticité et la proximité. Les clients achètent plus volontiers à une personne qu'à un logo. Montrez votre visage, votre équipe, votre atelier, les coulisses de votre activité. Répondez personnellement aux commentaires et aux messages, en appelant les gens par leur prénom. Un message vocal de quelques secondes pour remercier un nouveau client crée plus de sympathie qu'un long texte impersonnel.
-
-**La familiarité numérique** repose sur la régularité. Une publication par semaine pendant un an vaut mieux que dix publications en un jour suivies de six mois de silence. Le client doit vous voir régulièrement, sans être harcelé.
-
-Deux erreurs sont à éviter absolument. La première consiste à envoyer des messages commerciaux non sollicités en masse, à des inconnus ou dans des groupes qui ne sont pas faits pour cela : c'est l'inverse de la réciprocité, car vous prenez l'attention des gens sans rien leur donner. La seconde consiste à acheter des abonnés ou des mentions « j'aime » pour paraître populaire : c'est une fausse sympathie, et les clients finissent par s'en apercevoir.
+Deux erreurs sont à proscrire : les messages commerciaux non sollicités envoyés en masse à des inconnus, qui prennent l'attention sans rien donner, et l'achat d'abonnés ou de mentions « j'aime », qui fabrique une fausse popularité.
 
 ## Les limites éthiques
 
-La réciprocité et la sympathie sont des leviers puissants, et donc susceptibles d'abus. Quelques limites claires :
+- **Le cadeau ne doit jamais devenir un pot-de-vin.** Offrir un diagnostic ou un échantillon est une pratique commerciale. Offrir de l'argent ou un avantage personnel à un acheteur public ou au salarié d'une entreprise pour obtenir un marché est de la corruption, punie par la loi, même lorsqu'on l'appelle pudiquement « matabiche ».
+- **La sympathie ne doit pas être feinte.**
+- **La réciprocité ne doit pas devenir un piège** : rappeler au client qu'il « vous doit bien ça » transforme un geste généreux en chantage.
 
-- **Le cadeau ne doit jamais devenir un pot-de-vin.** Offrir un échantillon ou un service est une pratique commerciale ; offrir de l'argent ou un avantage personnel à un acheteur public ou au salarié d'une entreprise pour obtenir un marché est de la corruption, punie par la loi au Congo comme ailleurs, même lorsqu'on l'appelle pudiquement « matabiche ».
-- **La sympathie ne doit pas être feinte.** Simuler un intérêt pour la famille d'un client uniquement pour vendre est vite perçu, et profondément blessant lorsque c'est découvert.
-- **La réciprocité ne doit pas être un piège.** Offrir un cadeau puis rappeler au client qu'il « vous doit bien ça » transforme un geste généreux en chantage.
+## Deuxième cas pratique : les premiers clients d'un étudiant entrepreneur
 
-## Erreurs fréquentes
+Lorsqu'ils étaient encore étudiants, Séverin et Jean-Marc ont chacun lancé un service de soutien scolaire à domicile pour financer leurs études.
 
-- **Systématiser le cadeau** au point qu'il devienne un dû.
-- **Donner sans écouter** : un cadeau inadapté n'a aucun effet.
+**L'approche de Séverin.** Il imprime des affiches et distribue des prospectus avec ses tarifs. Il obtient quelques appels, mais les parents hésitent à confier leurs enfants à un étudiant qu'ils ne connaissent pas.
+
+**L'approche de Jean-Marc.** Il commence par les familles de son entourage et propose à chacune une première séance gratuite, suivie d'un court bilan écrit sur les points forts et les difficultés de l'enfant. Les parents, impressionnés par le sérieux du bilan, inscrivent leur enfant et parlent de lui à d'autres parents. Il demande à chaque famille satisfaite de le présenter à une autre. En un trimestre, son planning est complet, sans aucune publicité.
+
+**Ce qui fait la différence.** Séverin a demandé la confiance d'inconnus. Jean-Marc a donné d'abord (une séance et un bilan utiles), en s'appuyant sur la sympathie d'un réseau existant. Les mêmes leviers fonctionnent à toutes les échelles, de l'étudiant au dirigeant de PME.
+
+## Atelier : rédiger son script CROC
+
+Exemple pour un prestataire de services informatiques qui contacte une PME recommandée par un client :
+
+| Étape | Texte |
+|---|---|
+| **Contact** | « Bonjour Monsieur, je suis Jean-Marc, de la société de maintenance informatique qui accompagne l'entreprise de votre confrère. Il m'a conseillé de vous appeler. Avez-vous deux minutes ? » |
+| **Raison** | « Il m'a dit que vous aviez perdu des données le mois dernier. Comment sont sauvegardés vos fichiers aujourd'hui ? » |
+| **Objectif** | « Je vous propose un contrôle gratuit de vos sauvegardes, trente minutes dans vos locaux, avec un rapport écrit. » |
+| **Conclusion** | « Parfait, mardi à 9 heures. Je vous envoie la confirmation par message. Merci. » |
+
+Rédigez le vôtre, puis testez-le sur cinq appels et ajustez-le.
+
+## Les erreurs qui coûtent cher
+
+- **Demander avant de donner**, comme Séverin.
+- **Prospecter des inconnus en masse** au lieu de s'appuyer sur la recommandation.
 - **Céder sans contrepartie** dans la négociation.
-- **Inventer des points communs** pour créer une sympathie artificielle.
-- **Négliger la présentation** : tenue, boutique, profil en ligne.
-- **Bâcler l'étape Contact** de la méthode CROC.
+- **Inventer des points communs.**
+- **Négliger sa présentation** : tenue, documents, profils en ligne.
 
-## Liste de contrôle du chapitre 7
+## Feuille de route du chapitre 7
 
-- [ ] J'ai identifié trois dons significatifs, inattendus et personnalisables que je peux offrir à mes prospects.
-- [ ] J'ai préparé un contenu utile (guide, conseil, diagnostic) à partager avant de demander un rendez-vous.
+- [ ] J'ai identifié, grâce à la matrice des dons, trois dons à forte valeur et à faible coût pour mes prospects.
+- [ ] J'ai demandé à mes cinq meilleurs clients de me présenter à un dirigeant de leur réseau.
 - [ ] Je n'accorde plus aucune concession sans contrepartie.
-- [ ] Je note dans un carnet ou un fichier les informations personnelles que mes clients partagent (famille, projets, centres d'intérêt), avec leur accord, pour m'en souvenir lors du prochain contact.
 - [ ] J'ai rédigé mon script CROC pour mes appels de prospection.
-- [ ] J'ai vérifié que ma présentation personnelle, ma boutique et mon profil WhatsApp inspirent la confiance.
+- [ ] J'ai vérifié que ma présentation personnelle et mes profils professionnels inspirent confiance.
 
 ::: {custom-style="Encadre"}
-Donnez avant de demander, et donnez avec intelligence : un don significatif, inattendu et personnalisé crée une envie sincère de rendre. Cultivez une sympathie authentique fondée sur de vrais points communs, la coopération et la présence régulière. Et structurez chaque premier contact avec la méthode CROC : Contact, Raison, Objectif, Conclusion.
+Donnez avant de demander, et donnez avec intelligence : un don significatif, inattendu et personnalisé crée une envie sincère de rendre. Cultivez une sympathie authentique fondée sur de vrais points communs et la coopération. Structurez chaque premier contact avec la méthode CROC : Contact, Raison, Objectif, Conclusion.
 :::
