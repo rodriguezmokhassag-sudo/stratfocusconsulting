@@ -149,10 +149,10 @@ def construire_reference():
     if "Compact" in st:
         regle(st["Compact"], apres=2, align=WD_ALIGN_PARAGRAPH.LEFT)
 
-    regle(st["Heading 1"], taille=19, gras=True, couleur=BLEU,
+    regle(st["Heading 1"], taille=17, gras=True, couleur=BLEU,
           police=POLICE_TITRES, align=WD_ALIGN_PARAGRAPH.LEFT, avant=36,
           apres=18, saut_avant=True, garder=True)
-    regle(st["Heading 2"], taille=13, gras=True, couleur=BLEU,
+    regle(st["Heading 2"], taille=12.5, gras=True, couleur=BLEU,
           police=POLICE_TITRES, avant=12, apres=5, garder=True)
     regle(st["Heading 3"], taille=11, gras=True, couleur=OR,
           police=POLICE_TITRES, avant=8, apres=3, garder=True)
@@ -329,6 +329,26 @@ def inserer_page_titre(doc):
         body.insert(i, el)
 
 
+def titres_deux_lignes(doc):
+    """« Chapitre 1 » sur une ligne, le titre en dessous."""
+    import re
+    motif = re.compile(r"^(Chapitre \d+|Partie [IVX]+|Introduction|Conclusion|Annexe [A-D])\.\s+(.+)$")
+    for p in doc.paragraphs:
+        if p.style.name != "Heading 1":
+            continue
+        m = motif.match(p.text.strip())
+        if not m:
+            continue
+        for r in list(p.runs):
+            r._r.getparent().remove(r._r)
+        lab = p.add_run(m.group(1).upper())
+        lab.font.size = Pt(11.5)
+        lab.font.bold = False
+        lab.font.color.rgb = OR
+        lab.add_break()
+        p.add_run(m.group(2))
+
+
 def post_traiter(chemin):
     """Ajuste les tableaux (taille, bordures) et retire le titre pandoc."""
     doc = Document(chemin)
@@ -337,6 +357,7 @@ def post_traiter(chemin):
     for p in list(doc.paragraphs):
         if p.style.name in ("Title",):
             p._element.getparent().remove(p._element)
+    titres_deux_lignes(doc)
     for p in doc.paragraphs:
         if "¤" in p.text:
             p.paragraph_format.tab_stops.add_tab_stop(

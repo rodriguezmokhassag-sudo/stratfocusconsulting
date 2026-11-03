@@ -1,170 +1,146 @@
 # Partie I. Comment l'acheteur décide
 
 ::: {custom-style="IntroPartie"}
-Avant de vouloir convaincre un client, il faut comprendre comment il prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion et raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes culturels propres au marché congolais. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : il ne sait simplement pas toujours pourquoi il hésite.
+Avant de chercher à convaincre, il faut comprendre comment l'acheteur prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion et raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes de confiance propres au marché congolais. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : souvent, il ne sait pas lui-même pourquoi il hésite.
 :::
 
 # Chapitre 1. L'émotion décide, la raison justifie
 
-## Cas d'ouverture : le téléphone de Serge
+## Le cas : vendre un logiciel de gestion à un dirigeant de PME
 
-Serge, enseignant à Pointe-Noire, a besoin d'un nouveau téléphone. Il a fixé son budget, comparé les fiches techniques sur Internet et choisi un modèle d'entrée de gamme, solide et économique. Il entre dans une boutique du centre-ville, décidé à acheter ce modèle précis.
+Séverin et Jean-Marc commercialisent chacun un logiciel de gestion des stocks et des ventes, destiné aux PME. Les deux solutions sont comparables en fonctionnalités et en prix. Chacun obtient un rendez-vous avec le dirigeant d'une entreprise de distribution de boissons qui compte trois dépôts et une quinzaine de salariés.
 
-Le vendeur l'accueille, l'écoute, puis lui demande à quoi lui servira le téléphone. Serge explique qu'il veut surtout rester en contact avec sa fille, partie étudier au Maroc. Le vendeur prend alors un autre modèle, un peu plus cher, et lance un appel vidéo de démonstration : l'image est nette, le son est clair. « Avec celui-ci, vous la verrez comme si elle était dans le salon. »
+**L'approche de Séverin.** Il ouvre son ordinateur et présente pendant quarante minutes toutes les fonctionnalités : gestion multi-dépôts, alertes de stock, tableaux de bord, factures, sauvegarde en ligne, exports comptables. Il est précis et compétent. Le dirigeant l'écoute poliment, pose deux questions techniques et conclut : « C'est intéressant, envoyez-moi une proposition. » La proposition reste sans suite.
 
-Serge repart avec le modèle plus cher. Le soir, il explique à son épouse que la batterie est plus durable et que l'appareil photo servira pour les cérémonies. Ces arguments sont vrais. Mais ce ne sont pas eux qui ont déclenché l'achat. C'est l'image de sa fille souriante sur l'écran.
+**L'approche de Jean-Marc.** Il commence par une question : « Qu'est-ce qui vous inquiète le plus dans la gestion de vos dépôts aujourd'hui ? » Le dirigeant finit par avouer qu'il ne sait jamais exactement ce qui se passe dans ses dépôts quand il n'y est pas, qu'il soupçonne des écarts de stock et qu'il passe ses week-ends à vérifier des cahiers. Jean-Marc sort alors son téléphone et montre une seule chose : le stock de chaque dépôt en temps réel, consultable de n'importe où. « Vous pourrez voir vos trois dépôts depuis votre salon, ou depuis l'étranger lors de vos voyages d'approvisionnement. » Il laisse ensuite au dirigeant un document d'une page : coût mensuel, retour sur investissement estimé, références de deux entreprises similaires. Le contrat est signé dix jours plus tard, après validation par l'associé du dirigeant.
 
-Serge a vécu ce que vivent tous les acheteurs : **l'émotion a décidé, la raison a ensuite justifié**.
+**Ce qui fait la différence.** Séverin a parlé au raisonnement du client, avec des fonctionnalités. Jean-Marc a d'abord touché une émotion forte, le besoin de contrôle et de tranquillité, puis il a fourni les arguments rationnels qui ont permis au dirigeant de justifier sa décision devant son associé. **L'émotion a déclenché la décision ; la raison l'a validée.**
 
 ## Deux systèmes de pensée
 
-Dans son livre *Système 1 / Système 2 : les deux vitesses de la pensée* (2011), Daniel Kahneman décrit deux modes de fonctionnement de notre esprit.
-
-**Le système 1 est rapide, automatique et intuitif.** Il fonctionne en permanence, sans effort. C'est lui qui vous fait reconnaître un visage, sentir un danger, ou trouver un produit « sympathique » en une fraction de seconde. Il s'appuie sur les émotions, les habitudes et les associations d'idées.
-
-**Le système 2 est lent, réfléchi et coûteux en énergie.** C'est lui qui calcule, compare et analyse. Il intervient quand la situation est nouvelle, complexe ou importante. Mais il est paresseux : il préfère valider les propositions du système 1 plutôt que de tout recommencer.
+Dans *Système 1 / Système 2 : les deux vitesses de la pensée* (2011), Daniel Kahneman décrit deux modes de fonctionnement de notre esprit.
 
 | | Système 1 | Système 2 |
 |---|---|---|
 | Vitesse | Instantané | Lent |
 | Effort | Aucun | Important, fatigant |
-| Fonctionnement | Émotions, images, habitudes | Calcul, comparaison, logique |
-| Ce qui le convainc | Une histoire, une image, une personne de confiance | Des chiffres, des preuves, des garanties |
+| Fonctionnement | Émotions, images, habitudes, intuitions | Calcul, comparaison, logique |
+| Ce qui le convainc | Une image, une situation vécue, une personne de confiance | Des chiffres, des preuves, des garanties |
 | Question qu'il se pose | « Est-ce que je le sens ? » | « Est-ce que c'est raisonnable ? » |
-| Rôle dans l'achat | Déclenche le désir et la décision | Vérifie et justifie la décision |
+| Rôle dans l'achat | Déclenche le désir et oriente la décision | Vérifie et justifie la décision |
 
-Dans la grande majorité des achats courants, c'est le système 1 qui fait le travail. Même pour les achats importants, il oriente la décision avant que le système 2 n'entre en scène. Le neurologue Antonio Damasio a d'ailleurs observé que des patients dont les zones cérébrales liées aux émotions étaient endommagées éprouvaient de grandes difficultés à prendre des décisions simples, même lorsque leur capacité de raisonnement était intacte. Sans émotion, pas de décision.
+Le système 2 est paresseux : il préfère valider les propositions du système 1 plutôt que de tout recalculer. Même pour un achat professionnel important, le système 1 oriente la décision avant que le système 2 n'entre en scène. Le neurologue Antonio Damasio a observé que des patients dont les zones cérébrales liées aux émotions étaient endommagées avaient de grandes difficultés à prendre des décisions simples, alors que leur capacité de raisonnement restait intacte. Sans émotion, pas de décision.
 
-## Ce que cela change pour le vendeur
+## Ce que cela change pour l'entrepreneur
 
-La plupart des vendeurs s'adressent exclusivement au système 2. Ils récitent les caractéristiques du produit, énumèrent les avantages techniques, comparent les prix. Ils parlent à la calculatrice du client. Or la calculatrice n'achète pas : elle vérifie.
+La plupart des entrepreneurs, surtout ceux qui viennent d'un métier technique (ingénieurs, développeurs, transformateurs, artisans), s'adressent exclusivement au système 2. Ils sont fiers de leur produit et veulent en montrer toutes les qualités. C'est légitime, mais c'est inefficace : la fiche technique n'achète pas, elle vérifie.
 
 Vendre efficacement, c'est parler aux deux systèmes, dans le bon ordre :
 
-1. **D'abord au système 1** : créer un climat de confiance, susciter une image positive, faire ressentir le bénéfice.
-2. **Ensuite au système 2** : fournir les arguments rationnels qui permettront au client de justifier sa décision, à ses propres yeux et aux yeux de son entourage.
+1. **D'abord au système 1** : comprendre ce que le client ressent, créer la confiance, faire ressentir le bénéfice.
+2. **Ensuite au système 2** : fournir les preuves et les chiffres qui permettront au client de justifier sa décision, à ses propres yeux et devant ceux à qui il rend des comptes.
 
-Ce second point est capital au Congo, où l'acheteur doit souvent rendre compte de sa décision à sa famille ou à ses associés. Un client qui a « craqué » sans pouvoir se justifier risque de regretter son achat ou de l'annuler. Donnez-lui toujours les arguments qu'il pourra répéter à la maison.
+Ce second point est capital au Congo, où l'acheteur doit très souvent rendre compte de sa décision : à un associé, à un conseil d'administration, à une hiérarchie, à sa famille. Un client séduit qui ne peut pas défendre son choix reviendra souvent… pour annuler.
 
-::: {custom-style="Encadre"}
-**Ressentir, puis justifier**
+## Les émotions qui font acheter
 
-Avant chaque présentation, préparez deux listes.
+Derrière chaque achat se cachent quelques motivations émotionnelles profondes. Elles diffèrent légèrement selon que l'acheteur achète pour lui-même ou pour son entreprise.
 
-**Ressentir** : quelle image, quelle histoire, quelle émotion positive mon produit peut-il évoquer chez ce client ? (fierté, sécurité, tranquillité, appartenance, plaisir, reconnaissance)
-
-**Justifier** : quels sont les trois arguments rationnels que le client pourra répéter à son entourage ? (économie, durabilité, garantie, comparaison chiffrée)
-:::
-
-## Les grandes émotions de l'achat
-
-Derrière chaque achat se cache un petit nombre de motivations émotionnelles profondes. Les identifier vous permet de parler la langue intérieure du client.
-
-**La sécurité.** Le besoin d'être protégé, de ne pas manquer, de ne pas prendre de risque. Il motive l'achat d'une assurance, d'un groupe électrogène, d'une serrure, mais aussi le choix d'une marque connue plutôt qu'une marque nouvelle.
-
-**La fierté et la reconnaissance.** Le désir d'être bien vu, de tenir son rang, d'honorer sa famille. Il est très présent dans les achats liés aux cérémonies (mariages, baptêmes, funérailles), à l'habillement, à la voiture ou au téléphone.
-
-**L'appartenance.** Le besoin de faire partie d'un groupe : sa famille, sa communauté, sa génération, son église ou sa mosquée, son association. On achète ce que le groupe valorise.
-
-**Le confort et le plaisir.** Le désir de se faire du bien, de se simplifier la vie, de gagner du temps.
-
-**L'amour et le devoir.** Le besoin de prendre soin des siens : nourrir les enfants, payer leur scolarité, soigner les parents. C'est l'émotion qui a fait acheter Serge.
-
-**La peur de manquer une occasion.** La crainte de rater une bonne affaire ou d'être le dernier à avoir quelque chose. Nous y reviendrons au chapitre 9 avec le principe de rareté.
-
-Un même produit peut répondre à des émotions différentes selon le client. Un réfrigérateur peut être acheté pour la sécurité (conserver les aliments), pour la fierté (le grand modèle dans le salon), pour le confort (des boissons fraîches) ou pour le revenu (vendre de l'eau glacée et des jus). Le bon vendeur ne présente pas le réfrigérateur : il présente la réponse à l'émotion de son client.
-
-## Des caractéristiques aux bénéfices émotionnels
-
-Une technique simple permet de passer du langage du système 2 à celui du système 1 : la chaîne **Caractéristique, Avantage, Bénéfice émotionnel**.
-
-| Caractéristique (ce que c'est) | Avantage (ce que ça fait) | Bénéfice émotionnel (ce que ça change pour le client) |
+| Motivation | Chez le particulier | Chez l'acheteur professionnel |
 |---|---|---|
-| Batterie de 5 000 mAh | Tient deux jours sans recharge | « Vous ne serez plus coupé de vos clients pendant les délestages. » |
-| Tissu wax 100 % coton certifié | Ne déteint pas au lavage | « Vous serez aussi élégante au dixième lavage qu'au premier jour. » |
-| Logiciel de caisse avec suivi des stocks | Indique les ruptures en temps réel | « Vous dormirez tranquille en sachant exactement ce qui se passe dans votre boutique. » |
-| Livraison en 24 heures | Le client reçoit vite | « Vous serez prêt pour la cérémonie de samedi, sans stress. » |
-| Formation certifiante de 3 mois | Diplôme reconnu | « Votre famille sera fière, et vous pourrez enfin décrocher ce poste. » |
+| **Sécurité** | Ne pas manquer, protéger sa famille | Ne pas être blâmé en cas de problème, éviter le risque |
+| **Contrôle** | Maîtriser son budget | Savoir ce qui se passe dans l'entreprise, ne pas subir |
+| **Reconnaissance** | Être bien vu de son entourage | Être reconnu par sa hiérarchie, réussir un projet visible |
+| **Tranquillité** | Se simplifier la vie | Moins de problèmes à gérer, un fournisseur sur lequel compter |
+| **Croissance** | Améliorer sa situation | Développer le chiffre d'affaires, gagner des parts de marché |
+| **Appartenance** | Faire comme son groupe | Travailler avec les fournisseurs reconnus du secteur |
 
-Remarquez que les bénéfices émotionnels utilisent le mot « vous » et décrivent une scène que le client peut imaginer. C'est ce qui active le système 1.
+Un même produit répond à des émotions différentes selon le client. Un jus de fruits local proposé à un hôtel peut répondre à la reconnaissance (offrir un produit de qualité qui valorise l'établissement), à la sécurité (un fournisseur proche, sans rupture d'importation) ou à la croissance (une marge supérieure sur les boissons servies). L'entrepreneur qui vend « un jus de fruits » parle à tous et ne touche personne. Celui qui vend la réponse à l'émotion de son acheteur précis conclut.
 
-## Le pouvoir des histoires
+## La matrice « Ressentir et Justifier »
 
-Si l'émotion décide, l'histoire est son meilleur véhicule. Notre cerveau retient beaucoup mieux un récit qu'une liste d'arguments. Les sociétés congolaises, de tradition orale, le savent depuis toujours : le conte, le proverbe et l'anecdote transmettent le savoir plus efficacement que n'importe quel exposé.
+Avant chaque rendez-vous important, remplissez cette matrice pour votre client. Elle vous oblige à préparer les deux versants de votre argumentation.
 
-Dans la vente, une bonne histoire comporte quatre éléments :
+| | Ce que le client doit **ressentir** (système 1) | Ce qui lui permettra de **justifier** (système 2) |
+|---|---|---|
+| **Pour lui** | Quelle émotion positive ? (tranquillité, fierté, contrôle…) | Quels chiffres ou preuves le rassureront personnellement ? |
+| **Pour ceux à qui il rend des comptes** | Quelle image donnera-t-il en proposant ce choix ? | Quels trois arguments pourra-t-il répéter à son associé, sa direction ou son conseil ? |
 
-1. **Un personnage auquel le client peut s'identifier** : un client précédent, dans une situation semblable.
-2. **Un problème concret** : la difficulté qu'il rencontrait.
-3. **Une transformation** : ce qui a changé grâce au produit ou au service.
-4. **Un résultat tangible** : un chiffre, une émotion, une conséquence visible.
+Dans le cas d'ouverture, Jean-Marc avait rempli les quatre cases : la tranquillité de voir ses dépôts à distance (ressentir, pour lui), l'image d'un dirigeant moderne qui maîtrise son activité (ressentir, pour les autres), le coût mensuel comparé aux écarts de stock (justifier, pour lui), les deux références d'entreprises similaires (justifier, pour l'associé).
 
-> « L'an dernier, un transporteur de Dolisie, comme vous, perdait presque une journée par semaine à cause des pannes de ses camions. Nous avons mis en place le contrat d'entretien préventif. Six mois plus tard, il m'a appelé pour me dire qu'il avait pu ajouter une tournée par semaine. Il dit que c'est la première fois qu'il dort tranquille le dimanche soir. »
+## Des caractéristiques aux bénéfices ressentis
 
-Cette histoire contient un personnage (un transporteur comme vous), un problème (les pannes), une transformation (l'entretien préventif) et un résultat (une tournée de plus, le sommeil retrouvé). Elle parle au système 1, et le chiffre parle au système 2.
+Une technique simple permet de passer du langage du système 2 à celui du système 1 : la chaîne caractéristique, avantage, bénéfice ressenti.
+
+| Caractéristique (ce que c'est) | Avantage (ce que ça fait) | Bénéfice ressenti (ce que ça change pour le client) |
+|---|---|---|
+| Jus pasteurisé, conservation de 6 mois | Moins de pertes, stock possible | « Vous ne serez plus jamais en rupture un samedi soir de forte affluence. » |
+| Logiciel avec tableau de bord mobile | Suivi en temps réel | « Vous saurez ce qui se passe dans vos dépôts, où que vous soyez. » |
+| Contrat de maintenance préventive | Moins de pannes | « Votre production ne s'arrêtera plus au milieu d'une commande importante. » |
+| Formation certifiante pour les équipes | Personnel mieux qualifié | « Vous pourrez enfin déléguer sans tout vérifier vous-même. » |
+| Emballages personnalisés à votre marque | Meilleure présentation | « Votre produit sera choisi en rayon à côté des marques importées. » |
+
+Les bénéfices ressentis utilisent le mot « vous » et décrivent une situation que le client peut imaginer. C'est ce qui active le système 1.
+
+## Le cas client : votre meilleur argument
+
+Le cerveau retient beaucoup mieux un cas concret qu'une liste d'arguments. Un bon cas client, présenté en moins d'une minute, comporte quatre éléments :
+
+1. **Un client comparable** à votre interlocuteur (même secteur, même taille, même problème).
+2. **La situation de départ** : le problème chiffré qu'il rencontrait.
+3. **Ce qui a été fait** : votre solution, en une phrase.
+4. **Le résultat mesurable** : un chiffre et un bénéfice ressenti.
+
+> « Une entreprise de distribution comparable à la vôtre perdait l'équivalent de 4 % de son stock chaque mois sans savoir où. Après trois mois d'utilisation du logiciel, les écarts sont tombés sous 1 %. Le dirigeant m'a surtout dit qu'il ne passait plus ses week-ends à recompter. »
+
+Ce cas parle au système 1 (le week-end retrouvé) et au système 2 (de 4 % à moins de 1 %). Il doit être vrai : dans un marché où les milieux d'affaires se connaissent, un faux témoignage finit toujours par se savoir.
+
+## Application : le parcours d'une décision d'achat professionnelle
+
+Lorsqu'une entreprise envisage un achat important, comme un équipement de production ou un contrat de service annuel, la décision suit généralement ce parcours :
+
+| Étape | Ce qui se passe chez l'acheteur | Ce que fait Jean-Marc |
+|---|---|---|
+| 1. Le déclencheur | Un incident, une perte, une pression de la direction | Il fait raconter cet incident par ses questions |
+| 2. L'intuition | « Il nous faut une solution » | Il montre une réalisation concrète et visible |
+| 3. La recherche de confirmation | L'acheteur se renseigne auprès de pairs | Il fournit des références vérifiables |
+| 4. La comparaison | Prix, conditions, garanties | Il présente la valeur avant le prix |
+| 5. La validation collective | Associés, direction, conseil | Il prépare un document de synthèse transmissible |
+| 6. La justification | L'acheteur défend son choix | Il lui fournit les arguments et le suivi des résultats |
+
+Séverin, lui, n'intervient qu'à l'étape 4. Il arrive trop tard et sur le terrain le plus défavorable : la comparaison des prix.
+
+## Ce que vous vendez vraiment, selon votre activité
+
+Chaque type d'entreprise a tendance à vendre ce qu'elle fabrique, alors que le client achète autre chose. Ce tableau aide à reformuler votre offre dans la langue de l'acheteur.
+
+| Votre activité | Ce que vous croyez vendre | Ce que le client achète réellement |
+|---|---|---|
+| Petite industrie, transformation | Un produit de qualité, bien fabriqué | La régularité d'approvisionnement, la marge, la fierté de proposer un produit local valorisant |
+| Prestation de services | Des heures de travail, une expertise | Un problème qui disparaît, du temps libéré, la tranquillité |
+| Tech, logiciel | Des fonctionnalités | Le contrôle, la visibilité, l'image d'une entreprise moderne |
+| Conseil, formation | Une méthode, un programme | Une transformation visible, la reconnaissance de la hiérarchie |
+| Solo-entrepreneur | Ses compétences | La confiance en une personne fiable et disponible |
+| Jeune entreprise | Un produit nouveau | Le plaisir de découvrir, à condition que le risque soit faible |
+
+Le dernier point est important pour les étudiants et les jeunes entrepreneurs. Une offre nouvelle suscite la curiosité, mais aussi la méfiance. Votre premier travail n'est pas de convaincre que votre produit est le meilleur : c'est de rendre l'essai sans risque. Nous verrons au chapitre 2 pourquoi le cerveau préfère presque toujours ce qu'il connaît déjà.
+
+## Les erreurs qui coûtent cher
+
+- **Réciter la fiche technique.** Le client n'a pas besoin de tout savoir ; il a besoin de savoir ce qui va changer pour lui.
+- **Oublier ceux qui valident.** Un acheteur séduit mais sans arguments à présenter à son associé ou à sa direction ne signera pas.
+- **Confondre émotion et pression.** Parler aux émotions ne signifie pas faire peur ou culpabiliser. Les émotions positives construisent des relations durables.
+- **Parler de soi.** « Notre entreprise existe depuis dix ans » intéresse moins que « Vous gagnerez deux heures par jour ».
+- **Utiliser le même argumentaire pour tous.** Un hôtel, une administration et un distributeur n'ont ni les mêmes émotions ni les mêmes critères de justification.
+
+## Feuille de route du chapitre 1
+
+- [ ] J'ai identifié les trois émotions principales qui poussent mes clients à acheter mon offre.
+- [ ] J'ai transformé les cinq principales caractéristiques de mon offre en bénéfices ressentis.
+- [ ] J'ai rédigé trois cas clients vrais, au format client comparable, situation, solution, résultat.
+- [ ] J'ai rempli la matrice « Ressentir et Justifier » pour mes trois prochains rendez-vous.
+- [ ] J'ai préparé un document d'une page que mon client peut transmettre à ceux qui valident.
 
 ::: {custom-style="Encadre"}
-**Attention à l'éthique**
-
-Une histoire de vente doit être vraie. Inventer un témoignage est non seulement malhonnête, mais dangereux : dans les marchés congolais, tout finit par se savoir, et la réputation perdue ne se rachète pas. Si vous débutez et n'avez pas encore de clients, racontez votre propre histoire : pourquoi vous avez créé ce produit, quel problème vous vouliez résoudre.
-:::
-
-## Application terrain : le parcours d'une décision
-
-Reprenons l'exemple d'un achat important, comme un panneau solaire pour une famille de Talangaï, à Brazzaville. La décision suit généralement ce parcours :
-
-1. **Le déclencheur émotionnel** : une coupure d'électricité pendant une fête, un enfant qui ne peut pas réviser le soir, la honte de ne pas pouvoir recevoir correctement des invités.
-2. **L'intuition** : « Il nous faut une solution, le solaire du voisin a l'air de bien fonctionner. »
-3. **La recherche de confirmation** : le chef de famille interroge le voisin, regarde des vidéos sur WhatsApp, demande l'avis d'un neveu qui « connaît l'électricité ».
-4. **La comparaison rationnelle** : prix, puissance, garantie, possibilité de paiement échelonné.
-5. **La décision collective** : la famille valide, souvent après une discussion où chacun apporte son argument.
-6. **La justification** : on explique aux autres pourquoi on a fait le bon choix.
-
-Le vendeur efficace accompagne chacune de ces étapes. Il réveille le déclencheur émotionnel par ses questions, nourrit l'intuition par des exemples visibles, fournit des preuves pour la confirmation, des éléments chiffrés pour la comparaison, des arguments pour la discussion familiale et de la fierté pour la justification.
-
-## Et les acheteurs professionnels ?
-
-On objecte souvent que tout cela s'applique aux particuliers, mais pas aux entreprises ni aux administrations, où les achats seraient guidés par des critères objectifs, des appels d'offres et des grilles de notation. C'est vrai en partie : les procédures existent et elles comptent. Mais derrière chaque procédure, il y a des êtres humains, avec leur système 1.
-
-L'acheteur professionnel ressent lui aussi des émotions, simplement différentes :
-
-- **La peur d'être blâmé.** Un directeur des achats qui choisit un fournisseur défaillant risque sa réputation, voire son poste. Il cherche donc avant tout à éviter l'erreur. C'est pourquoi il privilégie volontiers le fournisseur connu, même plus cher.
-- **Le désir d'être reconnu.** Le responsable qui fait réaliser une économie importante à son entreprise, ou qui introduit une solution innovante, espère que son initiative sera remarquée par sa hiérarchie.
-- **Le besoin de tranquillité.** Un fournisseur fiable, qui livre à l'heure et règle les problèmes sans bruit, simplifie la vie de son interlocuteur. Cette tranquillité a une valeur considérable, rarement inscrite dans le cahier des charges.
-- **La loyauté et la relation.** Comme nous le verrons au chapitre 3, la relation personnelle pèse lourd dans les décisions professionnelles au Congo.
-
-Pour vendre à un acheteur professionnel, il faut donc répondre à deux questions à la fois. La question officielle : « Cette offre est-elle la meilleure pour l'entreprise ? » Et la question personnelle, jamais formulée : « Ce choix est-il sans risque pour moi, et va-t-il me valoriser ? »
-
-Le vendeur qui ne traite que la première question rédige de bons dossiers. Celui qui traite aussi la seconde gagne des contrats. Concrètement, cela signifie rassurer l'acheteur avec des références similaires, lui fournir des arguments qu'il pourra présenter à sa direction, s'engager sur un accompagnement en cas de difficulté et, quand c'est possible, l'aider à faire de ce choix une réussite visible.
-
-::: {custom-style="Encadre"}
-**Les deux questions de votre client professionnel**
-
-Pour votre principal prospect professionnel, complétez ces deux phrases :
-
-- « Pour son entreprise, mon offre est la meilleure parce que… »
-- « Pour lui personnellement, choisir mon offre est sans risque et valorisant parce que… »
-
-Si vous ne parvenez pas à compléter la seconde phrase, vous avez trouvé ce qui manque à votre proposition.
-:::
-
-## Erreurs fréquentes
-
-- **Réciter la fiche technique.** Le client n'a pas besoin de connaître toutes les caractéristiques. Il a besoin de savoir ce que le produit va changer dans sa vie.
-- **Ignorer la justification.** Un client séduit mais sans arguments à opposer à son entourage reviendra souvent… pour annuler.
-- **Confondre émotion et pression.** Parler aux émotions ne signifie pas faire peur ou culpabiliser. Les émotions positives (fierté, sécurité, plaisir) construisent des relations durables ; les émotions négatives manipulées détruisent la confiance.
-- **Parler de soi au lieu de parler du client.** « Notre entreprise est leader depuis vingt ans » intéresse beaucoup moins le client que « Vous allez gagner deux heures par jour ».
-- **Utiliser la même histoire pour tout le monde.** Une histoire n'est efficace que si le client s'identifie au personnage.
-
-## Liste de contrôle du chapitre 1
-
-- [ ] J'ai identifié les trois émotions principales qui poussent mes clients à acheter mes produits.
-- [ ] J'ai transformé les cinq principales caractéristiques de mon offre en bénéfices émotionnels.
-- [ ] J'ai préparé au moins trois histoires vraies de clients satisfaits.
-- [ ] Pour chaque produit, je dispose de trois arguments rationnels que le client peut répéter à son entourage.
-- [ ] Je commence mes présentations par le bénéfice ressenti, pas par la fiche technique.
-- [ ] J'observe pendant une semaine les moments où mes clients « s'animent » pendant la conversation.
-
-::: {custom-style="Encadre"}
-Le client décide avec son système 1, rapide et émotionnel, puis justifie avec son système 2, lent et rationnel. Parlez d'abord au cœur, ensuite à la tête, et donnez toujours au client les mots pour défendre son choix devant les siens.
+Le client décide avec son système 1, rapide et émotionnel, puis justifie avec son système 2, lent et rationnel. Parlez d'abord à ce qu'il ressent, ensuite à ce qu'il calcule, et donnez-lui toujours les arguments pour défendre son choix devant ceux à qui il rend des comptes.
 :::

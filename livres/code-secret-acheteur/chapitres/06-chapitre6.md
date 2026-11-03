@@ -1,177 +1,127 @@
 # Chapitre 6. Lire les signaux
 
-## Cas d'ouverture : « C'est bon, on va voir »
+## Le cas : « C'est bon, on va voir »
 
-Landry est commercial dans une entreprise de fournitures scolaires à Brazzaville. Il présente son catalogue au directeur d'un groupe scolaire privé. Le directeur écoute, feuillette, hoche la tête et conclut : « C'est bon, on va voir. » Landry repart ravi : pour lui, l'affaire est dans le sac.
+Séverin et Jean-Marc fabriquent chacun des produits d'entretien : savons liquides, détergents et désinfectants. Ils cherchent à être référencés par le responsable des achats d'une chaîne de supermarchés.
 
-Son collègue Hervé, plus expérimenté, l'accompagnait ce jour-là. Dans la voiture, il tempère son enthousiasme : « Tu as remarqué qu'il a regardé deux fois sa montre quand tu as parlé des prix ? Qu'il a refermé le catalogue avant la fin ? Et qu'il n'a posé aucune question sur les délais de livraison, alors que la rentrée est dans trois semaines ? "On va voir", chez lui, ça veut dire non. Ou plutôt : pas comme ça. »
+**L'approche de Séverin.** Le rendez-vous se passe bien. L'acheteur écoute, feuillette le catalogue, hoche la tête et conclut : « C'est bon, on va voir. » Séverin repart ravi et annonce à son équipe que le référencement est presque acquis. Il ne se passe rien. Ses relances restent sans réponse.
 
-Hervé avait raison. Le directeur ne commanda rien. Mais Hervé retourna le voir seul la semaine suivante, avec une proposition de paiement en trois fois, calée sur le versement des frais de scolarité par les parents. La commande fut passée le jour même. Le problème n'avait jamais été l'intérêt pour les produits : c'était la trésorerie de début d'année. Le directeur ne l'avait pas dit, mais son corps et ses silences l'avaient exprimé.
+**L'approche de Jean-Marc.** Pendant son propre rendez-vous, il remarque que l'acheteur s'est raidi au moment où il a parlé des volumes de la première commande, qu'il a refermé le catalogue et qu'il n'a posé aucune question sur les délais de livraison. Quand l'acheteur prononce le même « on va voir », Jean-Marc répond calmement : « Bien sûr. Pour que je puisse vous faire une proposition utile, qu'est-ce qui vous fait encore hésiter ? » L'acheteur finit par expliquer que les produits locaux nouveaux tournent parfois mal en rayon et qu'il ne veut pas se retrouver avec des invendus. Jean-Marc propose alors une première commande réduite, la reprise des invendus après deux mois et une animation en magasin. Le référencement est obtenu.
 
-## Ce que le client dit, et ce qu'il ne dit pas
+**Ce qui fait la différence.** Séverin a entendu les mots. Jean-Marc a lu les signaux, puis il a posé la question qui faisait émerger le vrai frein.
 
-Au Congo, comme dans beaucoup de cultures africaines, dire « non » directement est souvent considéré comme impoli, voire blessant. On préfère des formules indirectes qui préservent la relation : « On va voir », « Je vais en parler », « Ce n'est pas mauvais », « Repasse un de ces jours », « Si Dieu le veut », « Dieu est grand ». Ces formules peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
+## Ce que l'acheteur dit, et ce qu'il ne dit pas
 
-Le vendeur qui ne prend en compte que les mots risque donc de mal interpréter la situation. Il doit apprendre à lire **trois niveaux de signaux** :
+Dans la culture congolaise, comme dans beaucoup de cultures africaines, dire « non » directement est souvent perçu comme impoli. On préfère des formules qui préservent la relation : « on va voir », « je vais en parler », « ce n'est pas mauvais », « repassez un de ces jours », « si Dieu le veut ». Elles peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
+
+L'entrepreneur doit donc lire trois niveaux de signaux :
 
 1. **Les signaux verbaux** : les mots choisis, les questions posées ou non posées.
 2. **Les signaux vocaux** : le ton, le rythme, les hésitations, les silences.
-3. **Les signaux non verbaux** : les gestes, la posture, le regard, l'utilisation de l'espace et du temps.
+3. **Les signaux non verbaux** : la posture, les gestes, le regard, le rapport au temps.
 
 ::: {custom-style="Encadre"}
 **Le mythe des « 93 % de communication non verbale »**
 
-Ce chiffre, très répandu dans les formations commerciales, provient d'une mauvaise interprétation des travaux du psychologue Albert Mehrabian dans les années 1960. Ses expériences portaient sur une situation très particulière : l'expression de sentiments à travers des mots isolés prononcés sur un ton contradictoire. Mehrabian lui-même a rappelé que ses résultats ne s'appliquent pas à la communication en général. Les mots comptent beaucoup. Mais quand les mots et le corps se contredisent, c'est souvent le corps qui dit la vérité sur les émotions.
+Ce chiffre très répandu provient d'une mauvaise interprétation des travaux du psychologue Albert Mehrabian, qui portaient sur une situation très particulière : l'expression de sentiments par des mots isolés prononcés sur un ton contradictoire. Mehrabian lui-même a rappelé que ses résultats ne s'appliquent pas à la communication en général. Les mots comptent beaucoup. Mais quand les mots et le corps se contredisent, c'est souvent le corps qui révèle l'émotion.
 :::
 
-## Les signaux verbaux : écouter entre les lignes
+## Les signaux verbaux
 
-### Les questions du client sont des signaux d'achat
+### Les questions de l'acheteur sont des signaux d'achat
 
-Un client qui pose des questions précises se projette dans l'achat. Plus ses questions deviennent concrètes, plus il est proche de la décision :
+Un acheteur qui pose des questions précises se projette dans l'achat. Plus ses questions sont concrètes, plus il est proche de la décision :
 
-- « Vous livrez jusqu'à Mfilou ? »
-- « Il y a combien de couleurs ? »
-- « Si je prends aujourd'hui, ça arrive quand ? »
-- « Est-ce qu'on peut payer par MTN MoMo ou par Airtel Money ? »
-- « Et la garantie, ça marche comment si ça tombe en panne ? »
+- « Quel est votre délai de livraison pour une commande de cette taille ? »
+- « Pouvez-vous facturer à 60 jours ? »
+- « Qui sera notre interlocuteur en cas de problème ? »
+- « Est-ce que la formation de notre équipe est incluse ? »
+- « Si nous démarrons le mois prochain, quand serions-nous opérationnels ? »
 
-Ces questions sont des **signaux d'achat**. Lorsque vous les entendez, cessez d'argumenter et aidez le client à conclure.
+Lorsque ces signaux apparaissent, **cessez d'argumenter** et aidez le client à avancer vers la décision.
 
 ### L'absence de questions est aussi un signal
 
-À l'inverse, un client qui écoute sans poser de questions n'est pas forcément convaincu : il est peut-être déjà ailleurs. Comme le directeur d'école de Landry, il peut n'avoir aucune question parce qu'il a déjà décidé de ne pas acheter, ou parce qu'un obstacle qu'il ne nomme pas bloque toute projection.
+Un acheteur qui écoute sans rien demander n'est pas forcément convaincu. Comme dans le cas d'ouverture, il a peut-être déjà décidé de ne pas avancer, ou un obstacle qu'il ne nomme pas l'empêche de se projeter.
 
-### Le passage du conditionnel au futur
+### Le glissement du conditionnel au futur
 
-Écoutez attentivement les temps des verbes. « Si je le prenais, est-ce que… » indique une hypothèse. « Quand je l'aurai, je pourrai… » indique une projection. Le passage du conditionnel au futur, ou du « vous » au « nous » (« Comment on fera pour l'installation ? »), signale que le client s'approprie déjà le produit.
+« Si nous le prenions, est-ce que… » indique une hypothèse. « Quand nous l'aurons, nous pourrons… » indique une projection. Le passage du conditionnel au futur, ou du « vous » au « nous » (« comment ferons-nous pour l'installation ? »), signale que l'acheteur s'approprie déjà votre solution.
 
 ### Les objections déguisées
 
-Une objection est rarement exprimée directement. Elle se cache derrière des formules qui ne disent pas la vraie raison. Nous les traiterons en détail au chapitre 11, mais il est utile d'apprendre dès maintenant à les repérer :
-
-| Ce que le client dit | Ce que cela peut signifier |
+| Ce que l'acheteur dit | Ce que cela peut signifier |
 |---|---|
-| « Je vais réfléchir. » | « Je ne suis pas convaincu », « Je dois consulter quelqu'un » ou « Je n'ai pas l'argent maintenant » |
-| « C'est un peu cher. » | « Je ne vois pas encore assez de valeur » ou « Je veux négocier » |
-| « Envoyez-moi une documentation. » | « Je veux mettre fin poliment à l'entretien » ou « J'ai besoin d'éléments pour convaincre ma hiérarchie » |
-| « On a déjà un fournisseur. » | « Je ne veux pas prendre de risque » ou « Je ne vois pas de raison de changer » |
-| « Repassez le mois prochain. » | « Le moment n'est pas bon (trésorerie, période) » ou « Je ne veux pas dire non » |
+| « Je vais réfléchir. » | « Je ne suis pas convaincu », « je dois consulter » ou « je n'ai pas le budget maintenant » |
+| « C'est un peu cher. » | « Je ne vois pas encore assez de valeur » ou « je veux négocier » |
+| « Envoyez-moi une documentation. » | « Je veux clore poliment » ou « j'ai besoin d'éléments pour convaincre ma direction » |
+| « Nous avons déjà un fournisseur. » | « Je ne veux pas prendre de risque » |
+| « Revenez dans quelques mois. » | « Le moment n'est pas bon » ou « je ne veux pas dire non » |
 
-La seule façon de savoir ce que cache une objection est de poser une question ouverte et bienveillante : « Bien sûr. Pour que je puisse vous aider à réfléchir, qu'est-ce qui vous fait encore hésiter ? »
+La seule façon de savoir ce que cache une objection est de poser une question ouverte et bienveillante : « Qu'est-ce qui vous fait encore hésiter ? » Nous traiterons les objections en détail au chapitre 11.
 
-## Les signaux vocaux : le ton dit l'émotion
+## Les signaux vocaux
 
-Le ton de la voix traduit souvent l'état émotionnel mieux que les mots. Soyez attentif à :
+- **L'accélération** traduit l'enthousiasme… ou l'agacement.
+- **Le ralentissement et les hésitations** traduisent un doute, une réflexion ou une gêne.
+- **La baisse de volume** accompagne souvent un sujet sensible : budget, problème interne, désaccord avec un supérieur.
+- **Le rire** peut exprimer le plaisir, mais aussi la gêne ou le scepticisme poli.
 
-- **L'accélération** : un client qui parle plus vite et plus fort s'enthousiasme… ou s'agace.
-- **Le ralentissement et les hésitations** : un doute, une réflexion, ou une gêne.
-- **La baisse de volume** : souvent un sujet sensible (argent, problème personnel, désaccord avec un supérieur).
-- **Le rire** : il peut traduire le plaisir, mais aussi la gêne ou le scepticisme poli.
+**Le silence** mérite une attention particulière. Le silence de réflexion suit une question importante : ne l'interrompez pas. Le silence d'hésitation précède souvent une objection : laissez-la venir. Le silence de résistance traduit un désaccord poli : relancez avec douceur. Dans la culture congolaise, le silence est aussi une marque de sérieux face à une question importante. Beaucoup d'entrepreneurs, mal à l'aise, le comblent en ajoutant des arguments ou en baissant leur prix. C'est une erreur coûteuse.
 
-### Le silence, un signal précieux
+## Les signaux non verbaux
 
-Beaucoup de vendeurs ont peur du silence et le comblent immédiatement en ajoutant des arguments ou… en baissant leur prix. C'est une erreur. Le silence a plusieurs sens :
+| Signaux d'intérêt | Signaux de doute ou de retrait |
+|---|---|
+| Se pencher vers vous ou vers le document | Reculer, se caler au fond du siège |
+| Manipuler l'échantillon, revenir sur une page | Refermer le document, le repousser |
+| Prendre des notes | Regarder l'heure, le téléphone, la porte |
+| Appeler un collaborateur pour lui montrer | Réponses de plus en plus courtes |
+| Sourire spontané, hochements de tête | Se toucher le visage de façon répétée au moment du prix |
 
-- **Le silence de réflexion** suit une question importante. Le client calcule, imagine, se projette. Ne l'interrompez pas.
-- **Le silence d'hésitation** précède souvent une objection. Laissez le client la formuler.
-- **Le silence de résistance** traduit un désaccord poli. Relancez avec douceur : « J'ai l'impression que quelque chose vous fait hésiter… »
-
-Dans la culture congolaise, le silence est aussi une marque de respect et de sérieux : on ne répond pas trop vite à une question importante. Apprenez à le respecter.
-
-## Les signaux non verbaux : observer sans surinterpréter
-
-### Les signaux d'intérêt
-
-- Le client se penche vers vous ou vers le produit.
-- Il touche, manipule, essaie le produit.
-- Il garde le document en main, revient sur une page.
-- Il sourit spontanément, hoche la tête.
-- Il rapproche sa chaise ou vous invite à vous asseoir.
-- Il appelle un collègue ou un proche pour lui montrer.
-
-### Les signaux de doute ou de désintérêt
-
-- Il recule, se cale au fond de son siège.
-- Il croise les bras ou les jambes en se détournant légèrement (attention : cela peut aussi être une position de confort).
-- Il regarde sa montre, son téléphone ou la porte.
-- Il referme le document ou le repousse.
-- Il se touche le visage, le menton ou le cou de façon répétée lorsqu'on parle du prix.
-- Ses réponses deviennent de plus en plus courtes.
-
-### La règle des grappes
-
-Un seul geste ne veut rien dire. Des bras croisés peuvent signifier que le client a froid à cause de la climatisation. Un regard vers la montre peut indiquer un rendez-vous important, pas un désintérêt. Les spécialistes recommandent de toujours chercher des **grappes de signaux** : plusieurs signaux convergents, à un moment précis de la conversation, en rupture avec le comportement habituel de la personne.
-
-Dans l'exemple de Landry, ce n'est pas un regard isolé vers la montre qui était significatif, mais la combinaison de plusieurs signaux (montre, catalogue refermé, absence de questions) au moment précis où l'on parlait des prix.
+**La règle des grappes.** Un geste isolé ne veut rien dire : des bras croisés peuvent simplement traduire le froid de la climatisation. Cherchez des grappes, c'est-à-dire plusieurs signaux convergents, à un moment précis de l'échange, en rupture avec le comportement habituel de la personne. Dans le cas d'ouverture, c'est la combinaison du raidissement, du catalogue refermé et de l'absence de questions, au moment précis des volumes, qui était significative.
 
 ## Les codes culturels de la communication non verbale
 
-Les signaux non verbaux sont en partie culturels. Ce qui signifie une chose à Paris peut en signifier une autre à Brazzaville ou à Pointe-Noire. Quelques exemples importants :
-
 | Comportement | Interprétation fréquente en Occident | Interprétation fréquente au Congo |
 |---|---|---|
-| Éviter le regard | Gêne, dissimulation, manque de franchise | Respect envers un aîné ou un supérieur |
-| Arriver en retard | Désintérêt, manque de respect | Rapport au temps plus souple ; pas forcément un signal négatif |
-| Répondre au téléphone pendant l'entretien | Impolitesse | Souvent normal ; le signal négatif est plutôt la longueur de l'appel |
-| Proximité physique, contact de la main | Familiarité excessive | Chaleur, confiance, sympathie |
-| Long silence avant de répondre | Malaise | Réflexion, sérieux, respect |
-| Formules religieuses (« Si Dieu le veut », « Dieu merci ») | Formule vague | Expression sincère de la foi ; à respecter, sans en tirer de conclusion sur la décision |
+| Éviter le regard | Gêne, manque de franchise | Respect envers un aîné ou un supérieur |
+| Arriver en retard | Désintérêt | Rapport au temps plus souple, pas forcément négatif |
+| Répondre au téléphone pendant le rendez-vous | Impolitesse | Souvent normal ; le signal négatif est la durée de l'appel |
+| Long silence avant de répondre | Malaise | Réflexion, sérieux |
+| Formules religieuses (« si Dieu le veut ») | Formule vague | Expression sincère de la foi, à respecter sans en tirer de conclusion |
 
-Le principe est simple : **comparez le comportement du client à sa propre normalité, pas à la vôtre**. Un client habituellement expansif qui devient soudain silencieux envoie un signal. Un client naturellement réservé qui reste silencieux ne fait que rester lui-même.
+Le principe est simple : **comparez le comportement de l'acheteur à sa propre normalité, pas à la vôtre.**
 
-## Le marchandage : un rituel à lire, pas un combat
+## La négociation comme rituel
 
-Dans les marchés congolais, le marchandage fait partie de l'acte d'achat. Pour le vendeur formé à l'occidentale, il peut ressembler à une contestation du prix, voire à un manque de respect. C'est une erreur de lecture.
+Dans de nombreuses relations d'affaires, la négociation des conditions fait partie du rituel de la relation : elle permet de tester la bonne foi de l'autre et de partager la satisfaction d'un bon accord. Un acheteur qui négocie est souvent un acheteur intéressé : celui qui n'a aucune intention d'acheter ne prend pas cette peine. Apprenez à distinguer la négociation rituelle (souriante, qui attend un geste symbolique), la négociation de contrainte (budget ou trésorerie réellement limités, où un étalement des paiements vaut mieux qu'une remise) et la négociation de comparaison (référence à un concurrent, où il faut revenir à la valeur). Le chapitre 9 détaille comment négocier sans détruire sa marge.
 
-Le marchandage est d'abord un **rituel social**. Il permet de créer une relation, de montrer son habileté, de tester la bonne foi de l'autre et de partager le plaisir de « faire une bonne affaire ». Un client qui marchande est souvent un client intéressé : celui qui n'a aucune intention d'acheter ne prend pas la peine de négocier.
+## Lire les signaux à distance
 
-Lire les signaux du marchandage permet de distinguer :
+Une grande partie des échanges commerciaux passe désormais par le téléphone, le courriel et la messagerie. D'autres signaux apparaissent :
 
-- **Le marchandage rituel** : souriant, joueur, ponctué de plaisanteries. Le client s'attend à un petit geste, symbolique, qui le valorise. Un cadeau, un arrondi ou un « prix d'ami » suffit souvent.
-- **Le marchandage de nécessité** : plus tendu, avec des références précises à son budget (« Je n'ai que 40 000 sur moi »). Le client a une contrainte réelle. Une solution de paiement (acompte, échelonnement par mobile money) est souvent plus efficace qu'une baisse de prix.
-- **Le marchandage de comparaison** : le client cite un concurrent (« Là-bas, on me le fait à 35 000 »). Il faut alors revenir à la valeur : qualité, garantie, service.
+- **Le délai de réponse** : un prospect qui répond vite est engagé ; des réponses qui s'espacent indiquent un refroidissement.
+- **La longueur des messages** : des messages de plus en plus courts signalent un désintérêt.
+- **Le passage de l'écrit à la voix** : un interlocuteur qui appelle ou envoie un message vocal cherche souvent plus de proximité.
+- **Le message lu sans réponse** : l'acheteur ne sait pas quoi répondre. Relancez avec une question simple, à laquelle il est facile de répondre.
 
-Nous verrons au chapitre 9 comment négocier sans détruire sa marge, en s'appuyant sur l'ancrage et la réciprocité.
+## Les erreurs qui coûtent cher
 
-## Lire les signaux à distance : téléphone et WhatsApp
+- **Prendre « on va voir » pour un oui.** Vérifiez toujours par une question ouverte.
+- **Interpréter un geste isolé.** Cherchez des grappes.
+- **Projeter ses propres codes.** Un regard baissé n'est pas un mensonge.
+- **Combler les silences** par des arguments ou des remises.
+- **Continuer d'argumenter** quand les signaux d'achat sont là.
 
-Une part croissante des ventes se déroule par téléphone ou par messagerie. Les signaux non verbaux disparaissent, mais d'autres apparaissent :
+## Feuille de route du chapitre 6
 
-- **Le délai de réponse** : un prospect qui répond en quelques minutes est engagé ; un prospect dont les réponses s'espacent se refroidit.
-- **La longueur des messages** : des messages de plus en plus courts sont un signal de désintérêt.
-- **Les messages vocaux** : un client qui passe de l'écrit au vocal cherche souvent à créer plus de proximité, c'est un bon signe.
-- **Les émojis et la ponctuation** : leur apparition ou leur disparition traduit l'évolution de l'humeur.
-- **Les « vus » sans réponse** : le message a été lu, mais le client ne sait pas quoi répondre. Relancez avec une question simple, à laquelle il est facile de répondre.
-
-## Outil : la grille d'observation en trois colonnes
-
-Après chaque rendez-vous important, remplissez rapidement cette grille, disponible en annexe A :
-
-| Signaux d'intérêt observés | Signaux de doute observés | Moment de la conversation |
-|---|---|---|
-| … | … | (présentation, prix, délais, concurrence…) |
-
-Puis répondez à deux questions : à quel moment l'intérêt du client a-t-il été le plus fort ? À quel moment a-t-il faibli ? Vous saurez ainsi quel argument a porté et quel point bloque.
-
-## Erreurs fréquentes
-
-- **Prendre « on va voir » pour un oui.** Vérifiez toujours avec une question ouverte.
-- **Interpréter un geste isolé.** Cherchez des grappes de signaux.
-- **Projeter ses propres codes culturels.** Un regard baissé n'est pas un mensonge.
-- **Combler tous les silences.** Le silence travaille souvent pour vous.
-- **Ignorer les signaux d'achat.** Continuer à argumenter quand le client est prêt peut le faire changer d'avis.
-- **Prendre le marchandage pour une agression.** C'est souvent un signal d'intérêt.
-
-## Liste de contrôle du chapitre 6
-
-- [ ] J'ai listé les formules indirectes que mes clients utilisent pour dire non, et une question pour clarifier chacune.
+- [ ] J'ai listé les formules indirectes que mes acheteurs utilisent pour dire non, et une question pour clarifier chacune.
 - [ ] Je repère les signaux d'achat et je cesse d'argumenter lorsqu'ils apparaissent.
-- [ ] Je cherche des grappes de signaux plutôt que des gestes isolés.
 - [ ] Je laisse au moins cinq secondes de silence après chaque question importante.
-- [ ] Je distingue marchandage rituel, de nécessité et de comparaison, et j'ai préparé une réponse pour chacun.
-- [ ] Je suis l'évolution des délais et de la longueur des réponses de mes prospects sur WhatsApp.
+- [ ] Après chaque rendez-vous, je remplis la grille d'observation de l'annexe A.
+- [ ] Je suis l'évolution des délais et de la longueur des réponses de mes prospects.
 
 ::: {custom-style="Encadre"}
-Le client ne dit pas toujours non avec des mots. Écoutez ses questions et ses silences, observez son corps en cherchant des grappes de signaux, et interprétez tout cela selon ses codes culturels, pas les vôtres. Quand le doute apparaît, posez une question ouverte : c'est le seul moyen de découvrir ce qui bloque vraiment.
+L'acheteur ne dit pas toujours non avec des mots. Écoutez ses questions et ses silences, observez les grappes de signaux et interprétez-les selon ses codes, pas les vôtres. Quand le doute apparaît, une question ouverte vaut mieux que dix arguments.
 :::

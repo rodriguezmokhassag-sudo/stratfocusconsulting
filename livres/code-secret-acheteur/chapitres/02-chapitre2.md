@@ -1,151 +1,122 @@
 # Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client
 
-## Cas d'ouverture : les deux devis d'Arsène
+## Le cas : convaincre un hôtel de changer de fournisseur de jus
 
-Arsène dirige une petite entreprise de climatisation à Pointe-Noire. Il doit répondre à l'appel d'offres d'une clinique privée pour l'installation de quinze climatiseurs. Son concurrent principal propose un prix de 9 millions de francs CFA. Le devis d'Arsène s'élève à 9,5 millions, mais son matériel consomme beaucoup moins d'électricité.
+Séverin et Jean-Marc dirigent chacun une petite unité de fabrication de jus de fruits naturels. Ils visent le même marché : les hôtels, qui achètent aujourd'hui des jus importés ou ceux d'un fournisseur installé.
 
-Dans un premier temps, Arsène présente son devis de manière classique : « Notre prix est de 9,5 millions, soit 500 000 francs de plus que la concurrence, mais nos appareils sont plus économes. » La directrice de la clinique fronce les sourcils. Elle a entendu « 500 000 francs de plus ».
+**L'approche de Séverin.** Pour décrocher un premier contrat, il baisse son prix de 15 % et insiste sur ce rabais : « Nous sommes moins chers que votre fournisseur actuel. » Le directeur accepte un essai. Mais dès la première livraison, il compare chaque facture au prix le plus bas du marché. Trois mois plus tard, un concurrent propose encore moins cher : Séverin perd le client. Il a vendu sans marge et sans fidélité.
 
-Sur les conseils d'un ami, Arsène reformule son offre lors de la seconde rencontre : « Avec l'installation actuelle, la clinique dépense environ 1,2 million de francs d'électricité par mois pour la climatisation. Avec le matériel du concurrent, vous continuerez à perdre près de 400 000 francs chaque mois par rapport à notre solution. En un an, cela fait près de 5 millions de francs perdus. Notre installation vous coûte 9,5 millions. »
+**L'approche de Jean-Marc.** Il garde son prix. Avant de l'annoncer, il pose des questions : combien de fois l'hôtel a-t-il été en rupture de jus le week-end ? Combien coûtent les achats d'urgence au supermarché ? Combien d'avis négatifs mentionnent le petit-déjeuner ? Le directeur fait lui-même le calcul : les ruptures lui coûtent chaque mois plus que l'écart de prix entre les deux fournisseurs. Jean-Marc propose alors une livraison programmée deux fois par semaine, avec un stock de sécurité. Le directeur signe pour six mois.
 
-Le contrat est signé dans la semaine. Les chiffres n'ont pas changé. Ce qui a changé, c'est la manière dont ils ont été présentés au cerveau de l'acheteuse. Arsène a utilisé, sans le savoir, deux des biais cognitifs les plus puissants : **l'aversion à la perte** et **l'effet de cadrage**.
+**Ce qui fait la différence.** Séverin a parlé de gain : « moins cher ». Jean-Marc a fait mesurer une perte évitée. Or le cerveau ressent une perte environ deux fois plus fortement qu'un gain de même montant. Séverin a aussi fixé lui-même la référence de la discussion : le prix. Jean-Marc l'a fixée sur le coût des ruptures. Deux biais cognitifs ont décidé de l'issue : l'aversion à la perte et l'ancrage.
 
 ## Qu'est-ce qu'un biais cognitif ?
 
-Notre cerveau traite chaque jour une quantité considérable d'informations. Pour ne pas être submergé, il utilise des raccourcis : des règles simples qui permettent de décider vite sans tout analyser. La plupart du temps, ces raccourcis sont utiles. Mais ils produisent aussi des erreurs systématiques et prévisibles : ce sont les biais cognitifs.
+Notre cerveau traite chaque jour une quantité considérable d'informations. Pour ne pas être submergé, il utilise des raccourcis : des règles simples qui permettent de décider vite. Ces raccourcis sont utiles, mais ils produisent aussi des erreurs systématiques et prévisibles : les biais cognitifs. Les chercheurs en ont recensé plusieurs dizaines. Une dizaine suffit à expliquer l'essentiel des comportements d'achat.
 
-Les chercheurs en ont recensé plusieurs dizaines. Pour le vendeur, une dizaine d'entre eux suffisent à expliquer l'essentiel des comportements d'achat. Les connaître permet deux choses : présenter son offre de la manière la plus claire pour le cerveau du client, et éviter de tomber soi-même dans ces pièges lorsqu'on achète ou qu'on négocie.
+Les connaître permet à l'entrepreneur deux choses : présenter son offre de la manière la plus claire pour le cerveau de l'acheteur, et éviter de tomber lui-même dans ces pièges lorsqu'il fixe ses prix ou négocie.
 
-## L'aversion à la perte : perdre fait plus mal que gagner ne fait plaisir
+## L'aversion à la perte
 
-C'est sans doute la découverte la plus importante de Kahneman et Tversky. Leur « théorie des perspectives », publiée en 1979, montre que la douleur d'une perte est ressentie environ deux fois plus intensément que le plaisir d'un gain équivalent. Perdre 10 000 francs nous affecte davantage que gagner 10 000 francs ne nous réjouit.
-
-Conséquence directe pour la vente : **un client est plus motivé par la perspective d'éviter une perte que par celle d'obtenir un gain**.
+La « théorie des perspectives » de Kahneman et Tversky, publiée en 1979, montre que la douleur d'une perte est ressentie environ deux fois plus intensément que le plaisir d'un gain équivalent. Un client est donc plus motivé par la perspective d'éviter une perte réelle que par celle d'obtenir un gain.
 
 | Formulation centrée sur le gain | Formulation centrée sur la perte évitée |
 |---|---|
-| « Vous allez économiser 30 000 francs par mois. » | « Aujourd'hui, vous perdez 30 000 francs chaque mois. » |
-| « Cette assurance vous protège. » | « Sans assurance, un seul accident peut vous coûter l'équivalent de trois ans de revenus. » |
-| « Notre logiciel améliore votre gestion des stocks. » | « Chaque rupture de stock vous fait perdre des clients qui partent chez le concurrent. » |
+| « Notre logiciel améliore votre gestion. » | « Aujourd'hui, chaque écart de stock non détecté vous coûte de l'argent. » |
+| « Notre maintenance prolonge la vie de vos machines. » | « Une panne de deux jours en pleine saison vous fait perdre une semaine de production. » |
+| « Notre formation rend vos commerciaux plus efficaces. » | « Chaque prospect mal suivi part chez un concurrent. » |
 
-Attention : l'aversion à la perte est un levier puissant, et donc à manier avec précaution. Exagérer les risques ou inventer des dangers relève de la manipulation. La règle est simple : vous pouvez présenter une perte **réelle et chiffrable**, jamais une peur fabriquée.
+La règle éthique est stricte : vous présentez une perte **réelle et chiffrable**, jamais une peur fabriquée. Le mieux est que ce soit le client qui la calcule, comme dans le cas de Jean-Marc. Nous verrons au chapitre 5 comment y parvenir avec la méthode SPIN.
 
-## L'effet de cadrage : la présentation change la décision
+## L'effet de cadrage
 
-Une même information, présentée de deux façons différentes, peut entraîner deux décisions opposées. Un yaourt « à 95 % sans matières grasses » se vend mieux qu'un yaourt « contenant 5 % de matières grasses ». Un traitement avec « 90 % de chances de survie » est plus souvent choisi qu'un traitement avec « 10 % de risque de décès ».
+Une même information, présentée de deux façons, peut entraîner deux décisions opposées. Un produit « à 95 % sans matières grasses » se vend mieux qu'un produit « contenant 5 % de matières grasses ». En vente, le cadrage concerne surtout :
 
-En vente, le cadrage concerne surtout trois éléments :
+- **Le prix** : un abonnement logiciel à « 1 500 francs par jour » paraît plus accessible qu'à « 45 000 francs par mois ». À l'inverse, pour souligner une économie, l'annualisation est plus frappante : « 540 000 francs économisés par an ».
+- **Le point de comparaison** : comparé à une embauche, un logiciel paraît bon marché ; comparé à un tableur gratuit, il paraît cher. Choisissez le référentiel le plus juste pour votre client.
+- **Le vocabulaire** : « investissement » plutôt que « dépense », « accompagnement » plutôt que « contrôle ».
 
-- **Le prix** : « 300 francs par jour » paraît plus accessible que « 9 000 francs par mois », lui-même plus doux que « 108 000 francs par an ». À l'inverse, pour souligner une économie, l'annualisation est plus frappante.
-- **Le point de comparaison** : comparer votre produit à une alternative plus chère le rend raisonnable ; le comparer à une alternative moins chère le rend coûteux.
-- **Le vocabulaire** : « investissement » plutôt que « dépense », « participation » plutôt que « frais », « accompagnement » plutôt que « surveillance ».
+## L'ancrage
 
-::: {custom-style="Encadre"}
-**Le prix ramené à la journée**
+Lorsque nous devons estimer une valeur, nous nous appuyons sur le premier chiffre disponible, même s'il n'a aucun rapport avec la question. Dans une expérience célèbre, Kahneman et Tversky faisaient tourner une roue truquée qui s'arrêtait sur 10 ou sur 65, puis demandaient d'estimer le pourcentage de pays africains membres des Nations unies. Ceux qui avaient vu 65 donnaient des estimations nettement plus élevées.
 
-Dans des économies où beaucoup de revenus sont journaliers ou hebdomadaires, ramener un prix à l'unité de temps du client est particulièrement efficace. Les opérateurs de kits solaires en paiement à l'usage (« pay-as-you-go ») l'ont bien compris : un kit présenté « à 250 francs par jour, payables par mobile money » devient accessible à des familles qui ne pourraient jamais débourser la somme totale en une fois.
-:::
+Dans la vente, le premier chiffre mentionné devient la référence. D'où trois règles pratiques :
 
-## L'ancrage : le premier chiffre fixe la référence
+1. **Annoncez la valeur avant le prix** : « Ce type de rupture coûte en moyenne… ; notre offre est de… »
+2. **Présentez d'abord votre offre la plus complète**, les autres paraîtront raisonnables.
+3. **Ne laissez pas le prix du concurrent devenir l'ancre.** Ramenez la discussion sur le coût du problème.
 
-Lorsque nous devons estimer une valeur, notre cerveau s'appuie sur le premier chiffre disponible, même s'il n'a aucun rapport avec la question. Dans une expérience célèbre, Kahneman et Tversky faisaient tourner une roue truquée qui s'arrêtait sur 10 ou sur 65, puis demandaient aux participants d'estimer le pourcentage de pays africains membres des Nations unies. Ceux qui avaient vu 65 donnaient des estimations nettement plus élevées que ceux qui avaient vu 10.
+## Le biais du statu quo
 
-Dans la vente, le premier prix mentionné devient l'ancre à partir de laquelle le client juge tous les autres. C'est pourquoi :
+Les êtres humains préfèrent ce qui est connu, même lorsqu'une alternative est meilleure. Changer de fournisseur, de logiciel ou de prestataire demande un effort et comporte un risque. Pour l'entrepreneur qui lance un produit local face à un produit importé installé, c'est l'obstacle principal. **Votre premier concurrent n'est pas l'autre entreprise : c'est l'habitude du client.**
 
-- **Présenter d'abord l'offre la plus complète** (et la plus chère) rend les offres intermédiaires plus attractives.
-- **Annoncer la valeur avant le prix** (« Ce type d'installation vaut habituellement entre 2 et 3 millions… ») ancre la perception à un niveau élevé.
-- **Dans le marchandage, celui qui annonce le premier chiffre** influence fortement le résultat final. Nous y reviendrons au chapitre 9.
+| Ce que craint l'acheteur | Ce que propose Jean-Marc |
+|---|---|
+| Que le nouveau fournisseur ne soit pas fiable | Une commande test limitée, sans engagement |
+| Que le changement perturbe l'organisation | Une prise en charge de la transition (installation, formation) |
+| D'être blâmé si cela tourne mal | Des références vérifiables et une garantie écrite |
+| De perdre du temps | Un démarrage simple, en une étape |
 
-## Le biais du statu quo : le changement fait peur
+## La surcharge de choix
 
-Les êtres humains préfèrent ce qui est connu, même lorsqu'une alternative serait objectivement meilleure. Changer de fournisseur, de banque, de marque ou de méthode demande un effort et comporte un risque. Le cerveau préfère souvent ne rien faire.
+On pense souvent qu'offrir beaucoup d'options augmente les ventes. Dans une étude publiée en 2000, Sheena Iyengar et Mark Lepper ont observé qu'un stand présentant 24 confitures attirait plus de visiteurs qu'un stand en présentant 6, mais vendait beaucoup moins : environ 3 % d'acheteurs contre environ 30 %. L'effet a depuis été nuancé, mais la leçon pratique demeure : **face à trop d'options, beaucoup d'acheteurs reportent leur décision.**
 
-C'est l'ennemi principal du vendeur qui cherche à conquérir les clients d'un concurrent installé. Votre véritable concurrent n'est souvent pas l'autre entreprise : c'est l'habitude du client.
+Pour un entrepreneur, cela signifie :
 
-Pour surmonter ce biais :
+- proposer **trois formules au maximum** à un prospect ;
+- **recommander clairement** l'une d'elles : « Pour votre volume, je vous conseille celle-ci, parce que… » ;
+- organiser son catalogue par **besoin** plutôt que par référence technique.
 
-- **Réduisez le risque perçu** : essai gratuit, échantillon, garantie « satisfait ou remboursé », première commande réduite.
-- **Facilitez la transition** : prenez en charge les démarches, la livraison, l'installation, la formation.
-- **Rendez visible le coût de l'inaction** : que perd le client en continuant comme avant ?
-- **Proposez de petits pas** : une commande test plutôt qu'un contrat annuel. C'est le principe de l'engagement progressif, que nous développerons au chapitre 9.
+## L'effet de leurre
 
-## La surcharge de choix : trop d'options tuent la décision
-
-Il semble logique de penser que plus on propose de choix, plus on a de chances de satisfaire le client. Les recherches montrent souvent l'inverse. Dans une étude de Sheena Iyengar et Mark Lepper publiée en 2000, un stand de dégustation de confitures présentant 24 variétés attirait davantage de passants qu'un stand en présentant 6, mais vendait beaucoup moins : environ 3 % des visiteurs achetaient face aux 24 variétés, contre environ 30 % face aux 6.
-
-Les chercheurs ont depuis nuancé ce résultat : l'effet dépend du contexte, de l'expertise de l'acheteur et de la clarté de l'offre. Mais la leçon pratique demeure : **face à trop d'options, beaucoup de clients préfèrent ne pas choisir**, de peur de se tromper.
-
-C'est exactement ce que faisait Merveille, la commerçante de notre introduction, en sortant trois pagnes et non quinze. Dans votre activité :
-
-- Présentez **trois options au maximum** à un client indécis.
-- **Recommandez clairement l'une d'elles** : « Si j'étais vous, je prendrais celle-ci, parce que… »
-- Organisez votre catalogue, votre boutique ou votre statut WhatsApp par **besoins** plutôt que par références.
-
-## L'effet de leurre : l'option qui aide à choisir
-
-Une variante intéressante de la surcharge de choix est l'effet de leurre. Lorsqu'on propose trois options, dont l'une est clairement moins intéressante qu'une autre, le client se tourne plus facilement vers l'option dominante.
-
-Prenons l'exemple d'un cybercafé ou d'un centre de formation informatique :
+Lorsqu'on propose trois options dont l'une est clairement moins intéressante qu'une autre, l'acheteur se tourne plus facilement vers l'option dominante. Exemple pour un cabinet de formation :
 
 | Formule | Contenu | Prix |
 |---|---|---|
-| Basique | 10 heures de formation | 25 000 F CFA |
-| Standard | 20 heures de formation | 45 000 F CFA |
-| Premium | 20 heures de formation + certificat + accompagnement à l'emploi | 50 000 F CFA |
+| Essentielle | 2 jours de formation | 300 000 F CFA |
+| Standard | 3 jours de formation | 450 000 F CFA |
+| Performance | 3 jours de formation et 3 mois de suivi sur le terrain | 500 000 F CFA |
 
-La formule Standard sert ici de point de comparaison : pour seulement 5 000 francs de plus, la formule Premium apporte un certificat et un accompagnement. Elle paraît donc évidente. L'éthique impose une condition : chaque formule doit être réelle, honnête et réellement vendue à ceux qui la choisissent.
+La formule Standard sert de point de comparaison : pour 50 000 francs de plus, la formule Performance ajoute trois mois de suivi. Elle devient évidente. Condition éthique : chaque formule doit être réelle, honnête et réellement vendue.
 
-## La preuve sociale et l'effet de mode
+## Le biais de confirmation
 
-Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres. Une file d'attente devant un nganda attire davantage de clients qu'une salle vide. Ce biais est si puissant qu'il constitue l'un des sept leviers d'influence étudiés au chapitre 8. Retenons pour l'instant qu'il est particulièrement fort dans les sociétés où le regard du groupe compte beaucoup.
+Une fois qu'il s'est fait une opinion, l'acheteur cherche les informations qui la confirment. Si un distributeur pense que « les produits locaux sont de qualité irrégulière », il remarquera le moindre défaut de votre produit et ignorera ses qualités. **La première impression est donc déterminante** : qualité de votre premier message, présentation de votre devis, ponctualité au premier rendez-vous, état de votre étiquette. Soignez chaque premier contact comme s'il était le seul.
 
-## Le biais de confirmation : on voit ce que l'on croit
+## L'effet de dotation
 
-Une fois qu'un client s'est fait une opinion, il recherche les informations qui la confirment et ignore celles qui la contredisent. Si un prospect pense que « les produits locaux sont de moins bonne qualité que les produits importés », il remarquera le moindre défaut de votre produit local et ignorera ses qualités.
+Nous accordons plus de valeur à ce que nous possédons, ou avons l'impression de posséder. Un client qui a utilisé un logiciel pendant quinze jours, goûté un produit avec ses clients ou testé une machine dans son atelier ressent déjà une forme de perte à l'idée de s'en séparer. **Faites essayer, tester, utiliser.** Une période d'essai bien accompagnée vaut mieux que la plus belle brochure.
 
-Conséquence : **la première impression est déterminante**. Les premières secondes d'une rencontre, l'aspect de votre boutique, la qualité de votre première réponse sur WhatsApp, la présentation de votre devis créent une opinion que le client cherchera ensuite à confirmer. Soignez-les.
+## La matrice des biais au service d'une vente honnête
 
-Ce biais touche aussi le vendeur. Si vous êtes persuadé qu'un client « n'a pas les moyens » parce qu'il est arrivé à moto, vous ne lui présenterez pas vos meilleures offres et vous confirmerez votre propre préjugé. Les meilleurs vendeurs gardent l'esprit ouvert.
-
-## L'effet de dotation : on valorise ce que l'on possède
-
-Les êtres humains accordent plus de valeur à un objet dès qu'ils le possèdent ou qu'ils ont l'impression de le posséder. C'est le ressort des essais gratuits, des prêts de matériel ou des cabines d'essayage. Un client qui a porté une montre pendant quelques minutes, qui a conduit une voiture pendant un week-end ou qui a utilisé un logiciel pendant quinze jours ressent déjà une forme de perte à l'idée de le rendre.
-
-En pratique : **faites toucher, essayer, goûter, utiliser**. Un vendeur de matériel agricole qui laisse un motoculteur à l'essai pendant trois jours dans une exploitation a plus de chances de conclure qu'un vendeur qui distribue une brochure.
-
-## Tableau récapitulatif : dix biais au service d'une vente honnête
-
-| Biais | Ce que fait le cerveau | Application éthique |
+| Biais | Ce que fait le cerveau | Application pour l'entrepreneur |
 |---|---|---|
-| Aversion à la perte | Craint davantage de perdre que de gagner | Chiffrer les pertes réelles que le client subit aujourd'hui |
-| Cadrage | Réagit à la présentation | Présenter le prix dans l'unité de temps du client |
+| Aversion à la perte | Craint davantage de perdre que de gagner | Faire chiffrer par le client le coût réel de son problème |
+| Cadrage | Réagit à la présentation | Présenter le prix dans l'unité qui parle au client |
 | Ancrage | Juge à partir du premier chiffre | Annoncer la valeur avant le prix |
-| Statu quo | Préfère ne rien changer | Réduire le risque du changement (essai, garantie) |
-| Surcharge de choix | Renonce face à trop d'options | Proposer trois options et recommander |
-| Leurre | Compare plutôt que d'évaluer | Construire des gammes claires et honnêtes |
-| Preuve sociale | Imite les autres | Montrer de vrais témoignages et de vrais clients |
+| Statu quo | Préfère ne rien changer | Rendre le changement sans risque |
+| Surcharge de choix | Renonce face à trop d'options | Trois formules et une recommandation |
+| Leurre | Compare plutôt qu'il n'évalue | Construire une gamme claire |
 | Confirmation | Cherche à confirmer son opinion | Soigner la première impression |
-| Dotation | Valorise ce qu'il possède | Faire essayer et utiliser |
-| Disponibilité | Juge selon les exemples qui lui viennent à l'esprit | Raconter des histoires concrètes et récentes |
+| Dotation | Valorise ce qu'il possède | Proposer un essai accompagné |
 
-## Erreurs fréquentes
+## Les erreurs qui coûtent cher
 
-- **Utiliser les biais comme des astuces de manipulation.** Un client manipulé finit par s'en rendre compte, et il le fait savoir. Les biais servent à présenter clairement une offre réellement avantageuse, pas à vendre un mauvais produit.
-- **Commencer par le prix.** Le prix annoncé trop tôt devient l'ancre, avant que le client n'ait perçu la valeur.
-- **Montrer tout le catalogue.** Plus vous montrez, moins vous vendez au client indécis.
-- **Sous-estimer l'habitude.** Le client fidèle à un concurrent n'a pas besoin d'arguments supplémentaires : il a besoin d'une transition sans risque.
-- **Négliger la première impression.** Une boutique désordonnée ou un message WhatsApp bâclé crée une opinion difficile à renverser.
+- **Baisser le prix pour convaincre.** C'est le réflexe de Séverin. Il attire les clients les plus volatils et détruit la marge.
+- **Annoncer le prix trop tôt.** Il devient l'ancre avant que la valeur ne soit perçue.
+- **Présenter tout le catalogue.** Plus vous montrez, moins l'acheteur indécis achète.
+- **Sous-estimer l'habitude.** Un client fidèle à un concurrent a besoin d'une transition sans risque, pas d'arguments supplémentaires.
+- **Utiliser les biais pour tromper.** Une fausse urgence ou une fausse comparaison se découvre toujours, et la réputation ne se rachète pas.
 
-## Liste de contrôle du chapitre 2
+## Feuille de route du chapitre 2
 
-- [ ] J'ai reformulé mon argument principal en termes de perte évitée réelle et chiffrée.
-- [ ] J'ai calculé le prix de mon offre principale par jour, par semaine ou par mois, selon l'unité de revenu de mes clients.
-- [ ] J'annonce la valeur de mon offre avant d'annoncer son prix.
-- [ ] J'ai réorganisé mon offre en trois formules claires au maximum, avec une recommandation.
-- [ ] J'ai prévu un moyen de faire essayer ou toucher mon produit.
-- [ ] J'ai identifié les risques que mes clients craignent en changeant de fournisseur, et une réponse pour chacun.
-- [ ] J'ai vérifié la première impression que donnent ma boutique, mes documents et mes réponses en ligne.
+- [ ] J'ai reformulé mon argument principal en perte évitée, réelle et chiffrable.
+- [ ] J'ai préparé trois questions qui permettent au client de calculer lui-même le coût de son problème.
+- [ ] J'annonce systématiquement la valeur avant le prix.
+- [ ] J'ai réorganisé mon offre en trois formules au maximum, avec une recommandation.
+- [ ] J'ai conçu une offre d'essai sans risque pour les nouveaux clients.
+- [ ] J'ai vérifié la première impression que donnent mes documents, mes messages et mes emballages.
 
 ::: {custom-style="Encadre"}
-Le cerveau de l'acheteur utilise des raccourcis prévisibles. Le vendeur qui les connaît présente son offre de manière claire, réduit les risques perçus et aide le client à décider. Le vendeur qui les exploite pour tromper gagne une vente et perd une réputation.
+Le cerveau de l'acheteur utilise des raccourcis prévisibles. L'entrepreneur qui les connaît cesse de vendre par le prix : il fait mesurer la perte évitée, fixe la bonne référence, simplifie le choix et rend le changement sans risque.
 :::
