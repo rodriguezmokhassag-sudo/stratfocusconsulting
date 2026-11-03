@@ -1,4 +1,4 @@
-# Partie IV — Vendre et fidéliser
+# Partie IV. Vendre et fidéliser
 
 ::: {custom-style="IntroPartie"}
 Vous savez désormais comment l'acheteur décide, comment le comprendre et comment l'influencer avec éthique. Il reste à transformer ces connaissances en ventes concrètes et en clients fidèles. Cette dernière partie est la plus opérationnelle. Elle vous montre comment construire un parcours d'achat sans obstacles grâce au lean management, comment conclure sans forcer en traitant les objections avec méthode, et comment faire de chaque client satisfait un client fidèle qui vous recommande.
@@ -6,19 +6,19 @@ Vous savez désormais comment l'acheteur décide, comment le comprendre et comme
 
 # Chapitre 10. Un parcours de vente qui facilite la décision
 
-## Cas d'ouverture : les commandes perdues de Yao
+## Cas d'ouverture : les commandes perdues de Brice
 
-Yao a créé à Abidjan une petite entreprise de livraison de repas faits maison. Ses plats sont délicieux, ses publications sur les réseaux sociaux attirent beaucoup de réactions, et de nombreux clients potentiels lui écrivent sur WhatsApp. Pourtant, une grande partie de ces conversations n'aboutit jamais à une commande.
+Brice a créé à Brazzaville une petite entreprise de livraison de repas faits maison : saka-saka, poisson braisé, maboké. Ses plats sont délicieux, ses publications sur les réseaux sociaux attirent beaucoup de réactions, et de nombreux clients potentiels lui écrivent sur WhatsApp. Pourtant, une grande partie de ces conversations n'aboutit jamais à une commande.
 
-Avec l'aide d'un consultant, Yao analyse cent conversations récentes. Le diagnostic est sans appel :
+Avec l'aide d'un consultant, Brice analyse cent conversations récentes. Le diagnostic est sans appel :
 
 - Le délai moyen de première réponse est de **trois heures**. Beaucoup de clients ont déjà mangé ailleurs.
-- Pour connaître le menu, le client doit demander. Yao envoie alors une liste de prix en texte, sans photos.
+- Pour connaître le menu, le client doit demander. Brice envoie alors une liste de prix en texte, sans photos.
 - Les frais de livraison ne sont annoncés qu'à la fin, ce qui surprend et fait fuir une partie des clients.
 - Pour payer, le client doit demander le numéro mobile money, puis envoyer une capture d'écran.
 - Personne ne confirme l'heure de livraison.
 
-Yao ne manquait pas de clients intéressés. Il les perdait en chemin, à cause d'un parcours d'achat semé d'obstacles. En trois semaines, il réorganise tout : réponses rapides préenregistrées, catalogue avec photos et prix tout compris, numéro de paiement affiché, confirmation automatique. Sans dépenser un franc de plus en publicité, son taux de conversion double.
+Brice ne manquait pas de clients intéressés. Il les perdait en chemin, à cause d'un parcours d'achat semé d'obstacles. En trois semaines, il réorganise tout : réponses rapides préenregistrées, catalogue avec photos et prix tout compris, numéro de paiement affiché, confirmation automatique. Sans dépenser un franc de plus en publicité, son taux de conversion double.
 
 ## Chaque obstacle fait fuir des clients
 
@@ -84,7 +84,7 @@ Même dans un point de vente physique, le parcours peut être optimisé selon le
 
 ## Le parcours sur WhatsApp et les réseaux sociaux
 
-WhatsApp est devenu le principal canal de vente de nombreuses TPE et PME africaines. L'application WhatsApp Business, gratuite, offre des fonctionnalités qui réduisent considérablement les frictions :
+WhatsApp est devenu le principal canal de vente de nombreuses TPE et PME congolaises. L'application WhatsApp Business, gratuite, offre des fonctionnalités qui réduisent considérablement les frictions :
 
 | Fonctionnalité | Gaspillage éliminé |
 |---|---|
@@ -108,9 +108,9 @@ WhatsApp est devenu le principal canal de vente de nombreuses TPE et PME africai
 
 La méthode CROC présentée au chapitre 7 s'applique aussi aux premiers messages de prospection sur WhatsApp ou LinkedIn, à condition de respecter le consentement des destinataires : contactez de préférence des personnes recommandées ou ayant manifesté un intérêt, et cessez immédiatement si elles le demandent.
 
-> **Contact** : « Bonjour Monsieur Ndiaye, je suis Fatou, de Bureau Express. Votre collègue M. Sarr m'a donné votre contact. J'espère que vous allez bien. »
+> **Contact** : « Bonjour Monsieur Ibara, je suis Exaucée, de Bureau Express. Votre collègue M. Okemba m'a donné votre contact. J'espère que vous allez bien. »
 >
-> **Raison** : « M. Sarr m'a dit que vous organisiez un séminaire de 80 personnes le mois prochain. Nous avons fourni les kits de séminaire de sa direction l'an dernier. »
+> **Raison** : « M. Okemba m'a dit que vous organisiez un séminaire de 80 personnes le mois prochain. Nous avons fourni les kits de séminaire de sa direction l'an dernier. »
 >
 > **Objectif** : « Je peux vous envoyer trois propositions de kits adaptées à votre budget, avec les délais. Ça vous intéresse ? »
 >
@@ -160,7 +160,5 @@ Pour chaque canal (boutique, téléphone, WhatsApp, réseaux sociaux), répondez
 - [ ] Je supprime chaque semaine au moins un obstacle de mon parcours de vente (kaizen).
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Un client intéressé n'est pas encore un client. Entre l'intérêt et l'achat, chaque obstacle fait fuir une partie des acheteurs. Appliquez le lean à votre parcours de vente : cartographiez, éliminez les gaspillages, simplifiez, mesurez, recommencez. Rendez l'achat facile, et vos clients achèteront davantage.
 :::

@@ -2,21 +2,21 @@
 
 ## Cas d'ouverture : les deux vendeurs de groupes électrogènes
 
-Dans une même rue commerçante de Conakry, deux vendeurs de groupes électrogènes reçoivent chacun la visite d'un propriétaire de boulangerie. Les deux clients posent la même question après la présentation : « C'est trop cher. Je vais réfléchir. »
+Dans une même rue commerçante de Pointe-Noire, deux vendeurs de groupes électrogènes reçoivent chacun la visite d'un propriétaire de boulangerie. Les deux clients posent la même question après la présentation : « C'est trop cher. Je vais réfléchir. »
 
-Le premier vendeur, Mamadou, insiste : « Mais c'est la meilleure marque ! Je vous fais 10 % de remise si vous signez aujourd'hui. Et la semaine prochaine, les prix vont augmenter. » Le client se sent sous pression, se braque et quitte la boutique. Il ne reviendra pas.
+Le premier vendeur, Junior, insiste : « Mais c'est la meilleure marque ! Je vous fais 10 % de remise si vous signez aujourd'hui. Et la semaine prochaine, les prix vont augmenter. » Le client se sent sous pression, se braque et quitte la boutique. Il ne reviendra pas.
 
-Le second vendeur, Alpha, répond calmement : « Je comprends tout à fait, c'est un investissement important. Pour que je puisse vous aider à réfléchir, qu'est-ce qui vous fait le plus hésiter : le montant total, la façon de payer, ou autre chose ? » Le boulanger finit par expliquer que le prix lui paraît justifié, mais qu'il ne peut pas sortir toute la somme avant la fin du mois, et qu'il doit en parler à son frère, associé dans la boulangerie.
+Le second vendeur, Fiacre, répond calmement : « Je comprends tout à fait, c'est un investissement important. Pour que je puisse vous aider à réfléchir, qu'est-ce qui vous fait le plus hésiter : le montant total, la façon de payer, ou autre chose ? » Le boulanger finit par expliquer que le prix lui paraît justifié, mais qu'il ne peut pas sortir toute la somme avant la fin du mois, et qu'il doit en parler à son frère, associé dans la boulangerie.
 
-Alpha lui propose alors un paiement en trois fois par mobile money, et l'invite à revenir avec son frère pour une démonstration. Il lui donne aussi une fiche simple avec le calcul des pertes de production lors des coupures d'électricité. La semaine suivante, les deux frères reviennent et signent.
+Fiacre lui propose alors un paiement en trois fois par mobile money, et l'invite à revenir avec son frère pour une démonstration. Il lui donne aussi une fiche simple avec le calcul des pertes de production lors des coupures d'électricité. La semaine suivante, les deux frères reviennent et signent.
 
-Mamadou a traité une objection de surface. Alpha a cherché l'objection réelle.
+Junior a traité une objection de surface. Fiacre a cherché l'objection réelle.
 
 ## Ce que la recherche dit de la conclusion
 
 Pendant des décennies, les formations commerciales ont enseigné des dizaines de « techniques de conclusion » : la conclusion alternative, la conclusion par l'urgence, la conclusion présumée… Neil Rackham, dans ses recherches à l'origine de la méthode SPIN, a observé un résultat surprenant : **dans les ventes simples et peu coûteuses, ces techniques peuvent fonctionner ; dans les ventes importantes, elles ont souvent l'effet inverse**. Plus le montant est élevé, plus le client ressent la pression comme une menace et se méfie.
 
-Rackham propose une autre approche : plutôt que de chercher à « arracher » une décision, le vendeur doit viser à chaque rencontre une **avancée**, c'est-à-dire un engagement concret du client qui fait progresser la vente : un essai, une visite, une rencontre avec le décideur, une avance, une commande test. C'est l'escalier des engagements que nous avons vu au chapitre 9.
+Rackham propose une autre approche : plutôt que de chercher à « arracher » une décision, le vendeur doit viser à chaque rencontre une **avancée**, c'est-à-dire un engagement concret du client qui fait progresser la vente : un essai, une visite, une rencontre avec le décideur, une avance, une commande test. C'est l'escalier des engagements présenté au chapitre 9.
 
 ## Pourquoi le client hésite au moment de décider
 
@@ -57,7 +57,7 @@ Beaucoup de vendeurs oublient la technique la plus simple : **demander**. Par pe
 
 ## Les objections : des demandes d'information déguisées
 
-Une objection n'est pas un refus. C'est le plus souvent un signe d'intérêt : le client qui n'est pas intéressé ne prend pas la peine d'objecter, il met fin à la conversation. L'objection exprime un doute, une peur, un besoin d'information ou une contrainte que le vendeur n'a pas encore pris en compte.
+Une objection n'est pas un refus. C'est le plus souvent un signe d'intérêt : le client qui n'est pas intéressé ne prend pas la peine d'objecter, il met fin à la conversation. L'objection exprime un doute, une peur, un besoin d'information ou une contrainte dont le vendeur n'a pas encore tenu compte.
 
 ### Mieux vaut prévenir que guérir
 
@@ -75,10 +75,10 @@ Lorsqu'une objection surgit, une méthode simple et très utilisée dans les for
 
 | Étape | Action | Exemple face à « C'est trop cher » |
 |---|---|---|
-| **C — Creuser** | Poser une question pour comprendre l'objection réelle | « Trop cher par rapport à quoi ? À votre budget, à une autre offre, ou à ce que vous attendiez ? » |
-| **R — Reformuler** | Reformuler l'objection pour montrer qu'on l'a comprise et la vérifier | « Si je comprends bien, le prix vous paraît juste, mais c'est le montant à sortir d'un coup qui pose problème ? » |
-| **A — Argumenter** | Répondre précisément à l'objection réelle | « Nous pouvons faire un paiement en trois fois par mobile money, sans frais. » |
-| **C — Contrôler** | Vérifier que la réponse satisfait le client | « Est-ce que cette solution vous convient ? » |
+| **C : Creuser** | Poser une question pour comprendre l'objection réelle | « Trop cher par rapport à quoi ? À votre budget, à une autre offre, ou à ce que vous attendiez ? » |
+| **R : Reformuler** | Reformuler l'objection pour montrer qu'on l'a comprise et la vérifier | « Si je comprends bien, le prix vous paraît juste, mais c'est le montant à sortir d'un coup qui pose problème ? » |
+| **A : Argumenter** | Répondre précisément à l'objection réelle | « Nous pouvons faire un paiement en trois fois par mobile money, sans frais. » |
+| **C : Contrôler** | Vérifier que la réponse satisfait le client | « Est-ce que cette solution vous convient ? » |
 
 L'étape décisive est la première. La plupart des vendeurs sautent directement à l'argumentation, et répondent à une objection qui n'est pas la bonne.
 
@@ -148,7 +148,7 @@ Lorsque la vente se déroule par téléphone ou par messagerie, la conclusion pr
 
 Un « non » n'est pas un échec définitif. C'est souvent un « pas maintenant » ou un « pas comme ça ». Un refus accepté avec élégance préserve la relation, et donc les chances futures. Remerciez le client, demandez-lui ce qui aurait pu le convaincre (pour apprendre), et restez en contact sans insister.
 
-En Afrique francophone, où la relation compte autant que la transaction, la manière dont vous accueillez un refus dit beaucoup de vous. Le client qui a refusé aujourd'hui peut devenir demain votre meilleur client… ou vous recommander à quelqu'un d'autre.
+Au Congo, où la relation compte autant que la transaction, la manière dont vous accueillez un refus dit beaucoup de vous. Le client qui a refusé aujourd'hui peut devenir demain votre meilleur client… ou vous recommander à quelqu'un d'autre.
 
 ## Erreurs fréquentes
 
@@ -171,7 +171,5 @@ En Afrique francophone, où la relation compte autant que la transaction, la man
 - [ ] Après chaque refus, je demande ce qui aurait pu convaincre le client et je note la réponse.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 On ne force pas une décision importante : on l'accompagne. Visez une avancée à chaque rencontre, demandez simplement la décision quand les signaux d'achat apparaissent et traitez chaque objection avec la méthode CRAC : Creuser, Reformuler, Argumenter, Contrôler. Une objection n'est pas un refus : c'est une demande d'aide.
 :::

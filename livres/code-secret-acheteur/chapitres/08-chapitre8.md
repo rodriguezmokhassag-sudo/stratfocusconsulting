@@ -14,7 +14,7 @@ En deux mois, ses commandes triplent. Elle a activé trois leviers : **la preuve
 
 ### Le principe
 
-Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres, surtout ceux qui nous ressemblent. C'est un raccourci efficace : si beaucoup de gens font un choix, ce choix est probablement bon. Le maquis bondé attire plus que le maquis vide ; la vendeuse entourée de clientes attire de nouvelles clientes.
+Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres, surtout ceux qui nous ressemblent. C'est un raccourci efficace : si beaucoup de gens font un choix, ce choix est probablement bon. Le nganda bondé attire plus que le maquis vide ; la vendeuse entourée de clientes attire de nouvelles clientes.
 
 Une étude célèbre menée par Noah Goldstein, Robert Cialdini et Vladas Griskevicius, publiée en 2008, l'a montré dans les hôtels. Le message classique invitant les clients à réutiliser leurs serviettes « pour protéger l'environnement » était moins efficace qu'un message indiquant que **la majorité des clients de l'hôtel** réutilisaient leurs serviettes. Et le message le plus efficace précisait que la majorité des clients ayant séjourné **dans la même chambre** l'avaient fait. Plus les « autres » nous ressemblent, plus leur exemple est convaincant.
 
@@ -28,7 +28,7 @@ Une étude célèbre menée par Noah Goldstein, Robert Cialdini et Vladas Griske
 | Forme | Exemples d'application |
 |---|---|
 | **Témoignages** | Messages vocaux ou vidéos de clients satisfaits, captures d'écran de messages de remerciement (avec autorisation) |
-| **Chiffres** | « Plus de 500 familles équipées à Bobo-Dioulasso », « 3 000 commandes livrées cette année » |
+| **Chiffres** | « Plus de 500 familles équipées à Dolisie », « 3 000 commandes livrées cette année » |
 | **Références** | Logos ou noms des entreprises clientes, avec leur accord |
 | **Avis en ligne** | Avis sur Google, Facebook ou les plateformes de vente |
 | **Popularité visible** | Le produit « le plus demandé », la file d'attente, les photos de clients avec le produit |
@@ -36,7 +36,7 @@ Une étude célèbre menée par Noah Goldstein, Robert Cialdini et Vladas Griske
 
 ### La preuve sociale à l'ère de WhatsApp
 
-En Afrique francophone, WhatsApp est devenu le premier vecteur de preuve sociale. Quelques bonnes pratiques :
+Au Congo, WhatsApp est devenu le premier vecteur de preuve sociale. Quelques bonnes pratiques :
 
 - **Demandez systématiquement un retour** à vos clients quelques jours après l'achat. Les réponses positives deviennent, avec leur accord, des témoignages.
 - **Privilégiez les messages vocaux et les vidéos courtes** : ils sont plus authentiques et plus convaincants que les textes, et accessibles aux clients qui lisent peu.
@@ -44,9 +44,9 @@ En Afrique francophone, WhatsApp est devenu le premier vecteur de preuve sociale
 - **Animez des groupes de clients** où les échanges entre membres constituent une preuve sociale permanente.
 
 ::: {custom-style="Encadre"}
-**Ligne rouge : les faux avis**
+**Les faux avis**
 
-Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une tromperie. Au-delà de la question morale, c'est une pratique commerciale trompeuse au regard des législations de protection du consommateur, et un risque majeur pour votre réputation : dans les réseaux sociaux africains, les faux sont vite démasqués et largement partagés.
+Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une tromperie. Au-delà de la question morale, c'est une pratique commerciale trompeuse au regard de la loi congolaise n° 36-2024 du 11 octobre 2024 portant protection du consommateur, et un risque majeur pour votre réputation : dans les réseaux sociaux congolais, les faux sont vite démasqués et largement partagés.
 :::
 
 ### Éviter la preuve sociale négative
@@ -63,7 +63,7 @@ Cette tendance a été démontrée de façon spectaculaire, et inquiétante, par
 
 ### L'autorité dans les sociétés à forte distance hiérarchique
 
-Comme nous l'avons vu au chapitre 3, les sociétés d'Afrique francophone accordent une grande importance au statut, à l'âge et à la fonction. L'autorité y est donc un levier particulièrement puissant, sous plusieurs formes :
+Comme nous l'avons vu au chapitre 3, les sociétés congolaises accordent une grande importance au statut, à l'âge et à la fonction. L'autorité y est donc un levier particulièrement puissant, sous plusieurs formes :
 
 - **L'autorité d'expertise** : diplômes, certifications, années d'expérience, publications.
 - **L'autorité institutionnelle** : agréments officiels, partenariats avec des institutions reconnues, références dans l'administration ou les grandes entreprises.
@@ -74,7 +74,7 @@ Comme nous l'avons vu au chapitre 3, les sociétés d'Afrique francophone accord
 
 Le paradoxe de l'autorité est qu'il est difficile de la proclamer soi-même sans paraître prétentieux. Quelques méthodes efficaces :
 
-1. **Faites-vous présenter.** Une personne qui vous présente (« Je vous présente M. Ouédraogo, il a équipé plus de cent boutiques en caisses enregistreuses ») établit votre autorité mieux que vous ne pourriez le faire.
+1. **Faites-vous présenter.** Une personne qui vous présente (« Je vous présente M. Makosso, il a équipé plus de cent boutiques en caisses enregistreuses ») établit votre autorité mieux que vous ne pourriez le faire.
 2. **Affichez vos preuves de compétence** : diplômes et agréments dans votre bureau, mentions sur vos documents, certifications sur votre profil.
 3. **Partagez votre savoir** : conseils, articles, vidéos pédagogiques, interventions lors d'événements professionnels. L'expert est celui qui enseigne.
 4. **Reconnaissez une faiblesse.** Cialdini montre qu'admettre une petite limite avant de présenter ses points forts renforce la crédibilité : « Nous ne sommes pas les moins chers du marché. En revanche, nous sommes les seuls à offrir une garantie de trois ans. »
@@ -92,21 +92,21 @@ Pour un fabricant de peinture, convaincre cent peintres en bâtiment peut valoir
 
 En 2016, dans son livre *Pre-Suasion*, Cialdini a ajouté un septième principe à sa liste : **l'unité**. Il ne s'agit plus seulement d'apprécier quelqu'un (sympathie) ou de lui ressembler (similarité), mais de partager une **identité commune** : faire partie du même « nous ». Nous disons plus facilement oui à ceux que nous considérons comme des membres de notre famille, de notre communauté ou de notre groupe.
 
-### L'unité, un levier naturellement africain
+### L'unité, un levier naturellement congolais
 
-Peu de cultures accordent autant d'importance au « nous » que les cultures africaines. On est « frère » ou « sœur » au-delà des liens de sang, « fils du village », « enfant du quartier », « promotionnaire ». Les expressions comme « on est ensemble » ou « c'est la famille » traduisent cette identité partagée.
+Peu de cultures accordent autant d'importance au « nous » que la culture congolaise. On est « frère » ou « sœur » au-delà des liens de sang, « fils du village », « enfant du quartier », « promotionnaire ». Les expressions comme « on est ensemble » ou « c'est la famille » traduisent cette identité partagée.
 
 Pour le vendeur, l'unité peut s'activer de plusieurs façons, toujours avec sincérité :
 
-- **L'identité territoriale** : « produit ici, pour nous », « fabriqué au Burkina », « le savoir-faire de chez nous ». Le mouvement en faveur du « consommer local » s'appuie directement sur ce levier.
+- **L'identité territoriale** : « produit ici, pour nous », « fabriqué au Congo », « le savoir-faire de chez nous ». Le mouvement en faveur du « consommer local » s'appuie directement sur ce levier.
 - **L'identité de communauté** : créer une véritable communauté de clients, comme les « Reines du Karité » de Prisca, avec ses codes, ses échanges et son sentiment d'appartenance.
-- **La co-création** : associer les clients à la conception des produits, leur demander leur avis, les faire voter pour un nouveau modèle. Celui qui a participé à la création se sent membre du « nous ».
+- **La cocréation** : associer les clients à la conception des produits, leur demander leur avis, les faire voter pour un nouveau modèle. Celui qui a participé à la création se sent membre du « nous ».
 - **Le partage d'expériences** : événements clients, rencontres, ateliers, célébrations communes.
 
 ::: {custom-style="Encadre"}
-**Cas pratique : le « nous » d'une coopérative de jus**
+**Les mamans de la Bouenza**
 
-Une coopérative de transformation de fruits au Bénin a renouvelé ses étiquettes en y faisant figurer la photo et le prénom des productrices, avec la mention « Nos mamans du Zou ont cueilli ces mangues pour vous ». Les consommateurs urbains ont acheté non seulement un jus, mais aussi une appartenance à une histoire commune. Le levier de l'unité a transformé un produit ordinaire en produit identitaire.
+Une coopérative de transformation de fruits de la Bouenza a renouvelé ses étiquettes en y faisant figurer la photo et le prénom des productrices, avec la mention « Nos mamans de la Bouenza ont cueilli ces mangues pour vous ». Les consommateurs de Brazzaville et de Pointe-Noire ont acheté non seulement un jus, mais aussi une appartenance à une histoire commune. Le levier de l'unité a transformé un produit ordinaire en produit identitaire.
 :::
 
 ### Les dangers de l'unité
@@ -138,7 +138,5 @@ Les leviers sont plus puissants lorsqu'ils se combinent. Une seule publication p
 - [ ] J'ai vérifié que mes messages ne mettent pas en avant un comportement négatif majoritaire.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Face à l'incertitude, le client regarde ce que font les gens qui lui ressemblent, écoute ceux qui font autorité et rejoint ceux avec qui il partage une identité. Montrez de vraies preuves, faites-vous recommander par de vrais experts et construisez une communauté authentique. Ces trois leviers transforment vos clients et vos prescripteurs en force de vente.
 :::

@@ -2,7 +2,7 @@
 
 ## Cas d'ouverture : le salon de coiffure de Nadège
 
-Nadège a ouvert un salon de coiffure à Cotonou il y a trois ans. Les premiers mois, elle dépensait beaucoup d'énergie et d'argent pour attirer de nouvelles clientes : flyers, promotions, publications sponsorisées. Chaque mois, elle repartait presque de zéro.
+Nadège a ouvert un salon de coiffure à Moungali, à Brazzaville, il y a trois ans. Les premiers mois, elle dépensait beaucoup d'énergie et d'argent pour attirer de nouvelles clientes : flyers, promotions, publications sponsorisées. Chaque mois, elle repartait presque de zéro.
 
 Un jour, elle fait un calcul simple. Une cliente fidèle vient environ une fois par mois et dépense en moyenne 15 000 francs CFA par visite, soit 180 000 francs par an. Si elle reste trois ans, elle rapporte plus d'un demi-million de francs. Et si elle recommande le salon à deux amies qui deviennent fidèles à leur tour, sa valeur dépasse le million et demi.
 
@@ -14,7 +14,7 @@ Deux ans plus tard, plus de la moitié de ses nouvelles clientes viennent par re
 
 Attirer un nouveau client coûte généralement beaucoup plus cher que conserver un client existant : il faut le trouver, le convaincre, gagner sa confiance. Les travaux de Frederick Reichheld, du cabinet Bain & Company, ont popularisé l'idée qu'une légère amélioration du taux de fidélité peut entraîner une hausse importante des profits, car les clients fidèles achètent davantage, coûtent moins cher à servir, sont moins sensibles au prix et recommandent l'entreprise.
 
-Dans le contexte africain, où le bouche-à-oreille est roi (chapitre 3), la fidélisation a un double effet : elle sécurise le chiffre d'affaires et elle alimente la recommandation, le canal d'acquisition le plus efficace et le moins coûteux.
+Dans le contexte congolais, où le bouche-à-oreille est roi (chapitre 3), la fidélisation a un double effet : elle sécurise le chiffre d'affaires et elle alimente la recommandation, le canal d'acquisition le plus efficace et le moins coûteux.
 
 ## La règle du pic et de la fin : soigner les moments qui marquent
 
@@ -95,7 +95,7 @@ Le meilleur moment pour demander une recommandation est le **pic de satisfaction
 
 ## Le patchwork fou : des clients partenaires
 
-Le principe du **patchwork fou** de l'effectuation propose d'aller plus loin : faire de certains clients de véritables partenaires. Un client fidèle peut devenir distributeur dans son quartier, co-concepteur d'un nouveau produit, ambassadeur dans sa communauté ou investisseur dans votre projet. Cette logique rejoint le levier de l'unité (chapitre 8) : le client partenaire fait partie du « nous ».
+Le principe du **patchwork fou** de l'effectuation propose d'aller plus loin : faire de certains clients de véritables partenaires. Un client fidèle peut devenir distributeur dans son quartier, coconcepteur d'un nouveau produit, ambassadeur dans sa communauté ou investisseur dans votre projet. Cette logique rejoint le levier de l'unité (chapitre 8) : le client partenaire fait partie du « nous ».
 
 ## Le fichier client : votre mémoire commerciale
 
@@ -113,7 +113,7 @@ Un fichier client efficace contient au minimum :
 
 Ces informations permettent de personnaliser chaque contact, de déclencher le réachat au bon moment et de remercier les clients qui vous recommandent. Elles constituent l'un des actifs les plus précieux de votre entreprise.
 
-Elles imposent aussi des responsabilités. Plusieurs pays de la région, dont le Sénégal et la Côte d'Ivoire, disposent de lois sur la protection des données personnelles et d'autorités chargées de les faire respecter. Même là où les règles sont moins développées, le principe est le même : ne collectez que les informations utiles, avec l'accord du client, conservez-les en sécurité et ne les partagez jamais sans son autorisation. Un client qui découvre que son numéro a été transmis à des tiers ne vous fera plus jamais confiance.
+Elles imposent aussi des responsabilités. Au Congo, la loi n° 29-2019 du 10 octobre 2019 encadre la protection des données à caractère personnel, et la loi n° 5-2025 du 29 mars 2025 a créé une Commission nationale chargée de la faire respecter. Le principe est simple : ne collectez que les informations utiles, avec l'accord du client, conservez-les en sécurité et ne les partagez jamais sans son autorisation. Un client qui découvre que son numéro a été transmis à des tiers ne vous fera plus jamais confiance.
 
 ## Les limites éthiques : vendre sans manipuler
 
@@ -137,7 +137,7 @@ Un test simple permet de vérifier de quel côté vous vous situez : **seriez-vo
 7. Je répare mes erreurs rapidement et généreusement.
 :::
 
-Au-delà de la morale, l'éthique est un choix économique rationnel. Les pays de la région ont adopté des législations de protection du consommateur qui sanctionnent les pratiques trompeuses. Surtout, dans des marchés où la réputation circule à la vitesse de WhatsApp, la manipulation est une stratégie perdante à moyen terme. Le client trompé ne revient pas, et il le dit à tout le monde.
+Au-delà de la morale, l'éthique est un choix économique rationnel. Au Congo, la loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur, inspirée de la directive CEMAC de 2019, rassemble désormais dans un texte unique les règles qui protègent l'acheteur. Surtout, dans des marchés où la réputation circule à la vitesse de WhatsApp, la manipulation est une stratégie perdante à moyen terme. Le client trompé ne revient pas, et il le dit à tout le monde.
 
 ## Erreurs fréquentes
 
@@ -159,7 +159,5 @@ Au-delà de la morale, l'éthique est un choix économique rationnel. Les pays d
 - [ ] J'ai affiché ou partagé avec mon équipe la charte du vendeur éthique.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 La vente ne s'arrête pas au paiement : elle commence. Soignez le pic et la fin de chaque expérience, transformez l'achat en habitude, réparez généreusement vos erreurs et invitez vos clients satisfaits à vous recommander. Et vendez toujours de manière à pouvoir expliquer au client comment vous l'avez convaincu : c'est la meilleure garantie d'une réputation durable.
 :::

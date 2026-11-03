@@ -1,14 +1,14 @@
-# Conclusion — Votre plan d'action sur 30 jours
+# Conclusion. Votre plan d'action sur 30 jours
 
-## Revenons au marché d'Abidjan
+## Revenons au marché Total
 
-Au début de ce livre, nous avons rencontré Aminata, la commerçante qui ne comprenait pas pourquoi sa voisine Fatou vendait davantage avec des produits comparables. Vous connaissez désormais le secret de Fatou. Il n'avait rien de magique : elle parlait au système 1 de ses clientes avant de parler à leur système 2, elle limitait le choix, elle utilisait la sympathie, la preuve sociale et la réciprocité, elle obtenait de petits engagements et elle soignait la fin de chaque échange.
+Au début de ce livre, nous avons rencontré Bénie, la commerçante qui ne comprenait pas pourquoi sa voisine Merveille vendait davantage avec des produits comparables. Vous connaissez désormais le secret de Merveille. Il n'avait rien de magique : elle parlait au système 1 de ses clientes avant de parler à leur système 2, elle limitait le choix, elle utilisait la sympathie, la preuve sociale et la réciprocité, elle obtenait de petits engagements et elle soignait la fin de chaque échange.
 
-Ce que Fatou faisait d'instinct, vous pouvez désormais le faire avec méthode. Mais une méthode qui reste dans un livre ne sert à rien. Ce dernier chapitre vous propose un plan d'action concret pour les trente prochains jours, construit selon trois principes que vous connaissez maintenant :
+Ce que Merveille faisait d'instinct, vous pouvez désormais le faire avec méthode. Mais une méthode qui reste dans un livre ne sert à rien. Ce dernier chapitre vous propose un plan d'action concret pour les trente prochains jours, construit selon trois principes que vous connaissez maintenant :
 
 - **Le kaizen** du lean management : de petites améliorations régulières valent mieux qu'une grande révolution qui ne se fait jamais.
 - **La perte acceptable** de l'effectuation : chaque action est un test limité, dont le risque est maîtrisé.
-- **Le cycle construire-mesurer-apprendre** du Lean Startup : on essaie, on mesure, on garde ce qui marche.
+- **Le cycle « construire, mesurer, apprendre »** du Lean Startup : on essaie, on mesure, on garde ce qui marche.
 
 ## Avant de commencer : votre point de départ
 
@@ -25,7 +25,7 @@ Prenez une heure pour mesurer votre situation actuelle. Sans point de départ, i
 
 Ne cherchez pas la perfection : une estimation honnête suffit. L'important est de mesurer de la même manière au début et à la fin.
 
-## Semaine 1 — Comprendre (chapitres 1 à 3)
+## Semaine 1 : comprendre (chapitres 1 à 3)
 
 **Objectif : voir votre offre avec les yeux de vos clients.**
 
@@ -35,7 +35,7 @@ Ne cherchez pas la perfection : une estimation honnête suffit. L'important est 
 - **Jour 5** : réduisez votre offre à trois options claires, avec une recommandation.
 - **Jour 6-7** : pour vos trois principaux prospects, identifiez les six rôles de la décision d'achat. Listez les communautés où vous pourriez être recommandé (chapitre 3).
 
-## Semaine 2 — Écouter (chapitres 4 à 6)
+## Semaine 2 : écouter (chapitres 4 à 6)
 
 **Objectif : parler moins, comprendre mieux.**
 
@@ -44,7 +44,7 @@ Ne cherchez pas la perfection : une estimation honnête suffit. L'important est 
 - **Jour 11-13** : utilisez la grille SPIN lors de tous vos rendez-vous. Vérifiez que le client parle au moins deux fois plus que vous.
 - **Jour 14** : listez les formules indirectes de refus de vos clients et la question qui permet de clarifier chacune (chapitre 6). Faites le bilan de la semaine : qu'avez-vous appris de nouveau sur vos clients ?
 
-## Semaine 3 — Influencer avec éthique (chapitres 7 à 9)
+## Semaine 3 : influencer avec éthique (chapitres 7 à 9)
 
 **Objectif : activer les sept leviers de manière authentique.**
 
@@ -54,7 +54,7 @@ Ne cherchez pas la perfection : une estimation honnête suffit. L'important est 
 - **Jour 19** : définissez l'escalier d'engagements de votre processus de vente et mettez en place l'avance par mobile money (chapitre 9).
 - **Jour 20-21** : remplissez votre fiche de négociation et appliquez-la à chaque marchandage.
 
-## Semaine 4 — Vendre et fidéliser (chapitres 10 à 12)
+## Semaine 4 : vendre et fidéliser (chapitres 10 à 12)
 
 **Objectif : fluidifier le parcours et transformer les clients en ambassadeurs.**
 
@@ -77,10 +77,7 @@ Si ce livre devait se résumer en une phrase, ce serait celle-ci : **l'acheteur 
 
 Il achète la tranquillité, la fierté, la sécurité, l'appartenance. Il achète à quelqu'un en qui il a confiance, qui l'a écouté, qui l'a compris et qui l'a aidé à décider sans le forcer. Il revient vers celui qui a tenu ses promesses, et il recommande celui qui l'a bien traité.
 
-Ce secret n'en est pas vraiment un. Les grands commerçants des marchés africains le connaissent depuis des générations. La psychologie comportementale l'a simplement mesuré, expliqué et transformé en outils. À vous, désormais, de le mettre en pratique.
+Ce secret n'en est pas vraiment un. Les grands commerçants des marchés congolais le connaissent depuis des générations. La psychologie comportementale l'a simplement mesuré, expliqué et transformé en outils. À vous, désormais, de le mettre en pratique.
 
 Bonnes ventes.
 
-::: {custom-style="Signature"}
-Rodriguez MOKHASSA
-:::

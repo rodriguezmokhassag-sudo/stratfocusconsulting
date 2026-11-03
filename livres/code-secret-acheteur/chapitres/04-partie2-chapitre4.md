@@ -1,4 +1,4 @@
-# Partie II — Comprendre son acheteur
+# Partie II. Comprendre son acheteur
 
 ::: {custom-style="IntroPartie"}
 Connaître les mécanismes généraux de la décision ne suffit pas : chaque client est unique. Cette deuxième partie vous donne trois compétences essentielles. Reconnaître rapidement le profil de la personne qui se trouve devant vous pour adapter votre discours. Conduire un entretien de découverte avec la méthode SPIN pour faire émerger les vrais motifs d'achat. Et lire les signaux, verbaux et non verbaux, qui trahissent l'intérêt, le doute ou le refus. Le vendeur qui maîtrise ces trois compétences parle moins, écoute mieux et vend davantage.
@@ -8,7 +8,7 @@ Connaître les mécanismes généraux de la décision ne suffit pas : chaque cli
 
 ## Cas d'ouverture : un même produit, quatre clients
 
-Dans un concessionnaire de motos à Lomé, le vendeur Kodjo reçoit quatre clients dans la même matinée, tous intéressés par le même modèle.
+Dans un concessionnaire de motos à Brazzaville, le vendeur Destin reçoit quatre clients dans la même matinée, tous intéressés par le même modèle.
 
 Le premier, un entrepreneur pressé, l'interrompt au bout de trente secondes : « Combien ? Quel délai ? Quelle remise si j'en prends trois pour mes livreurs ? » Il décide en dix minutes.
 
@@ -18,7 +18,7 @@ Le troisième, un enseignant calme et souriant, pose peu de questions. Il veut s
 
 Le quatrième, un comptable méthodique, a imprimé la fiche technique. Il compare la consommation, le prix des pièces détachées, les conditions de garantie et demande un devis écrit qu'il emporte pour l'étudier.
 
-Kodjo, s'il avait présenté la moto de la même façon aux quatre clients, en aurait probablement perdu trois. Car si le produit est le même, la manière d'acheter est radicalement différente.
+Destin, s'il avait présenté la moto de la même façon aux quatre clients, en aurait probablement perdu trois. Car si le produit est le même, la manière d'acheter est radicalement différente.
 
 ## Deux questions pour lire un client
 
@@ -44,7 +44,7 @@ En croisant ces deux dimensions, on obtient quatre profils.
 Dans notre cas d'ouverture, l'entrepreneur pressé est un Décideur, la jeune commerciale une Enthousiaste, l'enseignant un Bienveillant et le comptable un Analyste.
 
 ::: {custom-style="Encadre"}
-**Un modèle, pas une prison**
+**Un modèle, pas une case**
 
 Personne n'appartient à un seul profil à 100 %. Chacun de nous combine les quatre styles, avec une dominante qui peut varier selon la situation : on peut être Décideur au travail et Bienveillant en famille. Le modèle sert à adapter votre communication, pas à enfermer vos clients dans des cases.
 :::
@@ -83,7 +83,7 @@ Personne n'appartient à un seul profil à 100 %. Chacun de nous combine les qua
 - Évitez les présentations trop longues et trop chiffrées.
 - **Consolidez la décision** : un Enthousiaste peut changer d'avis. Concluez rapidement et confirmez par écrit (un message WhatsApp récapitulatif suffit).
 
-**Phrase type :** « Vous serez parmi les premiers à Lomé à l'avoir. D'ailleurs, l'animatrice radio que vous connaissez certainement vient de prendre le même. »
+**Phrase type :** « Vous serez parmi les premiers à Brazzaville à l'avoir. D'ailleurs, l'animatrice radio que vous connaissez certainement vient de prendre le même. »
 
 ## Le Bienveillant : « Prenons le temps »
 
@@ -135,9 +135,9 @@ Personne n'appartient à un seul profil à 100 %. Chacun de nous combine les qua
 
 ## Les profils et la culture locale
 
-Le modèle des styles sociaux a été conçu aux États-Unis. Appliqué en Afrique francophone, il doit tenir compte de deux nuances importantes.
+Le modèle des styles sociaux a été conçu aux États-Unis. Appliqué au Congo, il doit tenir compte de deux nuances importantes.
 
-**Premièrement, les codes de politesse masquent parfois le profil.** Un Décideur africain respectera les salutations d'usage et les formes hiérarchiques, même s'il est impatient. Ne le confondez pas avec un Bienveillant : observez plutôt ce qui se passe après les salutations. S'il entre rapidement dans le vif du sujet, c'est un Décideur.
+**Premièrement, les codes de politesse masquent parfois le profil.** Un Décideur congolais respectera les salutations d'usage et les formes hiérarchiques, même s'il est impatient. Ne le confondez pas avec un Bienveillant : observez plutôt ce qui se passe après les salutations. S'il entre rapidement dans le vif du sujet, c'est un Décideur.
 
 **Deuxièmement, le profil peut changer selon le rôle.** Une personne peut se comporter en Analyste lorsqu'elle achète pour son entreprise, parce qu'elle devra justifier sa décision, et en Enthousiaste lorsqu'elle achète pour elle-même. Rappelez-vous aussi que dans une décision collective, vous aurez souvent affaire à plusieurs profils à la fois : il faudra des chiffres pour l'Analyste qui conseille, de la rapidité pour le Décideur qui tranche et des garanties pour le Bienveillant qui utilisera le produit.
 
@@ -148,7 +148,7 @@ Chaque vendeur a lui aussi un profil dominant. Et chaque vendeur a tendance à v
 La règle d'or est simple : **vendez au client comme lui aime acheter, et non comme vous aimez vendre.** C'est ce que l'on appelle la flexibilité comportementale. Elle demande un effort, surtout avec les profils opposés au vôtre (le Décideur face au Bienveillant, l'Enthousiaste face à l'Analyste), mais c'est précisément avec ces clients que vous ferez les plus gros progrès.
 
 ::: {custom-style="Encadre"}
-**Exercice : votre propre profil**
+**Votre propre profil**
 
 Demandez à trois personnes qui vous connaissent bien de vous situer sur les deux axes : plutôt affirmé ou réservé ? Plutôt tourné vers les personnes ou vers les tâches ? Comparez avec votre propre perception. Puis identifiez le profil client avec lequel vous vous sentez le moins à l'aise : c'est votre priorité de progression.
 :::
@@ -181,7 +181,5 @@ Pendant les premières minutes d'un contact, observez et notez :
 - [ ] Je confirme systématiquement par écrit les décisions des clients Enthousiastes.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Quatre profils, deux questions : le client est-il affirmé ou réservé ? Tourné vers les personnes ou vers les tâches ? Le Décideur veut des résultats, l'Enthousiaste de la reconnaissance, le Bienveillant de la confiance, l'Analyste des preuves. Vendez à chacun comme il aime acheter.
 :::

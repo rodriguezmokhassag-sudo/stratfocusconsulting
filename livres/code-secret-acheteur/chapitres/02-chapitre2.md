@@ -1,14 +1,14 @@
 # Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client
 
-## Cas d'ouverture : les deux devis de Moussa
+## Cas d'ouverture : les deux devis d'Arsène
 
-Moussa dirige une petite entreprise de climatisation à Dakar. Il doit répondre à l'appel d'offres d'une clinique privée pour l'installation de quinze climatiseurs. Son concurrent principal propose un prix de 9 millions de francs CFA. Le devis de Moussa s'élève à 9,5 millions, mais son matériel consomme beaucoup moins d'électricité.
+Arsène dirige une petite entreprise de climatisation à Pointe-Noire. Il doit répondre à l'appel d'offres d'une clinique privée pour l'installation de quinze climatiseurs. Son concurrent principal propose un prix de 9 millions de francs CFA. Le devis d'Arsène s'élève à 9,5 millions, mais son matériel consomme beaucoup moins d'électricité.
 
-Dans un premier temps, Moussa présente son devis de manière classique : « Notre prix est de 9,5 millions, soit 500 000 francs de plus que la concurrence, mais nos appareils sont plus économes. » La directrice de la clinique fronce les sourcils. Elle a entendu « 500 000 francs de plus ».
+Dans un premier temps, Arsène présente son devis de manière classique : « Notre prix est de 9,5 millions, soit 500 000 francs de plus que la concurrence, mais nos appareils sont plus économes. » La directrice de la clinique fronce les sourcils. Elle a entendu « 500 000 francs de plus ».
 
-Sur les conseils d'un ami, Moussa reformule son offre lors de la seconde rencontre : « Avec l'installation actuelle, la clinique dépense environ 1,2 million de francs d'électricité par mois pour la climatisation. Avec le matériel du concurrent, vous continuerez à perdre près de 400 000 francs chaque mois par rapport à notre solution. En un an, cela fait près de 5 millions de francs perdus. Notre installation vous coûte 9,5 millions. »
+Sur les conseils d'un ami, Arsène reformule son offre lors de la seconde rencontre : « Avec l'installation actuelle, la clinique dépense environ 1,2 million de francs d'électricité par mois pour la climatisation. Avec le matériel du concurrent, vous continuerez à perdre près de 400 000 francs chaque mois par rapport à notre solution. En un an, cela fait près de 5 millions de francs perdus. Notre installation vous coûte 9,5 millions. »
 
-Le contrat est signé dans la semaine. Les chiffres n'ont pas changé. Ce qui a changé, c'est la manière dont ils ont été présentés au cerveau de l'acheteuse. Moussa a utilisé, sans le savoir, deux des biais cognitifs les plus puissants : **l'aversion à la perte** et **l'effet de cadrage**.
+Le contrat est signé dans la semaine. Les chiffres n'ont pas changé. Ce qui a changé, c'est la manière dont ils ont été présentés au cerveau de l'acheteuse. Arsène a utilisé, sans le savoir, deux des biais cognitifs les plus puissants : **l'aversion à la perte** et **l'effet de cadrage**.
 
 ## Qu'est-ce qu'un biais cognitif ?
 
@@ -41,7 +41,7 @@ En vente, le cadrage concerne surtout trois éléments :
 - **Le vocabulaire** : « investissement » plutôt que « dépense », « participation » plutôt que « frais », « accompagnement » plutôt que « surveillance ».
 
 ::: {custom-style="Encadre"}
-**Application africaine : le prix « journalier »**
+**Le prix ramené à la journée**
 
 Dans des économies où beaucoup de revenus sont journaliers ou hebdomadaires, ramener un prix à l'unité de temps du client est particulièrement efficace. Les opérateurs de kits solaires en paiement à l'usage (« pay-as-you-go ») l'ont bien compris : un kit présenté « à 250 francs par jour, payables par mobile money » devient accessible à des familles qui ne pourraient jamais débourser la somme totale en une fois.
 :::
@@ -75,7 +75,7 @@ Il semble logique de penser que plus on propose de choix, plus on a de chances d
 
 Les chercheurs ont depuis nuancé ce résultat : l'effet dépend du contexte, de l'expertise de l'acheteur et de la clarté de l'offre. Mais la leçon pratique demeure : **face à trop d'options, beaucoup de clients préfèrent ne pas choisir**, de peur de se tromper.
 
-C'est exactement ce que faisait Fatou, la commerçante de notre introduction, en sortant trois pagnes et non quinze. Dans votre activité :
+C'est exactement ce que faisait Merveille, la commerçante de notre introduction, en sortant trois pagnes et non quinze. Dans votre activité :
 
 - Présentez **trois options au maximum** à un client indécis.
 - **Recommandez clairement l'une d'elles** : « Si j'étais vous, je prendrais celle-ci, parce que… »
@@ -97,7 +97,7 @@ La formule Standard sert ici de point de comparaison : pour seulement 5 000 fran
 
 ## La preuve sociale et l'effet de mode
 
-Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres. Une file d'attente devant un maquis attire davantage de clients qu'une salle vide. Ce biais est si puissant qu'il constitue l'un des sept leviers d'influence étudiés au chapitre 8. Retenons pour l'instant qu'il est particulièrement fort dans les sociétés où le regard du groupe compte beaucoup.
+Lorsque nous ne savons pas quoi faire, nous regardons ce que font les autres. Une file d'attente devant un nganda attire davantage de clients qu'une salle vide. Ce biais est si puissant qu'il constitue l'un des sept leviers d'influence étudiés au chapitre 8. Retenons pour l'instant qu'il est particulièrement fort dans les sociétés où le regard du groupe compte beaucoup.
 
 ## Le biais de confirmation : on voit ce que l'on croit
 
@@ -147,7 +147,5 @@ En pratique : **faites toucher, essayer, goûter, utiliser**. Un vendeur de mat�
 - [ ] J'ai vérifié la première impression que donnent ma boutique, mes documents et mes réponses en ligne.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Le cerveau de l'acheteur utilise des raccourcis prévisibles. Le vendeur qui les connaît présente son offre de manière claire, réduit les risques perçus et aide le client à décider. Le vendeur qui les exploite pour tromper gagne une vente et perd une réputation.
 :::

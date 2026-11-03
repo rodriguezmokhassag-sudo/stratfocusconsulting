@@ -1,19 +1,33 @@
 ::: {custom-style="Mentions"}
-**Le Code Secret de l'Acheteur — Mieux vendre grâce à la psychologie comportementale**
+**Le Code Secret de l'Acheteur**
 
-© 2026 Rodriguez MOKHASSA — Stratfocus Consulting (STFC). Tous droits réservés.
+*Mieux vendre grâce à la psychologie comportementale*
 
-Aucune partie de cet ouvrage ne peut être reproduite, stockée ou transmise sous quelque forme que ce soit sans l'autorisation écrite préalable de l'auteur, à l'exception des fiches de l'annexe A, que le lecteur est autorisé à photocopier pour son usage professionnel personnel.
+Rodriguez MOKHASSA
 
-Avertissement : les personnages, entreprises et situations présentés dans les cas d'illustration sont fictifs. Ils ont été construits à partir de situations typiques rencontrées sur le terrain. Toute ressemblance avec des personnes ou des entreprises existantes serait fortuite.
+**STFC Éditions**, collection « Performance commerciale »
+
+Une marque éditoriale de Stratfocus Consulting (STFC), cabinet spécialisé dans l'accélération des TPE et PME, la performance commerciale et la stratégie marketing. Brazzaville, République du Congo.
+
+© 2026 Rodriguez MOKHASSA et STFC Éditions. Tous droits réservés.
+
+Aucune partie de cet ouvrage ne peut être reproduite, stockée ou transmise sous quelque forme que ce soit sans l'autorisation écrite préalable de l'éditeur, à l'exception des fiches de l'annexe A, que le lecteur est autorisé à photocopier pour son usage professionnel personnel.
+
+Avertissement : les personnages, entreprises et situations présentés dans les cas d'illustration sont fictifs. Ils ont été construits à partir de situations typiques rencontrées sur le terrain congolais. Toute ressemblance avec des personnes ou des entreprises existantes serait fortuite.
 
 Les données chiffrées citées proviennent de sources publiques référencées en annexe C. Elles reflètent l'état des connaissances au moment de la rédaction (2026) et doivent être actualisées avant toute décision importante.
 
-ISBN : à attribuer
+ISBN version imprimée : à attribuer
 
-Dépôt légal : à compléter
+ISBN version numérique : à attribuer
 
-Contact : Stratfocus Consulting — accélération des TPE et PME, performance commerciale et stratégie marketing.
+Dépôt légal : Bibliothèque nationale du Congo, Brazzaville, [trimestre et année à compléter]
+
+Première édition, 2026. Imprimé à la demande.
+
+Couverture : STFC Éditions. Composition en Garamond.
+
+Contact de l'éditeur : [adresse, téléphone, courriel et site Internet de STFC à compléter]
 :::
 
 ```{=openxml}
@@ -27,7 +41,7 @@ Contact : Stratfocus Consulting — accélération des TPE et PME, performance c
 :::
 
 ::: {custom-style="EpigrapheSource"}
-Maxime commerciale — Proverbe de commerçant, adapté
+Maxime commerciale et proverbe de commerçant, adapté
 :::
 
 ```{=openxml}
@@ -39,19 +53,19 @@ Sommaire
 :::
 
 ::: {custom-style="Sommaire"}
-Préface — Avant-propos de l'auteur¤6
+Préface de l'auteur¤6
 
-Introduction — Pourquoi vos clients n'achètent pas pour les raisons que vous croyez¤8
+Introduction. Pourquoi vos clients n'achètent pas pour les raisons que vous croyez¤8
 
-**Partie I — Comment l'acheteur décide**¤13
+**Partie I. Comment l'acheteur décide**¤13
 
 Chapitre 1. L'émotion décide, la raison justifie¤14
 
 Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client¤22
 
-Chapitre 3. Acheter en Afrique francophone : confiance, communauté et réputation¤30
+Chapitre 3. Acheter au Congo : confiance, communauté et réputation¤30
 
-**Partie II — Comprendre son acheteur**¤38
+**Partie II. Comprendre son acheteur**¤38
 
 Chapitre 4. Les quatre profils d'acheteurs¤39
 
@@ -59,7 +73,7 @@ Chapitre 5. Écouter et questionner pour découvrir les vrais motifs d'achat¤47
 
 Chapitre 6. Lire les signaux¤55
 
-**Partie III — Les sept leviers d'influence, utilisés avec éthique**¤63
+**Partie III. Les sept leviers d'influence, utilisés avec éthique**¤63
 
 Chapitre 7. Rendre la pareille et inspirer la sympathie¤64
 
@@ -67,7 +81,7 @@ Chapitre 8. L'exemple des autres, l'autorité et le sentiment d'appartenance¤72
 
 Chapitre 9. Rareté, engagement et psychologie du prix¤80
 
-**Partie IV — Vendre et fidéliser**¤88
+**Partie IV. Vendre et fidéliser**¤88
 
 Chapitre 10. Un parcours de vente qui facilite la décision¤89
 
@@ -75,7 +89,7 @@ Chapitre 11. Conclure sans forcer et répondre aux objections¤97
 
 Chapitre 12. Fidéliser et faire recommander, sans manipuler¤105
 
-Conclusion — Votre plan d'action sur 30 jours¤113
+Conclusion. Votre plan d'action sur 30 jours¤113
 
 Annexe A. Boîte à outils¤117
 
@@ -86,13 +100,13 @@ Annexe C. Bibliographie et sources¤123
 Annexe D. À propos de l'auteur et de STFC¤126
 :::
 
-# Préface — Avant-propos de l'auteur
+# Préface de l'auteur
 
-Pendant des années, j'ai accompagné des dirigeants de petites et moyennes entreprises dans leur développement commercial. Des commerçantes du marché de Treichville aux gérants de PME industrielles de Douala, des jeunes fondateurs de start-up dakaroises aux distributeurs de Kinshasa, j'ai entendu la même phrase, prononcée avec la même lassitude : « Mon produit est bon, mais les clients n'achètent pas assez. »
+Pendant des années, j'ai accompagné des dirigeants de petites et moyennes entreprises dans leur développement commercial. Des commerçantes du marché Total de Bacongo aux gérants de PME de Pointe-Noire, des jeunes fondateurs de start-up de Brazzaville aux distributeurs de Dolisie et d'Ouesso, j'ai entendu la même phrase, prononcée avec la même lassitude : « Mon produit est bon, mais les clients n'achètent pas assez. »
 
 Presque toujours, le produit était effectivement bon. Le problème ne venait ni de la qualité, ni même du prix. Il venait d'une incompréhension profonde : le vendeur présentait son offre comme si le client était une machine à calculer, alors que le client, comme chacun d'entre nous, décide d'abord avec ses émotions, ses habitudes, sa peur de se tromper et le regard de ses proches.
 
-Ce livre est né de ce constat. Il rassemble ce que la psychologie comportementale nous apprend sur la manière dont les êtres humains prennent leurs décisions d'achat, et il le traduit en outils simples, testés sur le terrain africain francophone. Car c'est là toute la difficulté : la plupart des ouvrages de vente que l'on trouve en librairie ont été écrits pour des acheteurs nord-américains ou européens. Ils ignorent le poids de la famille dans la décision, le rôle du marchandage comme rituel social, la place du bouche-à-oreille et de WhatsApp, la puissance du mobile money ou la méfiance née de trop de promesses non tenues.
+Ce livre est né de ce constat. Il rassemble ce que la psychologie comportementale nous apprend sur la manière dont les êtres humains prennent leurs décisions d'achat, et il le traduit en outils simples, testés sur le terrain congolais. Car c'est là toute la difficulté : la plupart des ouvrages de vente que l'on trouve en librairie ont été écrits pour des acheteurs nord-américains ou européens. Ils ignorent le poids de la famille dans la décision, le rôle du marchandage comme rituel social, la place du bouche-à-oreille et de WhatsApp, la puissance du mobile money ou la méfiance née de trop de promesses non tenues.
 
 Au sein de Stratfocus Consulting (STFC), nous combinons plusieurs approches que vous retrouverez tout au long de ces pages. La méthode SPIN pour conduire des entretiens de découverte qui font émerger les vrais besoins. La méthode CROC pour structurer chaque prise de contact. L'effectuation, cette logique des entrepreneurs qui avancent avec ce qu'ils ont plutôt que d'attendre les conditions idéales. Et le lean management, qui nous apprend à éliminer le gaspillage, y compris dans le parcours d'achat de nos clients. La psychologie comportementale est le fil qui relie toutes ces méthodes : elle explique pourquoi elles fonctionnent.
 
@@ -108,19 +122,19 @@ Rodriguez MOKHASSA
 Fondateur de Stratfocus Consulting (STFC)
 :::
 
-# Introduction — Pourquoi vos clients n'achètent pas pour les raisons que vous croyez
+# Introduction. Pourquoi vos clients n'achètent pas pour les raisons que vous croyez
 
-## Le paradoxe d'Aminata
+## Le paradoxe de Bénie
 
-Aminata tient une boutique de pagnes et de prêt-à-porter dans un quartier commerçant d'Abidjan. Ses tissus sont de belle qualité, ses prix sont dans la moyenne du marché et elle connaît parfaitement ses produits. Pourtant, deux boutiques plus loin, sa voisine Fatou vend nettement plus, avec une marchandise comparable et des prix légèrement supérieurs.
+Bénie tient une boutique de pagnes et de prêt-à-porter au marché Total, à Bacongo, le plus grand marché de Brazzaville. Ses tissus sont de belle qualité, ses prix sont dans la moyenne du marché et elle connaît parfaitement ses produits. Pourtant, deux boutiques plus loin, sa voisine Merveille vend nettement plus, avec une marchandise comparable et des prix légèrement supérieurs.
 
-Aminata a tout essayé : baisser ses prix, élargir son assortiment, rester ouverte plus tard. Rien n'y a fait. Un jour, elle décide d'observer discrètement la boutique de Fatou pendant une matinée entière. Ce qu'elle découvre la déconcerte.
+Bénie a tout essayé : baisser ses prix, élargir son assortiment, rester ouverte plus tard. Rien n'y a fait. Un jour, elle décide d'observer discrètement la boutique de Merveille pendant une matinée entière. Ce qu'elle découvre la déconcerte.
 
-Fatou n'explique presque jamais la qualité de ses tissus. Elle accueille chaque cliente par son nom ou par un surnom affectueux. Elle demande des nouvelles de la famille, de la cérémonie à venir. Elle sort trois pagnes, pas quinze. Elle dit : « Celui-là, ma sœur, c'est ce que la femme du directeur a pris pour le baptême la semaine dernière. » Elle propose de mettre le tissu de côté avec une petite avance par mobile money. Et quand la cliente hésite, elle ne baisse pas son prix : elle ajoute un petit foulard assorti « parce que c'est toi ».
+Merveille n'explique presque jamais la qualité de ses tissus. Elle accueille chaque cliente par son nom ou par un surnom affectueux. Elle demande des nouvelles de la famille, de la cérémonie à venir. Elle sort trois pagnes, pas quinze. Elle dit : « Celui-là, ma sœur, c'est ce que la femme du directeur a pris pour le baptême la semaine dernière. » Elle propose de mettre le tissu de côté avec une petite avance par mobile money. Et quand la cliente hésite, elle ne baisse pas son prix : elle ajoute un petit foulard assorti « parce que c'est toi ».
 
-Fatou n'a jamais lu de livre de psychologie. Mais elle applique, d'instinct, plusieurs des principes les plus solides de la science du comportement : la sympathie, la preuve sociale, la limitation du choix, l'engagement progressif et la réciprocité. Aminata, elle, vend comme si ses clientes comparaient rationnellement des fiches techniques.
+Merveille n'a jamais lu de livre de psychologie. Mais elle applique, d'instinct, plusieurs des principes les plus solides de la science du comportement : la sympathie, la preuve sociale, la limitation du choix, l'engagement progressif et la réciprocité. Bénie, elle, vend comme si ses clientes comparaient rationnellement des fiches techniques.
 
-Ce livre a pour ambition de transformer l'instinct de Fatou en méthode, pour que chacun puisse l'apprendre, l'enseigner et l'améliorer.
+Ce livre a pour ambition de transformer l'instinct de Merveille en méthode, pour que chacun puisse l'apprendre, l'enseigner et l'améliorer.
 
 ## Ce que la science a découvert sur nos décisions
 
@@ -132,20 +146,21 @@ En parallèle, le psychologue Robert Cialdini a étudié pendant des années les
 
 La bonne nouvelle, c'est que ces mécanismes ne sont pas réservés aux grandes multinationales disposant de laboratoires de recherche. Ils sont à la portée de toute entreprise, de la petite boutique à la PME de cinquante salariés, à condition de les comprendre et de les adapter au contexte local.
 
-## Pourquoi un livre pour l'Afrique francophone ?
+## Pourquoi un livre pensé pour le Congo ?
 
-Les principes de la psychologie humaine sont universels : un acheteur de Libreville a le même cerveau qu'un acheteur de Lyon. Mais la manière dont ces principes s'expriment dépend profondément de la culture, de l'économie et des habitudes locales.
+Les principes de la psychologie humaine sont universels : un acheteur de Brazzaville a le même cerveau qu'un acheteur de Lyon. Mais la manière dont ces principes s'expriment dépend profondément de la culture, de l'économie et des habitudes locales.
 
-En Afrique subsaharienne francophone, plusieurs réalités changent la donne pour le vendeur :
+Au Congo, plusieurs réalités changent la donne pour le vendeur :
 
 - **La décision d'achat est souvent collective.** Le mari, l'épouse, le grand frère, l'associé ou le conseil de famille pèsent sur le choix final, même quand ils sont absents de la conversation.
 - **La confiance se construit par la relation et la réputation**, davantage que par les contrats et les garanties écrites.
-- **L'économie informelle reste dominante.** Selon la Commission économique des Nations unies pour l'Afrique, environ 83 % des emplois du continent relevaient de l'informel en 2024. Vos clients, vos fournisseurs et parfois vos concurrents évoluent dans cet univers.
-- **Le mobile money a transformé les habitudes de paiement.** Dans l'espace UEMOA, les transactions par monnaie électronique ont dépassé 200 000 milliards de francs CFA en 2025, en forte hausse sur un an, selon les données de la BCEAO relayées par la presse spécialisée.
+- **L'économie informelle reste dominante.** L'essentiel de l'emploi se trouve dans le commerce, l'artisanat et l'agriculture informels. Les données manquent : l'Institut national de la statistique prépare avec le Bureau international du travail une nouvelle enquête sur l'emploi et le secteur informel, la première depuis 2009. Vos clients, vos fournisseurs et parfois vos concurrents évoluent dans cet univers.
+- **Le mobile money a transformé les habitudes de paiement.** Avec un taux de pénétration de la téléphonie mobile supérieur à 95 % en 2025 selon l'ARPCE, payer avec MTN MoMo ou Airtel Money fait désormais partie du quotidien, de Brazzaville à Pointe-Noire.
+- **Les contraintes du quotidien orientent les achats.** Délestages, coupures d'eau, embouteillages et approvisionnements irréguliers façonnent les besoins et les priorités des clients : groupes électrogènes, solaire, stockage, livraison à domicile.
 - **WhatsApp est devenu une vitrine, un canal de vente et un outil de bouche-à-oreille** plus puissant que bien des campagnes publicitaires.
 - **Le marchandage n'est pas un conflit mais un rituel social**, avec ses codes et ses attentes.
 
-Ignorer ces réalités, c'est appliquer des recettes importées qui sonnent faux. Les intégrer, c'est disposer d'un avantage concurrentiel considérable.
+Les cas et les exemples de ce livre se déroulent à Brazzaville, à Pointe-Noire, à Dolisie et dans les départements ; leurs principes valent aussi pour les pays voisins d'Afrique centrale. Ignorer ces réalités, c'est appliquer des recettes importées qui sonnent faux. Les intégrer, c'est disposer d'un avantage concurrentiel considérable.
 
 ## Les quatre méthodes qui structurent ce livre
 
@@ -162,7 +177,7 @@ Ce guide s'appuie sur la psychologie comportementale et sur quatre méthodes ép
 
 Le livre est organisé en quatre parties qui suivent une progression logique.
 
-**La partie I** explique comment l'acheteur décide : le rôle des émotions, les biais cognitifs et les spécificités culturelles de l'Afrique francophone.
+**La partie I** explique comment l'acheteur décide : le rôle des émotions, les biais cognitifs et les spécificités culturelles du marché congolais.
 
 **La partie II** vous apprend à comprendre chaque acheteur : reconnaître son profil, le faire parler et lire ses signaux.
 
@@ -175,7 +190,5 @@ Chaque chapitre suit la même structure : un **cas d'ouverture** tiré de situat
 Vous pouvez lire le livre d'une traite ou aller directement au chapitre qui répond à votre problème du moment. Mais je vous recommande une règle : après chaque chapitre, appliquez au moins un outil pendant une semaine avant de passer au suivant. Un livre de vente qui n'est pas mis en pratique n'est qu'un livre de plus sur l'étagère.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Vos clients n'achètent pas pour les raisons qu'ils donnent, ni pour celles que vous imaginez. Ils achètent pour des raisons émotionnelles, sociales et pratiques, qu'ils justifient ensuite avec des arguments rationnels. Comprendre ce mécanisme est le premier pas vers une vente plus efficace et plus respectueuse.
 :::

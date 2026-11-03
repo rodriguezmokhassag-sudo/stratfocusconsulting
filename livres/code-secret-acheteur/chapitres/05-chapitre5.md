@@ -2,7 +2,7 @@
 
 ## Cas d'ouverture : la visite de Mireille
 
-Mireille vend des logiciels de gestion pour pharmacies à Douala. Lors de sa première visite chez un pharmacien, elle consacre quarante minutes à présenter toutes les fonctionnalités de son logiciel : gestion des stocks, facturation, alertes de péremption, tableaux de bord, sauvegarde automatique. Le pharmacien l'écoute poliment, la remercie et promet de « réfléchir ».
+Mireille vend des logiciels de gestion pour pharmacies à Brazzaville. Lors de sa première visite chez un pharmacien, elle consacre quarante minutes à présenter toutes les fonctionnalités de son logiciel : gestion des stocks, facturation, alertes de péremption, tableaux de bord, sauvegarde automatique. Le pharmacien l'écoute poliment, la remercie et promet de « réfléchir ».
 
 Quelques mois plus tard, après une formation à la méthode SPIN, Mireille rend visite à un autre pharmacien. Cette fois, elle parle à peine de son logiciel pendant les vingt premières minutes. Elle pose des questions.
 
@@ -45,7 +45,7 @@ Elles sont indispensables, mais Rackham a constaté que les vendeurs moins perfo
 
 - Préparez-vous avant le rendez-vous : site Internet, page Facebook, conversation avec des connaissances communes, observation des lieux. Ne demandez pas ce que vous pouvez savoir autrement.
 - Limitez-vous aux questions de situation vraiment utiles.
-- Montrez que vous vous êtes renseigné : « J'ai vu que vous avez ouvert une deuxième boutique à Bonapriso l'an dernier. Comment s'organise l'approvisionnement entre les deux ? »
+- Montrez que vous vous êtes renseigné : « J'ai vu que vous avez ouvert une deuxième boutique à Moungali l'an dernier. Comment s'organise l'approvisionnement entre les deux ? »
 
 ## P comme Problème : faire émerger les insatisfactions
 
@@ -59,7 +59,7 @@ Les questions de problème explorent les difficultés, les insatisfactions et le
 - « Qu'est-ce que vous aimeriez améliorer dans… ? »
 - « Qu'est-ce qui vous fait perdre le plus de temps ? »
 
-Dans le contexte africain, une précaution s'impose : de nombreux clients, par fierté ou par politesse, hésitent à reconnaître qu'ils ont des problèmes, surtout devant un inconnu ou devant leurs collaborateurs. Formulez donc vos questions de manière à ne pas mettre la personne en difficulté :
+Dans le contexte congolais, une précaution s'impose : de nombreux clients, par fierté ou par politesse, hésitent à reconnaître qu'ils ont des problèmes, surtout devant un inconnu ou devant leurs collaborateurs. Formulez donc vos questions de manière à ne pas mettre la personne en difficulté :
 
 - Plutôt que « Avez-vous des problèmes de trésorerie ? », dites : « Beaucoup de commerçants nous disent que les délais de paiement de leurs clients les mettent parfois en difficulté. Est-ce que c'est aussi quelque chose que vous rencontrez ? »
 - Cette technique, qui consiste à présenter le problème comme fréquent chez d'autres, permet au client de le reconnaître sans perdre la face.
@@ -97,7 +97,7 @@ Ces questions ont un triple effet : le client se convainc lui-même, il vous don
 
 ## Exemple complet : SPIN dans une boutique de matériaux
 
-Voici un exemple d'entretien SPIN dans un contexte de commerce de détail, chez un vendeur de matériaux de construction à Bamako.
+Voici un exemple d'entretien SPIN dans un contexte de commerce de détail, chez un vendeur de matériaux de construction à Pointe-Noire.
 
 > **Vendeur (S)** : Vous construisez pour vous-même ou pour louer ?
 >
@@ -176,7 +176,5 @@ Préparez trois à cinq questions par catégorie : elles serviront de guide.
 - [ ] Lors de mes prochains rendez-vous, je vérifie que le client parle au moins deux fois plus que moi.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Le client croit davantage ce qu'il découvre lui-même que ce que vous lui affirmez. Avec la méthode SPIN, vous l'aidez à décrire sa situation, à reconnaître ses problèmes, à mesurer leurs conséquences et à formuler lui-même la valeur de votre solution. Posez les bonnes questions, puis taisez-vous et écoutez.
 :::

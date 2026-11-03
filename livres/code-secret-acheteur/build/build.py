@@ -11,7 +11,7 @@ import sys
 
 from docx import Document
 from docx.enum.style import WD_STYLE_TYPE
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT, WD_TAB_LEADER
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -21,15 +21,18 @@ RACINE = os.path.dirname(ICI)
 CHAPITRES = os.path.join(RACINE, "chapitres")
 SORTIE = os.path.join(RACINE, "sortie")
 REF = os.path.join(ICI, "reference.docx")
-NOM = "Le-Code-Secret-de-l-Acheteur"
+VERSION = os.environ.get("VERSION", "lecture")  # "lecture" ou "impression"
+NOM = "Le-Code-Secret-de-l-Acheteur" + ("-interieur-impression" if VERSION == "impression" else "")
 
 # Réglages typographiques (ajustables pour viser 127 pages)
 TAILLE_CORPS = float(os.environ.get("TAILLE_CORPS", "11"))
-INTERLIGNE = float(os.environ.get("INTERLIGNE", "1.2"))
-POLICE = "Liberation Serif"
-POLICE_TITRES = "Liberation Sans"
-BLEU = RGBColor(0x12, 0x3B, 0x63)
-OR = RGBColor(0xB0, 0x7D, 0x2B)
+INTERLIGNE = float(os.environ.get("INTERLIGNE", "1.1"))
+# Garamond : police de référence de l'édition (EB Garamond sert au rendu PDF)
+POLICE = "Garamond"
+POLICE_TITRES = "Garamond"
+# Palette noir et gris, assortie à la couverture
+BLEU = RGBColor(0x11, 0x11, 0x11)
+OR = RGBColor(0x55, 0x55, 0x55)
 
 
 def ombrage(par_format_element, couleur):
@@ -40,7 +43,7 @@ def ombrage(par_format_element, couleur):
     par_format_element.append(shd)
 
 
-def bordure_gauche(ppr, couleur="B07D2B", taille="18"):
+def bordure_gauche(ppr, couleur="222222", taille="18"):
     pbdr = OxmlElement("w:pBdr")
     for cote in ("left",):
         b = OxmlElement(f"w:{cote}")
@@ -162,7 +165,7 @@ def construire_reference():
               police=POLICE, avant=4, apres=8)
         st["Block Text"].paragraph_format.left_indent = Inches(0.3)
         st["Block Text"].paragraph_format.right_indent = Inches(0.2)
-        bordure_gauche(st["Block Text"].element.get_or_add_pPr(), "123B63", "12")
+        bordure_gauche(st["Block Text"].element.get_or_add_pPr(), "555555", "12")
 
     # Styles personnalisés
     s = style_par(doc, "TitreLivre")
@@ -202,11 +205,19 @@ def construire_reference():
     s = style_par(doc, "Encadre")
     regle(s, taille=TAILLE_CORPS - 0.5, police=POLICE,
           align=WD_ALIGN_PARAGRAPH.LEFT, avant=3, apres=3)
-    s.paragraph_format.left_indent = Inches(0.12)
-    s.paragraph_format.right_indent = Inches(0.08)
+    # Encadré sobre : simple cadre fin sur les quatre côtés, sans fond
+    s.paragraph_format.left_indent = Inches(0.1)
+    s.paragraph_format.right_indent = Inches(0.1)
     ppr = s.element.get_or_add_pPr()
-    bordure_gauche(ppr)
-    ombrage(ppr, "F6EFE3")
+    cadre = OxmlElement("w:pBdr")
+    for cote in ("top", "left", "bottom", "right"):
+        b = OxmlElement(f"w:{cote}")
+        b.set(qn("w:val"), "single")
+        b.set(qn("w:sz"), "6")
+        b.set(qn("w:space"), "6")
+        b.set(qn("w:color"), "333333")
+        cadre.append(b)
+    ppr.append(cadre)
 
     # Tableaux : police un peu plus petite
     s = style_par(doc, "Table")  # pandoc applique ce nom au tableau
@@ -231,15 +242,51 @@ def assembler():
     r = subprocess.run(["pdfinfo", pdf], capture_output=True, text=True)
     pages = [l for l in r.stdout.splitlines() if l.startswith("Pages")]
     print(pages[0] if pages else r.stdout)
+    return pdf
+
+
+def norm(x):
+    import unicodedata
+    x = x.replace("’", "'").replace("*", "")
+    return "".join(c for c in unicodedata.normalize("NFKD", x) if c.isalnum()).lower()
+
+
+def maj_sommaire(pdf):
+    """Recalcule les numéros de page du sommaire. Renvoie True si modifié."""
+    n = int([l for l in subprocess.run(["pdfinfo", pdf], capture_output=True, text=True)
+             .stdout.splitlines() if l.startswith("Pages")][0].split()[-1])
+    debuts = {}
+    for p in range(6, n + 1):
+        txt = subprocess.run(["pdftotext", "-f", str(p), "-l", str(p), pdf, "-"],
+                             capture_output=True, text=True).stdout
+        debuts[p] = norm(" ".join(txt.split("\n")[:4]))
+    f = os.path.join(CHAPITRES, "00-liminaires.md")
+    lignes = open(f).read().split("\n")
+    modifie = False
+    for k, l in enumerate(lignes):
+        if "¤" not in l:
+            continue
+        titre, ancien = l.rsplit("¤", 1)
+        cle = norm(titre)[:30]
+        trouve = [p for p, d in debuts.items() if d.startswith(cle)]
+        if trouve and str(trouve[0]) != ancien:
+            lignes[k] = f"{titre}¤{trouve[0]}"
+            modifie = True
+    if modifie:
+        open(f, "w").write("\n".join(lignes))
+    return modifie
 
 
 def inserer_couverture(doc):
     """Place la couverture en pleine page (page 1), dans sa propre section."""
     from copy import deepcopy
     couv = os.path.join(RACINE, "images", "couverture.jpg")
+    body = doc.element.body
+    if VERSION == "impression":
+        inserer_page_titre(doc)
+        return
     if not os.path.exists(couv):
         return
-    body = doc.element.body
     p = doc.add_paragraph()
     p.add_run().add_picture(couv, width=Inches(6), height=Inches(9))
     pf = p.paragraph_format
@@ -261,6 +308,27 @@ def inserer_couverture(doc):
     p._p.get_or_add_pPr().append(sect)
 
 
+def inserer_page_titre(doc):
+    """Version imprimeur : page de titre sobre à la place de la couverture."""
+    body = doc.element.body
+    elements = [
+        ("TitreLivre", "Le Code Secret de l’Acheteur"),
+        ("SousTitreLivre", "Mieux vendre grâce à la psychologie comportementale"),
+        ("AuteurLivre", "Rodriguez MOKHASSA"),
+        ("EditeurLivre", "STFC Éditions"),
+    ]
+    paras = []
+    for style, texte in elements:
+        p = doc.add_paragraph(texte, style=style)
+        paras.append(p._p)
+    saut = doc.add_paragraph()
+    saut.add_run().add_break(WD_BREAK.PAGE)
+    paras.append(saut._p)
+    for i, el in enumerate(paras):
+        body.remove(el)
+        body.insert(i, el)
+
+
 def post_traiter(chemin):
     """Ajuste les tableaux (taille, bordures) et retire le titre pandoc."""
     doc = Document(chemin)
@@ -279,13 +347,23 @@ def post_traiter(chemin):
         if "……" in p.text:
             p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
     for t in doc.tables:
+        precedent = t._tbl.getprevious()
+        if precedent is not None and precedent.tag == qn("w:p"):
+            from docx.text.paragraph import Paragraph
+            pp = Paragraph(precedent, doc._body)
+            if len(pp.text) < 160:
+                pp.paragraph_format.keep_with_next = True
+        suivant = t._tbl.getnext()
+        if suivant is not None and suivant.tag == qn("w:p"):
+            from docx.text.paragraph import Paragraph
+            Paragraph(suivant, doc._body).paragraph_format.space_before = Pt(8)
         tblpr = t._tbl.tblPr
         borders = OxmlElement("w:tblBorders")
         for cote in ("top", "left", "bottom", "right", "insideH", "insideV"):
             b = OxmlElement(f"w:{cote}")
             b.set(qn("w:val"), "single")
             b.set(qn("w:sz"), "4")
-            b.set(qn("w:color"), "9AA9B8")
+            b.set(qn("w:color"), "8C8C8C")
             borders.append(b)
         tblpr.append(borders)
         tblw = tblpr.find(qn("w:tblW"))
@@ -294,11 +372,19 @@ def post_traiter(chemin):
             tblpr.append(tblw)
         tblw.set(qn("w:type"), "pct")
         tblw.set(qn("w:w"), "5000")
+        # Ne jamais couper un tableau sur deux pages
+        nb = len(t.rows)
         for i, row in enumerate(t.rows):
+            trpr = row._tr.get_or_add_trPr()
+            trpr.append(OxmlElement("w:cantSplit"))
             for cell in row.cells:
+                for p in cell.paragraphs:
+                    p.paragraph_format.keep_together = True
+                    if i < nb - 1:
+                        p.paragraph_format.keep_with_next = True
                 if i == 0:
                     tcpr = cell._tc.get_or_add_tcPr()
-                    ombrage(tcpr, "123B63")
+                    ombrage(tcpr, "1A1A1A")
                 for p in cell.paragraphs:
                     p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
                     p.paragraph_format.space_after = Pt(1)
@@ -314,4 +400,10 @@ def post_traiter(chemin):
 
 if __name__ == "__main__":
     construire_reference()
-    assembler()
+    pdf = assembler()
+    if VERSION == "lecture":
+        if maj_sommaire(pdf):
+            print("Sommaire mis à jour, seconde passe")
+            assembler()
+        # Version imprimeur (page de titre au lieu de la couverture)
+        subprocess.run([sys.executable, __file__], env={**os.environ, "VERSION": "impression"}, check=True)

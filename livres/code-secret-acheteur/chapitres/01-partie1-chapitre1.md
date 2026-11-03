@@ -1,16 +1,16 @@
-# Partie I — Comment l'acheteur décide
+# Partie I. Comment l'acheteur décide
 
 ::: {custom-style="IntroPartie"}
-Avant de vouloir convaincre un client, il faut comprendre comment il prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion-raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes culturels propres à l'Afrique francophone. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : il ne sait simplement pas toujours pourquoi il hésite.
+Avant de vouloir convaincre un client, il faut comprendre comment il prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion et raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes culturels propres au marché congolais. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : il ne sait simplement pas toujours pourquoi il hésite.
 :::
 
 # Chapitre 1. L'émotion décide, la raison justifie
 
 ## Cas d'ouverture : le téléphone de Serge
 
-Serge, enseignant à Yaoundé, a besoin d'un nouveau téléphone. Il a fixé son budget, comparé les fiches techniques sur Internet et choisi un modèle d'entrée de gamme, solide et économique. Il entre dans une boutique du centre-ville, décidé à acheter ce modèle précis.
+Serge, enseignant à Pointe-Noire, a besoin d'un nouveau téléphone. Il a fixé son budget, comparé les fiches techniques sur Internet et choisi un modèle d'entrée de gamme, solide et économique. Il entre dans une boutique du centre-ville, décidé à acheter ce modèle précis.
 
-Le vendeur l'accueille, l'écoute, puis lui demande à quoi lui servira le téléphone. Serge explique qu'il veut surtout rester en contact avec sa fille, partie étudier à Dakar. Le vendeur prend alors un autre modèle, un peu plus cher, et lance un appel vidéo de démonstration : l'image est nette, le son est clair. « Avec celui-ci, vous la verrez comme si elle était dans le salon. »
+Le vendeur l'accueille, l'écoute, puis lui demande à quoi lui servira le téléphone. Serge explique qu'il veut surtout rester en contact avec sa fille, partie étudier au Maroc. Le vendeur prend alors un autre modèle, un peu plus cher, et lance un appel vidéo de démonstration : l'image est nette, le son est clair. « Avec celui-ci, vous la verrez comme si elle était dans le salon. »
 
 Serge repart avec le modèle plus cher. Le soir, il explique à son épouse que la batterie est plus durable et que l'appareil photo servira pour les cérémonies. Ces arguments sont vrais. Mais ce ne sont pas eux qui ont déclenché l'achat. C'est l'image de sa fille souriante sur l'écran.
 
@@ -44,10 +44,10 @@ Vendre efficacement, c'est parler aux deux systèmes, dans le bon ordre :
 1. **D'abord au système 1** : créer un climat de confiance, susciter une image positive, faire ressentir le bénéfice.
 2. **Ensuite au système 2** : fournir les arguments rationnels qui permettront au client de justifier sa décision, à ses propres yeux et aux yeux de son entourage.
 
-Ce second point est capital en Afrique francophone, où l'acheteur doit souvent rendre compte de sa décision à sa famille ou à ses associés. Un client qui a « craqué » sans pouvoir se justifier risque de regretter son achat ou de l'annuler. Donnez-lui toujours les arguments qu'il pourra répéter à la maison.
+Ce second point est capital au Congo, où l'acheteur doit souvent rendre compte de sa décision à sa famille ou à ses associés. Un client qui a « craqué » sans pouvoir se justifier risque de regretter son achat ou de l'annuler. Donnez-lui toujours les arguments qu'il pourra répéter à la maison.
 
 ::: {custom-style="Encadre"}
-**Outil express : la règle « Ressentir, puis Justifier »**
+**Ressentir, puis justifier**
 
 Avant chaque présentation, préparez deux listes.
 
@@ -76,7 +76,7 @@ Un même produit peut répondre à des émotions différentes selon le client. U
 
 ## Des caractéristiques aux bénéfices émotionnels
 
-Une technique simple permet de passer du langage du système 2 à celui du système 1 : la chaîne **Caractéristique – Avantage – Bénéfice émotionnel**.
+Une technique simple permet de passer du langage du système 2 à celui du système 1 : la chaîne **Caractéristique, Avantage, Bénéfice émotionnel**.
 
 | Caractéristique (ce que c'est) | Avantage (ce que ça fait) | Bénéfice émotionnel (ce que ça change pour le client) |
 |---|---|---|
@@ -84,13 +84,13 @@ Une technique simple permet de passer du langage du système 2 à celui du syst�
 | Tissu wax 100 % coton certifié | Ne déteint pas au lavage | « Vous serez aussi élégante au dixième lavage qu'au premier jour. » |
 | Logiciel de caisse avec suivi des stocks | Indique les ruptures en temps réel | « Vous dormirez tranquille en sachant exactement ce qui se passe dans votre boutique. » |
 | Livraison en 24 heures | Le client reçoit vite | « Vous serez prêt pour la cérémonie de samedi, sans stress. » |
-| Formation certifiante de 3 mois | Diplôme reconnu | « Votre famille sera fière, et vous pourrez enfin postuler à ce poste. » |
+| Formation certifiante de 3 mois | Diplôme reconnu | « Votre famille sera fière, et vous pourrez enfin décrocher ce poste. » |
 
 Remarquez que les bénéfices émotionnels utilisent le mot « vous » et décrivent une scène que le client peut imaginer. C'est ce qui active le système 1.
 
 ## Le pouvoir des histoires
 
-Si l'émotion décide, l'histoire est son meilleur véhicule. Notre cerveau retient beaucoup mieux un récit qu'une liste d'arguments. Les sociétés africaines, de tradition orale, le savent depuis toujours : le conte, le proverbe et l'anecdote transmettent le savoir plus efficacement que n'importe quel exposé.
+Si l'émotion décide, l'histoire est son meilleur véhicule. Notre cerveau retient beaucoup mieux un récit qu'une liste d'arguments. Les sociétés congolaises, de tradition orale, le savent depuis toujours : le conte, le proverbe et l'anecdote transmettent le savoir plus efficacement que n'importe quel exposé.
 
 Dans la vente, une bonne histoire comporte quatre éléments :
 
@@ -99,19 +99,19 @@ Dans la vente, une bonne histoire comporte quatre éléments :
 3. **Une transformation** : ce qui a changé grâce au produit ou au service.
 4. **Un résultat tangible** : un chiffre, une émotion, une conséquence visible.
 
-> « L'an dernier, un transporteur de Bamako, comme vous, perdait presque une journée par semaine à cause des pannes de ses camions. Nous avons mis en place le contrat d'entretien préventif. Six mois plus tard, il m'a appelé pour me dire qu'il avait pu ajouter une tournée par semaine. Il dit que c'est la première fois qu'il dort tranquille le dimanche soir. »
+> « L'an dernier, un transporteur de Dolisie, comme vous, perdait presque une journée par semaine à cause des pannes de ses camions. Nous avons mis en place le contrat d'entretien préventif. Six mois plus tard, il m'a appelé pour me dire qu'il avait pu ajouter une tournée par semaine. Il dit que c'est la première fois qu'il dort tranquille le dimanche soir. »
 
 Cette histoire contient un personnage (un transporteur comme vous), un problème (les pannes), une transformation (l'entretien préventif) et un résultat (une tournée de plus, le sommeil retrouvé). Elle parle au système 1, et le chiffre parle au système 2.
 
 ::: {custom-style="Encadre"}
 **Attention à l'éthique**
 
-Une histoire de vente doit être vraie. Inventer un témoignage est non seulement malhonnête, mais dangereux : dans les marchés africains, tout finit par se savoir, et la réputation perdue ne se rachète pas. Si vous débutez et n'avez pas encore de clients, racontez votre propre histoire : pourquoi vous avez créé ce produit, quel problème vous vouliez résoudre.
+Une histoire de vente doit être vraie. Inventer un témoignage est non seulement malhonnête, mais dangereux : dans les marchés congolais, tout finit par se savoir, et la réputation perdue ne se rachète pas. Si vous débutez et n'avez pas encore de clients, racontez votre propre histoire : pourquoi vous avez créé ce produit, quel problème vous vouliez résoudre.
 :::
 
 ## Application terrain : le parcours d'une décision
 
-Reprenons l'exemple d'un achat important, comme un panneau solaire pour une famille de Ouagadougou. La décision suit généralement ce parcours :
+Reprenons l'exemple d'un achat important, comme un panneau solaire pour une famille de Talangaï, à Brazzaville. La décision suit généralement ce parcours :
 
 1. **Le déclencheur émotionnel** : une coupure d'électricité pendant une fête, un enfant qui ne peut pas réviser le soir, la honte de ne pas pouvoir recevoir correctement des invités.
 2. **L'intuition** : « Il nous faut une solution, le solaire du voisin a l'air de bien fonctionner. »
@@ -128,17 +128,17 @@ On objecte souvent que tout cela s'applique aux particuliers, mais pas aux entre
 
 L'acheteur professionnel ressent lui aussi des émotions, simplement différentes :
 
-- **La peur d'être blâmé.** Un directeur des achats qui choisit un fournisseur défaillant risque sa réputation, voire son poste. Il cherche donc avant tout à éviter l'erreur. C'est pourquoi il privilégie souvent le fournisseur connu, même plus cher.
+- **La peur d'être blâmé.** Un directeur des achats qui choisit un fournisseur défaillant risque sa réputation, voire son poste. Il cherche donc avant tout à éviter l'erreur. C'est pourquoi il privilégie volontiers le fournisseur connu, même plus cher.
 - **Le désir d'être reconnu.** Le responsable qui fait réaliser une économie importante à son entreprise, ou qui introduit une solution innovante, espère que son initiative sera remarquée par sa hiérarchie.
 - **Le besoin de tranquillité.** Un fournisseur fiable, qui livre à l'heure et règle les problèmes sans bruit, simplifie la vie de son interlocuteur. Cette tranquillité a une valeur considérable, rarement inscrite dans le cahier des charges.
-- **La loyauté et la relation.** Comme nous le verrons au chapitre 3, la relation personnelle pèse lourd dans les décisions professionnelles en Afrique francophone.
+- **La loyauté et la relation.** Comme nous le verrons au chapitre 3, la relation personnelle pèse lourd dans les décisions professionnelles au Congo.
 
 Pour vendre à un acheteur professionnel, il faut donc répondre à deux questions à la fois. La question officielle : « Cette offre est-elle la meilleure pour l'entreprise ? » Et la question personnelle, jamais formulée : « Ce choix est-il sans risque pour moi, et va-t-il me valoriser ? »
 
 Le vendeur qui ne traite que la première question rédige de bons dossiers. Celui qui traite aussi la seconde gagne des contrats. Concrètement, cela signifie rassurer l'acheteur avec des références similaires, lui fournir des arguments qu'il pourra présenter à sa direction, s'engager sur un accompagnement en cas de difficulté et, quand c'est possible, l'aider à faire de ce choix une réussite visible.
 
 ::: {custom-style="Encadre"}
-**Exercice : les deux questions de votre client professionnel**
+**Les deux questions de votre client professionnel**
 
 Pour votre principal prospect professionnel, complétez ces deux phrases :
 
@@ -166,7 +166,5 @@ Si vous ne parvenez pas à compléter la seconde phrase, vous avez trouvé ce qu
 - [ ] J'observe pendant une semaine les moments où mes clients « s'animent » pendant la conversation.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Le client décide avec son système 1, rapide et émotionnel, puis justifie avec son système 2, lent et rationnel. Parlez d'abord au cœur, ensuite à la tête, et donnez toujours au client les mots pour défendre son choix devant les siens.
 :::

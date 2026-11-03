@@ -2,11 +2,11 @@
 
 ## Cas d'ouverture : le tissu qui n'était « plus disponible »
 
-Au grand marché de Lomé, deux grossistes en tissus reçoivent le même arrivage d'un motif très demandé. Le premier expose les rouleaux et attend les clientes. Le second, Akossiwa, envoie un message vocal à ses meilleures clientes revendeuses : « Ma sœur, le nouveau motif que tout le monde réclame est arrivé. J'ai seulement quarante rouleaux et le prochain arrivage n'est pas prévu avant deux mois. Je t'en mets de côté combien ? Il faut juste envoyer l'avance de 20 % par mobile money avant ce soir. »
+Au marché Total de Brazzaville, deux grossistes en tissus reçoivent le même arrivage d'un motif très demandé. Le premier expose les rouleaux et attend les clientes. Le second, Félicité, envoie un message vocal à ses meilleures clientes revendeuses : « Ma sœur, le nouveau motif que tout le monde réclame est arrivé. J'ai seulement quarante rouleaux et le prochain arrivage n'est pas prévu avant deux mois. Je t'en mets de côté combien ? Il faut juste envoyer l'avance de 20 % par mobile money avant ce soir. »
 
 En six heures, ses quarante rouleaux sont réservés. Les clientes qui ont versé l'avance viennent toutes chercher leurs rouleaux. Plusieurs en commandent même davantage en arrivant au magasin.
 
-Akossiwa a mobilisé deux leviers : **la rareté** (une quantité réellement limitée, un délai réel avant le prochain arrivage) et **l'engagement** (une petite avance qui transforme une intention en décision). Et elle a fixé le prix du tissu sans jamais le discuter : quand la rareté est réelle et que l'engagement est pris, le prix devient secondaire.
+Félicité a mobilisé deux leviers : **la rareté** (une quantité réellement limitée, un délai réel avant le prochain arrivage) et **l'engagement** (une petite avance qui transforme une intention en décision). Et elle a fixé le prix du tissu sans jamais le discuter : quand la rareté est réelle et que l'engagement est pris, le prix devient secondaire.
 
 ## Sixième levier : la rareté
 
@@ -26,12 +26,12 @@ La rareté active aussi l'**aversion à la perte** du chapitre 2 : la peur de ma
 | **Rareté de temps** | « Le prix augmente le 1er du mois, car le fournisseur a annoncé une hausse » | « Offre valable aujourd'hui seulement », renouvelée chaque jour |
 | **Rareté d'accès** | « Cette formation est limitée à 15 participants pour garantir un suivi personnalisé » | Fausse liste d'attente |
 
-### La rareté dans le contexte africain
+### La rareté dans le contexte congolais
 
-La rareté est souvent naturelle dans les économies africaines : arrivages irréguliers de marchandises importées, saisonnalité des produits agricoles, capacités de production limitées des artisans, périodes de forte demande (rentrée scolaire, fêtes religieuses, saison des mariages). Le vendeur n'a pas besoin d'inventer la rareté : il lui suffit de **communiquer honnêtement une rareté réelle**.
+La rareté est souvent naturelle dans l'économie congolaise : arrivages irréguliers de marchandises importées par le port de Pointe-Noire, saisonnalité des produits agricoles, capacités de production limitées des artisans, périodes de forte demande (rentrée scolaire, fêtes religieuses, saison des mariages). Le vendeur n'a pas besoin d'inventer la rareté : il lui suffit de **communiquer honnêtement une rareté réelle**.
 
 - **Le producteur de mangues séchées** peut annoncer : « La saison se termine, il nous reste la production de trois semaines. »
-- **La couturière** peut annoncer : « Pour la Tabaski, je ne peux prendre que trente commandes pour garantir la qualité. »
+- **La couturière** peut annoncer : « Pour les fêtes de fin d'année, je ne peux prendre que trente commandes pour garantir la qualité. »
 - **Le revendeur de téléphones** peut annoncer : « Le stock de ce modèle arrive par conteneur tous les deux mois. »
 
 ::: {custom-style="Encadre"}
@@ -75,7 +75,7 @@ En vente, il est rarement efficace de demander une grosse décision d'emblée. I
 
 ### L'avance par mobile money : un engagement actif
 
-En Afrique francophone, l'avance versée par mobile money est un formidable outil d'engagement. Elle est simple, rapide, accessible même pour de petits montants, et elle transforme une intention vague (« je vais passer ») en décision concrète. Un client qui a versé 5 000 francs d'avance a fait un geste actif : il revient dans la grande majorité des cas.
+Au Congo, l'avance versée par mobile money est un formidable outil d'engagement. Elle est simple, rapide, accessible même pour de petits montants, et elle transforme une intention vague (« je vais passer ») en décision concrète. Un client qui a versé 5 000 francs d'avance a fait un geste actif : il revient dans la grande majorité des cas.
 
 Pour être efficace et éthique, l'avance doit être :
 
@@ -123,7 +123,7 @@ Le marchandage, nous l'avons vu au chapitre 6, est souvent un rituel social. Voi
 6. **Terminez toujours par un geste de sympathie.** Le marchandage doit se conclure par un sentiment de satisfaction partagée : chacun doit avoir l'impression d'avoir fait une bonne affaire.
 
 ::: {custom-style="Encadre"}
-**Outil : la fiche de négociation**
+**La fiche de négociation**
 
 Avant chaque négociation importante, notez :
 
@@ -153,7 +153,5 @@ Avant chaque négociation importante, notez :
 - [ ] J'ai rempli ma fiche de négociation et je connais mon prix plancher.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 La rareté réelle, honnêtement communiquée, aide le client à décider. Les petits engagements actifs, comme une avance par mobile money, transforment une intention en décision. Et le prix est une perception : présentez la valeur avant le chiffre, fractionnez la douleur du paiement et n'accordez jamais une concession sans contrepartie.
 :::

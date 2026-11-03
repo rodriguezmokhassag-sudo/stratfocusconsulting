@@ -2,7 +2,7 @@
 
 Les fiches suivantes peuvent être photocopiées pour un usage professionnel personnel ou pour la formation de votre équipe.
 
-## Fiche 1 — Lecture rapide du client (chapitre 4)
+## Fiche 1. Lecture rapide du client (chapitre 4)
 
 | Observation | Plutôt… | Ou plutôt… |
 |---|---|---|
@@ -13,7 +13,7 @@ Les fiches suivantes peuvent être photocopiées pour un usage professionnel per
 | Rapport au temps | Pressé | Disponible |
 | **Hypothèse de profil** | Décideur / Enthousiaste | Bienveillant / Analyste |
 
-## Fiche 2 — Grille de préparation SPIN (chapitre 5)
+## Fiche 2. Grille de préparation SPIN (chapitre 5)
 
 **Client :** ……………………… **Date :** ………… **Offre concernée :** ………………………
 
@@ -28,7 +28,7 @@ Les fiches suivantes peuvent être photocopiées pour un usage professionnel per
 
 **Avancée obtenue en fin d'entretien :** …………………………………………
 
-## Fiche 3 — Grille d'observation des signaux (chapitre 6)
+## Fiche 3. Grille d'observation des signaux (chapitre 6)
 
 | Signaux d'intérêt observés | Signaux de doute observés | Moment de la conversation |
 |---|---|---|
@@ -42,7 +42,7 @@ Moment où l'intérêt a faibli : ………………………………
 
 Question ouverte à poser au prochain contact : ………………………………
 
-## Fiche 4 — Script CROC (chapitres 7 et 10)
+## Fiche 4. Script CROC (chapitres 7 et 10)
 
 | Étape | Mon texte (une à deux phrases) |
 |---|---|
@@ -51,7 +51,7 @@ Question ouverte à poser au prochain contact : …………………………�
 | **Objectif** : ce que je propose concrètement (rendez-vous, essai, diagnostic, commande) | |
 | **Conclusion** : confirmation, récapitulatif, remerciement | |
 
-## Fiche 5 — Fiche de négociation (chapitre 9)
+## Fiche 5. Fiche de négociation (chapitre 9)
 
 - Mon prix de départ (ancre) : ………………………
 - Mon prix plancher : ………………………
@@ -62,7 +62,7 @@ Question ouverte à poser au prochain contact : …………………………�
 - Contrepartie demandée pour chaque concession : ………………………
 - « Petits plus » à ajouter plutôt que baisser le prix : ………………………
 
-## Fiche 6 — Audit du parcours d'achat (chapitre 10)
+## Fiche 6. Audit du parcours d'achat (chapitre 10)
 
 Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque canal.
 
@@ -77,7 +77,7 @@ Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque can
 | Contact identifié en cas de problème | | | | |
 | **Total sur 35** | | | | |
 
-## Fiche 7 — Traitement des objections avec CRAC (chapitre 11)
+## Fiche 7. Traitement des objections avec CRAC (chapitre 11)
 
 | Objection | Creuser (ma question) | Reformuler | Argumenter | Contrôler |
 |---|---|---|---|---|
@@ -88,7 +88,7 @@ Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque can
 | « Ce n'est pas le moment. » | | | | |
 | « Je n'ai pas confiance. » | | | | |
 
-## Fiche 8 — Tableau de bord mensuel (conclusion)
+## Fiche 8. Tableau de bord mensuel (conclusion)
 
 | Indicateur | Mois 1 | Mois 2 | Mois 3 |
 |---|---|---|---|
@@ -190,10 +190,14 @@ Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque can
 - Tversky, A. ; Kahneman, D. « Judgment under uncertainty : heuristics and biases ». *Science*, 185, 1974.
 - Worchel, S. ; Lee, J. ; Adewole, A. « Effects of supply and demand on ratings of object value ». *Journal of Personality and Social Psychology*, 32(5), 1975.
 
-## Données sur l'Afrique francophone
+## Données sur la République du Congo
 
-- BCEAO. *Indicateurs de suivi de l'inclusion financière dans l'UEMOA au titre de l'année 2025*. Publié en octobre 2026. www.bceao.int
-- BCEAO. Stratégie régionale d'inclusion financière 2025-2030, adoptée le 3 avril 2025.
+- ARPCE (Agence de régulation des postes et des communications électroniques). Rapport annuel 2025 sur le marché des communications électroniques. www.arpce.cg
+- BEAC. Rapports sur les services de paiement et la monnaie électronique dans la CEMAC. www.beac.int
+- Institut national de la statistique (INS) et Bureau international du travail. Enquête sur l'emploi et le secteur informel au Congo (EESIC, 2009) ; nouvelle enquête annoncée pour 2027.
+- République du Congo. Loi n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel (Journal officiel n° 45-2019).
+- République du Congo. Loi n° 5-2025 du 29 mars 2025 portant création de la Commission nationale pour la protection des données à caractère personnel.
+- République du Congo. Loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur.
 - Commission économique des Nations unies pour l'Afrique (CEA). Données sur l'emploi informel en Afrique, 2024. www.uneca.org
 - CPCCAF. *Baromètre de l'opinion des entreprises africaines francophones*, 25e édition, 2025. www.cpccaf.org
 - OCDE / Commission de l'Union africaine. *Dynamiques du développement en Afrique 2024*. www.oecd.org
@@ -204,7 +208,7 @@ Notez chaque critère de 1 (très insuffisant) à 5 (excellent), pour chaque can
 - Méthode CROC (Contact, Raison, Objectif, Conclusion) et méthode CRAC (Creuser, Reformuler, Argumenter, Contrôler) : méthodes de vente largement enseignées dans les formations commerciales francophones.
 
 ::: {custom-style="Mentions"}
-Note : les chiffres relatifs à l'Afrique francophone évoluent rapidement. Ils ont été vérifiés au moment de la rédaction à partir des publications citées et de leur reprise par la presse économique spécialisée. Nous recommandons au lecteur de consulter les dernières publications des institutions concernées avant toute utilisation professionnelle.
+Note : les chiffres relatifs au Congo évoluent vite ; consultez les dernières publications des institutions citées avant toute utilisation professionnelle.
 :::
 
 # Annexe D. À propos de l'auteur et de STFC
@@ -213,9 +217,9 @@ Note : les chiffres relatifs à l'Afrique francophone évoluent rapidement. Ils 
 
 Rodriguez MOKHASSA est le fondateur de Stratfocus Consulting (STFC), cabinet spécialisé dans l'accélération des petites et moyennes entreprises, la performance commerciale et la stratégie marketing.
 
-Consultant et formateur, il accompagne des dirigeants de TPE et de PME, des commerçants et des équipes commerciales en Afrique francophone dans la structuration de leur démarche de vente, l'amélioration de leurs résultats commerciaux et le développement durable de leur clientèle.
+Consultant et formateur, il accompagne des dirigeants de TPE et de PME, des commerçants et des équipes commerciales en République du Congo dans la structuration de leur démarche de vente, l'amélioration de leurs résultats commerciaux et le développement durable de leur clientèle.
 
-Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN Selling, CROC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités des marchés africains : poids de la relation et de la réputation, décision collective, économie informelle, essor du mobile money et du commerce sur messagerie.
+Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN Selling, CROC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités des marchés congolais : poids de la relation et de la réputation, décision collective, économie informelle, essor du mobile money et du commerce sur messagerie.
 
 ::: {custom-style="Mentions"}
 [À compléter par l'auteur : formation, parcours professionnel, années d'expérience, secteurs et pays d'intervention, nombre d'entreprises accompagnées, certifications, publications, coordonnées professionnelles.]
@@ -235,4 +239,4 @@ La méthode STFC repose sur une conviction : chaque entreprise, quelle que soit 
 [À compléter : adresse, téléphone, adresse électronique, site Internet, réseaux sociaux.]
 :::
 
-Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.
+Ce livre est publié par STFC Éditions, la marque éditoriale du cabinet, qui édite des guides pratiques pour les dirigeants et les vendeurs congolais. Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.

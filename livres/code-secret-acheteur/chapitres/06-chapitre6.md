@@ -2,15 +2,15 @@
 
 ## Cas d'ouverture : « C'est bon, on va voir »
 
-Ibrahim est commercial dans une entreprise de fournitures scolaires à Niamey. Il présente son catalogue au directeur d'un groupe scolaire privé. Le directeur écoute, feuillette, hoche la tête et conclut : « C'est bon, on va voir. » Ibrahim repart ravi : pour lui, l'affaire est dans le sac.
+Landry est commercial dans une entreprise de fournitures scolaires à Brazzaville. Il présente son catalogue au directeur d'un groupe scolaire privé. Le directeur écoute, feuillette, hoche la tête et conclut : « C'est bon, on va voir. » Landry repart ravi : pour lui, l'affaire est dans le sac.
 
-Son collègue Abdoul, plus expérimenté, l'accompagnait ce jour-là. Dans la voiture, il tempère son enthousiasme : « Tu as remarqué qu'il a regardé deux fois sa montre quand tu as parlé des prix ? Qu'il a refermé le catalogue avant la fin ? Et qu'il n'a posé aucune question sur les délais de livraison, alors que la rentrée est dans trois semaines ? "On va voir", chez lui, ça veut dire non. Ou plutôt : pas comme ça. »
+Son collègue Hervé, plus expérimenté, l'accompagnait ce jour-là. Dans la voiture, il tempère son enthousiasme : « Tu as remarqué qu'il a regardé deux fois sa montre quand tu as parlé des prix ? Qu'il a refermé le catalogue avant la fin ? Et qu'il n'a posé aucune question sur les délais de livraison, alors que la rentrée est dans trois semaines ? "On va voir", chez lui, ça veut dire non. Ou plutôt : pas comme ça. »
 
-Abdoul avait raison. Le directeur ne commanda rien. Mais Abdoul retourna le voir seul la semaine suivante, avec une proposition de paiement en trois fois, calée sur le versement des frais de scolarité par les parents. La commande fut passée le jour même. Le problème n'avait jamais été l'intérêt pour les produits : c'était la trésorerie de début d'année. Le directeur ne l'avait pas dit, mais son corps et ses silences l'avaient exprimé.
+Hervé avait raison. Le directeur ne commanda rien. Mais Hervé retourna le voir seul la semaine suivante, avec une proposition de paiement en trois fois, calée sur le versement des frais de scolarité par les parents. La commande fut passée le jour même. Le problème n'avait jamais été l'intérêt pour les produits : c'était la trésorerie de début d'année. Le directeur ne l'avait pas dit, mais son corps et ses silences l'avaient exprimé.
 
 ## Ce que le client dit, et ce qu'il ne dit pas
 
-Dans la plupart des cultures d'Afrique francophone, dire « non » directement est souvent considéré comme impoli, voire blessant. On préfère des formules indirectes qui préservent la relation : « On va voir », « Je vais en parler », « Ce n'est pas mauvais », « Repasse un de ces jours », « Inch'Allah », « Dieu est grand ». Ces formules peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
+Au Congo, comme dans beaucoup de cultures africaines, dire « non » directement est souvent considéré comme impoli, voire blessant. On préfère des formules indirectes qui préservent la relation : « On va voir », « Je vais en parler », « Ce n'est pas mauvais », « Repasse un de ces jours », « Si Dieu le veut », « Dieu est grand ». Ces formules peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
 
 Le vendeur qui ne prend en compte que les mots risque donc de mal interpréter la situation. Il doit apprendre à lire **trois niveaux de signaux** :
 
@@ -19,9 +19,9 @@ Le vendeur qui ne prend en compte que les mots risque donc de mal interpréter l
 3. **Les signaux non verbaux** : les gestes, la posture, le regard, l'utilisation de l'espace et du temps.
 
 ::: {custom-style="Encadre"}
-**Un mythe à oublier : « 93 % de la communication est non verbale »**
+**Le mythe des « 93 % de communication non verbale »**
 
-Ce chiffre, très répandu dans les formations commerciales, provient d'une mauvaise interprétation des travaux du psychologue Albert Mehrabian dans les années 1960. Ses expériences portaient sur une situation très particulière : l'expression de sentiments à travers des mots isolés prononcés sur un ton contradictoire. Mehrabian lui-même a rappelé que ses résultats ne s'appliquent pas à la communication en général. Les mots comptent, beaucoup. Mais quand les mots et le corps se contredisent, c'est souvent le corps qui dit la vérité sur les émotions.
+Ce chiffre, très répandu dans les formations commerciales, provient d'une mauvaise interprétation des travaux du psychologue Albert Mehrabian dans les années 1960. Ses expériences portaient sur une situation très particulière : l'expression de sentiments à travers des mots isolés prononcés sur un ton contradictoire. Mehrabian lui-même a rappelé que ses résultats ne s'appliquent pas à la communication en général. Les mots comptent beaucoup. Mais quand les mots et le corps se contredisent, c'est souvent le corps qui dit la vérité sur les émotions.
 :::
 
 ## Les signaux verbaux : écouter entre les lignes
@@ -30,17 +30,17 @@ Ce chiffre, très répandu dans les formations commerciales, provient d'une mauv
 
 Un client qui pose des questions précises se projette dans l'achat. Plus ses questions deviennent concrètes, plus il est proche de la décision :
 
-- « Vous livrez jusqu'à Kalley ? »
+- « Vous livrez jusqu'à Mfilou ? »
 - « Il y a combien de couleurs ? »
 - « Si je prends aujourd'hui, ça arrive quand ? »
-- « Est-ce qu'on peut payer par Orange Money ou par Wave ? »
+- « Est-ce qu'on peut payer par MTN MoMo ou par Airtel Money ? »
 - « Et la garantie, ça marche comment si ça tombe en panne ? »
 
 Ces questions sont des **signaux d'achat**. Lorsque vous les entendez, cessez d'argumenter et aidez le client à conclure.
 
 ### L'absence de questions est aussi un signal
 
-À l'inverse, un client qui écoute sans poser de questions n'est pas forcément convaincu : il est peut-être déjà ailleurs. Comme le directeur d'école d'Ibrahim, il peut n'avoir aucune question parce qu'il a déjà décidé de ne pas acheter, ou parce qu'un obstacle qu'il ne nomme pas bloque toute projection.
+À l'inverse, un client qui écoute sans poser de questions n'est pas forcément convaincu : il est peut-être déjà ailleurs. Comme le directeur d'école de Landry, il peut n'avoir aucune question parce qu'il a déjà décidé de ne pas acheter, ou parce qu'un obstacle qu'il ne nomme pas bloque toute projection.
 
 ### Le passage du conditionnel au futur
 
@@ -77,7 +77,7 @@ Beaucoup de vendeurs ont peur du silence et le comblent immédiatement en ajouta
 - **Le silence d'hésitation** précède souvent une objection. Laissez le client la formuler.
 - **Le silence de résistance** traduit un désaccord poli. Relancez avec douceur : « J'ai l'impression que quelque chose vous fait hésiter… »
 
-Dans de nombreuses cultures africaines, le silence est aussi une marque de respect et de sérieux : on ne répond pas trop vite à une question importante. Apprenez à le respecter.
+Dans la culture congolaise, le silence est aussi une marque de respect et de sérieux : on ne répond pas trop vite à une question importante. Apprenez à le respecter.
 
 ## Les signaux non verbaux : observer sans surinterpréter
 
@@ -103,26 +103,26 @@ Dans de nombreuses cultures africaines, le silence est aussi une marque de respe
 
 Un seul geste ne veut rien dire. Des bras croisés peuvent signifier que le client a froid à cause de la climatisation. Un regard vers la montre peut indiquer un rendez-vous important, pas un désintérêt. Les spécialistes recommandent de toujours chercher des **grappes de signaux** : plusieurs signaux convergents, à un moment précis de la conversation, en rupture avec le comportement habituel de la personne.
 
-Dans l'exemple d'Ibrahim, ce n'est pas un regard isolé vers la montre qui était significatif, mais la combinaison de plusieurs signaux (montre, catalogue refermé, absence de questions) au moment précis où l'on parlait des prix.
+Dans l'exemple de Landry, ce n'est pas un regard isolé vers la montre qui était significatif, mais la combinaison de plusieurs signaux (montre, catalogue refermé, absence de questions) au moment précis où l'on parlait des prix.
 
-## Les codes culturels du non-verbal
+## Les codes culturels de la communication non verbale
 
-Les signaux non verbaux sont en partie culturels. Ce qui signifie une chose à Paris peut en signifier une autre à Abidjan ou à Kinshasa. Quelques exemples importants :
+Les signaux non verbaux sont en partie culturels. Ce qui signifie une chose à Paris peut en signifier une autre à Brazzaville ou à Pointe-Noire. Quelques exemples importants :
 
-| Comportement | Interprétation fréquente en Occident | Interprétation fréquente en Afrique francophone |
+| Comportement | Interprétation fréquente en Occident | Interprétation fréquente au Congo |
 |---|---|---|
 | Éviter le regard | Gêne, dissimulation, manque de franchise | Respect envers un aîné ou un supérieur |
 | Arriver en retard | Désintérêt, manque de respect | Rapport au temps plus souple ; pas forcément un signal négatif |
 | Répondre au téléphone pendant l'entretien | Impolitesse | Souvent normal ; le signal négatif est plutôt la longueur de l'appel |
 | Proximité physique, contact de la main | Familiarité excessive | Chaleur, confiance, sympathie |
 | Long silence avant de répondre | Malaise | Réflexion, sérieux, respect |
-| Formules religieuses (« Inch'Allah », « Dieu merci ») | Formule vague | Expression sincère de la foi ; à respecter, sans en tirer de conclusion sur la décision |
+| Formules religieuses (« Si Dieu le veut », « Dieu merci ») | Formule vague | Expression sincère de la foi ; à respecter, sans en tirer de conclusion sur la décision |
 
 Le principe est simple : **comparez le comportement du client à sa propre normalité, pas à la vôtre**. Un client habituellement expansif qui devient soudain silencieux envoie un signal. Un client naturellement réservé qui reste silencieux ne fait que rester lui-même.
 
 ## Le marchandage : un rituel à lire, pas un combat
 
-Dans de nombreux marchés d'Afrique francophone, le marchandage fait partie de l'acte d'achat. Pour le vendeur formé à l'occidentale, il peut ressembler à une contestation du prix, voire à un manque de respect. C'est une erreur de lecture.
+Dans les marchés congolais, le marchandage fait partie de l'acte d'achat. Pour le vendeur formé à l'occidentale, il peut ressembler à une contestation du prix, voire à un manque de respect. C'est une erreur de lecture.
 
 Le marchandage est d'abord un **rituel social**. Il permet de créer une relation, de montrer son habileté, de tester la bonne foi de l'autre et de partager le plaisir de « faire une bonne affaire ». Un client qui marchande est souvent un client intéressé : celui qui n'a aucune intention d'acheter ne prend pas la peine de négocier.
 
@@ -173,7 +173,5 @@ Puis répondez à deux questions : à quel moment l'intérêt du client a-t-il �
 - [ ] Je suis l'évolution des délais et de la longueur des réponses de mes prospects sur WhatsApp.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Le client ne dit pas toujours non avec des mots. Écoutez ses questions et ses silences, observez son corps en cherchant des grappes de signaux, et interprétez tout cela selon ses codes culturels, pas les vôtres. Quand le doute apparaît, posez une question ouverte : c'est le seul moyen de découvrir ce qui bloque vraiment.
 :::

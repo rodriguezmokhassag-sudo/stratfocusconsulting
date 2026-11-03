@@ -1,14 +1,14 @@
-# Partie III — Les sept leviers d'influence, utilisés avec éthique
+# Partie III. Les sept leviers d'influence, utilisés avec éthique
 
 ::: {custom-style="IntroPartie"}
-Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte africain francophone, avec une règle non négociable : un levier d'influence doit servir à présenter une offre réellement bonne, jamais à tromper.
+Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte congolais, avec une règle non négociable : un levier d'influence doit servir à présenter une offre réellement bonne, jamais à tromper.
 :::
 
 # Chapitre 7. Rendre la pareille et inspirer la sympathie
 
 ## Cas d'ouverture : les beignets de Mama Rose
 
-Mama Rose vend des beignets et de la bouillie au coin d'une rue animée de Kinshasa. Elles sont une dizaine de vendeuses sur le même trottoir, avec des produits presque identiques et des prix similaires. Pourtant, chaque matin, une file se forme devant l'étal de Mama Rose, tandis que ses voisines attendent les clients.
+Mama Rose vend des beignets (les mikate) et de la bouillie au coin d'une rue animée de Poto-Poto, à Brazzaville. Elles sont une dizaine de vendeuses sur le même trottoir, avec des produits presque identiques et des prix similaires. Pourtant, chaque matin, une file se forme devant l'étal de Mama Rose, tandis que ses voisines attendent les clients.
 
 Son secret ? Elle connaît le prénom de la plupart de ses habitués et leur demande des nouvelles des enfants. Quand un nouveau passant hésite, elle lui tend un petit morceau de beignet à goûter, « pour que tu saches ». Quand un écolier n'a pas assez d'argent, elle lui donne quand même son beignet : « Tu me paieras demain. » Et l'écolier revient le lendemain… avec sa mère. Les jours de pluie, elle offre un gobelet de bouillie chaude aux conducteurs de taxi-moto qui s'abritent près de son étal. Ils sont devenus ses meilleurs ambassadeurs.
 
@@ -22,9 +22,9 @@ Toutes les sociétés humaines connaissent une règle fondamentale : lorsque que
 
 Cialdini cite de nombreuses études. L'une des plus connues a été menée dans un restaurant américain au début des années 2000 : lorsque le serveur offrait un bonbon avec l'addition, les pourboires augmentaient légèrement. Lorsqu'il en offrait deux, ils augmentaient nettement plus. Et lorsqu'il déposait un bonbon, s'éloignait, puis revenait en offrir un second « spécialement pour vous », les pourboires augmentaient d'environ 23 %. Ce n'est pas la valeur du cadeau qui compte, c'est la manière de le donner.
 
-### La réciprocité dans la culture africaine
+### La réciprocité dans la culture congolaise
 
-En Afrique francophone, la réciprocité est une valeur sociale centrale. Le don et le contre-don structurent les relations familiales, communautaires et économiques : cadeaux de cérémonie, contributions aux funérailles, « cadeau » du commerçant à son fidèle client, partage de la cola dans certaines régions. Le petit supplément offert par le vendeur (le fameux « cadeau » ou « matabiche » selon les pays) fait partie des habitudes d'achat.
+Au Congo, la réciprocité est une valeur sociale centrale. Le don et le contre-don structurent les relations familiales, communautaires et économiques : présents de la dot, contributions au matanga lors d'un deuil, « cadeau » du commerçant à son fidèle client. Le petit supplément offert par le vendeur fait partie des habitudes d'achat.
 
 Cette familiarité culturelle est un atout pour le vendeur, mais aussi un piège : un cadeau attendu ne crée plus d'obligation. Il devient un dû. Pour que la réciprocité fonctionne, le don doit avoir trois caractéristiques.
 
@@ -67,7 +67,7 @@ Nous disons plus facilement oui aux personnes que nous apprécions. Cette évide
 
 ### La similarité
 
-Nous apprécions les personnes qui nous ressemblent : même origine, même langue, mêmes centres d'intérêt, même parcours, mêmes valeurs. En Afrique francophone, les points communs sont nombreux et puissants : le village ou la région d'origine, la langue nationale, l'école ou l'université fréquentée, le club de football supporté, l'appartenance religieuse, le quartier.
+Nous apprécions les personnes qui nous ressemblent : même origine, même langue, mêmes centres d'intérêt, même parcours, mêmes valeurs. Au Congo, les points communs sont nombreux et puissants : le village ou le département d'origine, la langue (lingala, kituba ou langue de la région), l'école ou l'université fréquentée, le club de football supporté, l'appartenance religieuse, le quartier.
 
 La règle éthique est essentielle : **cherchez des points communs réels, n'en inventez jamais**. Prétendre être originaire du même village ou supporter le même club pour plaire à un client est une manipulation qui finira par se découvrir. En revanche, s'intéresser sincèrement à son interlocuteur fait presque toujours apparaître des points communs authentiques.
 
@@ -93,27 +93,27 @@ La réciprocité et la sympathie se jouent dès les premières secondes. Pour st
 
 | Étape | Contenu | Leviers psychologiques mobilisés |
 |---|---|---|
-| **C — Contact** | Saluer, se présenter, créer un climat agréable, vérifier la disponibilité de l'interlocuteur | Sympathie, familiarité, respect |
-| **R — Raison** | Expliquer pourquoi on contacte cette personne, en partant de son intérêt ; poser quelques questions pour vérifier le besoin | Réciprocité (apporter quelque chose), découverte (SPIN) |
-| **O — Objectif** | Formuler clairement ce que l'on propose : un rendez-vous, un essai, une démonstration, une commande | Clarté, engagement progressif |
-| **C — Conclusion** | Confirmer l'accord, récapituler, remercier, prendre congé chaleureusement | Engagement, cohérence, sympathie |
+| **C : Contact** | Saluer, se présenter, créer un climat agréable, vérifier la disponibilité de l'interlocuteur | Sympathie, familiarité, respect |
+| **R : Raison** | Expliquer pourquoi on contacte cette personne, en partant de son intérêt ; poser quelques questions pour vérifier le besoin | Réciprocité (apporter quelque chose), découverte (SPIN) |
+| **O : Objectif** | Formuler clairement ce que l'on propose : un rendez-vous, un essai, une démonstration, une commande | Clarté, engagement progressif |
+| **C : Conclusion** | Confirmer l'accord, récapituler, remercier, prendre congé chaleureusement | Engagement, cohérence, sympathie |
 
 ### Exemple d'appel CROC
 
-> **Contact** : « Bonjour Madame Diallo, je suis Aïcha, de la société Hygiène Plus. Mme Koné, de la clinique Les Palmiers, m'a conseillé de vous appeler. Est-ce que je vous dérange ou avez-vous deux minutes ? »
+> **Contact** : « Bonjour Madame Mabiala, je suis Gloria, de la société Hygiène Plus. Mme Nkounkou, de la clinique Les Manguiers, m'a conseillé de vous appeler. Est-ce que je vous dérange ou avez-vous deux minutes ? »
 >
-> **Raison** : « Mme Koné m'a dit que vous ouvriez une deuxième structure le mois prochain. Nous avons accompagné la clinique Les Palmiers pour réduire leurs coûts de produits d'entretien d'environ un quart. Comment gérez-vous l'hygiène dans votre première structure aujourd'hui ? »
+> **Raison** : « Mme Nkounkou m'a dit que vous ouvriez une deuxième structure le mois prochain. Nous avons accompagné la clinique Les Manguiers pour réduire leurs coûts de produits d'entretien d'environ un quart. Comment gérez-vous l'hygiène dans votre première structure aujourd'hui ? »
 >
 > **Objectif** : « Je vous propose de passer jeudi pour un petit diagnostic gratuit de vos besoins. Ça prend trente minutes, et vous repartez avec une estimation de ce que vous pourriez économiser, même si vous ne travaillez pas avec nous. »
 >
-> **Conclusion** : « Parfait, donc jeudi à 10 heures à la clinique. Je vous envoie un message WhatsApp pour confirmer. Merci beaucoup, Madame Diallo, et bonne journée. »
+> **Conclusion** : « Parfait, donc jeudi à 10 heures à la clinique. Je vous envoie un message WhatsApp pour confirmer. Merci beaucoup, Madame Mabiala, et bonne journée. »
 
 Remarquez la présence des deux leviers de ce chapitre : la sympathie (recommandation d'une personne connue, respect de la disponibilité) et la réciprocité (diagnostic gratuit qui apporte de la valeur, « même si vous ne travaillez pas avec nous »).
 
 ::: {custom-style="Encadre"}
-**Adapter CROC au contexte africain**
+**CROC et les salutations**
 
-Dans un appel en Afrique francophone, l'étape Contact est souvent plus longue qu'en Europe. Si l'interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le. Abréger cette étape pour « gagner du temps » peut compromettre tout l'appel. Le chapitre 10 revient sur l'utilisation de CROC dans la prospection par WhatsApp et par téléphone.
+Dans un appel au Congo, l'étape Contact est souvent plus longue qu'en Europe. Si l'interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le. Abréger cette étape pour « gagner du temps » peut compromettre tout l'appel. Le chapitre 10 revient sur l'utilisation de CROC dans la prospection par WhatsApp et par téléphone.
 :::
 
 ## Réciprocité et sympathie à distance
@@ -132,7 +132,7 @@ Deux erreurs sont à éviter absolument. La première consiste à envoyer des me
 
 La réciprocité et la sympathie sont des leviers puissants, et donc susceptibles d'abus. Quelques limites claires :
 
-- **Le cadeau ne doit jamais devenir un pot-de-vin.** Offrir un échantillon ou un service est une pratique commerciale ; offrir de l'argent ou un avantage personnel à un acheteur public ou au salarié d'une entreprise pour obtenir un marché est de la corruption, punie par la loi dans tous les pays de la région.
+- **Le cadeau ne doit jamais devenir un pot-de-vin.** Offrir un échantillon ou un service est une pratique commerciale ; offrir de l'argent ou un avantage personnel à un acheteur public ou au salarié d'une entreprise pour obtenir un marché est de la corruption, punie par la loi au Congo comme ailleurs, même lorsqu'on l'appelle pudiquement « matabiche ».
 - **La sympathie ne doit pas être feinte.** Simuler un intérêt pour la famille d'un client uniquement pour vendre est vite perçu, et profondément blessant lorsque c'est découvert.
 - **La réciprocité ne doit pas être un piège.** Offrir un cadeau puis rappeler au client qu'il « vous doit bien ça » transforme un geste généreux en chantage.
 
@@ -155,7 +155,5 @@ La réciprocité et la sympathie sont des leviers puissants, et donc susceptible
 - [ ] J'ai vérifié que ma présentation personnelle, ma boutique et mon profil WhatsApp inspirent la confiance.
 
 ::: {custom-style="Encadre"}
-**À retenir**
-
 Donnez avant de demander, et donnez avec intelligence : un don significatif, inattendu et personnalisé crée une envie sincère de rendre. Cultivez une sympathie authentique fondée sur de vrais points communs, la coopération et la présence régulière. Et structurez chaque premier contact avec la méthode CROC : Contact, Raison, Objectif, Conclusion.
 :::
