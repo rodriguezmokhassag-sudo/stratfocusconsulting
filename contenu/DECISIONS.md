@@ -183,3 +183,9 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - Partage du Sheet avec stfc-n8n@… : non confirmé.
 - Prochaine étape : alternative 1, copier la valeur private_key avec la visionneuse JSON de Firefox, puis retester. En cas d'échec : alternative 2, tables de données n8n. Alternative 3 : reconnexion OAuth hebdomadaire (prochaine échéance vers le 28/10).
 - À faire aussi : lier le workflow d'erreur « ALERTE – Échec des publications STFC » dans les paramètres du workflow principal (action de l'utilisateur).
+
+## 07/11 : posts « dans les photos », diagnostic et plan
+- Comparaison Graph API (exécution de test 112) entre les posts automatiques du 05/11 et les posts manuels de juillet et septembre : même status_type (added_photos), privacy Public (EVERYONE), timeline_visibility normal, is_hidden false. Seule différence : le champ application (« Strat Focus Consulting », 1847472296617299).
+- Cause probable : application Meta en mode Développement, d'où une diffusion et un partage limités. Correction : passer en Live, ce qui exige une URL de confidentialité.
+- Création d'un Google Doc public autorisée par l'utilisateur, mais impossible : le connecteur Google Drive n'a pas le droit d'écrire. Le texte prêt à coller est dans `contenu/site/confidentialite_texte.txt`.
+- Depuis le 22/10, le workflow tourne (exécutions 100 à 111, une erreur le 03/11).

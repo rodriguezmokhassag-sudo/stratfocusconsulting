@@ -1,0 +1,20 @@
+Politique de confidentialité
+
+STRAT FOCUS CONSULTING (STFC), cabinet spécialisé dans la performance commerciale et le marketing d'innovation, Pointe-Noire, République du Congo.
+
+Objet
+Cette page décrit l'usage des données par l'application « Strat Focus Consulting », outil interne qui automatise la préparation et la publication des contenus du cabinet sur ses propres réseaux sociaux.
+
+Données utilisées
+L'application accède uniquement aux comptes appartenant au cabinet : un tableur Google Sheets de planification des publications, la messagerie professionnelle du cabinet et la Page Facebook de STFC. Aucune donnée personnelle de tiers n'est collectée, vendue ni partagée.
+
+Conservation et sécurité
+Les données restent dans les comptes du cabinet. Les accès sont protégés et peuvent être révoqués à tout moment par le cabinet.
+
+Suppression des données
+L'application ne conserve aucune donnée personnelle d'utilisateurs Facebook. Toute personne souhaitant la suppression d'une information la concernant peut en faire la demande à admin@stratfocus-consulting.com ou sur WhatsApp au 066 000 066 (+242) ; la demande est traitée sous 30 jours.
+
+Contact
+admin@stratfocus-consulting.com ou WhatsApp au 066 000 066 (+242).
+
+Dernière mise à jour : 7 novembre 2026
