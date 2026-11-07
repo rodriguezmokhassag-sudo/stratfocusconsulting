@@ -191,3 +191,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - Depuis le 22/10, le workflow tourne (exécutions 100 à 111, une erreur le 03/11).
 - 07/11 vers 23 h : **application Meta PUBLIÉE (Live)** par l'utilisateur. Confidentialité et suppression des données : Google Doc public `docs.google.com/document/d/146DMNclX4RVhpyO-Lw6ESlc9rnWQNTNo4K7P8rkDKPU`. Cause confirmée : le statut était « Non publiée » depuis la création. À vérifier : la visibilité et le partage des posts du lundi 09/11 (fenêtre privée, partage par un proche), plus 1 alerte dans la « Messagerie d'alertes » Meta.
 - 07/11 : l'utilisateur confirme que les publications apparaissent désormais sur le fil. Problème « posts dans les photos » RÉSOLU par la publication de l'application Meta. Partage confirmé par un proche.
+- 07/11 : workflow d'alerte `r0JrxVPlxtuTTOb3` publié et lié comme « Error workflow » du workflow principal (settings.errorWorkflow vérifié).
