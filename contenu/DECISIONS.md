@@ -189,3 +189,4 @@ Code source : `n8n/workflow_publications_stfc.js`.
 - Cause probable : application Meta en mode Développement, d'où une diffusion et un partage limités. Correction : passer en Live, ce qui exige une URL de confidentialité.
 - Création d'un Google Doc public autorisée par l'utilisateur, mais impossible : le connecteur Google Drive n'a pas le droit d'écrire. Le texte prêt à coller est dans `contenu/site/confidentialite_texte.txt`.
 - Depuis le 22/10, le workflow tourne (exécutions 100 à 111, une erreur le 03/11).
+- 07/11 vers 23 h : **application Meta PUBLIÉE (Live)** par l'utilisateur. Confidentialité et suppression des données : Google Doc public `docs.google.com/document/d/146DMNclX4RVhpyO-Lw6ESlc9rnWQNTNo4K7P8rkDKPU`. Cause confirmée : le statut était « Non publiée » depuis la création. À vérifier : la visibilité et le partage des posts du lundi 09/11 (fenêtre privée, partage par un proche), plus 1 alerte dans la « Messagerie d'alertes » Meta.
