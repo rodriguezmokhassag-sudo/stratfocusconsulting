@@ -21,6 +21,15 @@ Il ne garde que l'essentiel. Les blocs **« À copier dans Claude »** se collen
 | 7 | Premier passage test | ⬜ |
 | 8 | Relire et valider les e-mails | ⬜ |
 | 9 | Passages automatiques (Planificateur Windows) | ⬜ |
+| 10 | WhatsApp par Geskap | ⏳ en attente du ZIP à jour de Konno Fuente |
+
+### WhatsApp (Geskap) : décision du plan
+- Compte Geskap **actif** : numéro +242 06 600 0066 (STFC), 400 crédits. La catégorie **MARKETING est désactivée**.
+- La version actuelle de l'application **n'a pas de module d'envoi WhatsApp**.
+- Plan retenu : terminer d'abord l'e-mail (étapes 4 à 8) et **demander à Konno Fuente le ZIP à jour avec Geskap**. S'il n'est pas disponible, le module sera développé.
+- À préparer sur https://console.geskap.com :
+  1. activer la catégorie **MARKETING** ;
+  2. créer une clé API dédiée avec les droits `messages:send`, `messages:read`, `templates:read` et `templates:write`. Elle ne s'affiche qu'une fois, ne la partagez pas.
 
 ⚠️ **Sur Windows : ne double-cliquez jamais sur `setup.command`.** Ce fichier est fait pour Mac.
 
