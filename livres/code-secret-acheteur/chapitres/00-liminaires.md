@@ -63,7 +63,7 @@ Chapitre 1. L'émotion décide, la raison justifie¤14
 
 Chapitre 2. Les biais cognitifs, ces raccourcis qui décident à la place du client¤22
 
-Chapitre 3. Acheter au Congo : confiance, communauté et réputation¤30
+Chapitre 3. Acheter en Afrique francophone : confiance, communauté et réputation¤30
 
 **Partie II. Comprendre son acheteur**¤38
 
@@ -154,16 +154,24 @@ En parallèle, le psychologue Robert Cialdini a étudié les professionnels de l
 
 Ces découvertes ne sont pas réservées aux multinationales. Elles sont à la portée de toute entreprise, de la plus petite à la plus structurée, à condition de les comprendre et de les adapter à son marché.
 
-## Pourquoi un livre pensé pour le Congo ?
+## Un livre pour tous les entrepreneurs d'Afrique francophone
 
-Un acheteur de Brazzaville a le même cerveau qu'un acheteur de Paris ou de Montréal. Mais la manière dont ces mécanismes s'expriment dépend de la culture et de l'économie. Au Congo, plusieurs réalités changent la donne pour l'entrepreneur qui vend :
+Un acheteur de Libreville, de Kinshasa, de Brazzaville, de Douala, d'Abidjan ou de Dakar a le même cerveau qu'un acheteur de Paris ou de Montréal. Mais la manière dont ces mécanismes s'expriment dépend de la culture et de l'économie. Or, d'un pays d'Afrique francophone à l'autre, les entrepreneurs rencontrent largement les mêmes réalités : dix-sept pays partagent le même droit des affaires, celui de l'OHADA ; la langue des affaires est commune ; les habitudes d'achat et de consommation sont proches. Plusieurs de ces réalités changent la donne pour l'entrepreneur qui vend :
 
 - **La décision d'achat est souvent collective.** En entreprise comme en famille, plusieurs personnes pèsent sur le choix final, même lorsqu'elles sont absentes de la discussion.
 - **La confiance se construit par la relation et la réputation**, davantage que par les contrats et les garanties écrites.
 - **L'économie informelle reste dominante.** Une grande partie de vos clients, fournisseurs et concurrents y évolue, avec ses propres codes.
-- **Le mobile money a transformé les paiements.** Avec un taux de pénétration de la téléphonie mobile supérieur à 95 % en 2025 selon l'ARPCE, encaisser par MTN MoMo ou Airtel Money fait partie du quotidien.
-- **Les contraintes du quotidien orientent les priorités** : délestages, coupures d'eau, approvisionnements irréguliers, délais de paiement des entreprises et des administrations.
+- **Le paiement mobile a transformé les habitudes.** Encaisser par téléphone fait partie du quotidien dans la plupart des pays. Au Congo, par exemple, le taux de pénétration de la téléphonie mobile dépassait 95 % en 2025 selon l'autorité de régulation.
+- **Les contraintes du quotidien orientent les priorités** : coupures d'électricité, approvisionnements irréguliers, délais de paiement des entreprises et des administrations.
 - **Le produit local doit souvent prouver davantage** que le produit importé pour gagner la confiance des acheteurs et des distributeurs.
+
+C'est ce qui permet à ce livre de traverser les frontières : les mêmes mécanismes produisent les mêmes effets, au contexte près.
+
+::: {custom-style="Encadre"}
+**Adapter, ne pas copier**
+
+Ce livre n'est pas un recueil de recettes à appliquer à la lettre. Chaque outil, chaque matrice et chaque script doit être adapté à votre contexte : votre pays, votre secteur, vos clients, votre réglementation. Pour chaque outil, demandez-vous ce qui, chez vous, rend la situation différente, et comment l'ajuster.
+:::
 
 ## Les méthodes qui structurent ce livre
 

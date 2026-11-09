@@ -38,12 +38,12 @@ Toutes les preuves n'ont pas la même force. Classez les vôtres selon leur cré
 | **Avis en ligne** | Avis sur les pages professionnelles et les plateformes de vente |
 | **Popularité visible** | Le produit « le plus commandé », les rayons qui se vident |
 
-Au Congo, les messageries sont devenues le premier vecteur de preuve sociale. Demandez systématiquement un retour à vos clients quelques jours après la livraison ; avec leur accord, les réponses positives deviennent des témoignages. Privilégiez les vidéos courtes et les messages vocaux, plus authentiques que les textes.
+Dans nos pays, les messageries sont devenues le premier vecteur de preuve sociale. Demandez systématiquement un retour à vos clients quelques jours après la livraison ; avec leur accord, les réponses positives deviennent des témoignages. Privilégiez les vidéos courtes et les messages vocaux, plus authentiques que les textes.
 
 ::: {custom-style="Encadre"}
 **Les faux avis**
 
-Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une pratique commerciale trompeuse au regard de la loi congolaise n° 36-2024 du 11 octobre 2024 portant protection du consommateur. C'est aussi un risque majeur pour votre réputation : dans un milieu d'affaires où tout le monde se connaît, les faux sont vite démasqués et largement partagés.
+Inventer des témoignages, acheter des avis ou publier des captures d'écran truquées est une pratique commerciale trompeuse au regard des lois de protection du consommateur en vigueur dans la plupart des pays (au Congo, par exemple, la loi n° 36-2024 du 11 octobre 2024). C'est aussi un risque majeur pour votre réputation : dans un milieu d'affaires où tout le monde se connaît, les faux sont vite démasqués et largement partagés.
 :::
 
 ### Éviter la preuve sociale négative
@@ -56,7 +56,7 @@ Mettre en avant un comportement négatif majoritaire l'encourage involontairemen
 
 Nous suivons plus facilement les recommandations des personnes que nous jugeons compétentes ou légitimes. Les expériences de Stanley Milgram, dans les années 1960, ont montré à quel point l'autorité peut influencer les comportements. Dans la vie des affaires, elle joue un rôle plus modeste mais constant : nous faisons confiance aux experts parce que nous ne pouvons pas tout vérifier nous-mêmes.
 
-Dans une culture à forte distance hiérarchique comme celle du Congo, l'autorité est un levier particulièrement puissant, sous plusieurs formes : **l'expertise** (diplômes, certifications, années d'expérience), **l'institution** (agréments, normes, partenariats reconnus), **le statut social** (personnalités respectées du secteur) et **la visibilité** (interventions publiques, publications).
+Dans une culture à forte distance hiérarchique comme celles de la plupart des pays africains, l'autorité est un levier particulièrement puissant, sous plusieurs formes : **l'expertise** (diplômes, certifications, années d'expérience), **l'institution** (agréments, normes, partenariats reconnus), **le statut social** (personnalités respectées du secteur) et **la visibilité** (interventions publiques, publications).
 
 ### Établir son autorité sans se vanter
 
@@ -83,9 +83,9 @@ Convaincre dix prescripteurs bien choisis peut valoir plus que convaincre cent c
 
 En 2016, dans *Pre-Suasion*, Cialdini a ajouté un septième principe : **l'unité**. Il ne s'agit plus seulement d'apprécier quelqu'un, mais de partager une identité commune, de faire partie du même « nous ». Nous disons plus facilement oui à ceux que nous considérons comme membres de notre groupe.
 
-Peu de cultures accordent autant d'importance au « nous » que la culture congolaise. Pour l'entrepreneur, l'unité peut s'activer de plusieurs façons, toujours avec sincérité :
+Peu de cultures accordent autant d'importance au « nous » que les cultures africaines. Pour l'entrepreneur, l'unité peut s'activer de plusieurs façons, toujours avec sincérité :
 
-- **L'identité nationale** : « fabriqué au Congo », « le savoir-faire congolais ». Le mouvement en faveur de la consommation de produits locaux s'appuie directement sur ce levier, à condition que la qualité suive.
+- **L'identité nationale** : « fabriqué au pays », « le savoir-faire local ». Le mouvement en faveur de la consommation de produits locaux s'appuie directement sur ce levier, à condition que la qualité suive.
 - **La communauté d'utilisateurs** : un groupe de clients qui échangent, s'entraident et se reconnaissent dans la marque.
 - **La cocréation** : associer les clients au choix d'un nouveau produit ou d'une nouvelle fonctionnalité. Celui qui a participé se sent membre du « nous ».
 - **L'identité professionnelle** : « par des entrepreneurs, pour des entrepreneurs ».
@@ -96,7 +96,7 @@ Le « nous » que construit une entreprise doit rester ouvert. Il ne doit jamais
 
 Les leviers sont plus puissants lorsqu'ils se combinent. Une seule page de présentation peut les activer tous :
 
-> « Recommandé par des pharmaciens et des dermatologues (**autorité**). Déjà adopté par plus de 2 000 utilisatrices (**preuve sociale**). Rejoignez la communauté de celles qui choisissent un soin naturel fabriqué au Congo (**unité**). »
+> « Recommandé par des pharmaciens et des dermatologues (**autorité**). Déjà adopté par plus de 2 000 utilisatrices (**preuve sociale**). Rejoignez la communauté de celles qui choisissent un soin naturel fabriqué chez nous (**unité**). »
 
 ## Deuxième cas pratique : vendre un logiciel grâce aux prescripteurs
 

@@ -12,7 +12,7 @@ Séverin et Jean-Marc fabriquent chacun des produits d'entretien : savons liquid
 
 ## Ce que l'acheteur dit, et ce qu'il ne dit pas
 
-Dans la culture congolaise, comme dans beaucoup de cultures africaines, dire « non » directement est souvent perçu comme impoli. On préfère des formules qui préservent la relation : « on va voir », « je vais en parler », « ce n'est pas mauvais », « repassez un de ces jours », « si Dieu le veut ». Elles peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
+Dans la plupart des cultures africaines, dire « non » directement est souvent perçu comme impoli. On préfère des formules qui préservent la relation : « on va voir », « je vais en parler », « ce n'est pas mauvais », « repassez un de ces jours », « si Dieu le veut ». Elles peuvent signifier un vrai oui, un vrai non, ou un « oui, mais » qui attend une condition non exprimée.
 
 L'entrepreneur doit donc lire trois niveaux de signaux :
 
@@ -67,7 +67,7 @@ La seule façon de savoir ce que cache une objection est de poser une question o
 - **La baisse de volume** accompagne souvent un sujet sensible : budget, problème interne, désaccord avec un supérieur.
 - **Le rire** peut exprimer le plaisir, mais aussi la gêne ou le scepticisme poli.
 
-**Le silence** mérite une attention particulière. Le silence de réflexion suit une question importante : ne l'interrompez pas. Le silence d'hésitation précède souvent une objection : laissez-la venir. Le silence de résistance traduit un désaccord poli : relancez avec douceur. Dans la culture congolaise, le silence est aussi une marque de sérieux face à une question importante. Beaucoup d'entrepreneurs, mal à l'aise, le comblent en ajoutant des arguments ou en baissant leur prix. C'est une erreur coûteuse.
+**Le silence** mérite une attention particulière. Le silence de réflexion suit une question importante : ne l'interrompez pas. Le silence d'hésitation précède souvent une objection : laissez-la venir. Le silence de résistance traduit un désaccord poli : relancez avec douceur. Dans beaucoup de cultures africaines, le silence est aussi une marque de sérieux face à une question importante. Beaucoup d'entrepreneurs, mal à l'aise, le comblent en ajoutant des arguments ou en baissant leur prix. C'est une erreur coûteuse.
 
 ## Les signaux non verbaux
 
@@ -83,7 +83,7 @@ La seule façon de savoir ce que cache une objection est de poser une question o
 
 ## Les codes culturels de la communication non verbale
 
-| Comportement | Interprétation fréquente en Occident | Interprétation fréquente au Congo |
+| Comportement | Interprétation fréquente en Occident | Interprétation fréquente en Afrique francophone |
 |---|---|---|
 | Éviter le regard | Gêne, manque de franchise | Respect envers un aîné ou un supérieur |
 | Arriver en retard | Désintérêt | Rapport au temps plus souple, pas forcément négatif |

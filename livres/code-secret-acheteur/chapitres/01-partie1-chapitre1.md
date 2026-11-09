@@ -1,7 +1,7 @@
 # Partie I. Comment l'acheteur décide
 
 ::: {custom-style="IntroPartie"}
-Avant de chercher à convaincre, il faut comprendre comment l'acheteur prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion et raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes de confiance propres au marché congolais. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : souvent, il ne sait pas lui-même pourquoi il hésite.
+Avant de chercher à convaincre, il faut comprendre comment l'acheteur prend ses décisions. Cette première partie lève le voile sur les mécanismes invisibles qui guident chaque achat : le duo émotion et raison, les raccourcis mentaux que la science appelle biais cognitifs, et les codes de confiance propres aux marchés d'Afrique francophone. Vous découvrirez que le client ne ment pas quand il dit « je vais réfléchir » : souvent, il ne sait pas lui-même pourquoi il hésite.
 :::
 
 # Chapitre 1. L'émotion décide, la raison justifie
@@ -40,7 +40,7 @@ Vendre efficacement, c'est parler aux deux systèmes, dans le bon ordre :
 1. **D'abord au système 1** : comprendre ce que le client ressent, créer la confiance, faire ressentir le bénéfice.
 2. **Ensuite au système 2** : fournir les preuves et les chiffres qui permettront au client de justifier sa décision, à ses propres yeux et devant ceux à qui il rend des comptes.
 
-Ce second point est capital au Congo, où l'acheteur doit très souvent rendre compte de sa décision : à un associé, à un conseil d'administration, à une hiérarchie, à sa famille. Un client séduit qui ne peut pas défendre son choix reviendra souvent… pour annuler.
+Ce second point est capital dans nos marchés, où l'acheteur doit très souvent rendre compte de sa décision : à un associé, à un conseil d'administration, à une hiérarchie, à sa famille. Un client séduit qui ne peut pas défendre son choix reviendra souvent… pour annuler.
 
 ## Les émotions qui font acheter
 

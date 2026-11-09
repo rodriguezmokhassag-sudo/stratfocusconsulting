@@ -12,7 +12,7 @@ Séverin et Jean-Marc dirigent chacun une entreprise qui livre de l'eau en bonbo
 
 ## Pourquoi la fidélisation est le meilleur investissement commercial
 
-Attirer un nouveau client coûte généralement beaucoup plus cher que conserver un client existant. Les travaux de Frederick Reichheld, du cabinet Bain & Company, ont popularisé l'idée qu'une légère amélioration du taux de fidélité peut entraîner une hausse importante des profits : les clients fidèles achètent davantage, coûtent moins cher à servir, sont moins sensibles au prix et recommandent l'entreprise. Au Congo, où la réputation et la recommandation pèsent lourd, l'effet est encore plus marqué.
+Attirer un nouveau client coûte généralement beaucoup plus cher que conserver un client existant. Les travaux de Frederick Reichheld, du cabinet Bain & Company, ont popularisé l'idée qu'une légère amélioration du taux de fidélité peut entraîner une hausse importante des profits : les clients fidèles achètent davantage, coûtent moins cher à servir, sont moins sensibles au prix et recommandent l'entreprise. Dans nos marchés, où la réputation et la recommandation pèsent lourd, l'effet est encore plus marqué.
 
 ### Calculer la valeur d'un client
 
@@ -86,7 +86,7 @@ Le principe du **patchwork fou** de l'effectuation invite à aller plus loin : c
 
 La fidélisation repose sur une condition simple : se souvenir de ses clients. Tableur, outil de messagerie ou logiciel de gestion de la relation client : l'outil importe moins que la discipline. Notez l'historique des achats, les besoins exprimés, le profil comportemental (chapitre 4), les interlocuteurs et leurs rôles (chapitre 3), les réclamations et leur traitement, les recommandations reçues.
 
-Ces informations imposent des responsabilités. Au Congo, la loi n° 29-2019 du 10 octobre 2019 encadre la protection des données à caractère personnel, et la loi n° 5-2025 du 29 mars 2025 a créé une Commission nationale chargée de la faire respecter. Ne collectez que les informations utiles, avec l'accord des personnes concernées, conservez-les en sécurité et ne les partagez jamais sans autorisation.
+Ces informations imposent des responsabilités. La plupart des pays francophones disposent désormais de lois de protection des données personnelles et d'autorités chargées de les faire respecter ; au Congo, par exemple, c'est la loi n° 29-2019 du 10 octobre 2019. Ne collectez que les informations utiles, avec l'accord des personnes concernées, conservez-les en sécurité et ne les partagez jamais sans autorisation.
 
 ## Influencer ou manipuler : tracer la frontière
 
@@ -104,7 +104,7 @@ Ces informations imposent des responsabilités. Au Congo, la loi n° 29-2019 du 
 7. Je répare mes erreurs vite et généreusement.
 :::
 
-Au-delà de la morale, l'éthique est un choix économique. La loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur, inspirée de la directive CEMAC de 2019, rassemble désormais les règles qui protègent l'acheteur. Et dans un marché où la réputation circule vite, le client trompé ne revient pas, et il le dit.
+Au-delà de la morale, l'éthique est un choix économique. Les législations de protection du consommateur, qui se renforcent dans de nombreux pays, sanctionnent les pratiques trompeuses. Et dans un marché où la réputation circule vite, le client trompé ne revient pas, et il le dit.
 
 ## Deuxième cas pratique : transformer les premiers clients en ambassadeurs
 

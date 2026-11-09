@@ -124,7 +124,7 @@ def main():
     f_ital = ImageFont.truetype(SERIF_ITAL, 48)
     y = paragraphe(d, x0, y, "Votre offre est bonne, vos prix sont justes, et pourtant vos prospects hésitent, comparent, reportent. La raison est simple : ils ne décident pas comme vous le croyez. Ils décident d’abord avec leurs émotions, leurs habitudes, la peur de se tromper et le regard de ceux à qui ils rendent des comptes.", f_corps, larg)
     y += 22
-    y = paragraphe(d, x0, y, "Ancien manager commercial de grandes structures, industriel et fondateur du cabinet STFC, Rodriguez MOKHASSA traduit la psychologie comportementale en outils concrets pour les chefs d’entreprise, les solo-entrepreneurs et les porteurs de projets congolais.", f_corps, larg)
+    y = paragraphe(d, x0, y, "Ancien manager commercial de grandes structures, industriel et fondateur du cabinet STFC, Rodriguez MOKHASSA traduit la psychologie comportementale en outils concrets pour les chefs d’entreprise, les solo-entrepreneurs et les porteurs de projets d’Afrique francophone.", f_corps, larg)
     y += 30
     d.text((x0, y), "Vous apprendrez à :", font=f_gras, fill=NOIR)
     y += 68
@@ -146,7 +146,7 @@ def main():
     d.line([x0, y, x0 + larg, y], fill=GRIS, width=3)
     y += 30
     f_petit = ImageFont.truetype(SERIF, 42)
-    y = paragraphe(d, x0, y, "Rodriguez MOKHASSA est expert en stratégie de vente, marketing et innovation, entrepreneur industriel congolais et manager principal de Stratfocus Consulting (STFC).", f_petit, larg, GRIS)
+    y = paragraphe(d, x0, y, "Rodriguez MOKHASSA est expert en stratégie de vente, marketing et innovation, entrepreneur industriel et manager principal de Stratfocus Consulting (STFC).", f_petit, larg, GRIS)
 
     # Bas de la 4e : éditeur à gauche, zone code-barres réservée à droite
     # bande noire basse, en écho à la 1re de couverture

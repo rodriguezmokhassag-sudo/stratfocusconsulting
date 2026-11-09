@@ -46,7 +46,7 @@ Préparez-vous avant le rendez-vous : site Internet, pages professionnelles, éc
 
 Les questions de problème explorent les difficultés, les frustrations et les insatisfactions : « Qu'est-ce qui vous fait perdre le plus de temps ? », « Qu'aimeriez-vous améliorer en priorité ? », « Êtes-vous satisfait de… ? »
 
-Au Congo, une précaution s'impose : par fierté ou par politesse, beaucoup de dirigeants hésitent à reconnaître un problème devant un inconnu ou devant leurs collaborateurs. Présentez le problème comme fréquent chez d'autres, pour que le client puisse le reconnaître sans perdre la face :
+Dans nos pays, une précaution s'impose : par fierté ou par politesse, beaucoup de dirigeants hésitent à reconnaître un problème devant un inconnu ou devant leurs collaborateurs. Présentez le problème comme fréquent chez d'autres, pour que le client puisse le reconnaître sans perdre la face :
 
 > « Beaucoup de dirigeants industriels nous disent que les coupures perturbent leur planning de production. Est-ce aussi quelque chose que vous rencontrez ? »
 

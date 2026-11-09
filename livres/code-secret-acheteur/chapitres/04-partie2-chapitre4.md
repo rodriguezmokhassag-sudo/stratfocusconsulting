@@ -90,9 +90,9 @@ Personne n'appartient à un seul profil à 100 %. Chacun combine les quatre styl
 | **Ce qui le fait fuir** | Lenteur, bavardage | Ennui, froideur | Pression | Imprécision |
 | **Support idéal** | Synthèse d'une page | Visuels, références | Témoignages, plan d'accompagnement | Tableau détaillé |
 
-## Les profils dans le contexte congolais
+## Les profils dans le contexte africain
 
-Le modèle a été conçu aux États-Unis. Appliqué au Congo, il demande deux nuances.
+Le modèle a été conçu aux États-Unis. Appliqué en Afrique francophone, il demande deux nuances.
 
 **Les codes de politesse masquent parfois le profil.** Un Décideur respectera les salutations d'usage et les formes hiérarchiques, même s'il est impatient. Observez ce qui se passe après les salutations : s'il entre vite dans le vif du sujet, c'est un Décideur.
 

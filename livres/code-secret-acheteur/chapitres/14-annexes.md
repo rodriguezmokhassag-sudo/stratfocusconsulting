@@ -198,21 +198,19 @@ Les fiches suivantes peuvent être photocopiées pour un usage professionnel per
 - Tversky, A. ; Kahneman, D. « Judgment under uncertainty : heuristics and biases ». *Science*, 185, 1974.
 - Worchel, S. ; Lee, J. ; Adewole, A. « Effects of supply and demand on ratings of object value ». *Journal of Personality and Social Psychology*, 32(5), 1975.
 
-## Données sur la République du Congo
+## Cadre juridique et exemples de législations nationales
 
-- ARPCE (Agence de régulation des postes et des communications électroniques). Rapport annuel 2025 sur le marché des communications électroniques. www.arpce.cg
-- BEAC. Rapports sur les services de paiement et la monnaie électronique dans la CEMAC. www.beac.int
-- République du Congo. Loi n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel (Journal officiel n° 45-2019).
-- République du Congo. Loi n° 5-2025 du 29 mars 2025 portant création de la Commission nationale pour la protection des données à caractère personnel.
-- République du Congo. Loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur.
-- CEMAC. Directive de 2019 relative à la protection du consommateur.
+- Traité relatif à l'harmonisation du droit des affaires en Afrique (OHADA), 1993, et ses actes uniformes, applicables dans dix-sept pays membres. www.ohada.com
+- Communauté économique et monétaire de l'Afrique centrale (CEMAC) et Union économique et monétaire ouest-africaine (UEMOA).
+- Exemples de législations nationales cités : République du Congo, loi n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel ; loi n° 36-2024 du 11 octobre 2024 portant protection du consommateur.
+- Exemple de données nationales citées : Agence de régulation des postes et des communications électroniques du Congo (ARPCE), rapport annuel 2025.
 
 ## Sources sur les méthodes commerciales
 
 - Méthode CROC (Contact, Raison, Objectif, Conclusion) et méthode CRAC (Creuser, Reformuler, Argumenter, Contrôler) : méthodes de vente largement enseignées dans les formations commerciales francophones.
 
 ::: {custom-style="Mentions"}
-Note : les chiffres relatifs au Congo évoluent vite ; consultez les dernières publications des institutions citées avant toute utilisation professionnelle.
+Note : les chiffres et les textes cités évoluent vite et varient d'un pays à l'autre ; consultez les dernières publications des institutions citées avant toute utilisation professionnelle.
 :::
 
 # Annexe D. À propos de l'auteur et de STFC
@@ -223,11 +221,11 @@ Rodriguez MOKHASSA est expert en stratégie de vente, en marketing et en innovat
 
 Avant de créer son cabinet, il a exercé comme manager commercial au sein de grandes structures de la place, où il occupait une position centrale dans la réalisation du chiffre d'affaires de l'entreprise : pilotage des objectifs, animation des équipes, négociation avec les grands comptes.
 
-Entrepreneur et industriel congolais, il a créé et développé une marque qui pèse aujourd'hui plusieurs dizaines de millions de francs CFA. Cette expérience lui a fait vivre de l'intérieur les difficultés commerciales des entrepreneurs : convaincre des distributeurs, défendre un prix, imposer un produit local face à des marques installées. Les méthodes qu'il partage dans ce livre ne viennent pas seulement de la formation : elles ont été éprouvées sur le terrain.
+Entrepreneur et industriel, il a créé et développé une marque qui pèse aujourd'hui plusieurs dizaines de millions de francs CFA. Cette expérience lui a fait vivre de l'intérieur les difficultés commerciales des entrepreneurs : convaincre des distributeurs, défendre un prix, imposer un produit local face à des marques installées. Les méthodes qu'il partage dans ce livre ne viennent pas seulement de la formation : elles ont été éprouvées sur le terrain.
 
-Depuis plus de cinq ans, il accompagne des entreprises et des industries congolaises. Il a structuré des sociétés qui manquaient de direction commerciale pour les doter d'une vision claire, d'une organisation et d'outils de pilotage, et il a formé des commerciaux et des dirigeants devenus des ressources clés de la vente dans leurs entreprises.
+Depuis plus de cinq ans, il accompagne des entreprises et des industries. Il a structuré des sociétés qui manquaient de direction commerciale pour les doter d'une vision claire, d'une organisation et d'outils de pilotage, et il a formé des commerciaux et des dirigeants devenus des ressources clés de la vente dans leurs entreprises.
 
-Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN, CROC, CRAC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités du marché congolais.
+Son approche combine la psychologie comportementale, les méthodes de vente éprouvées (SPIN, CROC, CRAC), la logique entrepreneuriale de l'effectuation et les principes du lean management, adaptés aux réalités des marchés d'Afrique francophone.
 
 ::: {custom-style="Mentions"}
 [À compléter par l'auteur si souhaité : formation, certifications, coordonnées professionnelles.]
@@ -247,4 +245,4 @@ La méthode STFC repose sur une conviction : chaque entreprise, quelle que soit 
 [À compléter : adresse, téléphone, adresse électronique, site Internet, réseaux sociaux.]
 :::
 
-Ce livre est publié par STFC Éditions, la marque éditoriale du cabinet, qui édite des guides pratiques pour les entrepreneurs et les dirigeants congolais. Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.
+Ce livre est publié par STFC Éditions, la marque éditoriale du cabinet, qui édite des guides pratiques pour les entrepreneurs et les dirigeants d'Afrique francophone. Pour aller plus loin, STFC propose des formations et des ateliers fondés sur les outils de ce livre, ainsi qu'un accompagnement personnalisé des entreprises dans la mise en œuvre du plan d'action sur 30 jours.

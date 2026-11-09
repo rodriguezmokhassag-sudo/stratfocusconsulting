@@ -1,7 +1,7 @@
 # Partie III. Les sept leviers d'influence, utilisés avec éthique
 
 ::: {custom-style="IntroPartie"}
-Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte congolais, avec une règle non négociable : un levier d'influence sert à présenter une offre réellement bonne, jamais à tromper.
+Pendant plusieurs décennies, le psychologue américain Robert Cialdini a étudié les professionnels de la persuasion pour comprendre pourquoi les gens disent « oui ». Il a identifié six principes universels, publiés en 1984 dans *Influence*, auxquels il a ajouté un septième en 2016 : la réciprocité, la sympathie, la preuve sociale, l'autorité, l'unité, la rareté et l'engagement. Ces leviers fonctionnent dans toutes les cultures, mais leur expression varie. Cette troisième partie vous montre comment les activer dans le contexte africain francophone, avec une règle non négociable : un levier d'influence sert à présenter une offre réellement bonne, jamais à tromper.
 :::
 
 # Chapitre 7. Rendre la pareille et inspirer la sympathie
@@ -93,7 +93,7 @@ Pour structurer chaque prise de contact, par téléphone, par messagerie ou en f
 >
 > **Conclusion** : « Parfait, donc jeudi à 10 heures dans vos bureaux. Je vous envoie le modèle dès ce soir. Merci et bonne journée. »
 
-Au Congo, l'étape Contact est souvent plus longue qu'ailleurs. Si votre interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le : écourter cette étape pour « gagner du temps » peut compromettre tout l'appel.
+En Afrique francophone, l'étape Contact est souvent plus longue qu'ailleurs. Si votre interlocuteur prend le temps des salutations et demande des nouvelles, suivez-le : écourter cette étape pour « gagner du temps » peut compromettre tout l'appel.
 
 ## Réciprocité et sympathie en ligne
 

@@ -1,4 +1,4 @@
-# Chapitre 3. Acheter au Congo : confiance, communauté et réputation
+# Chapitre 3. Acheter en Afrique francophone : confiance, communauté et réputation
 
 ## Le cas : vendre un contrat de services à une grande structure
 
@@ -12,7 +12,7 @@ Séverin et Jean-Marc dirigent chacun une société de maintenance des installat
 
 ## Un même cerveau, des codes différents
 
-Les mécanismes des chapitres précédents sont universels, mais leur intensité varie selon les cultures. Le chercheur Geert Hofstede a mesuré plusieurs dimensions culturelles à partir d'enquêtes menées dans de nombreux pays. Ses travaux ne fournissent pas de score propre au Congo, mais ses estimations pour les régions d'Afrique subsaharienne étudiées font ressortir deux caractéristiques que l'on retrouve largement dans la vie des affaires congolaise :
+Les mécanismes des chapitres précédents sont universels, mais leur intensité varie selon les cultures. Le chercheur Geert Hofstede a mesuré plusieurs dimensions culturelles à partir d'enquêtes menées dans de nombreux pays. Ses travaux ne fournissent pas de score pour chaque pays d'Afrique francophone, mais ses estimations pour les régions d'Afrique subsaharienne étudiées font ressortir deux caractéristiques que l'on retrouve largement dans la vie des affaires de nos pays :
 
 - **Un fort collectivisme.** L'identité de chacun est largement définie par son appartenance à des groupes : famille élargie, communauté d'origine, réseau professionnel, promotion d'école, communauté religieuse.
 - **Une forte distance hiérarchique.** Les écarts de statut sont acceptés. L'âge, la fonction et le rang déterminent qui parle, qui décide et comment on s'adresse à chacun.
@@ -51,7 +51,7 @@ Posées avec respect, ces questions ne vexent jamais : elles montrent que vous c
 
 ## La confiance d'abord, l'affaire ensuite
 
-Dans beaucoup de cultures d'affaires occidentales, on fait affaire d'abord et on construit éventuellement une relation ensuite. Au Congo, c'est généralement l'inverse : **on fait affaire avec ceux que l'on connaît et en qui l'on a confiance.** Là où les recours juridiques sont lents et où beaucoup ont été déçus par des promesses non tenues, la relation reste la meilleure garantie.
+Dans beaucoup de cultures d'affaires occidentales, on fait affaire d'abord et on construit éventuellement une relation ensuite. En Afrique francophone, c'est généralement l'inverse : **on fait affaire avec ceux que l'on connaît et en qui l'on a confiance.** Là où les recours juridiques sont lents et où beaucoup ont été déçus par des promesses non tenues, la relation reste la meilleure garantie.
 
 La confiance se construit comme un capital, par dépôts successifs :
 
@@ -77,7 +77,7 @@ Trois principes guident la gestion de la réputation :
 
 ## Les réseaux qui achètent et qui recommandent
 
-Le marché congolais est structuré par des réseaux qui sont aussi des espaces de prescription : associations professionnelles, chambres de commerce, organisations patronales, réseaux d'anciens élèves, groupements de producteurs, coopératives, communautés religieuses, tontines (la likelemba) et cercles d'entrepreneurs.
+Nos marchés sont structurés par des réseaux qui sont aussi des espaces de prescription : associations professionnelles, chambres de commerce, organisations patronales, réseaux d'anciens élèves, groupements de producteurs, coopératives, communautés religieuses, tontines (la likelemba) et cercles d'entrepreneurs.
 
 Pour l'entrepreneur, ces réseaux présentent trois intérêts :
 
@@ -108,11 +108,11 @@ En étudiant des entrepreneurs expérimentés, la chercheuse Saras Sarasvathy a 
 | **La limonade** | Tirer parti des surprises | Transformer une objection ou une réclamation en nouvelle offre |
 | **Le pilote dans l'avion** | Agir sur ce que l'on contrôle | Se concentrer sur ses actions commerciales plutôt que d'attendre une conjoncture meilleure |
 
-Cette logique rejoint parfaitement le fonctionnement relationnel du marché congolais : votre réseau de confiance est votre première ressource commerciale.
+Cette logique rejoint parfaitement le fonctionnement relationnel des marchés africains : votre réseau de confiance est votre première ressource commerciale.
 
 ## Le numérique : une révolution des habitudes
 
-La quasi-totalité de la population dispose d'un abonnement mobile, et le mobile money (MTN MoMo et Airtel Money, encadrés par la Banque des États de l'Afrique centrale) permet de payer un fournisseur, de verser un acompte ou d'encaisser une vente en quelques secondes. Trois conséquences pour l'entrepreneur : la distance compte moins, à condition que la confiance soit établie ; le paiement fractionné devient simple ; la trace écrite rassure l'acheteur, mais les arnaques ont aussi rendu les clients prudents face aux vendeurs inconnus. La confiance reste la condition de tout.
+Dans la plupart des pays, une très large part de la population dispose d'un téléphone mobile, et le paiement mobile, proposé par les opérateurs de télécommunications et encadré par les banques centrales, permet de payer un fournisseur, de verser un acompte ou d'encaisser une vente en quelques secondes. Trois conséquences pour l'entrepreneur : la distance compte moins, à condition que la confiance soit établie ; le paiement fractionné devient simple ; la trace écrite rassure l'acheteur, mais les arnaques ont aussi rendu les clients prudents face aux vendeurs inconnus. La confiance reste la condition de tout.
 
 ## Atelier : cartographier une décision dans une administration
 
@@ -146,5 +146,5 @@ Deux enseignements ressortent de cet exemple. D'abord, la personne la plus inté
 - [ ] Je tiens un registre de mes promesses aux clients et je vérifie chaque semaine qu'elles sont tenues.
 
 ::: {custom-style="Encadre"}
-Au Congo, on achète d'abord à quelqu'un, ensuite quelque chose. La décision est souvent collective, la confiance passe par la relation et la réputation circule vite. L'entrepreneur qui cartographie la décision, respecte les codes et s'appuie sur son réseau dispose d'un avantage que ses concurrents ne peuvent pas copier.
+En Afrique francophone, on achète d'abord à quelqu'un, ensuite quelque chose. La décision est souvent collective, la confiance passe par la relation et la réputation circule vite. L'entrepreneur qui cartographie la décision, respecte les codes et s'appuie sur son réseau dispose d'un avantage que ses concurrents ne peuvent pas copier.
 :::

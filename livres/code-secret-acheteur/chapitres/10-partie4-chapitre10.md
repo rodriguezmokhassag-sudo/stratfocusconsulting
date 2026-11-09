@@ -73,7 +73,7 @@ Ce qui ne se mesure pas ne s'améliore pas. Suivez au minimum ces cinq indicateu
 
 ## Les canaux numériques sans friction
 
-Pour beaucoup d'entreprises congolaises, la messagerie est devenue le premier canal commercial. L'application WhatsApp Business, gratuite, offre des fonctions qui suppriment des gaspillages :
+Pour beaucoup d'entreprises africaines, la messagerie est devenue le premier canal commercial. L'application WhatsApp Business, gratuite, offre des fonctions qui suppriment des gaspillages :
 
 | Fonctionnalité | Gaspillage éliminé |
 |---|---|
