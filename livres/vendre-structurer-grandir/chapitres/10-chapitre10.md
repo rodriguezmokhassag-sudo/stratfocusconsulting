@@ -20,7 +20,7 @@ Séverin et Jean-Marc dirigent chacun une petite entreprise qui torréfie et con
 | **Numérique** | Site, plateformes de vente en ligne, réseaux sociaux, messageries | Accès direct à des clients éloignés, coûts fixes faibles | Logistique de livraison, confiance à construire |
 | **Partenariats** | Une autre entreprise propose votre offre à ses clients | Accès rapide à une clientèle existante | Dépendance au partenaire, partage de la valeur |
 
-La plupart des entreprises qui grandissent combinent plusieurs canaux. On parle de distribution multicanal. L'enjeu est alors de les rendre complémentaires plutôt que concurrents.
+La plupart des entreprises qui grandissent combinent plusieurs canaux. On parle de distribution multicanale. L'enjeu est alors de les rendre complémentaires plutôt que concurrents.
 
 ## Choisir ses canaux
 

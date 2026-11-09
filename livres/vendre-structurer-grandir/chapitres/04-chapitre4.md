@@ -161,7 +161,7 @@ Deux simulations éclairent les décisions. Une remise de 10 % (prix ramené à 
 
 - **Fixer ses prix sans connaître ses coûts**, comme Séverin.
 - **Aligner ses prix sur ceux des concurrents** sans tenir compte de sa différence.
-- **N'oser jamais augmenter ses prix.**
+- **Ne jamais oser augmenter ses prix.**
 - **Confondre marque et logo.**
 - **Promettre ce que l'on ne peut pas prouver.**
 

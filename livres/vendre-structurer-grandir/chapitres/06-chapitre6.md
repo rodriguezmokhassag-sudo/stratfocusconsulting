@@ -83,7 +83,7 @@ Les méthodes du *Code Secret de l'Acheteur* (profils d'acheteurs, SPIN, CROC, C
 | **Variable seul (commission)** | Coût proportionnel aux ventes | Instabilité, recherche du volume au détriment de la marge et de la relation | Apporteurs d'affaires, agents indépendants |
 | **Fixe et variable** | Sécurité et motivation | Plus complexe à concevoir | La plupart des commerciaux salariés |
 
-Quelques principes pour la part variable : elle doit être **compréhensible** (le vendeur doit pouvoir la calculer lui-même), **atteignable** (un objectif jamais atteint décourage), **liée à ce que l'entreprise veut vraiment** (la marge et l'encaissement, pas seulement le chiffre d'affaires) et **versée rapidement** après le résultat. Un variable calculé sur les ventes encaissées, et non simplement facturées, évite que les vendeurs vendent à des clients qui ne paient pas.
+Quelques principes pour la part variable : elle doit être **compréhensible** (le vendeur doit pouvoir la calculer lui-même), **atteignable** (un objectif jamais atteint décourage), **liée à ce que l'entreprise veut vraiment** (la marge et l'encaissement, pas seulement le chiffre d'affaires) et **versée rapidement** après le résultat. Une part variable calculée sur les ventes encaissées, et non simplement facturées, évite que les vendeurs vendent à des clients qui ne paient pas.
 
 ## Motiver au-delà de l'argent
 
