@@ -284,10 +284,8 @@ def inserer_couverture(doc):
     from copy import deepcopy
     couv = os.path.join(RACINE, "images", "couverture.jpg")
     body = doc.element.body
-    if VERSION == "impression":
+    if VERSION == "impression" or not os.path.exists(couv):
         inserer_page_titre(doc)
-        return
-    if not os.path.exists(couv):
         return
     p = doc.add_paragraph()
     p.add_run().add_picture(couv, width=Inches(6), height=Inches(9))

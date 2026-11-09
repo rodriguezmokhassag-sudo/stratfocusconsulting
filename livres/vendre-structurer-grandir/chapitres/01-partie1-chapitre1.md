@@ -94,6 +94,21 @@ Le diagnostic ne sert pas seulement à repérer les problèmes. Il permet aussi 
 | Que sais-je ? | La production laitière, la gestion de la chaîne du froid | Proposer un service de conseil ou de sous-traitance |
 | Qui est-ce que je connais ? | Des gérants d'hôtels, une association de producteurs | Ouvrir de nouveaux clients par recommandation, sécuriser l'approvisionnement |
 
+## Les signaux d'alerte qui imposent un diagnostic
+
+Certains signaux indiquent qu'il est urgent de s'arrêter pour faire le point, avant toute nouvelle décision de croissance.
+
+| Signal d'alerte | Ce qu'il révèle souvent | Première vérification |
+|---|---|---|
+| Le chiffre d'affaires augmente, mais la trésorerie diminue | Marges insuffisantes ou délais de paiement trop longs | Marge par produit, délai moyen d'encaissement |
+| Les stocks s'accumulent | Production déconnectée des ventes réelles | Rotation des stocks par référence |
+| Un client important retarde ses paiements | Dépendance dangereuse | Part de ce client dans le chiffre d'affaires |
+| Le dirigeant ne peut plus s'absenter | Absence d'organisation et de délégation | Liste des tâches que lui seul sait faire |
+| Les clients se plaignent davantage | Croissance qui dépasse la capacité d'organisation | Nombre et nature des réclamations |
+| Les concurrents gagnent des clients | Offre ou prix devenus moins attractifs | Raisons des ventes perdues |
+
+Un seul signal justifie un diagnostic ciblé. Deux ou trois signaux simultanés justifient un diagnostic complet, avec les quatre outils de ce chapitre. Dans le cas d'ouverture, Séverin présentait trois de ces signaux avant même son investissement : trésorerie tendue malgré la hausse des ventes, dépendance à quelques clients et impossibilité de s'absenter.
+
 ## Deuxième cas pratique : le solo-entrepreneur débordé
 
 Séverin et Jean-Marc sont aussi, chacun de leur côté, développeurs de sites Internet indépendants. Tous deux travaillent plus de soixante heures par semaine et ont pourtant du mal à se payer correctement.
