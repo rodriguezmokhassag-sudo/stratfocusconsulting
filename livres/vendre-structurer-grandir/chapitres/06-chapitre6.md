@@ -51,9 +51,9 @@ Le dernier point est souvent négligé. Un commercial recruté dans une entrepri
 
 La mise en situation est l'étape la plus révélatrice. Un candidat brillant en entretien peut se révéler incapable d'écouter un client ; un candidat discret peut se révéler un excellent vendeur. Observez s'il pose des questions avant de présenter, s'il écoute les réponses et comment il réagit à l'objection.
 
-Au Congo, la pression pour recruter un proche est forte. Elle n'est pas un problème en soi, à une condition : **le proche passe par la même procédure que les autres candidats, et il est évalué sur les mêmes critères.** Un recrutement de complaisance coûte doublement : il pénalise l'entreprise et rend difficile toute remarque ou toute séparation.
+Dans beaucoup de nos sociétés, où les liens familiaux et communautaires sont forts, la pression pour recruter un proche est importante. Elle n'est pas un problème en soi, à une condition : **le proche passe par la même procédure que les autres candidats, et il est évalué sur les mêmes critères.** Un recrutement de complaisance coûte doublement : il pénalise l'entreprise et rend difficile toute remarque ou toute séparation.
 
-Le contrat de travail doit être écrit et conforme au Code du travail congolais et aux conventions collectives applicables. Faites-vous conseiller pour sa rédaction.
+Le contrat de travail doit être écrit et conforme au Code du travail de votre pays et aux conventions collectives applicables. Faites-vous conseiller pour sa rédaction.
 
 ## Intégrer : les 90 premiers jours
 

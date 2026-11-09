@@ -124,7 +124,7 @@ Fondateur et manager principal de Stratfocus Consulting (STFC)
 
 ## Le plafond invisible
 
-Beaucoup d'entreprises congolaises connaissent le même parcours. Les débuts sont difficiles, puis l'activité trouve ses premiers clients, le chiffre d'affaires progresse, l'équipe s'étoffe un peu. Et un jour, tout semble se bloquer. Le dirigeant travaille toujours plus, mais l'entreprise ne grandit plus. Les problèmes se multiplient : retards, erreurs, clients mécontents, trésorerie tendue, collaborateurs qui attendent les décisions.
+Dans toute l'Afrique francophone, de nombreuses entreprises connaissent le même parcours. Les débuts sont difficiles, puis l'activité trouve ses premiers clients, le chiffre d'affaires progresse, l'équipe s'étoffe un peu. Et un jour, tout semble se bloquer. Le dirigeant travaille toujours plus, mais l'entreprise ne grandit plus. Les problèmes se multiplient : retards, erreurs, clients mécontents, trésorerie tendue, collaborateurs qui attendent les décisions.
 
 Ce plafond n'est pas une fatalité. Il a presque toujours les mêmes causes :
 
@@ -161,16 +161,33 @@ Les lecteurs du *Code Secret de l'Acheteur* connaissent déjà Séverin et Jean-
 
 Séverin n'est pas un mauvais entrepreneur : il est courageux, travailleur et engagé. Il lui manque simplement une méthode. C'est cette méthode que Jean-Marc applique, et que ce livre vous transmet.
 
-## Le contexte congolais
+## Un livre pour tous les entrepreneurs d'Afrique francophone
 
-Les principes de gestion sont universels, mais leur application dépend du contexte. Plusieurs réalités pèsent sur la croissance des entreprises au Congo :
+Qu'il entreprenne à Libreville, à Kinshasa, à Brazzaville, à Douala, à Abidjan, à Dakar ou à Lomé, un entrepreneur d'Afrique francophone rencontre, à quelques différences près, les mêmes réalités. Les maux dont souffrent nos entreprises sont largement communs, et les solutions qui fonctionnent dans un pays fonctionnent généralement dans les autres.
 
-- **Un marché intérieur de taille limitée**, qui pousse à choisir avec soin ses clients cibles et à regarder, à terme, vers la zone CEMAC, qui réunit six pays partageant la même monnaie.
+Plusieurs raisons expliquent cette proximité :
+
+- **Un droit des affaires commun.** Dix-sept pays d'Afrique de l'Ouest et d'Afrique centrale appliquent le droit de l'Organisation pour l'harmonisation en Afrique du droit des affaires (OHADA) : mêmes règles pour les sociétés commerciales, les contrats de vente, les sûretés, le recouvrement des créances, la comptabilité. Un contrat ou une société se pensent de la même façon à Libreville, à Kinshasa ou à Dakar.
+- **Une langue des affaires commune**, le français, avec des usages écrits et des documents commerciaux très proches.
+- **Des espaces monétaires et économiques partagés** : la CEMAC en Afrique centrale et l'UEMOA en Afrique de l'Ouest réunissent des pays qui partagent une même monnaie, et la Zone de libre-échange continentale africaine ouvre progressivement l'ensemble du continent.
+- **Des habitudes de consommation et d'achat proches** : poids de la relation et de la confiance, décision souvent collective, importance de la recommandation, essor du paiement mobile et des messageries.
+
+Les entreprises y font face aux mêmes défis :
+
+- **Des marchés intérieurs souvent de taille limitée**, qui obligent à choisir avec soin ses clients cibles et à regarder, à terme, vers les marchés régionaux.
 - **Une concurrence forte des produits importés**, qui oblige le produit local à se différencier par la qualité, la proximité et le service.
-- **Des contraintes d'infrastructure** : énergie, transport, approvisionnement, qui pèsent sur les coûts et doivent être intégrées au diagnostic.
-- **Des délais de paiement souvent longs**, notamment chez les grands clients et les administrations, qui rendent la gestion de trésorerie décisive.
-- **Une culture de la relation et de la confiance**, qui fait du réseau un levier de croissance majeur.
-- **Des dispositifs publics d'appui aux entreprises**, comme le Fonds d'impulsion, de garantie et d'accompagnement (FIGA) ou l'Agence de développement des très petites, petites et moyennes entreprises (ADPME), que l'entrepreneur gagne à connaître.
+- **Des contraintes d'infrastructure** (énergie, transport, approvisionnement) qui pèsent sur les coûts.
+- **Des délais de paiement souvent longs**, notamment chez les grands clients et les administrations.
+- **Une économie informelle importante**, qui pèse sur la concurrence, les prix et les habitudes de paiement.
+- **Un accès au financement difficile** pour les petites entreprises, malgré l'existence, dans la plupart des pays, de fonds de garantie et d'agences publiques d'appui aux PME.
+
+C'est ce qui permet à ce livre de traverser les frontières : les mêmes outils, appliqués avec méthode, produisent les mêmes résultats, au contexte près. Les exemples sont parfois tirés du Congo, que l'auteur connaît de l'intérieur, mais ils valent pour l'ensemble de l'espace francophone.
+
+::: {custom-style="Encadre"}
+**Adapter, ne pas copier**
+
+Ce livre n'est pas un recueil de recettes à appliquer à la lettre. Chaque matrice, chaque processus et chaque démarche doit être relié au contexte local de votre entreprise : votre pays, votre ville, votre secteur, vos clients, votre réglementation, vos moyens. Les chiffres des exemples sont des illustrations ; remplacez-les toujours par les vôtres. Pour chaque outil, posez-vous la même question : qu'est-ce qui, chez moi, rend cette démarche différente, et comment l'ajuster ?
+:::
 
 ## Un livre qui prolonge le premier
 

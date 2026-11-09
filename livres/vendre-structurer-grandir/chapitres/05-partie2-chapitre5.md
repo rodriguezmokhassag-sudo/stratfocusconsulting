@@ -60,7 +60,7 @@ Le fichier client appartient à l'entreprise, pas au vendeur. Un tableur partag�
 
 La règle d'or : **aucune affaire sans prochaine action datée.** Une affaire sans prochaine action est une affaire oubliée.
 
-Ces données sont des données personnelles lorsqu'elles concernent des personnes physiques : collectez-les avec leur accord et protégez-les, conformément à la loi congolaise n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel.
+Ces données sont des données personnelles lorsqu'elles concernent des personnes physiques : collectez-les avec leur accord et protégez-les, conformément aux lois de protection des données personnelles, désormais en vigueur dans la plupart des pays francophones. Au Congo, par exemple, c'est la loi n° 29-2019 du 10 octobre 2019 qui encadre ces traitements.
 
 ## Classer ses clients pour mieux les servir
 

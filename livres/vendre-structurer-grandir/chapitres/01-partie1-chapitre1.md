@@ -75,7 +75,7 @@ Un total inférieur à 16 sur 32 indique que la croissance sera difficile tant q
 
 ## Outil 4 : la matrice forces, faiblesses, opportunités, menaces
 
-Popularisée sous le sigle anglais SWOT, cette matrice croise l'analyse interne (forces et faiblesses) et l'analyse de l'environnement (opportunités et menaces). Elle est souvent remplie de manière vague ; pour qu'elle soit utile, chaque élément doit être précis et vérifiable. Exemple pour une petite unité agroalimentaire congolaise :
+Popularisée sous le sigle anglais SWOT, cette matrice croise l'analyse interne (forces et faiblesses) et l'analyse de l'environnement (opportunités et menaces). Elle est souvent remplie de manière vague ; pour qu'elle soit utile, chaque élément doit être précis et vérifiable. Exemple pour une petite unité agroalimentaire en Afrique francophone :
 
 | | **Favorable** | **Défavorable** |
 |---|---|---|
