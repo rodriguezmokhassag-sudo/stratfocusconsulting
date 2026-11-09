@@ -207,18 +207,7 @@ Les deux livres se complètent, mais chacun peut se lire seul. Lorsqu'un outil d
 
 ## Ce que vous saurez faire à la fin de ce livre
 
-- Poser un diagnostic honnête de votre entreprise et repérer les signaux d'alerte.
-- Choisir vos clients cibles et estimer la taille de votre marché.
-- Concevoir une offre difficile à copier et la décrire en une page.
-- Calculer votre seuil de rentabilité, fixer vos prix et construire votre marque.
-- Organiser une démarche commerciale qui ne dépend plus de vous seul.
-- Recruter, former, rémunérer et motiver ceux qui vendent.
-- Formaliser vos processus et clarifier qui fait quoi dans l'entreprise.
-- Piloter votre activité avec un tableau de bord mensuel.
-- Fixer votre vision et vos priorités de croissance.
-- Choisir et développer vos canaux de distribution.
-- Anticiper votre trésorerie et financer votre croissance.
-- Déléguer, innover et préparer l'entreprise à durer.
+Poser un diagnostic honnête, choisir vos clients cibles, concevoir une offre difficile à copier, fixer vos prix et bâtir votre marque ; organiser une démarche commerciale, une équipe et des processus qui ne dépendent plus de vous seul ; piloter par les chiffres ; enfin, fixer vos priorités, développer vos canaux, financer votre croissance, déléguer et innover pour durer.
 
 ## Comment utiliser ce livre
 

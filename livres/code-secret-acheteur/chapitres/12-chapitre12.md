@@ -139,7 +139,6 @@ Deux actions découlent de ce calcul : appeler chacun des 6 détracteurs pour co
 ## Les erreurs qui coûtent cher
 
 - **Tout miser sur la conquête** et négliger les clients existants.
-- **Disparaître après la vente.**
 - **Bâcler la fin de chaque interaction.**
 - **Ne jamais demander de recommandation.**
 - **Se justifier face à une réclamation** au lieu d'écouter et de réparer.
@@ -154,5 +153,5 @@ Deux actions découlent de ce calcul : appeler chacun des 6 détracteurs pour co
 - [ ] J'ai partagé la charte éthique avec mon équipe.
 
 ::: {custom-style="Encadre"}
-La vente ne s'arrête pas au paiement : elle commence. Calculez la valeur de vos clients, soignez le pic et la fin de chaque expérience, transformez l'achat en habitude, réparez généreusement vos erreurs et organisez la recommandation. Vendez toujours de manière à pouvoir expliquer au client comment vous l'avez convaincu.
+La vente ne s'arrête pas au paiement : elle commence. Soignez la fin de chaque expérience, transformez l'achat en habitude, réparez vos erreurs et organisez la recommandation, sans jamais manipuler.
 :::

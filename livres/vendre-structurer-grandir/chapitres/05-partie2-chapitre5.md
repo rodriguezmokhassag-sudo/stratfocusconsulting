@@ -177,7 +177,6 @@ Ce calcul transforme un objectif abstrait en actions concrètes et quotidiennes.
 - **Laisser chaque vendeur travailler à sa façon**, comme Séverin.
 - **Laisser les contacts dans les téléphones personnels.**
 - **Abandonner la prospection** quand les commandes arrivent.
-- **Traiter tous les clients de la même manière.**
 - **Envoyer des devis sans les suivre.**
 
 ## Feuille de route du chapitre 5
@@ -190,5 +189,5 @@ Ce calcul transforme un objectif abstrait en actions concrètes et quotidiennes.
 - [ ] J'ai instauré le point commercial hebdomadaire de trente minutes.
 
 ::: {custom-style="Encadre"}
-Une entreprise qui grandit ne peut pas dépendre de la mémoire de chaque vendeur. Écrivez votre démarche commerciale, tenez un fichier client partagé, suivez un portefeuille d'affaires pondéré, classez vos clients et instaurez des rituels courts et réguliers. La vente devient alors un système qui fonctionne même en votre absence.
+Une entreprise qui grandit ne peut pas dépendre de la mémoire de chaque vendeur. Démarche écrite, fichier partagé, portefeuille pondéré et rituels réguliers font de la vente un système qui fonctionne même en votre absence.
 :::

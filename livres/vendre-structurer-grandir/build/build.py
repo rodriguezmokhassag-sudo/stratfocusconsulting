@@ -370,6 +370,20 @@ def titres_deux_lignes(doc):
         p.add_run(m.group(2))
 
 
+def ne_pas_couper(doc):
+    """Aucun paragraphe ni encadré coupé entre deux pages."""
+    paras = doc.paragraphs
+    for i, p in enumerate(paras):
+        pf = p.paragraph_format
+        pf.keep_together = True
+        pf.widow_control = True
+        if p.style.name == "Encadre":
+            suivant = paras[i + 1] if i + 1 < len(paras) else None
+            if suivant is not None and suivant.style.name == "Encadre" \
+                    and p._p.getnext() is suivant._p:
+                pf.keep_with_next = True
+
+
 def post_traiter(chemin):
     """Ajuste les tableaux (taille, bordures) et retire le titre pandoc."""
     doc = Document(chemin)
@@ -380,6 +394,7 @@ def post_traiter(chemin):
             p._element.getparent().remove(p._element)
     typographie_francaise(doc)
     titres_deux_lignes(doc)
+    ne_pas_couper(doc)
     for p in doc.paragraphs:
         if "¤" in p.text:
             p.paragraph_format.tab_stops.add_tab_stop(
