@@ -60,13 +60,7 @@ def main():
     d.rectangle([(W - l) / 2 - marge, y, (W + l) / 2 + marge, y + 410], fill=NOIR)
     d.text(((W - l) / 2, y - 5), mot, font=f_bande, fill=BLANC)
     y += 450
-    # séparateur : traits et trois points
-    yc = y + 40
-    d.line([180, yc, 860, yc], fill=NOIR, width=9)
-    d.line([W - 860, yc, W - 180, yc], fill=NOIR, width=9)
-    for k in (-60, 0, 60):
-        d.ellipse([W / 2 + k - 14, yc - 14, W / 2 + k + 14, yc + 14], fill=NOIR)
-    y += 90
+    y += 30
     centre(d, y, "GRANDIR", f_titre)
     y += 390
     f_sous = montserrat(78, "Medium")
@@ -133,9 +127,6 @@ def main():
     ln = d.textlength(nom, font=f_aut)
     ya = 2790
     d.text(((W - ln) / 2, ya), nom, font=f_aut, fill=BLANC)
-    yl = ya + 70
-    d.line([110, yl, (W - ln) / 2 - 50, yl], fill=BLANC, width=8)
-    d.line([(W + ln) / 2 + 50, yl, W - 110, yl], fill=BLANC, width=8)
 
     os.makedirs(os.path.dirname(SORTIE), exist_ok=True)
     img.save(SORTIE, quality=95, dpi=(300, 300))
