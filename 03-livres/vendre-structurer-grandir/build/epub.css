@@ -1,0 +1,22 @@
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: normal; src: url("../fonts/EBGaramond-Regular.ttf"); }
+@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: normal; src: url("../fonts/EBGaramond-Italic.ttf"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: bold; src: url("../fonts/EBGaramond-Bold.ttf"); }
+@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: bold; src: url("../fonts/EBGaramond-BoldItalic.ttf"); }
+body { font-family: "EB Garamond", Garamond, Georgia, serif; line-height: 1.4; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+p { margin: 0 0 0.6em 0; text-indent: 0; }
+h1 { font-size: 1.6em; text-align: center; margin: 2em 0 1em; page-break-before: always; line-height: 1.2; color: #111; }
+h2 { font-size: 1.25em; margin: 1.6em 0 0.6em; color: #111; }
+h3 { font-size: 1.08em; margin: 1.2em 0 0.4em; color: #333; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.85em; }
+th { background: #1a1a1a; color: #fff; text-align: left; padding: 0.3em 0.4em; }
+td { border: 1px solid #bbb; padding: 0.3em 0.4em; vertical-align: top; text-align: left; }
+.encadre { border-left: 4px solid #222; background: #f2f2f2; padding: 0.6em 0.9em; margin: 1em 0; }
+.epigraphe { font-style: italic; text-align: center; margin: 3em 1em 0.5em; font-size: 1.1em; }
+.epigraphesource { text-align: center; font-size: 0.9em; color: #555; }
+.intropartie { font-style: italic; text-align: center; margin: 1em 1.5em; }
+.mentions { font-size: 0.85em; color: #333; }
+.mentions p { margin-bottom: 0.5em; }
+.signature { text-align: right; font-style: italic; }
+.verso { text-align: center; page-break-before: always; }
+.verso img { max-width: 100%; max-height: 95vh; }
+nav#toc ol { list-style: none; padding-left: 1em; }

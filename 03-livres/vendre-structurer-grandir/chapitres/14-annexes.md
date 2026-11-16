@@ -363,7 +363,7 @@ Entrepreneur et industriel, il a créé et développé une marque qui pèse aujo
 Depuis plus de cinq ans, il accompagne des entreprises et des industries. Il a structuré des sociétés qui manquaient de direction commerciale, pour les doter d'une vision claire, d'une organisation et d'outils de pilotage, et il a formé des commerciaux et des dirigeants devenus des ressources clés dans leurs entreprises.
 
 ::: {custom-style="Mentions"}
-[À compléter par l'auteur si souhaité : formation, certifications, coordonnées professionnelles.]
+Pour contacter l'auteur : admin@stratfocus-consulting.com · WhatsApp +242 066 000 066
 :::
 
 ## Stratfocus Consulting (STFC)
@@ -377,7 +377,7 @@ Stratfocus Consulting est un cabinet de conseil dédié à la croissance des pet
 STFC propose des formations, des ateliers et un accompagnement personnalisé fondés sur les outils de ce livre, notamment pour la mise en œuvre de la feuille de route sur 90 jours.
 
 ::: {custom-style="Mentions"}
-[À compléter : adresse, téléphone, adresse électronique, site Internet, réseaux sociaux.]
+Pointe-Noire, République du Congo · WhatsApp : +242 066 000 066 · Courriel : admin@stratfocus-consulting.com · Site : www.stratfocus-consulting.com · Facebook : Strat Focus Consulting
 :::
 
 ## Travailler avec STFC
