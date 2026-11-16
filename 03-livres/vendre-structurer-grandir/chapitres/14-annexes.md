@@ -354,7 +354,7 @@ Note : les règles juridiques et les dispositifs d'appui varient d'un pays à l'
 
 ## Rodriguez MOKHASSA
 
-Rodriguez MOKHASSA est expert en stratégie de vente, en marketing et en innovation, fondateur et manager principal du cabinet Stratfocus Consulting (STFC).
+Rodriguez MOKHASSA est consultant expert en stratégie de vente, en marketing et en innovation, fondateur et manager principal du cabinet Stratfocus Consulting (STFC).
 
 Avant de créer son cabinet, il a exercé comme manager commercial au sein de grandes structures, où il occupait une position centrale dans la réalisation du chiffre d'affaires : pilotage des objectifs, animation des équipes, négociation avec les grands comptes.
 
