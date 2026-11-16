@@ -53,49 +53,49 @@ Sommaire
 :::
 
 ::: {custom-style="Sommaire"}
-Préface de l'auteur¤7
+Préface de l'auteur¤6
 
-Introduction. Pourquoi tant d'entreprises vendent sans jamais grandir¤9
+Introduction. Pourquoi tant d'entreprises vendent sans jamais grandir¤8
 
-**Partie I. Vendre**¤14
+**Partie I. Vendre**¤13
 
-Chapitre 1. Diagnostiquer son entreprise et son potentiel commercial¤15
+Chapitre 1. Diagnostiquer son entreprise et son potentiel commercial¤14
 
-Chapitre 2. Comprendre son marché et choisir ses clients cibles¤24
+Chapitre 2. Comprendre son marché et choisir ses clients cibles¤23
 
-Chapitre 3. Concevoir une offre de valeur difficile à copier¤33
+Chapitre 3. Concevoir une offre de valeur difficile à copier¤32
 
-Chapitre 4. Fixer ses prix et faire connaître sa marque¤42
+Chapitre 4. Fixer ses prix et faire connaître sa marque¤41
 
-**Partie II. Structurer**¤51
+**Partie II. Structurer**¤50
 
-Chapitre 5. Organiser sa démarche commerciale, du prospect au client fidèle¤52
+Chapitre 5. Organiser sa démarche commerciale, du prospect au client fidèle¤51
 
-Chapitre 6. Recruter, former et motiver ceux qui vendent¤61
+Chapitre 6. Recruter, former et motiver ceux qui vendent¤60
 
-Chapitre 7. Bâtir ses processus et son organisation interne¤70
+Chapitre 7. Bâtir ses processus et son organisation interne¤69
 
-Chapitre 8. Piloter par les chiffres : indicateurs et tableau de bord¤79
+Chapitre 8. Piloter par les chiffres : indicateurs et tableau de bord¤78
 
-**Partie III. Grandir**¤88
+**Partie III. Grandir**¤87
 
-Chapitre 9. Clarifier sa vision et ses priorités de croissance¤89
+Chapitre 9. Clarifier sa vision et ses priorités de croissance¤88
 
-Chapitre 10. Développer ses canaux : distribution, partenariats et numérique¤98
+Chapitre 10. Développer ses canaux : distribution, partenariats et numérique¤97
 
-Chapitre 11. Maîtriser sa trésorerie pour financer la croissance¤107
+Chapitre 11. Maîtriser sa trésorerie pour financer la croissance¤106
 
-Chapitre 12. Déléguer et innover pour durer¤116
+Chapitre 12. Déléguer et innover pour durer¤115
 
-Conclusion. Votre feuille de route sur 90 jours¤125
+Conclusion. Votre feuille de route sur 90 jours¤124
 
-Annexe A. Boîte à outils¤130
+Annexe A. Boîte à outils¤129
 
-Annexe B. Glossaire¤138
+Annexe B. Glossaire¤137
 
-Annexe C. Bibliographie et sources¤141
+Annexe C. Bibliographie et sources¤140
 
-Annexe D. À propos de l'auteur et de STFC¤6
+Annexe D. À propos de l'auteur et de STFC¤143
 :::
 
 # Préface de l'auteur

@@ -18,14 +18,24 @@ from docx.shared import Inches, Pt, RGBColor
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
-CHAPITRES = os.path.join(RACINE, "chapitres")
+CHAPITRES = os.environ.get("CHAPITRES", os.path.join(RACINE, "chapitres"))
 SORTIE = os.path.join(RACINE, "sortie")
 REF = os.path.join(ICI, "reference.docx")
 VERSION = os.environ.get("VERSION", "lecture")  # "lecture" ou "impression"
+# Format de page : "6x9" (édition, par défaut), "A5" ou "A4" (lecture en ligne)
+FORMAT = os.environ.get("FORMAT", "6x9")
+#            largeur, hauteur, haut/bas, intérieur, extérieur (pouces), corps (pt)
+FORMATS = {"6x9": (6.0, 9.0, 0.7, 0.75, 0.55, 11),
+           "A5": (5.83, 8.27, 0.7, 0.65, 0.65, 11),
+           "A4": (8.27, 11.69, 0.98, 0.98, 0.98, 12)}
+PAGE_L, PAGE_H, MARGE_HB, MARGE_INT, MARGE_EXT, CORPS_FORMAT = FORMATS[FORMAT]
+LARGEUR_TEXTE = PAGE_L - MARGE_INT - MARGE_EXT
 NOM = "Vendre-structurer-grandir" + ("-interieur-impression" if VERSION == "impression" else "")
+if FORMAT != "6x9":
+    NOM = f"Vendre-structurer-grandir-lecture-en-ligne-{FORMAT}"
 
 # Réglages typographiques (ajustables pour viser 127 pages)
-TAILLE_CORPS = float(os.environ.get("TAILLE_CORPS", "11"))
+TAILLE_CORPS = float(os.environ.get("TAILLE_CORPS", str(CORPS_FORMAT)))
 INTERLIGNE = float(os.environ.get("INTERLIGNE", "1.1"))
 # Garamond : police de référence de l'édition (EB Garamond sert au rendu PDF)
 POLICE = "Garamond"
@@ -109,12 +119,12 @@ def construire_reference():
 
     # Format de page 15,24 x 22,86 cm (6 x 9 pouces), marges miroir
     for s in doc.sections:
-        s.page_width = Inches(6)
-        s.page_height = Inches(9)
-        s.top_margin = Inches(0.7)
-        s.bottom_margin = Inches(0.7)
-        s.left_margin = Inches(0.75)   # intérieur
-        s.right_margin = Inches(0.55)  # extérieur
+        s.page_width = Inches(PAGE_L)
+        s.page_height = Inches(PAGE_H)
+        s.top_margin = Inches(MARGE_HB)
+        s.bottom_margin = Inches(MARGE_HB)
+        s.left_margin = Inches(MARGE_INT)   # intérieur
+        s.right_margin = Inches(MARGE_EXT)  # extérieur
         s.gutter = Inches(0)
         s.header_distance = Inches(0.35)
         s.footer_distance = Inches(0.35)
@@ -194,7 +204,7 @@ def construire_reference():
           align=WD_ALIGN_PARAGRAPH.LEFT, avant=18, apres=12)
     s = style_par(doc, "Sommaire")
     regle(s, taille=10.5, police=POLICE, align=WD_ALIGN_PARAGRAPH.LEFT,
-          avant=0, apres=float(os.environ.get("SOMMAIRE_APRES", "9")))
+          avant=0, apres=float(os.environ.get("SOMMAIRE_APRES", "8")))
     s = style_par(doc, "Signature")
     regle(s, taille=TAILLE_CORPS, italique=True, couleur=BLEU, police=POLICE,
           align=WD_ALIGN_PARAGRAPH.RIGHT, avant=10, apres=2)
@@ -259,6 +269,8 @@ def maj_sommaire(pdf):
     for p in range(6, n + 1):
         txt = subprocess.run(["pdftotext", "-f", str(p), "-l", str(p), pdf, "-"],
                              capture_output=True, text=True).stdout
+        if "......" in txt:   # page du sommaire lui-même : à ignorer
+            continue
         debuts[p] = norm(" ".join(txt.split("\n")[:4]))
     f = os.path.join(CHAPITRES, "00-liminaires.md")
     if not os.path.exists(f):
@@ -279,6 +291,30 @@ def maj_sommaire(pdf):
     return modifie
 
 
+def image_pleine_page(chemin):
+    """Adapte une image 2:3 au format de page (A5, A4) en prolongeant ses bords
+    par effet miroir, sans rien couper ni déformer."""
+    if FORMAT == "6x9":
+        return chemin
+    import tempfile
+    from PIL import Image, ImageOps
+    im = Image.open(chemin).convert("RGB")
+    W, H = im.size
+    manque = round(H * PAGE_L / PAGE_H) - W
+    if manque > 0:
+        g, d = manque // 2, manque - manque // 2
+        out = Image.new("RGB", (W + manque, H))
+        out.paste(im, (g, 0))
+        out.paste(ImageOps.mirror(im.crop((0, 0, g, H))), (0, 0))
+        out.paste(ImageOps.mirror(im.crop((W - d, 0, W, H))), (g + W, 0))
+        im = out
+    # 300 dpi suffisent pour l'écran et l'impression de bureau
+    im = im.resize((round(PAGE_L * 300), round(PAGE_H * 300)), Image.LANCZOS)
+    dst = os.path.join(tempfile.mkdtemp(), os.path.basename(chemin))
+    im.save(dst, quality=90)
+    return dst
+
+
 def inserer_couverture(doc):
     """Place la couverture (recto page 1, verso page 2) en pleine page, dans sa propre section."""
     from copy import deepcopy
@@ -288,12 +324,13 @@ def inserer_couverture(doc):
         inserer_page_titre(doc)
         return
     p = doc.add_paragraph()
-    p.add_run().add_picture(couv, width=Inches(6), height=Inches(9))
+    couv = image_pleine_page(couv)
+    p.add_run().add_picture(couv, width=Inches(PAGE_L), height=Inches(PAGE_H))
     # 4e de couverture (verso) juste après le recto, dans la même section sans marges
     verso = os.path.join(RACINE, "images", "couverture-verso.jpg")
     if os.path.exists(verso):
         p.add_run().add_break(WD_BREAK.PAGE)
-        p.add_run().add_picture(verso, width=Inches(6), height=Inches(9))
+        p.add_run().add_picture(image_pleine_page(verso), width=Inches(PAGE_L), height=Inches(PAGE_H))
     pf = p.paragraph_format
     pf.space_before = Pt(0)
     pf.space_after = Pt(0)
@@ -403,7 +440,7 @@ def post_traiter(chemin):
     for p in doc.paragraphs:
         if "¤" in p.text:
             p.paragraph_format.tab_stops.add_tab_stop(
-                Inches(4.7), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+                Inches(LARGEUR_TEXTE), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
             for r in p.runs:
                 if "¤" in r.text:
                     r.text = r.text.replace("¤", "\t")
@@ -469,4 +506,5 @@ if __name__ == "__main__":
             print("Sommaire mis à jour, seconde passe")
             assembler()
         # Version imprimeur (page de titre au lieu de la couverture)
-        subprocess.run([sys.executable, __file__], env={**os.environ, "VERSION": "impression"}, check=True)
+        if FORMAT == "6x9":
+            subprocess.run([sys.executable, __file__], env={**os.environ, "VERSION": "impression"}, check=True)
