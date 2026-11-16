@@ -1,0 +1,14 @@
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+import fs from 'fs';
+const [svgFile, out, width, bg] = process.argv.slice(2);
+const svg = fs.readFileSync(svgFile, 'utf8');
+const vb = svg.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number);
+const W = Number(width), H = Math.round(W * vb[3] / vb[2]);
+const html = `<html><head><style>html,body{margin:0;background:${bg||'transparent'}} svg{display:block;width:${W}px;height:${H}px}</style></head><body>${svg}</body></html>`;
+fs.writeFileSync('tmp.html', html);
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const p = await b.newPage({ viewport: { width: W, height: H } });
+await p.goto('file://' + process.cwd() + '/tmp.html');
+await p.evaluate(() => document.fonts.ready);
+await p.screenshot({ path: out, omitBackground: !bg, clip: { x: 0, y: 0, width: W, height: H } });
+await b.close();

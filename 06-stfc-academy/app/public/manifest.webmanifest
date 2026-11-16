@@ -1,0 +1,12 @@
+{
+  "name": "STFC Academy",
+  "short_name": "STFC Academy",
+  "description": "Formations en performance commerciale, marketing et innovation pour l'Afrique francophone.",
+  "lang": "fr",
+  "start_url": "/#/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#0b2545",
+  "icons": [{ "src": "/assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
