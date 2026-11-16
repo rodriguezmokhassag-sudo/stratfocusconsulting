@@ -1,38 +1,40 @@
 #!/usr/bin/env python3
 """Couverture complète pour l'impression (4e de couverture + dos + 1re).
 
-Dimensions calculées selon le nombre de pages, au format 15,24 x 22,86 cm
-(6 x 9 pouces), papier blanc, avec 0,125 pouce de fond perdu.
-Usage : python3 couverture.py [nombre_de_pages]
+Format fini 6 x 9 pouces (15,24 x 22,86 cm), papier blanc, 0,125 pouce de
+fond perdu sur les bords extérieurs (exigé par l'imprimeur), rendu à 600 dpi.
+Sources : ../images/couverture.jpg (1re) et ../images/couverture-verso.jpg (4e).
+Usage : python3 couverture.py [nombre_de_pages_interieur]
 """
 import os
 import subprocess
 import sys
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 SORTIE = os.path.join(RACINE, "sortie")
 FACE = os.path.join(RACINE, "images", "couverture.jpg")
-PDF_INT = os.path.join(SORTIE, "Vendre-structurer-grandir.pdf")
+VERSO = os.path.join(RACINE, "images", "couverture-verso.jpg")
+LOGO = os.path.join(RACINE, "images", "logo-stfc-embleme.png")
+PDF_INT = os.path.join(SORTIE, "Vendre-structurer-grandir-interieur-impression.pdf")
 
-DPI = 300
-LARG, HAUT = 6.0, 9.0          # format fini (pouces)
+DPI = 600
+LARG, HAUT = 6.0, 9.0
 FOND_PERDU = 0.125
 EPAISSEUR_PAGE = 0.002252       # papier blanc (pouce par page)
 
-FONTS = os.path.expanduser("~/.fonts")
-SANS_GRAS = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-SERIF = os.path.join(FONTS, "EBGaramond-Regular.ttf")
-SERIF_GRAS = os.path.join(FONTS, "EBGaramond-Bold.ttf")
-SERIF_ITAL = os.path.join(FONTS, "EBGaramond-Italic.ttf")
+INTER = "/usr/share/fonts/opentype/inter/"
+NAVY, BLANC, OR = (4, 20, 48), (255, 255, 255), (247, 190, 38)
 
-NOIR, BLANC, GRIS = (17, 17, 17), (255, 255, 255), (90, 90, 90)
+# zone utile de la 4e (la photo source a un liseré et la tranche du livre au bord)
+VERSO_CROP = (18, 22, 4930, 7672)
+FACE_CROP = (0, 12, 5120, 7660)          # retire les liserés clairs haut et bas
 
 
-def px(pouces):
-    return round(pouces * DPI)
+def px(p):
+    return round(p * DPI)
 
 
 def nb_pages():
@@ -42,128 +44,77 @@ def nb_pages():
     return int([l for l in out.splitlines() if l.startswith("Pages")][0].split()[-1])
 
 
-def lignes(draw, texte, police, largeur):
-    mots, res, cour = texte.split(), [], ""
-    for m in mots:
-        essai = (cour + " " + m).strip()
-        if draw.textlength(essai, font=police) <= largeur:
-            cour = essai
-        else:
-            res.append(cour)
-            cour = m
-    if cour:
-        res.append(cour)
-    return res
-
-
-def paragraphe(draw, x, y, texte, police, largeur, couleur=NOIR, interligne=1.32):
-    h = police.size * interligne
-    for l in lignes(draw, texte, police, largeur):
-        draw.text((x, y), l, font=police, fill=couleur)
-        y += h
-    return y
+def miroir(img, g, d, h, b):
+    """Étend l'image par effet miroir de ses bords (fond perdu, recadrage)."""
+    W, H = img.size
+    out = Image.new("RGB", (W + g + d, H + h + b))
+    out.paste(img, (g, h))
+    if g: out.paste(ImageOps.mirror(img.crop((0, 0, g, H))), (0, h))
+    if d: out.paste(ImageOps.mirror(img.crop((W - d, 0, W, H))), (g + W, h))
+    if h: out.paste(ImageOps.flip(out.crop((0, h, out.width, 2 * h))), (0, 0))
+    if b: out.paste(ImageOps.flip(out.crop((0, h + H - b, out.width, h + H))), (0, h + H))
+    return out
 
 
 def main():
     pages = nb_pages()
-    pages_imp = pages + (pages % 2)          # l'imprimeur ajoute une page blanche si impair
+    pages_imp = pages + (pages % 2)
     dos = pages_imp * EPAISSEUR_PAGE
-    W = px(FOND_PERDU + LARG + dos + LARG + FOND_PERDU)
-    H = px(FOND_PERDU + HAUT + FOND_PERDU)
-    img = Image.new("RGB", (W, H), BLANC)
-    d = ImageDraw.Draw(img)
-
-    x_dos = px(FOND_PERDU + LARG)
+    fp, pw, ph = px(FOND_PERDU), px(LARG), px(HAUT)
     w_dos = px(dos)
+    W, H = fp + pw + w_dos + pw + fp, fp + ph + fp
+    img = Image.new("RGB", (W, H), NAVY)
+    x_dos = fp + pw
     x_face = x_dos + w_dos
 
-    # --- 1re de couverture : image fournie, recadrée au centre ---
-    face = Image.open(FACE).convert("RGB")
-    cible_w, cible_h = W - x_face, H
-    ech = max(cible_w / face.width, cible_h / face.height)
-    face = face.resize((round(face.width * ech), round(face.height * ech)), Image.LANCZOS)
-    gx = (face.width - cible_w) // 2
-    gy = (face.height - cible_h) // 2
-    img.paste(face.crop((gx, gy, gx + cible_w, gy + cible_h)), (x_face, 0))
+    # --- 4e de couverture (à gauche) ---
+    v = Image.open(VERSO).convert("RGB").crop(VERSO_CROP)
+    manque = round(v.height * 2 / 3) - v.width          # ramener au ratio 2:3
+    v = miroir(v, manque // 2, manque - manque // 2, 0, 0).resize((pw, ph), Image.LANCZOS)
+    img.paste(miroir(v, fp, 0, fp, fp), (0, 0))
 
-    # --- Dos : bande noire, texte de bas en haut (usage français) ---
-    d.rectangle([x_dos, 0, x_face - 1, H], fill=NOIR)
+    # --- 1re de couverture (à droite) ---
+    f = Image.open(FACE).convert("RGB").crop(FACE_CROP).resize((pw, ph), Image.LANCZOS)
+    img.paste(miroir(f, 0, fp, fp, fp), (x_face, 0))
+
+    # --- Dos : bleu nuit, texte de bas en haut (usage français) ---
+    d = ImageDraw.Draw(img)
+    d.rectangle([x_dos, 0, x_face - 1, H], fill=NAVY)
     if pages > 79:
-        hauteur_txt = int(w_dos * 0.52)
-        f_dos = ImageFont.truetype(SANS_GRAS, hauteur_txt)
-        f_dos2 = ImageFont.truetype(SERIF, int(hauteur_txt * 0.95))
-        bande = Image.new("RGB", (H, w_dos), NOIR)
+        th = int(w_dos * 0.40)
+        f1 = ImageFont.truetype(INTER + "Inter-ExtraBold.otf", th)
+        f2 = ImageFont.truetype(INTER + "Inter-SemiBold.otf", int(th * 0.85))
+        bande = Image.new("RGB", (H, w_dos), NAVY)
         bd = ImageDraw.Draw(bande)
-        t1, t2, t3 = "VENDRE, STRUCTURER, GRANDIR", "Rodriguez MOKHASSA", "STFC Éditions"
-        y = (w_dos - hauteur_txt) // 2 - int(hauteur_txt * 0.12)
-        marge = px(0.6)
-        bd.text((marge, y), t1, font=f_dos, fill=BLANC)
-        l2 = bd.textlength(t2, font=f_dos2)
-        bd.text((H // 2 + px(0.6), y), t2, font=f_dos2, fill=BLANC)
-        l3 = bd.textlength(t3, font=f_dos2)
-        bd.text((H - marge - l3, y), t3, font=f_dos2, fill=(200, 200, 200))
+        cy = w_dos / 2
+        x = fp + px(0.45)
+        for txt, coul in (("VENDRE, STRUCTURER, ", BLANC), ("GRANDIR", OR)):
+            bd.text((x, cy), txt, font=f1, fill=coul, anchor="lm")
+            x += bd.textlength(txt, font=f1)
+        bd.text((x + px(0.35), cy), "Rodriguez MOKHASSA", font=f2, fill=BLANC, anchor="lm")
+        # emblème STFC en bas du dos, texte STFC Éditions à côté
+        xe = H - fp - px(0.45)
+        if os.path.exists(LOGO):
+            taille = int(w_dos * 0.78)
+            disque = Image.new("L", (taille * 4, taille * 4), 0)
+            ImageDraw.Draw(disque).ellipse((0, 0, taille * 4 - 1, taille * 4 - 1), fill=255)
+            disque = disque.resize((taille, taille), Image.LANCZOS)
+            xe -= taille
+            bande.paste(BLANC, (xe, int(cy - taille / 2)), disque)
+            emb = Image.open(LOGO).convert("RGBA").rotate(-90, expand=True)
+            emb.thumbnail((int(taille * 0.8), int(taille * 0.8)), Image.LANCZOS)
+            bande.paste(emb, (xe + (taille - emb.width) // 2, int(cy - emb.height / 2)), emb)
+            xe -= px(0.12)
+        bd.text((xe, cy), "STFC Éditions", font=f2, fill=OR, anchor="rm")
         img.paste(bande.rotate(90, expand=True), (x_dos, 0))
-
-    # --- 4e de couverture ---
-    m = px(FOND_PERDU + 0.55)
-    x0, larg = m, px(LARG) - px(0.55) * 2 - px(0.0)
-    y = px(FOND_PERDU + 0.65)
-
-    f_bandeau = ImageFont.truetype(SANS_GRAS, 58)
-    accroche = "POURQUOI VOTRE ENTREPRISE VEND SANS GRANDIR ?"
-    lt = lignes(d, accroche, f_bandeau, larg - 40)
-    for l in lt:
-        tw = d.textlength(l, font=f_bandeau)
-        d.rectangle([x0, y, x0 + tw + 40, y + 86], fill=NOIR)
-        d.text((x0 + 20, y + 10), l, font=f_bandeau, fill=BLANC)
-        y += 98
-    y += 30
-
-    f_corps = ImageFont.truetype(SERIF, 48)
-    f_gras = ImageFont.truetype(SERIF_GRAS, 48)
-    f_ital = ImageFont.truetype(SERIF_ITAL, 48)
-    y = paragraphe(d, x0, y, "Vos ventes progressent, mais vous travaillez toujours plus, la trésorerie reste tendue et tout repose sur vous. Le problème n’est pas votre courage : c’est l’ordre dans lequel vous faites les choses.", f_corps, larg)
-    y += 22
-    y = paragraphe(d, x0, y, "Ancien manager commercial de grandes structures, industriel et fondateur du cabinet STFC, Rodriguez MOKHASSA propose une méthode en trois temps, applicable dans tous les pays d’Afrique francophone.", f_corps, larg)
-    y += 30
-    d.text((x0, y), "Vous apprendrez à :", font=f_gras, fill=NOIR)
-    y += 68
-    puces = [
-        "poser un diagnostic honnête de votre entreprise ;",
-        "choisir vos clients et construire une offre difficile à copier ;",
-        "fixer vos prix à partir de vos coûts et de votre valeur ;",
-        "organiser une vente qui ne dépend plus de vous seul ;",
-        "piloter par les chiffres et anticiper votre trésorerie ;",
-        "choisir vos priorités, déléguer et innover pour durer.",
-    ]
-    for p in puces:
-        d.ellipse([x0 + 4, y + 22, x0 + 18, y + 36], fill=NOIR)
-        y = paragraphe(d, x0 + 36, y, p, f_corps, larg - 36)
-        y += 6
-    y += 22
-    y = paragraphe(d, x0, y, "Avec des cas pratiques comparés, des matrices, dix-huit fiches à photocopier et une feuille de route sur 90 jours.", f_ital, larg)
-    y += 40
-    d.line([x0, y, x0 + larg, y], fill=GRIS, width=3)
-    y += 30
-    f_petit = ImageFont.truetype(SERIF, 42)
-    y = paragraphe(d, x0, y, "Rodriguez MOKHASSA est expert en stratégie de vente, marketing et innovation, entrepreneur industriel et manager principal de Stratfocus Consulting (STFC). Du même auteur : Le Code Secret de l’Acheteur.", f_petit, larg, GRIS)
-
-    # Bas de la 4e : éditeur à gauche, zone code-barres réservée à droite
-    # bande noire basse, en écho à la 1re de couverture
-    yb = H - px(FOND_PERDU + 1.15)
-    d.rectangle([0, yb, x_dos, H], fill=NOIR)
-    d.line([x0, yb + 40, x0 + px(0.6), yb + 40], fill=BLANC, width=4)
-    f_edit = ImageFont.truetype(SANS_GRAS, 56)
-    d.text((x0, yb + 75), "STFC ÉDITIONS", font=f_edit, fill=BLANC)
-    d.text((x0, yb + 150), "Brazzaville, République du Congo", font=f_petit, fill=(210, 210, 210))
-    # zone blanche de 2 x 1,2 pouce pour le code-barres ISBN (laissée vide)
 
     os.makedirs(SORTIE, exist_ok=True)
     base = os.path.join(SORTIE, "Couverture-complete-impression")
     img.save(base + ".pdf", resolution=DPI)
     img.save(base + ".png", dpi=(DPI, DPI))
     print(f"Pages : {pages} (impression {pages_imp}) | dos : {dos:.3f} po ({dos*25.4:.1f} mm)"
-          f" | couverture : {W/DPI:.3f} x {H/DPI:.3f} po ({W/DPI*2.54:.2f} x {H/DPI*2.54:.2f} cm)")
+          f" | couverture : {W/DPI:.3f} x {H/DPI:.3f} po ({W/DPI*2.54:.2f} x {H/DPI*2.54:.2f} cm)"
+          f" | {W} x {H} px")
 
 
 if __name__ == "__main__":
