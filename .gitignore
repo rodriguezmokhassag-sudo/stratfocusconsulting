@@ -1,1 +1,4 @@
-livres/*/build/reference.docx
+03-livres/*/build/reference.docx
+node_modules/
+.env
+.DS_Store

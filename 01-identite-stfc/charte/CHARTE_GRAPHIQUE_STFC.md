@@ -1,7 +1,7 @@
 # Charte graphique des documents STFC
 
 Règles appliquées à tous les documents produits par Strat Focus Consulting (STFC) pour ses clients.
-Modèle Word prêt à l'emploi : `modeles/STFC_Modele_Document.dotx`.
+Modèle Word prêt à l'emploi : `02-modeles-documents/modele-word/STFC_Modele_Document.dotx`.
 
 ## Couleurs
 
