@@ -21,6 +21,7 @@ Ce dépôt réunit tous les projets STFC, rangés par famille.
 | **04 · Marketing et contenu** | | |
 | [`04-marketing-contenu/publications`](04-marketing-contenu/publications) | Publications réseaux sociaux | Banque de 100 thèmes, prompts, visuels T001 à T100, journal des décisions |
 | [`04-marketing-contenu/n8n`](04-marketing-contenu/n8n) | Automatisation n8n | Code du workflow de publications quotidiennes |
+| [`04-marketing-contenu/videos-ia`](04-marketing-contenu/videos-ia) | Vidéos IA TikTok | Scripts avatar HeyGen, montage automatisé (STFC Academy) |
 | **05 · Prospection** | | |
 | [`05-prospection`](05-prospection) | Agent de prospection | Guide d'installation Windows |
 | **06 · STFC Academy** | | |
