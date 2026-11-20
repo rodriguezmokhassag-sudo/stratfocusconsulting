@@ -31,6 +31,16 @@ PAGES = [  # clé, fichier FR, fichier EN, libellé FR, libellé EN
     ("contact", "contact.html", "contact.html", "Contact", "Contact"),
 ]
 P = {k: {"fr": f, "en": e, "lfr": lf, "len": le} for k, f, e, lf, le in PAGES}
+# Sous-menu de l'accueil : une page par rubrique
+SOUS_PAGES = [  # clé, fichier FR, fichier EN, libellé FR, libellé EN
+    ("vision", "vision.html", "vision.html", "Notre vision", "Our vision"),
+    ("mission", "mission.html", "mission.html", "Notre mission", "Our mission"),
+    ("valeurs", "valeurs.html", "values.html", "Nos valeurs", "Our values"),
+    ("directeur", "mot-du-directeur.html", "director.html", "Le mot du directeur", "A word from the director"),
+    ("campus", "campus.html", "campus.html", "Le campus", "The campus"),
+]
+P.update({k: {"fr": f, "en": e, "lfr": lf, "len": le} for k, f, e, lf, le in SOUS_PAGES})
+SOUS_CLES = [k for k, *_ in SOUS_PAGES]
 
 
 def lien(lang, cle, depuis=None):
@@ -200,10 +210,9 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
     for k, *_ in PAGES:
         if k in ("admissions",):
             continue
-        cur = ' aria-current="page"' if k == cle else ""
+        cur = ' aria-current="page"' if (k == cle or (k == "accueil" and cle in SOUS_CLES)) else ""
         if k == "accueil":
-            base = "" if cle == "accueil" else lien(lang, "accueil")
-            sous = "".join(f'<a href="{base}#{a}">{fr if lang == "fr" else en}</a>' for a, fr, en in SOUS_MENU_ACCUEIL)
+            sous = "".join(f'<a href="{lien(lang, s)}"{" aria-current=page" if s == cle else ""}>{P[s]["l" + lang]}</a>' for s in SOUS_CLES)
             nav.append(f'<div class="menu-parent"><a href="{lien(lang, k)}"{cur} aria-haspopup="true">{P[k]["l" + lang]}'
                        f'<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>'
                        f'<div class="sous-menu">{sous}</div></div>')
@@ -283,7 +292,7 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
       </div>
       <div>
         <h4>{L('L’école', 'About')}</h4>
-        <ul>{''.join(f'<li><a href="{lien(lang, "accueil")}#{a}">{fr if lang == "fr" else en}</a></li>' for a, fr, en in SOUS_MENU_ACCUEIL)}</ul>
+        <ul>{''.join(f'<li><a href="{lien(lang, s)}">{P[s]["l" + lang]}</a></li>' for s in SOUS_CLES)}</ul>
         <h4 style="margin-top:26px">{L('Formations', 'Programs')}</h4>
         <ul>
           <li><a href="{lien(lang, 'filieres')}#gestion">{L('Gestion et administration', 'Management and administration')}</a></li>
@@ -425,8 +434,6 @@ def p_accueil(lang):
   </div>
 </section>
 
-{sections_ecole(lang)}
-
 <section class="bloc fond-noir">
   <div class="wrap">
     {titre_section(L('Pourquoi HEMIP', 'Why HEMIP'), L('10 raisons de nous choisir', '10 reasons to choose us'), L('Une école à taille humaine, ancrée dans le tissu industriel congolais.', 'A human-scale school rooted in Congo’s industrial landscape.'))}
@@ -460,11 +467,6 @@ def p_accueil(lang):
 
 
 # ---------------------------------------------------------------- L'ÉCOLE (sections de l'accueil)
-SOUS_MENU_ACCUEIL = [("vision", "Notre vision", "Our vision"), ("mission", "Notre mission", "Our mission"),
-                     ("valeurs", "Nos valeurs", "Our values"), ("directeur", "Le mot du directeur", "A word from the director"),
-                     ("campus", "Le campus", "The campus")]
-
-
 def sections_ecole(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
     pre = "" if lang == "fr" else "../"
@@ -475,8 +477,7 @@ def sections_ecole(lang):
         ("ampoule", L("Innovation", "Innovation"), L("Une recherche orientée vers les besoins réels de nos communautés.", "Research focused on the real needs of our communities.")),
     ]
     vals = "".join(f'<div class="carte apparait"><div class="ico">{ico(i)}</div><h3>{t}</h3><p>{d}</p></div>' for i, t, d in valeurs)
-    return f"""
-<section class="bloc ancre" id="vision">
+    return {"vision": f"""<section class="bloc">
   <div class="wrap deux-col">
     <div class="apparait">
       {titre_section(L('Notre vision', 'Our vision'), L('Viser l’excellence africaine', 'Aiming for African excellence'))}
@@ -485,9 +486,8 @@ def sections_ecole(lang):
     </div>
     <div class="photo-cadre apparait"><img src="{pre}img/etudiante-admissions.webp" alt="{L('Étudiante de HEMIP', 'HEMIP student')}" width="900" height="1350" loading="lazy" style="max-height:560px"></div>
   </div>
-</section>
-
-<section class="bloc fond-bleu ancre" id="mission">
+</section>""",
+        "mission": f"""<section class="bloc">
   <div class="wrap">
     {titre_section(L('Notre mission', 'Our mission'), L('Former, chercher, insérer', 'Teach, research, employ'))}
     <div class="grille-3">
@@ -496,16 +496,14 @@ def sections_ecole(lang):
       <div class="carte apparait"><div class="ico">{ico('mallette')}</div><h3>{L('Préparer à l’emploi', 'Prepare for work')}</h3><p>{L('Préparer les étudiants à la vie professionnelle dans les secteurs primaire (Perenco, TotalEnergies…), secondaire (CORAF, Dangote, Saris…) et tertiaire (E2C, La Congolaise des Eaux…), ou à créer leur start-up.', 'Prepare students for careers in the primary (Perenco, TotalEnergies…), secondary (CORAF, Dangote, Saris…) and tertiary sectors (E2C, La Congolaise des Eaux…), or to launch their own start-up.')}</p></div>
     </div>
   </div>
-</section>
-
-<section class="bloc ancre" id="valeurs">
+</section>""",
+        "valeurs": f"""<section class="bloc">
   <div class="wrap">
     {titre_section(L('Nos valeurs', 'Our values'), L('Ce qui nous guide', 'What guides us'))}
     <div class="grille-4">{vals}</div>
   </div>
-</section>
-
-<section class="bloc fond-bleu ancre" id="directeur">
+</section>""",
+        "directeur": f"""<section class="bloc">
   <div class="wrap deux-col">
     <div class="apparait">
       {titre_section(L('Le mot du directeur', 'A word from the director'), L('Faire la percée', 'Making the breakthrough'))}
@@ -515,9 +513,8 @@ def sections_ecole(lang):
     </div>
     <div class="apparait">{emplacement(lang, L('Portrait du directeur', 'Director’s portrait'), '360px')}</div>
   </div>
-</section>
-
-<section class="bloc ancre" id="campus">
+</section>""",
+        "campus": f"""<section class="bloc">
   <div class="wrap deux-col">
     <div class="apparait">{emplacement(lang, L('Campus de Pointe-Noire', 'Pointe-Noire campus'), '380px')}</div>
     <div class="apparait">
@@ -531,8 +528,24 @@ def sections_ecole(lang):
       <div class="btns" style="margin-top:24px"><a class="btn btn-bleu" href="{lien(lang, 'contact')}">{L('Nous rendre visite', 'Visit us')} {ico('fleche')}</a></div>
     </div>
   </div>
-</section>
-"""
+</section>"""}
+
+
+INTRO_SOUS = {
+    "vision": T("L’ambition qui guide HEMIP La Percée depuis sa création.", "The ambition that has guided HEMIP La Percée since its creation."),
+    "mission": T("Former des cadres, mener une recherche utile et préparer nos étudiants à l’emploi.", "Training professionals, conducting useful research and preparing our students for work."),
+    "valeurs": T("Les principes qui guident notre enseignement au quotidien.", "The principles that guide our teaching every day."),
+    "directeur": T("Le message du directeur général aux étudiants, aux familles et aux partenaires.", "The Director General’s message to students, families and partners."),
+    "campus": T("Un campus au centre-ville de Pointe-Noire, derrière la Tour Mayombe.", "A campus in downtown Pointe-Noire, behind the Mayombe Tower."),
+}
+
+
+def p_sous(cle):
+    def gen(lang):
+        titre = P[cle]["l" + lang]
+        contenu = entete_page(lang, cle, titre, INTRO_SOUS[cle][lang]) + "\n" + sections_ecole(lang)[cle] + "\n" + bandeau_appel(lang)
+        return page(lang, cle, titre, f"HEMIP La Percée — {titre}. {INTRO_SOUS[cle][lang]}", contenu)
+    return gen
 
 
 # ---------------------------------------------------------------- FILIÈRES
@@ -934,7 +947,7 @@ def p_contact(lang):
 
 
 # ---------------------------------------------------------------- ÉCRITURE
-GENERATEURS = {"accueil": p_accueil, "filieres": p_filieres, "recherche": p_recherche,
+GENERATEURS = {"accueil": p_accueil, **{k: p_sous(k) for k in SOUS_CLES}, "filieres": p_filieres, "recherche": p_recherche,
                "vie": p_vie, "partenaires": p_partenaires, "admissions": p_admissions, "contact": p_contact}
 
 
