@@ -13,20 +13,25 @@ Objectif du cahier des charges : vendre l'école sur internet, augmenter le traf
 | `site/css/style.css` | Styles. Seules les couleurs du logo sont utilisées : bleu `#0093DD`, rouge `#DA251C`, noir `#212121` et blanc |
 | `site/js/main.js` | Menu mobile, filtres des filières, envoi des formulaires sur WhatsApp |
 | `site/img/` | Logo, favicon, photos |
+| `site/img/partenaires/` | Logos des écoles partenaires (ENGDE, HESTIM, ISTA, IPSAS, ORAGEU) |
+| `site/img/entreprises/` | Logos des entreprises : déposer `coraf.png`, `snpc.png`, `totalenergies.png`, `eni.png`, `perenco.png`, `dangote.png`, `saris.png`, `lcde.png`, `e2c.png`, `brasco.png` puis relancer `build.py`. Une entreprise sans logo s'affiche avec son nom |
 | `source/build.py` | **Tout le contenu FR + EN.** On modifie un texte ici, puis on lance `python3 build.py` |
 
-## Pages (16 au total, 8 par langue)
+## Pages (14 au total, 7 par langue)
 
 | Français | Anglais | Contenu |
 |---|---|---|
-| `index.html` | `en/index.html` | Accueil : héros, accès rapides, chiffres clés, 2 parcours, 10 raisons, recherche, entreprises, vie étudiante |
-| `ecole.html` | `en/about.html` | Vision, mission, valeurs, agrément, mot du directeur, campus |
+| `index.html` | `en/index.html` | Accueil : héros, accès rapides, chiffres clés, puis Notre vision, Notre mission, Nos valeurs, Le mot du directeur, Le campus (sous-menu de l'onglet Accueil), 10 raisons, entreprises |
 | `filieres.html` | `en/programs.html` | Les 15 licences avec leurs débouchés, un filtre par parcours et la formation continue |
 | `recherche.html` | `en/research.html` | 6 axes de recherche et 4 secteurs de services aux entreprises |
 | `vie-etudiante.html` | `en/student-life.html` | Soutenances, visites en entreprise, excursions, fêtes scolaires, stages, témoignages |
 | `partenaires.html` | `en/partners.html` | ENGDE, HESTIM, ISTA, IPSAS, ORAGEU, entreprises, formulaire « Devenir partenaire » |
 | `admissions.html` | `en/admissions.html` | 4 étapes, conditions, bourses, formulaire de pré-inscription |
 | `contact.html` | `en/contact.html` | Coordonnées, formulaire, plan Google Maps |
+
+## Bandeau supérieur
+
+La mention d'agrément défile lentement de gauche à droite (pause au survol). Le téléphone et l'e-mail restent dans le pied de page et sur la page Contact.
 
 ## Formulaires
 
@@ -41,7 +46,8 @@ Les emplacements hachurés « Photo à venir » et les cartes « Témoignage à 
 - [ ] Photos réelles : campus, laboratoire de génie des procédés, soutenances, visites en entreprise, excursions, fêtes scolaires
 - [ ] Portrait, nom et message du directeur général
 - [ ] 3 témoignages (alumni, stagiaire, finaliste) avec nom, filière et promotion
-- [ ] Date de la prochaine rentrée : réglage `RENTREE` dans `build.py` (elle s'affiche alors dans le badge de l'accueil)
+- [ ] Date de la prochaine rentrée : réglage `RENTREE` dans `build.py` (elle s'affiche alors au-dessus du titre de l'accueil)
+- [ ] Logos des entreprises (dossier `site/img/entreprises/`)
 - [ ] Lien de la page Facebook : réglage `FACEBOOK`
 - [ ] Nom de domaine définitif : réglage `DOMAINE` (sert à `sitemap.xml`, `robots.txt` et aux balises de partage)
 - [ ] Faire valider : conditions d'admission (bac ou équivalent), « Licence · 3 ans » sur chaque filière, liste des entreprises partenaires

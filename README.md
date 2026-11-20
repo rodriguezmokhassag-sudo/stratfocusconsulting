@@ -29,7 +29,7 @@ Ce dépôt réunit tous les projets STFC, rangés par famille.
 | [`07-clients/g-clean/site`](07-clients/g-clean/site) | G-Clean (SOZACO-TD SARL) | Site vitrine www.gclean-congo.com |
 | [`07-clients/g-clean/plaquette`](07-clients/g-clean/plaquette) | G-Clean | Plaquette commerciale 2 pages HD |
 | [`07-clients/nita-lcc`](07-clients/nita-lcc) | Mayonnaise NITA × LCC | Spot vidéo 4K (16:9 et 9:16) |
-| [`07-clients/hemip`](07-clients/hemip) | HEMIP La Percée (école supérieure) | Site internet complet FR/EN, 16 pages, pré-inscription WhatsApp |
+| [`07-clients/hemip`](07-clients/hemip) | HEMIP La Percée (école supérieure) | Site internet complet FR/EN, 14 pages, pré-inscription WhatsApp |
 | [`07-clients/la-tendresse-de-ketchup`](07-clients/la-tendresse-de-ketchup) | Restaurant-Bar La Tendresse de Ketchup | Kit de gestion complet : affiches, formulaires, carnets numérotés |
 | **08 · Projets personnels** | | |
 | [`08-projets-personnels/gestion-chorale`](08-projets-personnels/gestion-chorale) | Gestion Chorale | Application Excel/VBA et guides par rôle |

@@ -23,7 +23,6 @@ FACEBOOK = ""                             # lien de la page Facebook ; vide = ma
 # ---------------------------------------------------------------- PAGES
 PAGES = [  # clé, fichier FR, fichier EN, libellé FR, libellé EN
     ("accueil", "index.html", "index.html", "Accueil", "Home"),
-    ("ecole", "ecole.html", "about.html", "L'école", "About"),
     ("filieres", "filieres.html", "programs.html", "Filières", "Programs"),
     ("recherche", "recherche.html", "research.html", "Recherche", "Research"),
     ("vie", "vie-etudiante.html", "student-life.html", "Vie étudiante", "Student life"),
@@ -167,11 +166,22 @@ PART_ACAD = [
     ("ISTA", T("RD Congo", "DR Congo"), T("Institut Supérieur des Techniques Appliquées de Kinshasa", "Higher Institute of Applied Techniques, Kinshasa")),
     ("IPSAS", T("Tunisie", "Tunisia"), T("Institut Polytechnique des Sciences Avancées de Sfax", "Polytechnic Institute of Advanced Sciences, Sfax")),
 ]
+# Logos : site/img/partenaires/<nom>.png (écoles) et site/img/entreprises/<nom>.png (entreprises).
+# Une entreprise sans fichier logo s'affiche avec son nom.
+LOGOS_ENT = {"CORAF": "coraf", "SNPC": "snpc", "TotalEnergies": "totalenergies", "Eni Congo": "eni", "Perenco": "perenco",
+             "Dangote": "dangote", "Saris Congo": "saris", "La Congolaise des Eaux": "lcde", "E2C": "e2c", "Brasco": "brasco"}
+
+
+def logo_entreprise(nom):
+    f = LOGOS_ENT.get(nom)
+    return f"img/entreprises/{f}.png" if f and (SITE / "img" / "entreprises" / f"{f}.png").exists() else None
+
+
 ENTREPRISES = [
     ("CORAF", T("Raffinage", "Refining")), ("SNPC", T("Pétrole", "Oil")), ("TotalEnergies", T("Énergie", "Energy")),
     ("Eni Congo", T("Énergie", "Energy")), ("Perenco", T("Pétrole", "Oil")), ("Dangote", T("Ciment", "Cement")),
     ("Saris Congo", T("Agro-industrie", "Agro-industry")), ("La Congolaise des Eaux", T("Eau", "Water")),
-    ("E2C", T("Électricité", "Electricity")), ("Brascon", T("Brasserie", "Brewery")),
+    ("E2C", T("Électricité", "Electricity")), ("Brasco", T("Brasseries du Congo", "Brasseries du Congo")),
     (T("Banques", "Banks"), T("Publiques et privées", "Public and private")),
 ]
 
@@ -191,6 +201,13 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
         if k in ("admissions",):
             continue
         cur = ' aria-current="page"' if k == cle else ""
+        if k == "accueil":
+            base = "" if cle == "accueil" else lien(lang, "accueil")
+            sous = "".join(f'<a href="{base}#{a}">{fr if lang == "fr" else en}</a>' for a, fr, en in SOUS_MENU_ACCUEIL)
+            nav.append(f'<div class="menu-parent"><a href="{lien(lang, k)}"{cur} aria-haspopup="true">{P[k]["l" + lang]}'
+                       f'<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>'
+                       f'<div class="sous-menu">{sous}</div></div>')
+            continue
         nav.append(f'<a href="{lien(lang, k)}"{cur}>{P[k]["l" + lang]}</a>')
     nav.append(f'<a class="btn btn-rouge" href="{lien(lang, "admissions")}"'
                f'{" aria-current=page" if cle == "admissions" else ""}>'
@@ -233,12 +250,8 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
 <a class="skip" href="#contenu">{L('Aller au contenu', 'Skip to content')}</a>
 <div class="topbar">
   <div class="wrap">
-    <span class="agr">{L('Établissement privé d’enseignement supérieur agréé définitivement par l’État', 'Private higher education institution with full State accreditation')} · <b>N° {AGREMENT}</b></span>
-    <span class="liens">
-      <a href="tel:{TEL1}">{TEL1_AFF}</a>
-      <a class="masquer-mobile" href="mailto:{EMAIL}">{EMAIL}</a>
-      <span class="langue" aria-label="{L('Langue', 'Language')}">{lang_switch}</span>
-    </span>
+    <div class="agr-defile"><p class="agr">{L('Établissement privé d’enseignement supérieur agréé définitivement par l’État', 'Private higher education institution with full State accreditation')} · <b>N° {AGREMENT}</b></p></div>
+    <span class="langue" aria-label="{L('Langue', 'Language')}">{lang_switch}</span>
   </div>
 </div>
 <header class="entete">
@@ -269,7 +282,9 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
         <ul>{''.join(f'<li><a href="{lien(lang, k)}">{P[k]["l" + lang]}</a></li>' for k, *_ in PAGES)}</ul>
       </div>
       <div>
-        <h4>{L('Formations', 'Programs')}</h4>
+        <h4>{L('L’école', 'About')}</h4>
+        <ul>{''.join(f'<li><a href="{lien(lang, "accueil")}#{a}">{fr if lang == "fr" else en}</a></li>' for a, fr, en in SOUS_MENU_ACCUEIL)}</ul>
+        <h4 style="margin-top:26px">{L('Formations', 'Programs')}</h4>
         <ul>
           <li><a href="{lien(lang, 'filieres')}#gestion">{L('Gestion et administration', 'Management and administration')}</a></li>
           <li><a href="{lien(lang, 'filieres')}#industrie">{L('Industriel et technologique', 'Industrial and technological')}</a></li>
@@ -362,29 +377,21 @@ def p_accueil(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
     pre = "" if lang == "fr" else "../"
     rentree = (f'{L("Rentrée", "Intake")} {RENTREE[lang]} · ' if RENTREE[lang] else "")
-    ges = [c for c, p, *_ in FILIERES if p == "ges"]
-    ind = [c for c, p, *_ in FILIERES if p == "ind"]
     raisons = "".join(f'<div class="raison apparait"><div><h3>{r[lang][0]}</h3><p>{r[lang][1]}</p></div></div>' for r in RAISONS)
     noms = [n if isinstance(n, str) else n[lang] for n, _ in ENTREPRISES]
-    defile = "".join(f"<li>{n}</li>" for n in noms * 2)
-
-    activites = [
-        ("presentation", L("Soutenances", "Thesis defenses"), L("Les finalistes présentent leurs travaux devant un jury de professionnels.", "Final-year students present their work to a panel of professionals.")),
-        ("usine", L("Visites en entreprise", "Company visits"), L("Raffinerie, usines, banques : nos étudiants découvrent le terrain.", "Refinery, plants, banks: our students see the field first-hand.")),
-        ("bus", L("Excursions", "Field trips"), L("Des sorties pédagogiques pour relier la théorie à la pratique.", "Educational trips that connect theory and practice.")),
-        ("fete", L("Fêtes scolaires", "School celebrations"), L("Journées d'intégration, fêtes de fin d'année et remises de diplômes.", "Welcome days, end-of-year parties and graduation ceremonies.")),
-    ]
-    act = "".join(f'<div class="carte apparait"><div class="ico">{ico(i)}</div><h3>{t}</h3><p>{d}</p></div>' for i, t, d in activites)
+    def item(n):
+        lg = logo_entreprise(n)
+        return f'<li class="avec-logo"><img src="{pre}{lg}" alt="{n}"></li>' if lg else f"<li>{n}</li>"
+    defile = "".join(item(n) for n in noms * 2)
 
     contenu = f"""
 <section class="hero">
   <div class="wrap">
     <div class="texte apparait">
-      <span class="badge"><i></i>{rentree}{L('Inscriptions ouvertes · Système LMD', 'Admissions open · LMD system')}</span>
+      {f'<p class="rentree">{rentree.rstrip(" · ")}</p>' if rentree else ''}
       <h1>{L('Formez-vous au <span>management</span> et à l’<em>ingénierie</em> à Pointe-Noire', 'Study <span>management</span> and <em>engineering</em> in Pointe-Noire')}</h1>
       <p class="accroche">{L('HEMIP La Percée forme des cadres et techniciens supérieurs prêts pour les entreprises du pétrole, de l’énergie, de l’industrie, de la banque et du commerce. Licences LMD, cours du jour et du soir.', 'HEMIP La Percée trains managers and senior technicians ready for companies in oil, energy, industry, banking and trade. LMD Bachelor’s degrees, day and evening classes.')}</p>
       <div class="btns">
-        <a class="btn btn-rouge" href="{lien(lang, 'admissions')}">{L('Je me pré-inscris', 'Apply now')} {ico('fleche')}</a>
         <a class="btn btn-contour" href="{lien(lang, 'filieres')}">{L('Voir les 15 filières', 'See the 15 programs')}</a>
       </div>
     </div>
@@ -418,33 +425,7 @@ def p_accueil(lang):
   </div>
 </section>
 
-<section class="bloc">
-  <div class="wrap">
-    {titre_section(L('Nos formations', 'Our programs'), L('Deux parcours, quinze métiers', 'Two tracks, fifteen careers'), L('Des licences pensées avec les entreprises de Pointe-Noire et de Brazzaville, pour être opérationnel dès la sortie.', 'Bachelor’s degrees designed with companies in Pointe-Noire and Brazzaville, so you are job-ready on day one.'))}
-    <div class="grille-2">
-      <article class="parcours apparait">
-        <img src="{pre}img/parcours-gestion.webp" alt="" loading="lazy" width="1200" height="703">
-        <div class="contenu">
-          <span class="etiquette">{L('Parcours', 'Track')} 1</span>
-          <h3>{L('Gestion et administration', 'Management and administration')}</h3>
-          <p>{L('Ressources humaines, finance, banque, commerce international, droit des affaires, logistique.', 'Human resources, finance, banking, international trade, business law, logistics.')}</p>
-          <div class="codes">{''.join(f'<span>{c}</span>' for c in ges)}</div>
-          <a class="lien" href="{lien(lang, 'filieres')}#gestion">{L('Découvrir le parcours', 'Explore the track')} →</a>
-        </div>
-      </article>
-      <article class="parcours bleu apparait">
-        <img src="{pre}img/parcours-industrie.webp" alt="" loading="lazy" width="1065" height="714">
-        <div class="contenu">
-          <span class="etiquette">{L('Parcours', 'Track')} 2</span>
-          <h3>{L('Industriel et technologique', 'Industrial and technological')}</h3>
-          <p>{L('Maintenance, électrotechnique, automatisme, logiciel, télécoms et génie des procédés : pétrole, chimie, raffinage, énergies renouvelables.', 'Maintenance, electrical engineering, automation, software, telecoms and process engineering: oil, chemicals, refining, renewables.')}</p>
-          <div class="codes">{''.join(f'<span>{c}</span>' for c in ind)}</div>
-          <a class="lien" href="{lien(lang, 'filieres')}#industrie">{L('Découvrir le parcours', 'Explore the track')} →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+{sections_ecole(lang)}
 
 <section class="bloc fond-noir">
   <div class="wrap">
@@ -453,40 +434,10 @@ def p_accueil(lang):
   </div>
 </section>
 
-<section class="bloc">
-  <div class="wrap deux-col">
-    <div class="apparait">
-      {titre_section(L('Recherche et innovation', 'Research and innovation'), L('Une unité de recherche en génie des procédés', 'A process engineering research unit'))}
-      <p>{L('Au-delà de l’enseignement, HEMIP est un univers d’innovation. Notre unité de recherche conçoit des solutions concrètes aux problèmes de la société : énergies renouvelables, biocarburants, recyclage des plastiques, traitement de l’eau.', 'Beyond teaching, HEMIP is a hub of innovation. Our research unit designs practical solutions to society’s problems: renewable energy, biofuels, plastic recycling, water treatment.')}</p>
-      <ul class="liste-check" style="margin-top:22px">
-        <li><b>{L('Énergies renouvelables', 'Renewable energy')}</b> — {L('solaire photovoltaïque, biomasse, micro-centrales hydroélectriques', 'solar PV, biomass, micro hydropower')}</li>
-        <li><b>{L('Biocarburants', 'Biofuels')}</b> — {L('biodiesel et bioéthanol', 'biodiesel and bioethanol')}</li>
-        <li><b>{L('Économie circulaire', 'Circular economy')}</b> — {L('valorisation des déchets plastiques', 'turning plastic waste into value')}</li>
-        <li><b>{L('Eau potable', 'Drinking water')}</b> — {L('traitement industriel des eaux de surface', 'industrial surface water treatment')}</li>
-      </ul>
-      <div class="btns" style="margin-top:26px"><a class="btn btn-bleu" href="{lien(lang, 'recherche')}">{L('Nos travaux de recherche', 'Our research')} {ico('fleche')}</a></div>
-    </div>
-    <div class="grille-2 apparait">
-      <div class="carte"><div class="ico">{ico('soleil')}</div><h3>{L('Solaire', 'Solar')}</h3><p>{L('Systèmes solaires photovoltaïques', 'Solar photovoltaic systems')}</p></div>
-      <div class="carte rouge"><div class="ico">{ico('fiole')}</div><h3>{L('Biocarburants', 'Biofuels')}</h3><p>{L('Biodiesel, éthanol, glycérine', 'Biodiesel, ethanol, glycerin')}</p></div>
-      <div class="carte rouge"><div class="ico">{ico('recyclage')}</div><h3>{L('Recyclage', 'Recycling')}</h3><p>{L('Plastiques transformés en carburants et en pavés', 'Plastics turned into fuels and paving blocks')}</p></div>
-      <div class="carte"><div class="ico">{ico('goutte')}</div><h3>{L('Eau', 'Water')}</h3><p>{L('Production d’eau potable', 'Drinking water production')}</p></div>
-    </div>
-  </div>
-</section>
-
 <section class="bloc serre fond-bleu">
   <div class="wrap">
     {titre_section(L('Stages et emplois', 'Internships and jobs'), L('Ils accueillent nos étudiants', 'Where our students train'), L('Visites guidées, stages professionnels et premiers emplois chez les acteurs majeurs de l’économie congolaise.', 'Guided visits, internships and first jobs with major players in Congo’s economy.'), centre=True)}
     <div class="defile" aria-label="{L('Entreprises partenaires', 'Partner companies')}"><ul>{defile}</ul></div>
-  </div>
-</section>
-
-<section class="bloc">
-  <div class="wrap">
-    {titre_section(L('Vie étudiante', 'Student life'), L('Apprendre aussi hors de la classe', 'Learning beyond the classroom'))}
-    <div class="grille-4">{act}</div>
-    <div class="btns" style="margin-top:30px"><a class="btn btn-contour" href="{lien(lang, 'vie')}">{L('Découvrir la vie étudiante', 'Discover student life')} {ico('fleche')}</a></div>
   </div>
 </section>
 
@@ -508,8 +459,13 @@ def p_accueil(lang):
                 contenu, jsonld)
 
 
-# ---------------------------------------------------------------- L'ÉCOLE
-def p_ecole(lang):
+# ---------------------------------------------------------------- L'ÉCOLE (sections de l'accueil)
+SOUS_MENU_ACCUEIL = [("vision", "Notre vision", "Our vision"), ("mission", "Notre mission", "Our mission"),
+                     ("valeurs", "Nos valeurs", "Our values"), ("directeur", "Le mot du directeur", "A word from the director"),
+                     ("campus", "Le campus", "The campus")]
+
+
+def sections_ecole(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
     pre = "" if lang == "fr" else "../"
     valeurs = [
@@ -519,10 +475,8 @@ def p_ecole(lang):
         ("ampoule", L("Innovation", "Innovation"), L("Une recherche orientée vers les besoins réels de nos communautés.", "Research focused on the real needs of our communities.")),
     ]
     vals = "".join(f'<div class="carte apparait"><div class="ico">{ico(i)}</div><h3>{t}</h3><p>{d}</p></div>' for i, t, d in valeurs)
-    contenu = f"""
-{entete_page(lang, 'ecole', L('L’école', 'About HEMIP'), L('Haute École de Management et de l’Ingénierie La Percée : un établissement privé d’enseignement supérieur, agréé définitivement par l’État, au cœur de Pointe-Noire.', 'Haute École de Management et de l’Ingénierie La Percée: a fully State-accredited private higher education institution in the heart of Pointe-Noire.'))}
-
-<section class="bloc">
+    return f"""
+<section class="bloc ancre" id="vision">
   <div class="wrap deux-col">
     <div class="apparait">
       {titre_section(L('Notre vision', 'Our vision'), L('Viser l’excellence africaine', 'Aiming for African excellence'))}
@@ -533,7 +487,7 @@ def p_ecole(lang):
   </div>
 </section>
 
-<section class="bloc fond-bleu">
+<section class="bloc fond-bleu ancre" id="mission">
   <div class="wrap">
     {titre_section(L('Notre mission', 'Our mission'), L('Former, chercher, insérer', 'Teach, research, employ'))}
     <div class="grille-3">
@@ -544,14 +498,14 @@ def p_ecole(lang):
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc ancre" id="valeurs">
   <div class="wrap">
     {titre_section(L('Nos valeurs', 'Our values'), L('Ce qui nous guide', 'What guides us'))}
     <div class="grille-4">{vals}</div>
   </div>
 </section>
 
-<section class="bloc fond-bleu">
+<section class="bloc fond-bleu ancre" id="directeur">
   <div class="wrap deux-col">
     <div class="apparait">
       {titre_section(L('Le mot du directeur', 'A word from the director'), L('Faire la percée', 'Making the breakthrough'))}
@@ -563,7 +517,7 @@ def p_ecole(lang):
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc ancre" id="campus">
   <div class="wrap deux-col">
     <div class="apparait">{emplacement(lang, L('Campus de Pointe-Noire', 'Pointe-Noire campus'), '380px')}</div>
     <div class="apparait">
@@ -578,12 +532,7 @@ def p_ecole(lang):
     </div>
   </div>
 </section>
-
-{bandeau_appel(lang)}
 """
-    return page(lang, "ecole", L("L’école", "About"),
-                L("Vision, mission, valeurs et campus de HEMIP La Percée, établissement privé d’enseignement supérieur agréé définitivement par l’État à Pointe-Noire.",
-                  "Vision, mission, values and campus of HEMIP La Percée, a fully State-accredited private higher education institution in Pointe-Noire."), contenu)
 
 
 # ---------------------------------------------------------------- FILIÈRES
@@ -778,18 +727,28 @@ def p_vie(lang):
 # ---------------------------------------------------------------- PARTENAIRES
 def p_partenaires(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
+    pre = "" if lang == "fr" else "../"
     acad = "".join(
-        f'<div class="carte apparait"><div class="partenaire"><span class="drapeau">{sigle[:5]}</span><div><h3>{sigle} <small style="color:var(--gris);font-family:var(--texte);font-size:.85rem">· {pays[lang]}</small></h3><p>{nom[lang]}</p></div></div></div>'
+        f'<div class="carte logo-carte apparait"><div class="logo-zone"><img src="{pre}img/partenaires/{sigle.lower()}.png" alt="{L("Logo", "Logo")} {sigle}" loading="lazy"></div>'
+        f'<h3>{sigle} <small>· {pays[lang]}</small></h3><p>{nom[lang]}</p></div>'
         for sigle, pays, nom in PART_ACAD)
-    ent = "".join(f'<span>{n if isinstance(n, str) else n[lang]}<small>{s[lang]}</small></span>' for n, s in ENTREPRISES)
+    ent = ""
+    for n, s in ENTREPRISES:
+        nom = n if isinstance(n, str) else n[lang]
+        lg = logo_entreprise(nom) if isinstance(n, str) else None
+        if lg:
+            ent += f'<div class="ent-logo" title="{nom}"><img src="{pre}{lg}" alt="{nom}" loading="lazy"></div>'
+        else:
+            ent += f'<div class="ent-logo ent-texte"><b>{nom}</b><small>{s[lang]}</small></div>'
+
     contenu = f"""
 {entete_page(lang, 'partenaires', L('Nos partenaires', 'Our partners'), L('Des écoles partenaires sur trois continents et un réseau d’entreprises qui accueillent nos étudiants en stage.', 'Partner schools across Africa and Europe, and a network of companies that host our students as interns.'))}
 
 <section class="bloc">
   <div class="wrap">
     {titre_section(L('Partenaires académiques', 'Academic partners'), L('Un réseau international', 'An international network'))}
-    <div class="grille-2">{acad}
-      <div class="carte rouge apparait"><div class="partenaire"><span class="drapeau">ORA</span><div><h3>ORAGEU</h3><p>{L('HEMIP est membre de l’Ordre Africain des Grandes Écoles et Universités.', 'HEMIP is a member of the African Order of Grandes Écoles and Universities.')}</p></div></div></div>
+    <div class="grille-3">{acad}
+      <div class="carte logo-carte apparait"><div class="logo-zone"><img src="{pre}img/partenaires/orageu.png" alt="{L('Logo', 'Logo')} ORAGEU" loading="lazy"></div><h3>ORAGEU <small>· {L('Afrique', 'Africa')}</small></h3><p>{L('HEMIP est membre de l’Ordre Africain des Grandes Écoles et Universités.', 'HEMIP is a member of the African Order of Grandes Écoles and Universities.')}</p></div>
     </div>
   </div>
 </section>
@@ -974,7 +933,7 @@ def p_contact(lang):
 
 
 # ---------------------------------------------------------------- ÉCRITURE
-GENERATEURS = {"accueil": p_accueil, "ecole": p_ecole, "filieres": p_filieres, "recherche": p_recherche,
+GENERATEURS = {"accueil": p_accueil, "filieres": p_filieres, "recherche": p_recherche,
                "vie": p_vie, "partenaires": p_partenaires, "admissions": p_admissions, "contact": p_contact}
 
 

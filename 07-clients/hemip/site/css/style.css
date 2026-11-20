@@ -93,9 +93,6 @@ p+p{margin-top:.8em}
   .nav .btn{margin:14px 0 0;justify-content:center}
 }
 @media (max-width:640px){
-  .topbar .agr{display:none}
-  .topbar .wrap{justify-content:center}
-  .topbar .masquer-mobile{display:none}
 }
 
 /* Héros de l'accueil */
@@ -384,3 +381,48 @@ textarea{min-height:120px;resize:vertical}
   .defile ul{animation:none;flex-wrap:wrap;width:auto}
   *{transition:none!important}
 }
+
+/* ---- Bandeau supérieur : agrément qui défile lentement de gauche à droite ---- */
+.topbar .wrap{flex-wrap:nowrap}
+.agr-defile{flex:1;overflow:hidden;position:relative;min-width:0;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.agr-defile .agr{display:inline-block;white-space:nowrap;opacity:1;animation:agr-defile 32s linear infinite;will-change:transform}
+.agr-defile:hover .agr{animation-play-state:paused}
+@keyframes agr-defile{from{transform:translateX(-100%)}to{transform:translateX(100vw)}}
+.topbar .langue{flex:none}
+@media (prefers-reduced-motion:reduce){.agr-defile .agr{animation:none;white-space:normal}}
+
+/* ---- Sous-menu de l'onglet Accueil ---- */
+.menu-parent{position:relative;display:flex;align-items:center}
+.menu-parent>a{display:inline-flex;align-items:center;gap:4px}
+.chevron{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.sous-menu{position:absolute;top:100%;left:0;min-width:240px;background:#fff;border:1px solid var(--trait);border-top:4px solid var(--rouge);border-radius:0 0 12px 12px;box-shadow:var(--ombre);padding:8px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility 0s .2s;z-index:60}
+.sous-menu a{text-transform:none;font-family:var(--texte);font-size:.98rem;letter-spacing:0;padding:10px 14px;border-radius:8px}
+.sous-menu a:hover{background:var(--bleu-5);color:var(--bleu-fonce)}
+.sous-menu a::after{display:none}
+.menu-parent:hover .sous-menu,.menu-parent:focus-within .sous-menu{opacity:1;visibility:visible;transform:none;transition:opacity .2s,transform .2s}
+.menu-parent:hover .chevron,.menu-parent:focus-within .chevron{transform:rotate(180deg)}
+@media (max-width:1080px){
+  .menu-parent{flex-direction:column;align-items:stretch}
+  .chevron{display:none}
+  .sous-menu{position:static;opacity:1;visibility:visible;transform:none;border:0;box-shadow:none;padding:0 0 6px 14px;min-width:0;border-left:3px solid var(--rouge);border-radius:0;margin:4px 0 6px}
+  .nav .sous-menu a{border-bottom:0;padding:8px 6px;color:var(--gris)}
+}
+.ancre{scroll-margin-top:90px}
+.hero .rentree{display:inline-block;background:var(--rouge);color:#fff;font-family:var(--titre);letter-spacing:.08em;text-transform:uppercase;font-size:.9rem;padding:5px 14px;border-radius:999px;margin-bottom:18px}
+
+/* ---- Logos des partenaires ---- */
+.logo-carte{display:flex;flex-direction:column}
+.logo-carte .logo-zone{height:150px;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--trait);margin:-28px -28px 22px;padding:18px;border-radius:var(--r) var(--r) 0 0}
+.logo-carte .logo-zone img{max-height:114px;max-width:85%;width:auto;object-fit:contain}
+.logo-carte h3 small{color:var(--gris);font-family:var(--texte);font-size:.85rem;font-weight:400}
+.entreprises{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.ent-logo{background:#fff;border:1px solid var(--trait);border-radius:12px;height:120px;display:flex;align-items:center;justify-content:center;padding:16px;transition:transform .2s,box-shadow .2s}
+.ent-logo:hover{transform:translateY(-3px);box-shadow:var(--ombre)}
+.ent-logo img{max-height:86px;max-width:100%;object-fit:contain}
+.ent-texte{flex-direction:column;text-align:center}
+.ent-texte b{font-family:var(--titre);font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.ent-texte small{color:var(--gris);font-size:.8rem}
+.defile li.avec-logo{padding:8px 22px;display:flex;align-items:center}
+.defile li.avec-logo img{height:46px;width:auto;max-width:150px;object-fit:contain}
+@media (max-width:900px){.acces .grille{grid-template-columns:repeat(2,minmax(0,1fr))}.acces a{min-width:0;padding:20px 14px;gap:10px}.acces svg{width:28px;height:28px}}
+@media (max-width:360px){.acces .grille{grid-template-columns:1fr}}
