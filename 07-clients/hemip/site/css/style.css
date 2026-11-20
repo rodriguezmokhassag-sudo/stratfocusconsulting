@@ -395,7 +395,7 @@ textarea{min-height:120px;resize:vertical}
 .menu-parent{position:relative;display:flex;align-items:center}
 .menu-parent>a{display:inline-flex;align-items:center;gap:4px}
 .chevron{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
-.sous-menu{position:absolute;top:100%;left:0;min-width:240px;background:#fff;border:1px solid var(--trait);border-top:4px solid var(--rouge);border-radius:0 0 12px 12px;box-shadow:var(--ombre);padding:8px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility 0s .2s;z-index:60}
+.sous-menu{position:absolute;top:100%;left:0;min-width:300px;background:#fff;border:1px solid var(--trait);border-top:4px solid var(--rouge);border-radius:0 0 12px 12px;box-shadow:var(--ombre);padding:8px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility 0s .2s;z-index:60}
 .sous-menu a{text-transform:none;font-family:var(--texte);font-size:.98rem;letter-spacing:0;padding:10px 14px;border-radius:8px}
 .sous-menu a:hover{background:var(--bleu-5);color:var(--bleu-fonce)}
 .sous-menu a::after{display:none}
@@ -427,3 +427,16 @@ textarea{min-height:120px;resize:vertical}
 .defile li.avec-logo img{height:46px;width:auto;max-width:150px;object-fit:contain}
 @media (max-width:900px){.acces .grille{grid-template-columns:repeat(2,minmax(0,1fr))}.acces a{min-width:0;padding:20px 14px;gap:10px}.acces svg{width:28px;height:28px}}
 @media (max-width:360px){.acces .grille{grid-template-columns:1fr}}
+
+/* Cartes-liens des pages d'aperçu (Filières, Recherche) */
+.carte-lien{display:flex;flex-direction:column;color:var(--noir);border-top:5px solid var(--bleu)}
+.carte-lien.rouge{border-top-color:var(--rouge)}
+.carte-lien:hover{color:var(--noir)}
+.carte-lien p{flex:0 0 auto}
+.carte-lien .codes-mini{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.carte-lien .codes-mini span{font-family:var(--titre);font-weight:600;font-size:.82rem;letter-spacing:.06em;background:var(--bleu-10);color:var(--bleu-fonce);border-radius:6px;padding:1px 8px}
+.carte-lien.rouge .codes-mini span{background:var(--rouge-10);color:var(--rouge-fonce)}
+.carte-lien .nb{margin-top:10px;font-size:.88rem}
+.carte-lien .voir{margin-top:auto;padding-top:18px;font-family:var(--titre);text-transform:uppercase;letter-spacing:.06em;color:var(--bleu-fonce)}
+.carte-lien.rouge .voir{color:var(--rouge)}
+.carte-lien:hover .voir{color:var(--rouge)}

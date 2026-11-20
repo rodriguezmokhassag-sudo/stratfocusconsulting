@@ -17,14 +17,16 @@ Objectif du cahier des charges : vendre l'école sur internet, augmenter le traf
 | `site/img/entreprises/` | Logos des 10 entreprises (CORAF, SNPC, TotalEnergies, Eni, Perenco, Dangote, Saris Congo, LCDE, E2C, Brasco). Une entreprise sans fichier logo s'affiche avec son nom |
 | `source/build.py` | **Tout le contenu FR + EN.** On modifie un texte ici, puis on lance `python3 build.py` |
 
-## Pages (24 au total, 12 par langue)
+## Pages (34 au total, 17 par langue)
 
 | Français | Anglais | Contenu |
 |---|---|---|
 | `index.html` | `en/index.html` | Accueil : héros, accès rapides, chiffres clés, 10 raisons, entreprises |
 | `vision.html`, `mission.html`, `valeurs.html`, `mot-du-directeur.html`, `campus.html` | `en/vision.html`, `en/mission.html`, `en/values.html`, `en/director.html`, `en/campus.html` | Sous-menu de l'onglet Accueil : une page par rubrique |
-| `filieres.html` | `en/programs.html` | Les 15 licences avec leurs débouchés, un filtre par parcours et la formation continue |
-| `recherche.html` | `en/research.html` | 6 axes de recherche et 4 secteurs de services aux entreprises |
+| `filieres.html` | `en/programs.html` | Aperçu des filières : infos LMD, 3 cartes vers les parcours, formation continue |
+| `parcours-gestion.html`, `parcours-industriel.html`, `genie-des-procedes.html` | `en/management-track.html`, `en/industrial-track.html`, `en/process-engineering.html` | Sous-menu de l'onglet Filières : une page par parcours avec ses filières et débouchés |
+| `recherche.html` | `en/research.html` | Aperçu de l'unité de recherche, 2 cartes vers les sous-pages |
+| `axes-de-recherche.html`, `services-entreprises.html` | `en/research-areas.html`, `en/services-for-companies.html` | Sous-menu de l'onglet Recherche : 6 axes de recherche ; 4 secteurs de services aux entreprises |
 | `vie-etudiante.html` | `en/student-life.html` | Soutenances, visites en entreprise, excursions, fêtes scolaires, stages, témoignages |
 | `partenaires.html` | `en/partners.html` | ENGDE, HESTIM, ISTA, IPSAS, ORAGEU, entreprises, formulaire « Devenir partenaire » |
 | `admissions.html` | `en/admissions.html` | 4 étapes, conditions, bourses, formulaire de pré-inscription |

@@ -39,8 +39,20 @@ SOUS_PAGES = [  # clé, fichier FR, fichier EN, libellé FR, libellé EN
     ("directeur", "mot-du-directeur.html", "director.html", "Le mot du directeur", "A word from the director"),
     ("campus", "campus.html", "campus.html", "Le campus", "The campus"),
 ]
-P.update({k: {"fr": f, "en": e, "lfr": lf, "len": le} for k, f, e, lf, le in SOUS_PAGES})
+SOUS_FILIERES = [
+    ("gestion", "parcours-gestion.html", "management-track.html", "Parcours Gestion et Administration", "Management and Administration track"),
+    ("industriel", "parcours-industriel.html", "industrial-track.html", "Parcours Industriel et Technologique", "Industrial and Technological track"),
+    ("procedes", "genie-des-procedes.html", "process-engineering.html", "Génie des procédés", "Process engineering"),
+]
+SOUS_RECHERCHE = [
+    ("axes", "axes-de-recherche.html", "research-areas.html", "Nos axes de recherche", "Our research areas"),
+    ("services", "services-entreprises.html", "services-for-companies.html", "Services aux entreprises", "Services for companies"),
+]
+for _liste in (SOUS_PAGES, SOUS_FILIERES, SOUS_RECHERCHE):
+    P.update({k: {"fr": f, "en": e, "lfr": lf, "len": le} for k, f, e, lf, le in _liste})
 SOUS_CLES = [k for k, *_ in SOUS_PAGES]
+MENUS = {"accueil": SOUS_CLES, "filieres": [k for k, *_ in SOUS_FILIERES], "recherche": [k for k, *_ in SOUS_RECHERCHE]}
+PARENT = {s: k for k, liste in MENUS.items() for s in liste}
 
 
 def lien(lang, cle, depuis=None):
@@ -210,9 +222,9 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
     for k, *_ in PAGES:
         if k in ("admissions",):
             continue
-        cur = ' aria-current="page"' if (k == cle or (k == "accueil" and cle in SOUS_CLES)) else ""
-        if k == "accueil":
-            sous = "".join(f'<a href="{lien(lang, s)}"{" aria-current=page" if s == cle else ""}>{P[s]["l" + lang]}</a>' for s in SOUS_CLES)
+        cur = ' aria-current="page"' if (k == cle or PARENT.get(cle) == k) else ""
+        if k in MENUS:
+            sous = "".join(f'<a href="{lien(lang, s)}"{" aria-current=page" if s == cle else ""}>{P[s]["l" + lang]}</a>' for s in MENUS[k])
             nav.append(f'<div class="menu-parent"><a href="{lien(lang, k)}"{cur} aria-haspopup="true">{P[k]["l" + lang]}'
                        f'<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>'
                        f'<div class="sous-menu">{sous}</div></div>')
@@ -295,10 +307,9 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
         <ul>{''.join(f'<li><a href="{lien(lang, s)}">{P[s]["l" + lang]}</a></li>' for s in SOUS_CLES)}</ul>
         <h4 style="margin-top:26px">{L('Formations', 'Programs')}</h4>
         <ul>
-          <li><a href="{lien(lang, 'filieres')}#gestion">{L('Gestion et administration', 'Management and administration')}</a></li>
-          <li><a href="{lien(lang, 'filieres')}#industrie">{L('Industriel et technologique', 'Industrial and technological')}</a></li>
+          {''.join(f'<li><a href="{lien(lang, s)}">{P[s]["l" + lang]}</a></li>' for s in MENUS["filieres"])}
           <li><a href="{lien(lang, 'filieres')}#continue">{L('Formation continue', 'Continuing education')}</a></li>
-          <li><a href="{lien(lang, 'recherche')}">{L('Unité de recherche', 'Research unit')}</a></li>
+          {''.join(f'<li><a href="{lien(lang, s)}">{P[s]["l" + lang]}</a></li>' for s in MENUS["recherche"])}
           {fb}
         </ul>
       </div>
@@ -327,9 +338,11 @@ def page(lang, cle, titre, description, contenu, jsonld=""):
 
 def entete_page(lang, cle, titre, intro):
     L = (lambda fr, en: fr if lang == "fr" else en)
+    par = PARENT.get(cle)
+    parent_fil = f'<a href="{lien(lang, par)}">{P[par]["l" + lang]}</a> / ' if par and par != "accueil" else ""
     return f"""<section class="page-titre">
   <div class="wrap">
-    <p class="fil"><a href="{lien(lang, 'accueil')}">{L('Accueil', 'Home')}</a> / {P[cle]['l' + lang]}</p>
+    <p class="fil"><a href="{lien(lang, 'accueil')}">{L('Accueil', 'Home')}</a> / {parent_fil}{P[cle]['l' + lang]}</p>
     <h1>{titre}</h1>
     <p>{intro}</p>
   </div>
@@ -416,8 +429,8 @@ def p_accueil(lang):
 
 <nav class="acces" aria-label="{L('Accès rapide', 'Quick links')}">
   <div class="wrap grille">
-    <a href="{lien(lang, 'filieres')}#gestion">{ico('mallette')}<span><b>{L('Gestion', 'Management')}</b><small>{L('6 filières', '6 programs')}</small></span></a>
-    <a href="{lien(lang, 'filieres')}#industrie">{ico('engrenage')}<span><b>{L('Ingénierie', 'Engineering')}</b><small>{L('9 filières', '9 programs')}</small></span></a>
+    <a href="{lien(lang, 'gestion')}">{ico('mallette')}<span><b>{L('Gestion', 'Management')}</b><small>{L('6 filières', '6 programs')}</small></span></a>
+    <a href="{lien(lang, 'industriel')}">{ico('engrenage')}<span><b>{L('Ingénierie', 'Engineering')}</b><small>{L('9 filières', '9 programs')}</small></span></a>
     <a href="{lien(lang, 'admissions')}">{ico('chapeau')}<span><b>Admissions</b><small>{L('Pré-inscription en ligne', 'Apply online')}</small></span></a>
     <a href="{lien(lang, 'partenaires')}#devenir">{ico('poignee')}<span><b>{L('Entreprises', 'Companies')}</b><small>{L('Devenir partenaire', 'Become a partner')}</small></span></a>
   </div>
@@ -561,15 +574,9 @@ def carte_filiere(lang, code, parcours, nom, debouches):
 </article>"""
 
 
-def p_filieres(lang):
+def infos_lmd(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
-    ges = "".join(carte_filiere(lang, *f) for f in FILIERES if f[1] == "ges")
-    ind = "".join(carte_filiere(lang, *f) for f in FILIERES if f[1] == "ind" and f[0] not in PROCEDES)
-    proc = "".join(carte_filiere(lang, *f) for f in FILIERES if f[0] in PROCEDES)
-    contenu = f"""
-{entete_page(lang, 'filieres', L('Nos filières', 'Our programs'), L('Quinze licences professionnalisantes réparties en deux parcours, avec des débouchés concrets dans les entreprises congolaises.', 'Fifteen career-focused Bachelor’s programs across two tracks, with concrete career paths in Congolese companies.'))}
-
-<section class="bloc serre fond-bleu">
+    return f"""<section class="bloc serre fond-bleu">
   <div class="wrap">
     <div class="infos-lmd">
       <div class="apparait"><b>LMD</b><span>{L('Licence en 6 semestres (3 ans)', 'Bachelor’s degree in 6 semesters (3 years)')}</span></div>
@@ -578,27 +585,52 @@ def p_filieres(lang):
       <div class="apparait"><b>{L('Stages', 'Internships')}</b><span>{L('En entreprise partenaire', 'In partner companies')}</span></div>
     </div>
   </div>
-</section>
+</section>"""
+
+
+def codes_de(sous):
+    if sous == "gestion":
+        return [f for f in FILIERES if f[1] == "ges"]
+    if sous == "industriel":
+        return [f for f in FILIERES if f[1] == "ind" and f[0] not in PROCEDES]
+    return [f for f in FILIERES if f[0] in PROCEDES]
+
+
+DESC_PARCOURS = {
+    "gestion": T("Ressources humaines, finance, banque, commerce international, droit des affaires et logistique : les métiers de la gestion d’entreprise.",
+                 "Human resources, finance, banking, international trade, business law and logistics: the business management professions."),
+    "industriel": T("Maintenance, électrotechnique, automatisme, génie logiciel et télécoms : les techniciens supérieurs dont l’industrie a besoin.",
+                    "Maintenance, electrical engineering, automation, software and telecoms: the senior technicians industry needs."),
+    "procedes": T("Pétrole, chimie, raffinage et énergies renouvelables : les filières de génie des procédés, adossées à notre unité de recherche.",
+                  "Oil, chemicals, refining and renewable energy: process engineering programs backed by our research unit."),
+}
+
+
+def carte_lien(lang, cle, texte, extra="", rouge=False, icone="fleche"):
+    L = (lambda fr, en: fr if lang == "fr" else en)
+    return (f'<a class="carte carte-lien{" rouge" if rouge else ""} apparait" href="{lien(lang, cle)}">'
+            f'<div class="ico">{ico(icone)}</div><h3>{P[cle]["l" + lang]}</h3><p>{texte}</p>{extra}'
+            f'<span class="voir">{L("Découvrir", "Explore")} →</span></a>')
+
+
+def p_filieres(lang):
+    L = (lambda fr, en: fr if lang == "fr" else en)
+    icones = {"gestion": "mallette", "industriel": "engrenage", "procedes": "fiole"}
+    cartes = "".join(
+        carte_lien(lang, s, DESC_PARCOURS[s][lang],
+                   f'<div class="codes-mini">{"".join(f"<span>{c[0]}</span>" for c in codes_de(s))}</div>'
+                   f'<p class="nb">{len(codes_de(s))} {L("filières", "programs")}</p>',
+                   rouge=(s == "industriel"), icone=icones[s])
+        for s in MENUS["filieres"])
+    contenu = f"""
+{entete_page(lang, 'filieres', L('Nos filières', 'Our programs'), L('Quinze licences professionnalisantes, avec des débouchés concrets dans les entreprises congolaises. Choisissez un parcours pour découvrir ses filières.', 'Fifteen career-focused Bachelor’s programs with concrete career paths in Congolese companies. Choose a track to see its programs.'))}
+
+{infos_lmd(lang)}
 
 <section class="bloc">
   <div class="wrap">
-    <div class="filtres" role="group" aria-label="{L('Filtrer les filières', 'Filter programs')}">
-      <button type="button" data-filtre="tous" aria-pressed="true">{L('Toutes les filières', 'All programs')} (15)</button>
-      <button type="button" data-filtre="ges" aria-pressed="false">{L('Gestion et administration', 'Management and administration')} (6)</button>
-      <button type="button" data-filtre="ind" aria-pressed="false">{L('Industriel et technologique', 'Industrial and technological')} (9)</button>
-    </div>
-
-    <div data-parcours="ges" id="gestion">
-      <h2 class="groupe-titre"><i></i>{L('Parcours Gestion et Administration', 'Management and Administration track')}</h2>
-      <div class="grille-3">{ges}</div>
-    </div>
-
-    <div data-parcours="ind" id="industrie">
-      <h2 class="groupe-titre bleu"><i></i>{L('Parcours Industriel et Technologique', 'Industrial and Technological track')}</h2>
-      <div class="grille-3">{ind}</div>
-      <h2 class="groupe-titre bleu" style="font-size:1.15rem"><i></i>{L('Génie des procédés', 'Process engineering')}</h2>
-      <div class="grille-2">{proc}</div>
-    </div>
+    {titre_section(L('Nos parcours', 'Our tracks'), L('Choisissez votre parcours', 'Choose your track'))}
+    <div class="grille-3">{cartes}</div>
   </div>
 </section>
 
@@ -620,12 +652,38 @@ def p_filieres(lang):
 {bandeau_appel(lang, L('Vous avez trouvé votre filière ?', 'Found your program?'))}
 """
     return page(lang, "filieres", L("Nos filières", "Programs"),
-                L("15 licences LMD à Pointe-Noire : RH, finance, banque, commerce international, droit, logistique, maintenance, électrotechnique, automatisme, génie logiciel, télécoms, génie pétrolier, chimique, raffinage, énergies renouvelables.",
-                  "15 LMD Bachelor’s programs in Pointe-Noire: HR, finance, banking, international trade, law, logistics, maintenance, electrical engineering, automation, software, telecoms, petroleum, chemical, refining and renewable energy engineering."), contenu)
+                L("15 licences LMD à Pointe-Noire en gestion, en ingénierie et en génie des procédés, cours du jour et du soir, et formations continues.",
+                  "15 LMD Bachelor’s programs in Pointe-Noire in management, engineering and process engineering, day and evening classes, and continuing education."), contenu)
+
+
+def p_parcours(sous):
+    def gen(lang):
+        L = (lambda fr, en: fr if lang == "fr" else en)
+        cartes = "".join(carte_filiere(lang, *f) for f in codes_de(sous))
+        grille = "grille-2" if sous == "procedes" else "grille-3"
+        if sous == "industriel":  # lien vers les filières de génie des procédés, qui font partie du parcours
+            cartes += carte_lien(lang, "procedes", L("Génie pétrolier, génie chimique, raffinage et pétrochimie, énergies renouvelables : 4 filières complètent ce parcours.",
+                                                     "Petroleum, chemical, refining and petrochemicals, renewable energy: 4 more programs in this track."), rouge=True, icone="fiole")
+        titre = P[sous]["l" + lang]
+        contenu = f"""
+{entete_page(lang, sous, titre, DESC_PARCOURS[sous][lang])}
+
+<section class="bloc">
+  <div class="wrap">
+    <div class="{grille}">{cartes}</div>
+  </div>
+</section>
+
+{infos_lmd(lang)}
+
+{bandeau_appel(lang, L('Vous avez trouvé votre filière ?', 'Found your program?'))}
+"""
+        return page(lang, sous, titre, f"HEMIP La Percée — {titre}. {DESC_PARCOURS[sous][lang]}", contenu)
+    return gen
 
 
 # ---------------------------------------------------------------- RECHERCHE
-def p_recherche(lang):
+def blocs_recherche(lang):
     L = (lambda fr, en: fr if lang == "fr" else en)
     axes = [
         (L("Énergies renouvelables : solaire", "Renewable energy: solar"), L("Conception et installation de systèmes solaires photovoltaïques (SSPV) pour l’électrification des habitations et des sites isolés.", "Design and installation of solar photovoltaic systems for homes and off-grid sites."), [L("Photovoltaïque", "Photovoltaics"), L("Électrification", "Electrification")]),
@@ -658,32 +716,76 @@ def p_recherche(lang):
         f'<p class="clients"><b>{L("Clients potentiels", "Potential clients")} :</b> {cl}</p></div>'
         for i, c, t, li, cl in secteurs)
 
+    return axes_html, sect
+
+
+INTRO_RECH = {
+    "axes": T("Six axes de recherche en génie des procédés, du laboratoire au pilote semi-industriel, auxquels nos étudiants participent.",
+              "Six process engineering research areas, from the lab to semi-industrial pilots, in which our students take part."),
+    "services": T("Entreprises, administrations et porteurs de projets : HEMIP met l’expertise de son unité de recherche à votre service.",
+                  "Companies, public bodies and project owners: HEMIP puts its research unit’s expertise at your service."),
+}
+
+
+def p_recherche(lang):
+    L = (lambda fr, en: fr if lang == "fr" else en)
+    cartes = (carte_lien(lang, "axes", INTRO_RECH["axes"][lang], icone="fiole")
+              + carte_lien(lang, "services", INTRO_RECH["services"][lang], rouge=True, icone="usine"))
     contenu = f"""
 {entete_page(lang, 'recherche', L('Recherche, innovation et développement', 'Research, innovation and development'), L('L’unité de recherche en génie des procédés de HEMIP développe des solutions concrètes, adaptées aux besoins du Congo et de l’Afrique centrale.', 'HEMIP’s process engineering research unit develops practical solutions tailored to the needs of Congo and Central Africa.'))}
 
 <section class="bloc">
-  <div class="wrap deux-col" style="align-items:start">
-    <div class="apparait" style="position:sticky;top:120px">
-      {titre_section(L('Nos axes de recherche', 'Our research areas'), L('Une recherche orientée vers la société', 'Research that serves society'), L('Nos étudiants participent à ces projets, du laboratoire au pilote semi-industriel : c’est la meilleure école de la pratique.', 'Our students take part in these projects, from the lab to semi-industrial pilots: the best way to learn by doing.'))}
-      {emplacement(lang, L('Laboratoire de génie des procédés', 'Process engineering lab'), '260px')}
-    </div>
-    <div>{axes_html}</div>
-  </div>
-</section>
-
-<section class="bloc fond-bleu">
   <div class="wrap">
-    {titre_section(L('Services aux entreprises', 'Services for companies'), L('Nos secteurs d’intervention', 'Our areas of work'), L('Entreprises, administrations et porteurs de projets : HEMIP met son expertise à votre service.', 'Companies, public bodies and project owners: HEMIP puts its expertise at your service.'))}
-    <div class="grille-2">{sect}</div>
-    <div class="btns" style="margin-top:34px"><a class="btn btn-rouge" href="{lien(lang, 'partenaires')}#devenir">{L('Proposer un projet', 'Propose a project')} {ico('fleche')}</a></div>
+    {titre_section(L('Unité de recherche', 'Research unit'), L('Un univers d’innovation', 'A hub of innovation'), L('Au-delà de l’enseignement, HEMIP conçoit des solutions concrètes aux problèmes de la société : énergies renouvelables, biocarburants, recyclage des plastiques, traitement de l’eau.', 'Beyond teaching, HEMIP designs practical solutions to society’s problems: renewable energy, biofuels, plastic recycling, water treatment.'))}
+    <div class="grille-2">{cartes}</div>
   </div>
 </section>
 
 {bandeau_appel(lang, L('Envie d’innover avec nous ?', 'Want to innovate with us?'), L('Rejoignez nos filières en génie des procédés et participez aux projets de l’unité de recherche.', 'Join our process engineering programs and take part in the research unit’s projects.'))}
 """
     return page(lang, "recherche", L("Recherche", "Research"),
-                L("Unité de recherche en génie des procédés de HEMIP : énergies renouvelables, biocarburants, recyclage des plastiques, traitement de l’eau, et services aux entreprises.",
-                  "HEMIP’s process engineering research unit: renewable energy, biofuels, plastic recycling, water treatment and services for companies."), contenu)
+                L("Unité de recherche en génie des procédés de HEMIP : axes de recherche et services aux entreprises.",
+                  "HEMIP’s process engineering research unit: research areas and services for companies."), contenu)
+
+
+def p_axes(lang):
+    L = (lambda fr, en: fr if lang == "fr" else en)
+    axes_html, _ = blocs_recherche(lang)
+    titre = P["axes"]["l" + lang]
+    contenu = f"""
+{entete_page(lang, 'axes', titre, INTRO_RECH['axes'][lang])}
+
+<section class="bloc">
+  <div class="wrap deux-col" style="align-items:start">
+    <div class="apparait" style="position:sticky;top:120px">
+      {titre_section(L('Recherche appliquée', 'Applied research'), L('Une recherche orientée vers la société', 'Research that serves society'), L('Nos étudiants participent à ces projets, du laboratoire au pilote semi-industriel : c’est la meilleure école de la pratique.', 'Our students take part in these projects, from the lab to semi-industrial pilots: the best way to learn by doing.'))}
+      {emplacement(lang, L('Laboratoire de génie des procédés', 'Process engineering lab'), '260px')}
+    </div>
+    <div>{axes_html}</div>
+  </div>
+</section>
+
+{bandeau_appel(lang, L('Envie d’innover avec nous ?', 'Want to innovate with us?'), L('Rejoignez nos filières en génie des procédés et participez aux projets de l’unité de recherche.', 'Join our process engineering programs and take part in the research unit’s projects.'))}
+"""
+    return page(lang, "axes", titre, f"HEMIP La Percée — {titre}. {INTRO_RECH['axes'][lang]}", contenu)
+
+
+def p_services(lang):
+    L = (lambda fr, en: fr if lang == "fr" else en)
+    _, sect = blocs_recherche(lang)
+    titre = P["services"]["l" + lang]
+    contenu = f"""
+{entete_page(lang, 'services', titre, INTRO_RECH['services'][lang])}
+
+<section class="bloc">
+  <div class="wrap">
+    {titre_section(L('Nos secteurs d’intervention', 'Our areas of work'), L('Une expertise au service des entreprises', 'Expertise for companies'))}
+    <div class="grille-2">{sect}</div>
+    <div class="btns" style="margin-top:34px"><a class="btn btn-rouge" href="{lien(lang, 'partenaires')}#devenir">{L('Proposer un projet', 'Propose a project')} {ico('fleche')}</a></div>
+  </div>
+</section>
+"""
+    return page(lang, "services", titre, f"HEMIP La Percée — {titre}. {INTRO_RECH['services'][lang]}", contenu)
 
 
 # ---------------------------------------------------------------- VIE ÉTUDIANTE
@@ -947,7 +1049,8 @@ def p_contact(lang):
 
 
 # ---------------------------------------------------------------- ÉCRITURE
-GENERATEURS = {"accueil": p_accueil, **{k: p_sous(k) for k in SOUS_CLES}, "filieres": p_filieres, "recherche": p_recherche,
+GENERATEURS = {"accueil": p_accueil, **{k: p_sous(k) for k in SOUS_CLES}, "filieres": p_filieres, **{k: p_parcours(k) for k in MENUS["filieres"]},
+               "recherche": p_recherche, "axes": p_axes, "services": p_services,
                "vie": p_vie, "partenaires": p_partenaires, "admissions": p_admissions, "contact": p_contact}
 
 
