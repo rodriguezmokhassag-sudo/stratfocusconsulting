@@ -415,7 +415,8 @@ textarea{min-height:120px;resize:vertical}
 .logo-carte .logo-zone{height:150px;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--trait);margin:-28px -28px 22px;padding:18px;border-radius:var(--r) var(--r) 0 0}
 .logo-carte .logo-zone img{max-height:114px;max-width:85%;width:auto;object-fit:contain}
 .logo-carte h3 small{color:var(--gris);font-family:var(--texte);font-size:.85rem;font-weight:400}
-.entreprises{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.entreprises{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+@media (max-width:480px){.ent-logo{height:100px;padding:12px}.ent-logo img{max-height:70px}}
 .ent-logo{background:#fff;border:1px solid var(--trait);border-radius:12px;height:120px;display:flex;align-items:center;justify-content:center;padding:16px;transition:transform .2s,box-shadow .2s}
 .ent-logo:hover{transform:translateY(-3px);box-shadow:var(--ombre)}
 .ent-logo img{max-height:86px;max-width:100%;object-fit:contain}

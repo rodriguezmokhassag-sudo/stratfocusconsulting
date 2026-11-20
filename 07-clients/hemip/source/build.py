@@ -733,7 +733,8 @@ def p_partenaires(lang):
         f'<h3>{sigle} <small>· {pays[lang]}</small></h3><p>{nom[lang]}</p></div>'
         for sigle, pays, nom in PART_ACAD)
     ent = ""
-    for n, s in ENTREPRISES:
+    avec_logo = sorted(ENTREPRISES, key=lambda e: not (isinstance(e[0], str) and logo_entreprise(e[0])))
+    for n, s in avec_logo:
         nom = n if isinstance(n, str) else n[lang]
         lg = logo_entreprise(nom) if isinstance(n, str) else None
         if lg:

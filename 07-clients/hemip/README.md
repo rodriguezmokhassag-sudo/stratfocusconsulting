@@ -14,7 +14,7 @@ Objectif du cahier des charges : vendre l'école sur internet, augmenter le traf
 | `site/js/main.js` | Menu mobile, filtres des filières, envoi des formulaires sur WhatsApp |
 | `site/img/` | Logo, favicon, photos |
 | `site/img/partenaires/` | Logos des écoles partenaires (ENGDE, HESTIM, ISTA, IPSAS, ORAGEU) |
-| `site/img/entreprises/` | Logos des entreprises : déposer `coraf.png`, `snpc.png`, `totalenergies.png`, `eni.png`, `perenco.png`, `dangote.png`, `saris.png`, `lcde.png`, `e2c.png`, `brasco.png` puis relancer `build.py`. Une entreprise sans logo s'affiche avec son nom |
+| `site/img/entreprises/` | Logos des entreprises, déjà fournis : Dangote, Saris Congo, LCDE, E2C, Brasco. Pour les autres, déposer `coraf.png`, `snpc.png`, `totalenergies.png`, `eni.png` ou `perenco.png` puis relancer `build.py`. Une entreprise sans logo s'affiche avec son nom |
 | `source/build.py` | **Tout le contenu FR + EN.** On modifie un texte ici, puis on lance `python3 build.py` |
 
 ## Pages (14 au total, 7 par langue)
@@ -47,7 +47,7 @@ Les emplacements hachurés « Photo à venir » et les cartes « Témoignage à 
 - [ ] Portrait, nom et message du directeur général
 - [ ] 3 témoignages (alumni, stagiaire, finaliste) avec nom, filière et promotion
 - [ ] Date de la prochaine rentrée : réglage `RENTREE` dans `build.py` (elle s'affiche alors au-dessus du titre de l'accueil)
-- [ ] Logos des entreprises (dossier `site/img/entreprises/`)
+- [ ] Logos restants des entreprises : CORAF, SNPC, TotalEnergies, Eni Congo, Perenco (dossier `site/img/entreprises/`)
 - [ ] Lien de la page Facebook : réglage `FACEBOOK`
 - [ ] Nom de domaine définitif : réglage `DOMAINE` (sert à `sitemap.xml`, `robots.txt` et aux balises de partage)
 - [ ] Faire valider : conditions d'admission (bac ou équivalent), « Licence · 3 ans » sur chaque filière, liste des entreprises partenaires
